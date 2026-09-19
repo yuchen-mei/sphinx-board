@@ -1,0 +1,5 @@
+# Preserve archived originals byte-for-byte, including historical line endings.
+board/** -text -whitespace
+*.xlsx binary
+*.md text eol=lf
+*.json text eol=lf

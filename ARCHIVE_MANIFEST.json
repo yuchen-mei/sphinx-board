@@ -1,0 +1,53 @@
+{
+  "archive": "Sphinx original passive adapter board",
+  "branch": "legacy/v1",
+  "tag": "legacy-v1-archive",
+  "archived_on": "2026-09-18",
+  "original_design_date": "not asserted",
+  "status": "Historical as-received snapshot; not current design or new fabrication release",
+  "electrical_or_layout_changes": false,
+  "files": [
+    {
+      "path": "board/sphinx_board.kicad_pro",
+      "original_filename": "sphinx_board.kicad_pro",
+      "bytes": 19646,
+      "sha256": "41eef66babd67a5d9f060e2da5497e472d92e03c86a241da657cb4c75a12059d"
+    },
+    {
+      "path": "board/sphinx_board.kicad_sch",
+      "original_filename": "sphinx_board.kicad_sch",
+      "bytes": 178846,
+      "sha256": "1154bcd55dbbd375a888eea919db8c97ef9880254353ae0a9ff01455b0c159d7"
+    },
+    {
+      "path": "board/sphinx_board.kicad_pcb",
+      "original_filename": "sphinx_board.kicad_pcb",
+      "bytes": 2502097,
+      "sha256": "2204ba95d593c129b7358d95063c1620cb80c0daf8bb9acb45101cfa4ca7fc1f"
+    },
+    {
+      "path": "board/sphinx_board.csv",
+      "original_filename": "sphinx_board.csv",
+      "bytes": 1724,
+      "sha256": "a3a0ad261f940b5b1c6f395e5b4ee907dba0c3fef8d709e971b65d0088258a7c"
+    },
+    {
+      "path": "board/Sphinx BOM.xlsx",
+      "original_filename": "Sphinx BOM.xlsx",
+      "bytes": 11577,
+      "sha256": "f2d372cbb54799bd6055aee77b051ef6d96ab96b87eb95df014325ab799d7c75"
+    },
+    {
+      "path": "board/sphinx_board BOM updated.xlsx",
+      "original_filename": "sphinx_board BOM updated.xlsx",
+      "bytes": 12101,
+      "sha256": "09a783952af8b5c2a53213cf0c864dac8c03514a29d8fbc452992704233c14db"
+    }
+  ],
+  "not_included": [
+    "Editor state and backups",
+    "Unrelated alternative schematic experiments",
+    "Unverified generated fabrication outputs",
+    "Original external my_symbols/my_footprints library directories, not present in source snapshot"
+  ]
+}

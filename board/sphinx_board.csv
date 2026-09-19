@@ -1,0 +1,12 @@
+Reference,Qty,Value,DNP,Footprint,Datasheet,Manufacturer_Name,Manufacturer_Part_Number,Description,#
+"C1,C2,C5,C6",4,47u,,Capacitor_SMD:C_0805_2012Metric,,,,Unpolarized capacitor,1
+"C3,C4,C7,C8,C9,C10,C12,C14,C15,C16,C25,C26,C28,C29,C30,C31,C32,C33,C34,C36,C37,C41,C44,C46,C51,C52,C53,C56,C57",29,0.1u,,Capacitor_SMD:C_0402_1005Metric,,,,Unpolarized capacitor,2
+"C17,C18,C19,C20,C21,C22,C23,C24,C35,C38,C39,C40,C42,C43,C45,C47,C48,C49,C50,C54,C58,C59,C60,C61",24,1u,,Capacitor_SMD:C_0805_2012Metric,,,,Unpolarized capacitor,3
+J2,1,Conn_01x06_Pin,,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,,,,"Generic connector, single row, 01x06, script generated",4
+J5,1,Conn_Coaxial,,Connector_Coaxial:SMA_Amphenol_132134-16_Vertical,,,,"coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)",5
+J6,1,Conn_02x10_Counter_Clockwise,,my_footprints:smd_jtag_connector,,,,"Generic connector, double row, 02x10, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)",6
+"J7,J8,J12",3,Conn_01x03,,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,,,,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",7
+"J9,J10,J11",3,Conn_01x02_Socket,,my_footprints:CONN_24.243_MTC,,,,"Generic connector, single row, 01x02, script generated",8
+R1,1,10k,,Resistor_SMD:R_0402_1005Metric,,,,Resistor,9
+SW2,1,SW_MEC_5E,,my_footprints:teco_push_button,https://www.apem.com/medias/download/MEC_switches_serie_MULTIMEC5E.pdf,,,MEC 5E single pole normally-open tactile switch,10
+"TP2,TP3,TP4,TP5,TP6,TP7",6,TestPoint,,TestPoint:TestPoint_Keystone_5010-5014_Multipurpose,,,,test point,11
