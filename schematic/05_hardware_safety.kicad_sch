@@ -1,0 +1,924 @@
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0")
+        (uuid "95ce739b-4eee-5f42-a669-179a7d0060de") (paper "A3")
+        (title_block (title "05 | Fault shutdown latch and power-qualified reset") (date "2026-09-19") (rev "V2")
+        (company "Sphinx | Programmable power test board")
+        (comment 1 "Review package: PCB, PI, SI, thermal and ASIC limits require qualification")
+        (comment 2 "12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V")
+        (comment 3 "Author: Yuchen Mei"))
+        (lib_symbols (symbol "Sphinx_V2:74LVC08A_TSSOP14" (pin_names (offset 0.8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 41.1 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "74LVC08A_TSSOP14" (at 0 39.1 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Diodes 74LVC08AT14-13 quad AND, TSSOP14; power-off output leakage specified" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(symbol "74LVC08A_TSSOP14_0_1" (rectangle (start -17.78 38.1) (end 17.78 -38.1) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "74LVC08A_TSSOP14_1_1"
+(pin input line (at -22.86 25.4 0) (length 5.08)  (name "1A" (effects (font (size 1 1))  )) (number "1" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -22.86 20.32 0) (length 5.08)  (name "1B" (effects (font (size 1 1))  )) (number "2" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 22.86 22.86 180) (length 5.08)  (name "1Y" (effects (font (size 1 1))  )) (number "3" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -22.86 10.16 0) (length 5.08)  (name "2A" (effects (font (size 1 1))  )) (number "4" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -22.86 5.08 0) (length 5.08)  (name "2B" (effects (font (size 1 1))  )) (number "5" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 22.86 7.62 180) (length 5.08)  (name "2Y" (effects (font (size 1 1))  )) (number "6" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -22.86 -5.08 0) (length 5.08)  (name "3A" (effects (font (size 1 1))  )) (number "9" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -22.86 -10.16 0) (length 5.08)  (name "3B" (effects (font (size 1 1))  )) (number "10" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 22.86 -7.62 180) (length 5.08)  (name "3Y" (effects (font (size 1 1))  )) (number "8" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -22.86 -20.32 0) (length 5.08)  (name "4A" (effects (font (size 1 1))  )) (number "12" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -22.86 -25.4 0) (length 5.08)  (name "4B" (effects (font (size 1 1))  )) (number "13" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 22.86 -22.86 180) (length 5.08)  (name "4Y" (effects (font (size 1 1))  )) (number "11" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 22.86 33.02 180) (length 5.08)  (name "VCC" (effects (font (size 1 1))  )) (number "14" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 22.86 -33.02 180) (length 5.08)  (name "GND" (effects (font (size 1 1))  )) (number "7" (effects (font (size 0.9 0.9))  )))
+))(symbol "Sphinx_V2:74xGxx__74LVC1G11"
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "U"
+    (at -5.08 10.16 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "74LVC1G11"
+    (at 7.62 -10.16 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Single AND 3-Input Gate, Low-Voltage CMOS"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "Single Gate AND triple LVC CMOS"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "SOT* SG-*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "74xGxx__74LVC1G11_0_1"
+    (arc
+      (start 0 6.35)
+      (mid 6.3224 0)
+      (end 0 -6.35)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type background)))
+    (polyline
+      (pts
+        (xy 0 -6.35)
+        (xy -7.62 -6.35)
+        (xy -7.62 6.35)
+        (xy 0 6.35))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type background))))
+  (symbol "74xGxx__74LVC1G11_1_1"
+    (pin input line
+      (at -15.24 0 0)
+      (length 7.62)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin power_in line
+      (at 0 -10.16 90)
+      (length 3.81)
+      (name "GND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin input line
+      (at -15.24 -5.08 0)
+      (length 7.62)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "3"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin output line
+      (at 12.7 0 180)
+      (length 6.35)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "4"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin power_in line
+      (at 0 10.16 270)
+      (length 3.81)
+      (name "VCC"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "5"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin input line
+      (at -15.24 5.08 0)
+      (length 7.62)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "6"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:Device__C"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0.254))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "C"
+    (at 0.635 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Value" "C"
+    (at 0.635 -2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Footprint" ""
+    (at 0.9652 -3.81 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Unpolarized capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "cap capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "C_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Device__C_0_1"
+    (polyline
+      (pts
+        (xy -2.032 0.762)
+        (xy 2.032 0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -2.032 -0.762)
+        (xy 2.032 -0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Device__C_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 2.794)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 2.794)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:Device__R"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "R"
+    (at 2.032 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "R"
+    (at 0 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at -1.778 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Resistor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "R res resistor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "R_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Device__R_0_1"
+    (rectangle
+      (start -1.016 -2.54)
+      (end 1.016 2.54)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Device__R_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 1.27)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 1.27)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:SN74LVC1G74" (pin_names (offset 0.8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 23.32 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "SN74LVC1G74" (at 0 21.32 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(symbol "SN74LVC1G74_0_1" (rectangle (start -12.7 20.32) (end 12.7 -20.32) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "SN74LVC1G74_1_1"
+(pin input line (at -17.78 10.16 0) (length 5.08)  (name "CLK" (effects (font (size 1 1))  )) (number "1" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -17.78 5.08 0) (length 5.08)  (name "D" (effects (font (size 1 1))  )) (number "2" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -17.78 -5.08 0) (length 5.08)  (name "CLR_N" (effects (font (size 1 1))  )) (number "6" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -17.78 -10.16 0) (length 5.08)  (name "PRE_N" (effects (font (size 1 1))  )) (number "7" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 15.24 180) (length 5.08)  (name "VCC" (effects (font (size 1 1))  )) (number "8" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 17.78 5.08 180) (length 5.08)  (name "Q" (effects (font (size 1 1))  )) (number "5" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 17.78 -5.08 180) (length 5.08)  (name "Q_N" (effects (font (size 1 1))  )) (number "3" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 -15.24 180) (length 5.08)  (name "GND" (effects (font (size 1 1))  )) (number "4" (effects (font (size 0.9 0.9))  )))
+))(symbol "Sphinx_V2:SN74LVC2G17" (pin_names (offset 0.8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 28.4 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "SN74LVC2G17" (at 0 26.4 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(symbol "SN74LVC2G17_0_1" (rectangle (start -12.7 25.4) (end 12.7 -25.4) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "SN74LVC2G17_1_1"
+(pin input line (at -17.78 10.16 0) (length 5.08)  (name "1A" (effects (font (size 1 1))  )) (number "1" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -17.78 -10.16 0) (length 5.08)  (name "2A" (effects (font (size 1 1))  )) (number "3" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 17.78 10.16 180) (length 5.08)  (name "1Y" (effects (font (size 1 1))  )) (number "6" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 17.78 -10.16 180) (length 5.08)  (name "2Y" (effects (font (size 1 1))  )) (number "4" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 20.32 180) (length 5.08)  (name "VCC" (effects (font (size 1 1))  )) (number "5" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 -20.32 180) (length 5.08)  (name "GND" (effects (font (size 1 1))  )) (number "2" (effects (font (size 0.9 0.9))  )))
+))(symbol "Sphinx_V2:Switch__SW_Push"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 1.016)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "SW"
+    (at 1.27 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Value" "SW_Push"
+    (at 0 -1.524 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 5.08 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 5.08 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Push button switch, generic, two pins"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "switch normally-open pushbutton push-button"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Switch__SW_Push_0_1"
+    (circle
+      (center -2.032 0)
+      (radius 0.508)
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 1.27)
+        (xy 0 3.048))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (circle
+      (center 2.032 0)
+      (radius 0.508)
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 2.54 1.27)
+        (xy -2.54 1.27))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -5.08 0 0)
+      (length 2.54)
+      (name "1"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 5.08 0 180)
+      (length 2.54)
+      (name "2"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:TLV3011" (pin_names (offset 0.8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 28.4 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "TLV3011" (at 0 26.4 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(symbol "TLV3011_0_1" (rectangle (start -12.7 25.4) (end 12.7 -25.4) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TLV3011_1_1"
+(pin input line (at -17.78 5.08 0) (length 5.08)  (name "IN+" (effects (font (size 1 1))  )) (number "3" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -17.78 -5.08 0) (length 5.08)  (name "IN-" (effects (font (size 1 1))  )) (number "4" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 17.78 10.16 180) (length 5.08)  (name "REF_1V242" (effects (font (size 1 1))  )) (number "5" (effects (font (size 0.9 0.9))  )))
+(pin open_collector line (at 17.78 0 180) (length 5.08)  (name "OUT_OD" (effects (font (size 1 1))  )) (number "1" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 20.32 180) (length 5.08)  (name "V+" (effects (font (size 1 1))  )) (number "6" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 -15.24 180) (length 5.08)  (name "V-" (effects (font (size 1 1))  )) (number "2" (effects (font (size 0.9 0.9))  )))
+))(symbol "Sphinx_V2:TPS3808G33" (pin_names (offset 0.8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 18.24 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "TPS3808G33" (at 0 16.24 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(symbol "TPS3808G33_0_1" (rectangle (start -12.7 15.24) (end 12.7 -15.24) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TPS3808G33_1_1"
+(pin input line (at -17.78 10.16 0) (length 5.08)  (name "SENSE" (effects (font (size 1 1))  )) (number "5" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -17.78 0 0) (length 5.08)  (name "MR_N" (effects (font (size 1 1))  )) (number "3" (effects (font (size 0.9 0.9))  )))
+(pin passive line (at -17.78 -10.16 0) (length 5.08)  (name "CT" (effects (font (size 1 1))  )) (number "4" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 10.16 180) (length 5.08)  (name "VDD" (effects (font (size 1 1))  )) (number "6" (effects (font (size 0.9 0.9))  )))
+(pin open_collector line (at 17.78 0 180) (length 5.08)  (name "RESET_N" (effects (font (size 1 1))  )) (number "1" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 -10.16 180) (length 5.08)  (name "GND" (effects (font (size 1 1))  )) (number "2" (effects (font (size 0.9 0.9))  )))
+)))
+        (text "ON sets the run latch automatically. STOP or a hardware fault clears it; recovery requires a new ON command." (at 15 15 0) (effects (font (size 1.65 1.65)) (justify left top) ) (uuid "655445f8-5cc1-521f-9786-cc602597f84e"))
+(text "No manual ARM step. Core OVP, VIN12 loss, eFuse fault and control brownout still shut down both rails in hardware." (at 15 23 0) (effects (font (size 1.15 1.15)) (justify left top) ) (uuid "7077fdbb-d2e1-58ba-82ca-7e486944a97b"))
+(symbol (lib_id "Sphinx_V2:TLV3011") (at 72.39 69.85 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3213d0c9-6ecf-5976-b455-412d9b7c439b")
+(property "Reference" "U501" (at 72.39 43.53 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "TLV3011AIDBVR" (at 72.39 46.03 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6" (at 72.39 69.85 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv3011.pdf" (at 72.39 69.85 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "TLV3011AIDBVR" (at 72.39 69.85 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6" (at 72.39 69.85 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "3" (uuid "d546cd3d-c0c4-542c-9829-854435b6b486"))
+(pin "4" (uuid "b9f45faa-40c6-54c1-bb04-6e4306048ca9"))
+(pin "5" (uuid "59a7ca18-7664-582b-94d6-5220d6c4a6ea"))
+(pin "1" (uuid "13f6977b-2263-5b87-9676-6c50770e9baa"))
+(pin "6" (uuid "20bbc1bc-2717-505d-bfa7-061af8820904"))
+(pin "2" (uuid "05550c32-44fe-5580-9cab-d2ee8507bf7b"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "U501") (unit 1)))) )
+(wire (pts (xy 54.61 64.77) (xy 49.53 64.77)) (stroke (width 0) (type default)) (uuid "ec89ca6c-3756-5124-a536-9440720e97e6"))
+(global_label "REF1V242" (shape passive) (at 49.53 64.77 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "435454a1-2225-5f5f-90b6-3d1d1fefce13") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 49.53 64.77 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 54.61 74.93) (xy 49.53 74.93)) (stroke (width 0) (type default)) (uuid "5f2151c8-cdef-5011-841d-a8735771f718"))
+(global_label "CORE_OV_SENSE" (shape passive) (at 49.53 74.93 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "75f052f0-5646-50ef-a84c-4f1c5a38b694") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 49.53 74.93 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 90.17 59.69) (xy 95.25 59.69)) (stroke (width 0) (type default)) (uuid "d6d2c294-4d76-5556-91fe-51f4ab2569ac"))
+(global_label "REF1V242" (shape passive) (at 95.25 59.69 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "454a4a05-7722-51c1-b817-d4d7035bcc26") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.25 59.69 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 90.17 69.85) (xy 95.25 69.85)) (stroke (width 0) (type default)) (uuid "0f20197b-077c-525d-bca3-77fef5a7d522"))
+(global_label "HW_FAULT_N" (shape passive) (at 95.25 69.85 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "dcf29e33-0a32-5583-99fc-f09a75dec26c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.25 69.85 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 90.17 49.53) (xy 95.25 49.53)) (stroke (width 0) (type default)) (uuid "5e0c3c8f-bdd9-5ecf-8af3-4b30ad22149a"))
+(global_label "3V3_CTRL" (shape passive) (at 95.25 49.53 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "fc57941a-b41b-54d3-b42d-8962af930f6e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.25 49.53 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 90.17 85.09) (xy 95.25 85.09)) (stroke (width 0) (type default)) (uuid "92327848-4d26-5df0-8c20-26c3627db482"))
+(global_label "GND" (shape passive) (at 95.25 85.09 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "eafd9163-2d50-5d7e-9647-7c3bb653e090") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 95.25 85.09 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 59.69 121.92 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7977cbff-2caa-5193-9dba-9b4eac77b165")
+(property "Reference" "R503" (at 63.69 120.67 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "1.24k / 1%" (at 63.69 123.17 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 59.69 121.92 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-071K24L" (at 59.69 121.92 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-071K24L" (at 59.69 121.92 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Independent socket-core sense trace; nominal OVP 1.319 V. Board fault threshold, not an ASIC voltage rating. | 1.24k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 59.69 121.92 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "5a19368e-d275-59a1-98c6-28989d574af5"))
+(pin "2" (uuid "59406206-ba4a-56b9-9dbd-5962ec8b72c0"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "R503") (unit 1)))) )
+(wire (pts (xy 59.69 118.11) (xy 59.69 113.03)) (stroke (width 0) (type default)) (uuid "70a114cf-ad72-5ec3-b7a2-ff226e5fee86"))
+(global_label "0V75" (shape passive) (at 59.69 113.03 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "4b51fc5c-be6e-5fe5-abb3-77d7ae8df80a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 113.03 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 59.69 125.73) (xy 59.69 130.81)) (stroke (width 0) (type default)) (uuid "e3f90935-db09-532b-8733-5b35f101392a"))
+(global_label "CORE_OV_SENSE" (shape passive) (at 59.69 130.81 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "6feab366-ba26-56a1-a46d-fea73436169d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 130.81 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 59.69 144.78 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9e7be1e0-1b70-54ac-9e72-f8fde3813270")
+(property "Reference" "R504" (at 63.69 143.53 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "20k / 0.1%" (at 63.69 146.03 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 59.69 144.78 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0720KL" (at 59.69 144.78 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RT0603BRD0720KL" (at 59.69 144.78 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Independent socket-core sense trace; nominal OVP 1.319 V. Board fault threshold, not an ASIC voltage rating. | 20kOhm +/-0.1% 0.1W 0603 thin film; 25ppm/C" (at 59.69 144.78 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "a8827a40-30fd-5cda-a2f3-bf4e8d765cb1"))
+(pin "2" (uuid "c5417503-b4ed-59be-8c24-5a97782a3f98"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "R504") (unit 1)))) )
+(wire (pts (xy 59.69 140.97) (xy 59.69 135.89)) (stroke (width 0) (type default)) (uuid "e4c0f104-c43c-5392-9390-b87a02f3345a"))
+(global_label "CORE_OV_SENSE" (shape passive) (at 59.69 135.89 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "5f1d43f2-1426-5bb1-89d6-7eb92a48e237") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 135.89 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 59.69 148.59) (xy 59.69 153.67)) (stroke (width 0) (type default)) (uuid "39827271-1eac-5871-aa98-2eaac84a824a"))
+(global_label "GND" (shape passive) (at 59.69 153.67 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "8f69c59d-04f5-5dbf-ba14-3bad9f4acc43") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 153.67 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:TPS3808G33") (at 204.47 69.85 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1b018c43-e6b2-5012-bce4-8a8d35f21f17")
+(property "Reference" "U502" (at 204.47 53.69 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "TPS3808G33DBVR" (at 204.47 56.19 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6" (at 204.47 69.85 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps3808.pdf" (at 204.47 69.85 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "TPS3808G33DBVR" (at 204.47 69.85 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Control-supply supervisor; CT open gives approximately 20 ms startup reset, threshold 3.07 V. | 0.9-6.5V supervisor, G33 threshold3.07V, open-drain reset, CT open approx20ms; DBV6" (at 204.47 69.85 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "5" (uuid "73c58564-66be-5396-8b8d-c8f12ce97dd1"))
+(pin "3" (uuid "df7a6b6a-79d8-5027-aeb6-054a9023a2b7"))
+(pin "4" (uuid "006806ce-3c0e-5a96-8d7f-cfa1d3a7669b"))
+(pin "6" (uuid "eba16649-0d19-50db-a702-bef90e28e785"))
+(pin "1" (uuid "be5e0563-0360-5042-811d-3db9f14f0f8c"))
+(pin "2" (uuid "2ac0b4c2-dba6-5ee8-89e2-0a4d9d899c3a"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "U502") (unit 1)))) )
+(wire (pts (xy 186.69 59.69) (xy 181.61 59.69)) (stroke (width 0) (type default)) (uuid "bcd64989-aaa7-52cd-b637-4c0e9ee466d4"))
+(global_label "3V3_CTRL" (shape passive) (at 181.61 59.69 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "68427a70-e07f-529f-a557-7caeff8067ca") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 181.61 59.69 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 186.69 69.85) (xy 181.61 69.85)) (stroke (width 0) (type default)) (uuid "af55a8db-6ad9-5f5c-9261-4a0afda4a1dd"))
+(global_label "3V3_CTRL" (shape passive) (at 181.61 69.85 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "e2d303d7-fcf9-5f2d-9561-059e71d6583e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 181.61 69.85 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(no_connect (at 186.69 80.01) (uuid "173b9fd1-1358-5f19-ad07-d757ead44e79"))
+(wire (pts (xy 222.25 59.69) (xy 227.33 59.69)) (stroke (width 0) (type default)) (uuid "f65866be-9413-539d-80c1-17c5ad1658e0"))
+(global_label "3V3_CTRL" (shape passive) (at 227.33 59.69 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "ca322171-13db-52ed-ad89-76a4896f06d2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 227.33 59.69 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 222.25 69.85) (xy 227.33 69.85)) (stroke (width 0) (type default)) (uuid "7f58159a-5943-582a-bc5a-c0bee1e9e5ae"))
+(global_label "HW_FAULT_N" (shape passive) (at 227.33 69.85 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "441cf2cc-a8bc-56c6-81d8-f8124cd8af22") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 227.33 69.85 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 222.25 80.01) (xy 227.33 80.01)) (stroke (width 0) (type default)) (uuid "43b8ff9a-6a82-5f65-b726-b73c5b9ae33b"))
+(global_label "GND" (shape passive) (at 227.33 80.01 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "21a479e6-dd95-5515-88b4-f6579802b8dd") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 227.33 80.01 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:SN74LVC1G74") (at 330.2 77.47 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "34104570-ee87-515c-bb13-831bc041df24")
+(property "Reference" "U503" (at 330.2 56.23 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "SN74LVC1G74DCUR" (at 330.2 58.73 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Package_SO__VSSOP-8_2.3x2mm_P0.5mm" (at 330.2 77.47 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g74.pdf" (at 330.2 77.47 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "SN74LVC1G74DCUR" (at 330.2 77.47 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "RUN_SET rising edge sets Q; asynchronous hardware fault clears Q. No automatic restart on fault recovery. | 1.65-5.5V D flip-flop with asynchronous clear/preset; DCU VSSOP8 0.5mm pitch" (at 330.2 77.47 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "850042ae-82d3-5730-a9b6-16b4af5e4ecc"))
+(pin "2" (uuid "1a0a6fc1-80d8-5941-92c9-2e44c7b9d4a8"))
+(pin "6" (uuid "c56b5500-79a4-5cda-88af-206fb98afa97"))
+(pin "7" (uuid "45247c71-dafe-5620-b133-1fb6bd0b88f5"))
+(pin "8" (uuid "8a436612-74b2-5c88-b500-e1a8bea9bdea"))
+(pin "5" (uuid "995de71a-0afc-5780-b936-2fee6b457eb9"))
+(pin "3" (uuid "069ac244-98e9-587c-947d-8d4026bb8b41"))
+(pin "4" (uuid "6bf2683c-c48e-5fe5-9bd8-3f1d52ebfb5f"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "U503") (unit 1)))) )
+(wire (pts (xy 312.42 67.31) (xy 307.34 67.31)) (stroke (width 0) (type default)) (uuid "f59fc667-59d0-5d78-a60f-018d9e8116c3"))
+(global_label "RUN_SET_CLEAN" (shape passive) (at 307.34 67.31 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "2edebacd-eef7-5cf6-aa65-db13acbc8e77") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 307.34 67.31 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 312.42 72.39) (xy 307.34 72.39)) (stroke (width 0) (type default)) (uuid "5caf004b-2eb2-502b-a3a2-49f2f05810ac"))
+(global_label "3V3_CTRL" (shape passive) (at 307.34 72.39 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "7eb46642-36a3-501b-82f9-352aafe34daa") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 307.34 72.39 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 312.42 82.55) (xy 307.34 82.55)) (stroke (width 0) (type default)) (uuid "97018882-c87d-5d9d-ad27-5e2ac7885fbb"))
+(global_label "HW_CLEAR_N" (shape passive) (at 307.34 82.55 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "8a58d09a-61cd-527a-88da-292aa449d4ea") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 307.34 82.55 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 312.42 87.63) (xy 307.34 87.63)) (stroke (width 0) (type default)) (uuid "5b7af498-1a06-5971-9ffe-437181a7cc4c"))
+(global_label "3V3_CTRL" (shape passive) (at 307.34 87.63 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "d6decad0-6c00-5497-bd40-2659170e00b7") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 307.34 87.63 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 347.98 62.23) (xy 353.06 62.23)) (stroke (width 0) (type default)) (uuid "c6862610-03a0-53ce-afd7-6eeaea7f8c9e"))
+(global_label "3V3_CTRL" (shape passive) (at 353.06 62.23 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "33b4f908-9ec0-543a-bb21-842380491b36") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 353.06 62.23 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 347.98 72.39) (xy 353.06 72.39)) (stroke (width 0) (type default)) (uuid "9125d208-8737-5032-b18d-c5c177b92979"))
+(global_label "RUN_LATCH" (shape passive) (at 353.06 72.39 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "1eed0ef7-9a49-5ac7-9a3a-4a99145404d1") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 353.06 72.39 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(no_connect (at 347.98 82.55) (uuid "a29fdb2d-1703-5c17-b72e-5365fa7c7b9b"))
+(wire (pts (xy 347.98 92.71) (xy 353.06 92.71)) (stroke (width 0) (type default)) (uuid "21819e51-6e3c-528f-81b5-cd75869971bd"))
+(global_label "GND" (shape passive) (at 353.06 92.71 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "3c60f275-81bd-5c64-9a59-32d310ff81ee") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 353.06 92.71 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:SN74LVC2G17") (at 204.47 147.32 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "41801752-b0c2-5589-ba1f-7dcfbc7b67c4")
+(property "Reference" "U507" (at 204.47 121 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "SN74LVC2G17DBVT" (at 204.47 123.5 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6" (at 204.47 147.32 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc2g17.pdf" (at 204.47 147.32 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "SN74LVC2G17DBVT" (at 204.47 147.32 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Schmitt buffers condition the controller set pulse and shared open-drain fault signal. | 1.65-5.5V dual Schmitt buffer; DBV SOT23-6; T reel packaging" (at 204.47 147.32 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "0e81aa5f-5760-59d0-8b00-8264b858734d"))
+(pin "3" (uuid "e11be97d-8e90-57b2-98ba-e829dea5091c"))
+(pin "6" (uuid "7f127541-6d36-59dc-b867-887b121465e7"))
+(pin "4" (uuid "4460baf0-60bc-5950-955a-cca7f4d301f1"))
+(pin "5" (uuid "b64a0afd-5fd1-554b-85e6-d4c399f6f333"))
+(pin "2" (uuid "d72713f1-2cec-56d0-b126-d552c417d196"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "U507") (unit 1)))) )
+(wire (pts (xy 186.69 137.16) (xy 181.61 137.16)) (stroke (width 0) (type default)) (uuid "a981966b-8a45-5a57-a156-f90ebb016546"))
+(global_label "RUN_SET" (shape passive) (at 181.61 137.16 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "5290a8ca-8721-53bb-af84-2c0b0759a69f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 181.61 137.16 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 186.69 157.48) (xy 181.61 157.48)) (stroke (width 0) (type default)) (uuid "60638b59-b0f7-5d54-b6eb-d249431abcf6"))
+(global_label "HW_FAULT_N" (shape passive) (at 181.61 157.48 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "37c32377-3b3f-53c9-b43a-eff330caad78") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 181.61 157.48 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 222.25 137.16) (xy 227.33 137.16)) (stroke (width 0) (type default)) (uuid "ccdefda7-27f2-55d9-8194-3900f09f99bc"))
+(global_label "RUN_SET_CLEAN" (shape passive) (at 227.33 137.16 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "5d81daa0-0bf7-5546-bacb-e2a1510cc052") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 227.33 137.16 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 222.25 157.48) (xy 227.33 157.48)) (stroke (width 0) (type default)) (uuid "68a64593-b99c-51c3-83b6-12d04160c159"))
+(global_label "HW_CLEAR_N" (shape passive) (at 227.33 157.48 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "d018f767-f63b-5b21-a798-7fd3598a64e6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 227.33 157.48 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 222.25 127) (xy 227.33 127)) (stroke (width 0) (type default)) (uuid "c8f12359-dc6e-5a10-a57d-b25a6d8ebf81"))
+(global_label "3V3_CTRL" (shape passive) (at 227.33 127 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "41380af5-31d5-5b99-9e48-7b1fad028194") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 227.33 127 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 222.25 167.64) (xy 227.33 167.64)) (stroke (width 0) (type default)) (uuid "4ff0b08e-72de-5762-a116-2b0f78bb7014"))
+(global_label "GND" (shape passive) (at 227.33 167.64 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "57bd2e2d-6140-5055-ade6-0b04b4d27966") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 227.33 167.64 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 270.51 128.27 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0fcb722b-fd38-5c0e-9f19-2080e384f9cc")
+(property "Reference" "R506" (at 274.51 127.02 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "10k" (at 274.51 129.52 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 270.51 128.27 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 270.51 128.27 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-0710KL" (at 270.51 128.27 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "10k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 270.51 128.27 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "735ec4a7-e48d-5f89-8ca8-9b1cddb702ad"))
+(pin "2" (uuid "01db3aa7-bf21-5554-b358-4cf6a6fd46fa"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "R506") (unit 1)))) )
+(wire (pts (xy 270.51 124.46) (xy 270.51 119.38)) (stroke (width 0) (type default)) (uuid "c55e397f-8457-59af-b23b-eb9430070956"))
+(global_label "3V3_CTRL" (shape passive) (at 270.51 119.38 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "fd0d41f0-c49c-5671-98a9-624c1090342e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 270.51 119.38 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 270.51 132.08) (xy 270.51 137.16)) (stroke (width 0) (type default)) (uuid "5992d723-b774-5cdd-b8e6-ab601a082912"))
+(global_label "HW_FAULT_N" (shape passive) (at 270.51 137.16 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "bb18339a-0c9c-5ce6-b07c-3065aebc96dd") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 270.51 137.16 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 330.2 128.27 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b0367f4d-3c1a-55d3-9688-866e8d9cb895")
+(property "Reference" "R507" (at 334.2 127.02 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "10k" (at 334.2 129.52 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 330.2 128.27 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 330.2 128.27 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-0710KL" (at 330.2 128.27 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Holds run-latch clock low while Pico GP10 is high impedance. | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 330.2 128.27 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "62ad2261-7373-535c-870e-a19ad3178dad"))
+(pin "2" (uuid "c02b33ea-f054-5d70-830f-62a9b627ce66"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "R507") (unit 1)))) )
+(wire (pts (xy 330.2 124.46) (xy 330.2 119.38)) (stroke (width 0) (type default)) (uuid "62941ab9-4c85-54de-abd8-f5335e71b968"))
+(global_label "RUN_SET" (shape passive) (at 330.2 119.38 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "2b0dffe9-e835-5098-b8c7-73ab6f1244e7") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 330.2 119.38 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 330.2 132.08) (xy 330.2 137.16)) (stroke (width 0) (type default)) (uuid "c6c13a55-37b9-52ee-8f73-135b2012db28"))
+(global_label "GND" (shape passive) (at 330.2 137.16 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b678a9da-7183-5589-b9c3-fbb5eea67aa1") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 330.2 137.16 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Switch__SW_Push") (at 330.2 173.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6a4d2c83-be04-56ae-a820-729aac69b928")
+(property "Reference" "SW502" (at 330.2 167.99 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "STOP" (at 330.2 170.49 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Button_Switch_SMD__SW_SPST_TL3342" (at 330.2 173.99 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://configured-product-images.s3.amazonaws.com/Datasheets/TL3342.pdf" (at 330.2 173.99 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "TL3342F160QG/TR" (at 330.2 173.99 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Momentary NO SMT switch, 50mA at12VDC, 160gf, -20 to70C; tape/reel suffix /TR" (at 330.2 173.99 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "7e1ee855-f631-5098-8e3e-4b00ff956cc9"))
+(pin "2" (uuid "e1a18f7c-ff5e-5121-b401-9b42926db0e0"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "SW502") (unit 1)))) )
+(wire (pts (xy 325.12 173.99) (xy 320.04 173.99)) (stroke (width 0) (type default)) (uuid "0e22f267-d463-5708-9d6c-56c71b1d4267"))
+(global_label "HW_FAULT_N" (shape passive) (at 320.04 173.99 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "970f1ea5-bca5-5b5f-91b3-1cbc46e5368e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 320.04 173.99 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 335.28 173.99) (xy 340.36 173.99)) (stroke (width 0) (type default)) (uuid "d2543d88-0ba1-5642-9126-28d106245d85"))
+(global_label "GND" (shape passive) (at 340.36 173.99 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "ddbe7cc6-5d78-5f10-b234-656f502d2f7e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 340.36 173.99 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(text "GP10: one RUN_SET pulse inside ON, after configuration.\nGP15: LOW / high impedance only on HW_FAULT_N.\nA stuck-high RUN_SET cannot restart a cleared latch." (at 245 190 0) (effects (font (size 0.95 0.95)) (justify left top) ) (uuid "05822d18-67c5-5bcd-a45f-6f70fe07bfb6"))
+(symbol (lib_id "Sphinx_V2:74LVC08A_TSSOP14") (at 91.44 213.36 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "38fa4fba-083f-5ef2-8f68-3245823b991a")
+(property "Reference" "U504" (at 91.44 174.34 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "74LVC08AT14-13" (at 91.44 176.84 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Package_SO__TSSOP-14_4.4x5mm_P0.65mm" (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.diodes.com/datasheet/download/74LVC08A.pdf" (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "74LVC08AT14-13" (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Quad AND; three channels gate Core, I/O and reset with RUN_LATCH. Fourth channel inputs grounded, output NC. IO_EN_CTRL drives Q301 gate only; decouple with C506." (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "7433e3d3-b297-5b3a-bf48-0634b6d2bb69"))
+(pin "2" (uuid "92c5fe8f-083a-5103-99b4-8f7416c9bc78"))
+(pin "3" (uuid "43f105b8-dfa1-57fe-a4f5-5ef1bea998e5"))
+(pin "4" (uuid "3e9514c3-9f58-5534-9568-ae2a671e338f"))
+(pin "5" (uuid "52d8bc6b-5aa6-5554-9101-34a428bcef0e"))
+(pin "6" (uuid "73e30fea-8481-52f8-9cc8-578c777e65e7"))
+(pin "9" (uuid "a40fb5f0-f44d-572b-b225-c6c13b9b8938"))
+(pin "10" (uuid "d554b3c1-41ee-56b6-87ee-4d2454b73771"))
+(pin "8" (uuid "d20f7c1b-c420-50c4-b9ad-4fb3a6b24f4c"))
+(pin "12" (uuid "f93289bd-2697-5898-940e-03350e6d1de6"))
+(pin "13" (uuid "48685393-1d02-57cc-834b-a7889f85e1f9"))
+(pin "11" (uuid "7ee4e234-cf42-5205-ad39-b5fa91058e1c"))
+(pin "14" (uuid "3d87646a-ea34-5dca-ac2a-bb02e4338029"))
+(pin "7" (uuid "139a172b-a77b-5f05-b3f8-dbaa7aee3437"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "U504") (unit 1)))) )
+(wire (pts (xy 68.58 187.96) (xy 63.5 187.96)) (stroke (width 0) (type default)) (uuid "af0649f4-1758-5abd-a86b-0d141afa971f"))
+(global_label "RUN_LATCH" (shape passive) (at 63.5 187.96 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "8f05293f-6229-555d-91bb-b58e230cb289") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 187.96 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 68.58 193.04) (xy 63.5 193.04)) (stroke (width 0) (type default)) (uuid "28a0c6bd-d451-5a99-b598-281124c84d4d"))
+(global_label "CORE_REQ" (shape passive) (at 63.5 193.04 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "0cac555a-1121-505d-8943-c9ce9a7a2359") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 193.04 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 114.3 190.5) (xy 119.38 190.5)) (stroke (width 0) (type default)) (uuid "8d91d0f5-927e-5455-8cf3-167e1c0e3c57"))
+(global_label "CORE_EN" (shape passive) (at 119.38 190.5 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "5391c61f-d271-5574-a2cd-0a2d2eaa1772") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 190.5 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 68.58 203.2) (xy 63.5 203.2)) (stroke (width 0) (type default)) (uuid "607e6651-6546-5d11-ae15-bde3470c1296"))
+(global_label "RUN_LATCH" (shape passive) (at 63.5 203.2 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "1e82ba8a-7110-578f-9f36-fe17d32cc369") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 203.2 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 68.58 208.28) (xy 63.5 208.28)) (stroke (width 0) (type default)) (uuid "b0bc9417-dc90-5a00-8385-82aa8a624b09"))
+(global_label "IO_REQ" (shape passive) (at 63.5 208.28 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "5fc5fd14-6fff-589a-a2fa-00df04febc28") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 208.28 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 114.3 205.74) (xy 119.38 205.74)) (stroke (width 0) (type default)) (uuid "c443a431-2a34-5795-a640-eb771c89cf33"))
+(global_label "IO_EN_CTRL" (shape passive) (at 119.38 205.74 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "73fb6edb-b310-5560-b180-c97f80965fe4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 205.74 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 68.58 218.44) (xy 63.5 218.44)) (stroke (width 0) (type default)) (uuid "683a6b67-272e-5595-b7f2-c1cecdf7caa5"))
+(global_label "RUN_LATCH" (shape passive) (at 63.5 218.44 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "d0f4481e-d289-5360-8d8b-b336a342c82a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 218.44 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 68.58 223.52) (xy 63.5 223.52)) (stroke (width 0) (type default)) (uuid "bd756c1c-c4bc-529f-b341-722f6f390cfa"))
+(global_label "RESET_RELEASE" (shape passive) (at 63.5 223.52 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "e745ab67-7695-5cb8-8f8d-4fd44eefde98") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 223.52 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 114.3 220.98) (xy 119.38 220.98)) (stroke (width 0) (type default)) (uuid "91ed999c-4167-58d7-ab19-22ede3cf5296"))
+(global_label "RESET_PERMIT" (shape passive) (at 119.38 220.98 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "e7dbe480-72cf-5974-9b0e-13791bd4bf03") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 220.98 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 68.58 233.68) (xy 63.5 233.68)) (stroke (width 0) (type default)) (uuid "be97df3e-c1e9-5305-acc8-21d3f2129356"))
+(global_label "GND" (shape passive) (at 63.5 233.68 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b9065b7b-f48d-5f37-876c-a70b88790ba7") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 233.68 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 68.58 238.76) (xy 63.5 238.76)) (stroke (width 0) (type default)) (uuid "0a98845f-a152-523f-972b-cc2a37ad37b9"))
+(global_label "GND" (shape passive) (at 63.5 238.76 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "e93f3764-9da2-5322-b6f5-6e707be4fa92") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 238.76 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(no_connect (at 114.3 236.22) (uuid "b246bb13-367b-5e63-98b8-8a9626dcb3a5"))
+(wire (pts (xy 114.3 180.34) (xy 119.38 180.34)) (stroke (width 0) (type default)) (uuid "1aef6a56-3aa8-541b-b5f2-29a8f4997afe"))
+(global_label "3V3_CTRL" (shape passive) (at 119.38 180.34 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "b75bb9a8-e137-5049-8242-fe5f04e40a23") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 180.34 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 114.3 246.38) (xy 119.38 246.38)) (stroke (width 0) (type default)) (uuid "6eba354b-6ae2-560f-ba30-128e971463b2"))
+(global_label "GND" (shape passive) (at 119.38 246.38 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "a560b7af-a5e5-589b-aa9e-d8b478bada66") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 246.38 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:74xGxx__74LVC1G11") (at 256.54 228.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "64a9dd6b-23fa-5075-9fc3-2d3083fbf6d8")
+(property "Reference" "U506" (at 266.54 218.6 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "SN74LVC1G11DCKR" (at 266.54 221.1 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-363_SC-70-6" (at 256.54 228.6 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf" (at 256.54 228.6 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "SN74LVC1G11DCKR" (at 256.54 228.6 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "1.65-5.5V single 3-input AND; DCK SC70-6" (at 256.54 228.6 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "0380c69a-0ffa-5090-9d2b-205beaa09c78"))
+(pin "2" (uuid "bb6d307d-025d-5a17-a9d9-d104a75cbc58"))
+(pin "3" (uuid "6ef73002-8cbe-51b6-acea-d4dddb9f0a4f"))
+(pin "4" (uuid "be88f1e2-1074-5556-915f-f6f8b7b37fb6"))
+(pin "5" (uuid "7b6ff99c-9842-52c8-97d4-09cdf0e6bb37"))
+(pin "6" (uuid "18c3b13c-a280-50ff-90b6-114cb70b7203"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "U506") (unit 1)))) )
+(wire (pts (xy 241.3 228.6) (xy 236.22 228.6)) (stroke (width 0) (type default)) (uuid "354e8f5a-0891-5a0e-8c39-efeb0052695e"))
+(global_label "CORE_PG" (shape passive) (at 236.22 228.6 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "1864cdfc-a25b-58cd-8dfa-185bc10b049f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 228.6 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 256.54 238.76) (xy 256.54 243.84)) (stroke (width 0) (type default)) (uuid "55a6162d-fd1e-570b-96e4-f5ddcc52a60b"))
+(global_label "GND" (shape passive) (at 256.54 243.84 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "197428a6-df9a-53a7-892d-10d9576089ce") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 256.54 243.84 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 241.3 233.68) (xy 236.22 233.68)) (stroke (width 0) (type default)) (uuid "dc2b453d-2b24-5da9-8517-62c34620021c"))
+(global_label "IO_VALID" (shape passive) (at 236.22 233.68 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "baf7ed11-14e9-5f6a-81b8-1d87ecd4a6d8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 233.68 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 269.24 228.6) (xy 274.32 228.6)) (stroke (width 0) (type default)) (uuid "7854a941-b959-5de8-b82b-35b435462811"))
+(global_label "RESET_RELEASE_OK" (shape passive) (at 274.32 228.6 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "97010859-f42b-5931-bd79-73c3775e0600") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 274.32 228.6 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 256.54 218.44) (xy 256.54 213.36)) (stroke (width 0) (type default)) (uuid "3eebb0e3-1eaa-5fed-9b6a-f0a593416552"))
+(global_label "3V3_CTRL" (shape passive) (at 256.54 213.36 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b8e3cf59-8823-5cf4-b9e6-73c72e2d3516") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 256.54 213.36 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 241.3 223.52) (xy 236.22 223.52)) (stroke (width 0) (type default)) (uuid "8a7d7e53-eda4-5a05-bc2a-c2bf81b19fd6"))
+(global_label "RESET_PERMIT" (shape passive) (at 236.22 223.52 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "42cbf7cf-2280-51f1-8ccf-8ac0f6bc8cec") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 223.52 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 353.06 231.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9015e99e-25c0-5209-ac74-3ea44a630cc8")
+(property "Reference" "R509" (at 357.06 229.89 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100k" (at 357.06 232.39 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 353.06 231.14 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL" (at 353.06 231.14 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-07100KL" (at 353.06 231.14 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 353.06 231.14 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "ffab0606-002a-57b2-9b66-6a0c8deab7d7"))
+(pin "2" (uuid "4fd4c069-833d-50ea-93e5-34fd21e7fe5f"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "R509") (unit 1)))) )
+(wire (pts (xy 353.06 227.33) (xy 353.06 222.25)) (stroke (width 0) (type default)) (uuid "05a79fb7-6e0b-563c-bcea-dd3a03c5b800"))
+(global_label "CORE_REQ" (shape passive) (at 353.06 222.25 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ff36b8c8-b247-54be-aac4-ba01e2ebb0a6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 353.06 222.25 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 353.06 234.95) (xy 353.06 240.03)) (stroke (width 0) (type default)) (uuid "7080e84c-9d22-5c3c-a098-f8d18c92de1f"))
+(global_label "GND" (shape passive) (at 353.06 240.03 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "4cc4e535-529a-5c28-a77d-e66160a09138") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 353.06 240.03 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 392.43 231.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a13e9346-bf4c-5ace-812b-58c9f64d3210")
+(property "Reference" "R510" (at 396.43 229.89 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100k" (at 396.43 232.39 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 392.43 231.14 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL" (at 392.43 231.14 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-07100KL" (at 392.43 231.14 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 392.43 231.14 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "2d217690-697b-506a-a234-79f259d8bfaf"))
+(pin "2" (uuid "d757ec44-174e-5892-a47b-3730825971c6"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "R510") (unit 1)))) )
+(wire (pts (xy 392.43 227.33) (xy 392.43 222.25)) (stroke (width 0) (type default)) (uuid "1302513b-fc0f-525c-a93b-dc2f84171048"))
+(global_label "IO_REQ" (shape passive) (at 392.43 222.25 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "61c206f1-c524-5dd9-a17f-0d948ffc2489") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 392.43 222.25 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 392.43 234.95) (xy 392.43 240.03)) (stroke (width 0) (type default)) (uuid "cebfe574-2caa-589d-b198-7fc77c1e524b"))
+(global_label "GND" (shape passive) (at 392.43 240.03 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "bc4f756c-e85f-544d-8bf1-7cd270f8b9ed") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 392.43 240.03 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__C") (at 25.4 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "0c51daa2-8afa-5c47-8aa5-bfbd9c248c81")
+(property "Reference" "C502" (at 29.4 269.26 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100n / 16V" (at 29.4 271.76 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric" (at 25.4 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do" (at 25.4 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "CL05B104KO5NNNC" (at 25.4 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100nF +/-10% 16V X7R 0402" (at 25.4 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "723b2cd8-8493-5177-9593-ec5447c9a5e9"))
+(pin "2" (uuid "f2355dd8-0b37-559d-a1f8-53488c6b6e76"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "C502") (unit 1)))) )
+(symbol (lib_id "Sphinx_V2:Device__C") (at 59.69 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2cddfd77-8bfb-5bbe-bb94-5f988e093061")
+(property "Reference" "C503" (at 63.69 269.26 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100n / 16V" (at 63.69 271.76 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric" (at 59.69 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do" (at 59.69 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "CL05B104KO5NNNC" (at 59.69 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100nF +/-10% 16V X7R 0402" (at 59.69 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "d0a7fead-1dc6-56ee-890a-e98fec377f9c"))
+(pin "2" (uuid "20fea5ab-6708-5a9e-8ae3-ee9b62bb8225"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "C503") (unit 1)))) )
+(symbol (lib_id "Sphinx_V2:Device__C") (at 95.25 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "57fd63c5-f507-5c59-ae2c-aa3783adeffb")
+(property "Reference" "C504" (at 99.25 269.26 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100n / 16V" (at 99.25 271.76 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric" (at 95.25 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do" (at 95.25 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "CL05B104KO5NNNC" (at 95.25 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100nF +/-10% 16V X7R 0402" (at 95.25 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "70c4ccec-7379-5ab4-8691-2cedb4c490ea"))
+(pin "2" (uuid "9eb82026-11d9-53f6-96d8-918663444c40"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "C504") (unit 1)))) )
+(symbol (lib_id "Sphinx_V2:Device__C") (at 129.54 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "4be391c3-deb8-58ac-95f8-c9a0f6ec48ab")
+(property "Reference" "C506" (at 133.54 269.26 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100n / 16V" (at 133.54 271.76 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric" (at 129.54 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do" (at 129.54 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "CL05B104KO5NNNC" (at 129.54 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100nF +/-10% 16V X7R 0402" (at 129.54 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "351fd116-45ec-5423-b0ba-baebd878b0aa"))
+(pin "2" (uuid "43b961d3-b209-57a7-8ed8-86d4674e775c"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "C506") (unit 1)))) )
+(symbol (lib_id "Sphinx_V2:Device__C") (at 165.1 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "bf96e47c-433a-50ac-84a6-0ea29be01da7")
+(property "Reference" "C507" (at 169.1 269.26 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100n / 16V" (at 169.1 271.76 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric" (at 165.1 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do" (at 165.1 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "CL05B104KO5NNNC" (at 165.1 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100nF +/-10% 16V X7R 0402" (at 165.1 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "d12ddc83-07c9-5f84-b957-f4d5140e67c0"))
+(pin "2" (uuid "a35d863b-b3c5-59ed-a5da-24dcb2afd8e9"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "C507") (unit 1)))) )
+(symbol (lib_id "Sphinx_V2:Device__C") (at 199.39 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7190ddbf-7aeb-5a8c-892d-0c36171ba11e")
+(property "Reference" "C508" (at 203.39 269.26 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100n / 16V" (at 203.39 271.76 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric" (at 199.39 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do" (at 199.39 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "CL05B104KO5NNNC" (at 199.39 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100nF +/-10% 16V X7R 0402" (at 199.39 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "83192f84-fd6d-54c9-93bb-c61a5fee57bf"))
+(pin "2" (uuid "895515ab-d5b8-50ee-a54c-8dc94650a400"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "C508") (unit 1)))) )
+(wire (pts (xy 25.4 260.35) (xy 199.39 260.35)) (stroke (width 0) (type default)) (uuid "0a618711-468f-584a-a072-4c911a6fe675"))
+(global_label "3V3_CTRL" (shape passive) (at 25.4 260.35 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "12ee31cc-4591-577e-b9c0-87eeb7395299") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 25.4 260.35 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 25.4 266.7) (xy 25.4 260.35)) (stroke (width 0) (type default)) (uuid "3ee4568c-43fe-589b-a245-ae2467038772"))
+(wire (pts (xy 59.69 266.7) (xy 59.69 260.35)) (stroke (width 0) (type default)) (uuid "02b7f024-ad37-5904-b320-990345245e1f"))
+(junction (at 59.69 260.35) (diameter 0) (color 0 0 0 0) (uuid "058bad68-8b62-5e93-99a8-5321ffe4d011"))
+(wire (pts (xy 95.25 266.7) (xy 95.25 260.35)) (stroke (width 0) (type default)) (uuid "38345c30-e979-5dd0-a5b2-7d5ddd3edb38"))
+(junction (at 95.25 260.35) (diameter 0) (color 0 0 0 0) (uuid "b3a63cb3-af7e-545f-9ab6-39e612db650c"))
+(wire (pts (xy 129.54 266.7) (xy 129.54 260.35)) (stroke (width 0) (type default)) (uuid "7cb6963f-fd0c-5a0f-9975-b3445b2bb4e8"))
+(junction (at 129.54 260.35) (diameter 0) (color 0 0 0 0) (uuid "019bd2ed-625d-58cd-901a-2cbeb950c86b"))
+(wire (pts (xy 165.1 266.7) (xy 165.1 260.35)) (stroke (width 0) (type default)) (uuid "ba80019a-dcba-5183-995b-4e0f2986b760"))
+(junction (at 165.1 260.35) (diameter 0) (color 0 0 0 0) (uuid "8dc539f0-c0c3-5a8b-a980-5320bfb4598b"))
+(wire (pts (xy 199.39 266.7) (xy 199.39 260.35)) (stroke (width 0) (type default)) (uuid "d886a294-f713-5a79-907c-8d02cb2207ee"))
+(wire (pts (xy 25.4 280.67) (xy 199.39 280.67)) (stroke (width 0) (type default)) (uuid "ca10b392-1741-5a55-938e-55cb4189a521"))
+(global_label "GND" (shape passive) (at 25.4 280.67 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "6e03e0dc-f3c3-5a00-aaef-ebaa64f13088") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 25.4 280.67 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 25.4 274.32) (xy 25.4 280.67)) (stroke (width 0) (type default)) (uuid "c81af149-785b-59ad-a3b7-65c88bc7255a"))
+(wire (pts (xy 59.69 274.32) (xy 59.69 280.67)) (stroke (width 0) (type default)) (uuid "53bacc01-9b38-59e9-b1b3-ade0f17995dd"))
+(junction (at 59.69 280.67) (diameter 0) (color 0 0 0 0) (uuid "b87f627a-e61f-5b1c-b9a9-ac2fff44b595"))
+(wire (pts (xy 95.25 274.32) (xy 95.25 280.67)) (stroke (width 0) (type default)) (uuid "338c23f0-ed54-5971-ae4d-f9e8955f83ce"))
+(junction (at 95.25 280.67) (diameter 0) (color 0 0 0 0) (uuid "09cb00b4-e4d2-522a-af00-ad1e720aa09e"))
+(wire (pts (xy 129.54 274.32) (xy 129.54 280.67)) (stroke (width 0) (type default)) (uuid "b1dc3774-4703-5d3a-80ea-4e743bbb7f5a"))
+(junction (at 129.54 280.67) (diameter 0) (color 0 0 0 0) (uuid "e5c7c229-fcd7-508c-aecf-8ead99244720"))
+(wire (pts (xy 165.1 274.32) (xy 165.1 280.67)) (stroke (width 0) (type default)) (uuid "b507820d-c3ed-5a45-88f7-01baefe143e2"))
+(junction (at 165.1 280.67) (diameter 0) (color 0 0 0 0) (uuid "b9618338-17cd-5c30-9413-c86f6d160ee2"))
+(wire (pts (xy 199.39 274.32) (xy 199.39 280.67)) (stroke (width 0) (type default)) (uuid "9a32cc00-c319-50a7-a433-7ef559d3b558"))
+(text "C502-U501; C503-U502; C504-U503.\nC506-U504; C507-U506; C508-U507.\nPlace each bypass capacitor at its IC." (at 215 250 0) (effects (font (size 0.9 0.9)) (justify left top) ) (uuid "941681dc-6d62-5e95-b868-7196cbb4ac58"))(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (page "6"))) (embedded_fonts no))

@@ -1,0 +1,255 @@
+{
+  "project": "Sphinx V2",
+  "hardware_revision": "V2",
+  "updated_on": "2026-09-19",
+  "maintenance": "Update the current design in place.",
+  "repository_scope": "Current KiCad schematic project, local libraries, BOM, exports, verification and design documentation",
+  "new_pcb_included": false,
+  "firmware_included": false,
+  "companion_firmware_location": "../controller",
+  "verification_report": "docs/evidence/documentation_validation.json",
+  "hardware_review": "docs/evidence/hardware_review.json",
+  "erc_report": "docs/evidence/erc.json",
+  "current_design_files": [
+    {
+      "path": "schematic/01_input_aux.kicad_sch",
+      "sha256": "0d16ff7ee4f8fde23152f28fbf0f9f659490617f52fb6f11cae8a14473ef3595"
+    },
+    {
+      "path": "schematic/02_core_regulator.kicad_sch",
+      "sha256": "277f275cc67f96448b2e888b8052b7d4bb8d391eb140c89641b733e28bdc63e2"
+    },
+    {
+      "path": "schematic/03_io_and_telemetry.kicad_sch",
+      "sha256": "2587125eb74c6fc8a722f30b14e6fbff6177ec6ddd83e2009d82b1367dfe56e4"
+    },
+    {
+      "path": "schematic/04_usb_control.kicad_sch",
+      "sha256": "b950d5bf1054d08e7fccb16599e7db4b74258c9ca98f6434498773a1f9341af6"
+    },
+    {
+      "path": "schematic/05_hardware_safety.kicad_sch",
+      "sha256": "971eeeb1b3919a7e38c5e8043a924435893cc47fe9879a86747fcab3793196a0"
+    },
+    {
+      "path": "schematic/06_socket_and_signals.kicad_sch",
+      "sha256": "5cde48270e3bcbdbb7f9ea8a02279e23131f90b31282bf00b03881c33655ec72"
+    },
+    {
+      "path": "schematic/07_core_decoupling.kicad_sch",
+      "sha256": "f14a1f1232e2d0ee6e64afcfc297e7ca7665ab2ec4e260bfa0d9dd4c91adbf93"
+    },
+    {
+      "path": "schematic/08_io_decoupling.kicad_sch",
+      "sha256": "2f912f9573378c8a48a7bcea648fed951db02a21d9280efc2fc2c420fdf0935c"
+    },
+    {
+      "path": "schematic/Sphinx_V2.kicad_sym",
+      "sha256": "682f09407584cb98c832a998afa5a0b46ee7753c818f8f9f3e49dce21490703e"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/AMASS_24_243_P15.7mm.kicad_mod",
+      "sha256": "3d4bff12e4d9cb8e75d3b99c27b057d4cf1d6c1afb91a8d6b6239f3a08f8641e"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Button_Switch_SMD__SW_SPST_TL3342.kicad_mod",
+      "sha256": "7c34085bf7e87f7c78f53aeb150155866f5a5ea52655876a4777a3273d3fa4cd"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Capacitor_SMD__C_0402_1005Metric.kicad_mod",
+      "sha256": "308ba83fa109b1107349c20b869995f71a9c2dc18385a27e2a651195c6d55f51"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Capacitor_SMD__C_0603_1608Metric.kicad_mod",
+      "sha256": "507c0eb8c23cbccffae915638d5ecd60dad0218b6fd7c21aedbbe8994e00d519"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Capacitor_SMD__C_0805_2012Metric.kicad_mod",
+      "sha256": "0890857a55c7a7e3e1b2e60eae67dab22621942c324995e16bf8f38310ecae47"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Capacitor_SMD__C_1206_3216Metric.kicad_mod",
+      "sha256": "37be28732bb35c5c7471e92db0e8308cbe1ebe0ac36fa2757ab616b4e22fe448"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Capacitor_SMD__C_1210_3225Metric.kicad_mod",
+      "sha256": "b4d26efc37d5f97e7a68e8912f6a3313e5210f3238d6eff3307adc5095d9daee"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D.kicad_mod",
+      "sha256": "e404a189bbe6cae3fa7ef1954757c5b37fe268d2661e2fc19b43332f88142a79"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Connector_Coaxial__SMA_Amphenol_132134_Vertical.kicad_mod",
+      "sha256": "b47d8350aadd9f0b97316a398a653e12ff0f46d7b988fe8458dd68c3e948f40b"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+      "sha256": "b6adff4a9e30419756316edee9750bd69bdbd209b209093622d14d7a3a397087"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Connector_PinHeader_2.54mm__PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+      "sha256": "7ca30dcc5286694081167d02e805a893158076bd447059c72998d1a2d802451b"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Connector_PinHeader_2.54mm__PinHeader_1x05_P2.54mm_Vertical.kicad_mod",
+      "sha256": "313492cad47d68a90161d8c97d09eb47ba9afdcf51085494c2ba28abf655c6d9"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Connector_PinHeader_2.54mm__PinHeader_1x06_P2.54mm_Vertical.kicad_mod",
+      "sha256": "a33827e0877cd40b86b772e8190f414b4ce39178d61843efd0ff0cd5c81368d2"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Connector_PinHeader_2.54mm__PinHeader_2x02_P2.54mm_Vertical.kicad_mod",
+      "sha256": "80bbc86fb8d25e45c1aeae86f7c9eed188d652f64aced3f7521aa0de57b1d5f0"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Connector_PinHeader_2.54mm__PinHeader_2x10_P2.54mm_Vertical.kicad_mod",
+      "sha256": "83c19a2f78ecd6b1c8844890a5a0ff4dd5a552dd509e9521cca350a5291a8e9e"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Diode_SMD__D_SMA.kicad_mod",
+      "sha256": "d0e8a712c18264fabc2df51cc035ae9ecba94ea39d249ed52c6ec2a9c8c7140c"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Fuse__Fuse_1206_3216Metric.kicad_mod",
+      "sha256": "1142c7ca445f84991e97003ab08e4fcdc39d8d5052f7ef2d79f4d5aa92ff0c4d"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Inductor_SMD__L_Bourns_SRP5030T.kicad_mod",
+      "sha256": "40d9aea88a70a070d834cc8e95fde8e225ad03aefd6746ce200876b78ad92acb"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Inductor_SMD__L_Bourns_SRP7028A_7.3x6.6mm.kicad_mod",
+      "sha256": "1434e8cafbf040a9b69f56ba42b25b604831c4c7646407a79583491973e051a5"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Inductor_SMD__L_Coilcraft_XAL1030-XXX.kicad_mod",
+      "sha256": "73aa67e7087bebcc624140905a71d4a6db4c7e1dd82e180fd4723a1fac919ded"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/LED_SMD__LED_0603_1608Metric.kicad_mod",
+      "sha256": "ada73bd2e29d8fbd120b78f9ac01d4c6181a3dadb9a8c749fc9d88162591ed0f"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Module__RaspberryPi_Pico_Common_THT.kicad_mod",
+      "sha256": "883b1de2d2d56257295d315a64e03e008fbde02478b1f2cc2cb3d126733fd870"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/NetTie__NetTie-2_SMD_Pad0.5mm.kicad_mod",
+      "sha256": "553de0ef93cffec58e6ea8f2665ed96195b2273e0676dd2f44b1af531a535b7a"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_DFN_QFN__VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm_ThermalVias.kicad_mod",
+      "sha256": "1e3bf1a45a2379c2e1b0b664a9118e07b619345f0e98cf8d33ef8fe8acff6242"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_SO__SOIC-4_4.55x2.6mm_P1.27mm.kicad_mod",
+      "sha256": "27dec90ac20b7f64bfd02b2f1125fc26c97263714ce9467c62072c4875831763"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_SO__TSSOP-10_3x3mm_P0.5mm.kicad_mod",
+      "sha256": "7b0eeb82bf179e0583edf1b75064c3eef0be0a485fc1086901dbc8a11b1111dd"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_SO__TSSOP-14_4.4x5mm_P0.65mm.kicad_mod",
+      "sha256": "7c160e25f9e44b069c208b299330353bcade93fa7d6e456c95094fabeafa3476"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_SO__VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
+      "sha256": "2d7f06adcc7abd2b008d9bc4d63292096de56efc23de0ab55d62dea6e97e4098"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_TO_SOT_SMD__SOT-23-5.kicad_mod",
+      "sha256": "1a23c38d8d62cf6ee28b363ffc597376756bb81d4b11bba45f9ed3ab7a0ab5bb"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_TO_SOT_SMD__SOT-23-6.kicad_mod",
+      "sha256": "38245a2707f557fe87bdaeaab931532d52a87d085d84e48cf0fe0a7c276f8819"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_TO_SOT_SMD__SOT-23.kicad_mod",
+      "sha256": "419aec85f343de06e1d07f3ff9f9da31277439c663990489947d8b0c9b074b72"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_TO_SOT_SMD__SOT-363_SC-70-6.kicad_mod",
+      "sha256": "bb8085c5df264745fbf940579996ef3f84e459ed8043f8bb39ec2be5e0aec78f"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Resistor_SMD__R_0603_1608Metric.kicad_mod",
+      "sha256": "c49223bef444e3a62fcbffd7b63c531c27bdbaf57362987865dcbf879792099c"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Resistor_SMD__R_0805_2012Metric.kicad_mod",
+      "sha256": "4e1b88f0125c40214543f63cc843428fcf9ef00b9aab2969848faa58a623c8ec"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Resistor_SMD__R_1206_3216Metric.kicad_mod",
+      "sha256": "5919558f23f15d5a9e5eaed8aa70664820649ccc21d223a11434f739f771f323"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Resistor_SMD__R_2512_6332Metric.kicad_mod",
+      "sha256": "4b71a2d0a0fdc38faa12a2b8fd021dd6a2361af6df71d8d547a7d2b53147289b"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Sphinx_socket_original.kicad_mod",
+      "sha256": "6a8fad478485faddb12b5bb70898e3d558b38b17df3e409fc41cd522e7b8e0c9"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/TI_RPW0010A.kicad_mod",
+      "sha256": "2274db49c5261d5d9a083d1887c1c60ac769ca391b4ce646b19c8b3b333fcd10"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/TI_RVF0040A.kicad_mod",
+      "sha256": "fa85c8ed4b8fff0faa4f434ccf7d0b1231889b325b9af9823eefd8fc907b2dd3"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/TerminalBlock_Phoenix__TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.kicad_mod",
+      "sha256": "dbb667a2cafdcb43d4715143b5982559c14656a9edc366d748f9d12c2055a91b"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/TestPoint__TestPoint_Pad_D1.0mm.kicad_mod",
+      "sha256": "929b75473dcce83bfc932cd8b1cc8cfc9ff7b67e65e3e1f170bd27fb2eb64ef7"
+    },
+    {
+      "path": "schematic/bom/ACCESSORIES.csv",
+      "sha256": "92fd41ef29e89cde51fbc6f0c8f081695464c824a33623a831c7bdbd559171eb"
+    },
+    {
+      "path": "schematic/bom/BUY_LIST.csv",
+      "sha256": "142415993e41fbf8c50586f78f8ac6d5693b54cfc4ad2e7791536b65f5306655"
+    },
+    {
+      "path": "schematic/bom/component_list.csv",
+      "sha256": "11b2ac8a9ecb9e6723fa18d94aed1e56347c9a523e36c3eb4e4e5719a4dd2703"
+    },
+    {
+      "path": "schematic/bom/parts_catalog.json",
+      "sha256": "f7717c7677199c2ae28277394a59537004aca6b60970f6865db39cca00653d5c"
+    },
+    {
+      "path": "schematic/exports/sphinx_power_v2.net.xml",
+      "sha256": "5408dd33b4aec6c27b180128e6693e8039145f7b041c027542cdb8ffb73db9aa"
+    },
+    {
+      "path": "schematic/exports/sphinx_power_v2.pdf",
+      "sha256": "14245cdc3e5366d69d70ecdd25406a2957f7470d00d47923a431a3777b145026"
+    },
+    {
+      "path": "schematic/fp-lib-table",
+      "sha256": "2c784885112cd4aee2a5073b5808fddb19d0518a20ee5f0bdc4738fb587db8dd"
+    },
+    {
+      "path": "schematic/sphinx_power_v2.kicad_pro",
+      "sha256": "443b5434f747347fecef294d24b7fe3daaefcd7ac40d711954ded2dccca7d2f7"
+    },
+    {
+      "path": "schematic/sphinx_power_v2.kicad_sch",
+      "sha256": "b22e2ff266de1a9e4133c27594f79b4f446d7a4b6125878ac89e2a6dc9204edf"
+    },
+    {
+      "path": "schematic/sym-lib-table",
+      "sha256": "66fe5541a9b776a8ec3a4a45aef70110c8b2212cb4e51e8be5d0ed08816eb40a"
+    }
+  ]
+}

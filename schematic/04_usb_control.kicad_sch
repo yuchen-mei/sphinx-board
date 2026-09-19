@@ -1,0 +1,1822 @@
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0")
+        (uuid "75c9142f-37c4-500b-ad86-039aa4577f35") (paper "A3")
+        (title_block (title "04 | USB control and remote reset") (date "2026-09-19") (rev "V2")
+        (company "Sphinx | Programmable power test board")
+        (comment 1 "Review package: PCB, PI, SI, thermal and ASIC limits require qualification")
+        (comment 2 "12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V")
+        (comment 3 "Author: Yuchen Mei"))
+        (lib_symbols (symbol "Sphinx_V2:Connector_Generic__Conn_01x02"
+  (pin_names
+    (offset 1.016)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "J"
+    (at 0 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "Conn_01x02"
+    (at 0 -5.08 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "connector"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "Connector*:*_1x??_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Connector_Generic__Conn_01x02_1_1"
+    (rectangle
+      (start -1.27 1.27)
+      (end 1.27 -3.81)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type background)))
+    (rectangle
+      (start -1.27 0.127)
+      (end 0 -0.127)
+      (stroke
+        (width 0.1524)
+        (type default))
+      (fill
+        (type none)))
+    (rectangle
+      (start -1.27 -2.413)
+      (end 0 -2.667)
+      (stroke
+        (width 0.1524)
+        (type default))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -5.08 0 0)
+      (length 3.81)
+      (name "Pin_1"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at -5.08 -2.54 0)
+      (length 3.81)
+      (name "Pin_2"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:Connector_Generic__Conn_01x05"
+  (pin_names
+    (offset 1.016)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "J"
+    (at 0 7.62 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "Conn_01x05"
+    (at 0 -7.62 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "connector"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "Connector*:*_1x??_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Connector_Generic__Conn_01x05_1_1"
+    (rectangle
+      (start -1.27 6.35)
+      (end 1.27 -6.35)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type background)))
+    (rectangle
+      (start -1.27 5.207)
+      (end 0 4.953)
+      (stroke
+        (width 0.1524)
+        (type default))
+      (fill
+        (type none)))
+    (rectangle
+      (start -1.27 2.667)
+      (end 0 2.413)
+      (stroke
+        (width 0.1524)
+        (type default))
+      (fill
+        (type none)))
+    (rectangle
+      (start -1.27 0.127)
+      (end 0 -0.127)
+      (stroke
+        (width 0.1524)
+        (type default))
+      (fill
+        (type none)))
+    (rectangle
+      (start -1.27 -2.413)
+      (end 0 -2.667)
+      (stroke
+        (width 0.1524)
+        (type default))
+      (fill
+        (type none)))
+    (rectangle
+      (start -1.27 -4.953)
+      (end 0 -5.207)
+      (stroke
+        (width 0.1524)
+        (type default))
+      (fill
+        (type none)))
+    (pin passive line
+      (at -5.08 5.08 0)
+      (length 3.81)
+      (name "Pin_1"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at -5.08 2.54 0)
+      (length 3.81)
+      (name "Pin_2"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at -5.08 0 0)
+      (length 3.81)
+      (name "Pin_3"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "3"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at -5.08 -2.54 0)
+      (length 3.81)
+      (name "Pin_4"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "4"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at -5.08 -5.08 0)
+      (length 3.81)
+      (name "Pin_5"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "5"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:Device__C"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0.254))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "C"
+    (at 0.635 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Value" "C"
+    (at 0.635 -2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Footprint" ""
+    (at 0.9652 -3.81 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Unpolarized capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "cap capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "C_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Device__C_0_1"
+    (polyline
+      (pts
+        (xy -2.032 0.762)
+        (xy 2.032 0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -2.032 -0.762)
+        (xy 2.032 -0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Device__C_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 2.794)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 2.794)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:Device__D_Schottky"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 1.016)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "D"
+    (at 0 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "D_Schottky"
+    (at 0 -2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Schottky diode"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "diode Schottky"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Device__D_Schottky_0_1"
+    (polyline
+      (pts
+        (xy -1.905 0.635)
+        (xy -1.905 1.27)
+        (xy -1.27 1.27)
+        (xy -1.27 -1.27)
+        (xy -0.635 -1.27)
+        (xy -0.635 -0.635))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.27 1.27)
+        (xy 1.27 -1.27)
+        (xy -1.27 0)
+        (xy 1.27 1.27))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.27 0)
+        (xy -1.27 0))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Device__D_Schottky_1_1"
+    (pin passive line
+      (at -3.81 0 0)
+      (length 2.54)
+      (name "K"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 3.81 0 180)
+      (length 2.54)
+      (name "A"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:Device__LED"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 1.016)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "D"
+    (at 0 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "LED"
+    (at 0 -2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Light emitting diode"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Sim.Pins" "1=K 2=A"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "LED diode"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Device__LED_0_1"
+    (polyline
+      (pts
+        (xy -3.048 -0.762)
+        (xy -4.572 -2.286)
+        (xy -3.81 -2.286)
+        (xy -4.572 -2.286)
+        (xy -4.572 -1.524))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.778 -0.762)
+        (xy -3.302 -2.286)
+        (xy -2.54 -2.286)
+        (xy -3.302 -2.286)
+        (xy -3.302 -1.524))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.27 0)
+        (xy 1.27 0))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -1.27 -1.27)
+        (xy -1.27 1.27))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.27 -1.27)
+        (xy 1.27 1.27)
+        (xy -1.27 0)
+        (xy 1.27 -1.27))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Device__LED_1_1"
+    (pin passive line
+      (at -3.81 0 0)
+      (length 2.54)
+      (name "K"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 3.81 0 180)
+      (length 2.54)
+      (name "A"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:Device__R"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "R"
+    (at 2.032 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "R"
+    (at 0 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at -1.778 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Resistor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "R res resistor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "R_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Device__R_0_1"
+    (rectangle
+      (start -1.016 -2.54)
+      (end 1.016 2.54)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Device__R_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 1.27)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 1.27)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))(symbol "Sphinx_V2:MCU_Module__RaspberryPi_Pico"
+  (pin_names
+    (offset 0.762))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "A"
+    (at -19.05 35.56 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Value" "RaspberryPi_Pico"
+    (at 7.62 35.56 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Footprint" "Module:RaspberryPi_Pico_Common_Unspecified"
+    (at 0 -46.99 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf"
+    (at 0 -49.53 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2"
+    (at 0 -52.07 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "RP2350A M33 RISC-V Hazard3 usb"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "RaspberryPi?Pico?Common* RaspberryPi?Pico?SMD*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "MCU_Module__RaspberryPi_Pico_0_1"
+    (rectangle
+      (start -19.05 34.29)
+      (end 19.05 -31.75)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type background)))
+    (polyline
+      (pts
+        (xy -5.08 34.29)
+        (xy -3.81 33.655)
+        (xy -3.81 31.75)
+        (xy -3.175 31.75))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -3.429 32.766)
+        (xy -3.429 33.02)
+        (xy -3.175 33.02)
+        (xy -3.175 30.48)
+        (xy -2.921 30.48)
+        (xy -2.921 30.734))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -3.175 31.75)
+        (xy -1.905 33.02)
+        (xy -1.905 30.48)
+        (xy -3.175 31.75))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 34.29)
+        (xy -1.27 33.655)
+        (xy -1.27 31.75)
+        (xy -1.905 31.75))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0 -31.75)
+        (xy 1.27 -31.115)
+        (xy 1.27 -24.13)
+        (xy 18.415 -24.13)
+        (xy 19.05 -22.86))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "MCU_Module__RaspberryPi_Pico_1_1"
+    (pin bidirectional line
+      (at -22.86 15.24 0)
+      (length 3.81)
+      (name "GPIO0"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SDA" bidirectional line)
+      (alternate "PWM0_A" output line)
+      (alternate "SPI0_RX" input line)
+      (alternate "UART0_TX" output line)
+      (alternate "USB_OVCUR_DET" input line))
+    (pin bidirectional line
+      (at -22.86 12.7 0)
+      (length 3.81)
+      (name "GPIO1"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SCL" bidirectional clock)
+      (alternate "PWM0_B" bidirectional line)
+      (alternate "UART0_RX" input line)
+      (alternate "USB_VBUS_DET" passive line)
+      (alternate "~{SPI0_CSn}" bidirectional line))
+    (pin passive line
+      (at 0 -35.56 90)
+      (length 3.81)
+      (name "GND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "3"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "GND_IN" power_in line))
+    (pin bidirectional line
+      (at -22.86 10.16 0)
+      (length 3.81)
+      (name "GPIO2"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "4"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SDA" bidirectional line)
+      (alternate "PWM1_A" output line)
+      (alternate "SPI0_SCK" bidirectional clock)
+      (alternate "UART0_CTS" input line)
+      (alternate "USB_VBUS_EN" output line))
+    (pin bidirectional line
+      (at -22.86 7.62 0)
+      (length 3.81)
+      (name "GPIO3"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "5"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SCL" bidirectional clock)
+      (alternate "PWM1_B" bidirectional line)
+      (alternate "SPI0_TX" output line)
+      (alternate "UART0_RTS" output line)
+      (alternate "USB_OVCUR_DET" input line))
+    (pin bidirectional line
+      (at -22.86 5.08 0)
+      (length 3.81)
+      (name "GPIO4"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "6"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SDA" bidirectional line)
+      (alternate "PWM2_A" output line)
+      (alternate "SPI0_RX" input line)
+      (alternate "UART1_TX" output line)
+      (alternate "USB_VBUS_DET" input line))
+    (pin bidirectional line
+      (at -22.86 2.54 0)
+      (length 3.81)
+      (name "GPIO5"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "7"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SCL" bidirectional clock)
+      (alternate "PWM2_B" bidirectional line)
+      (alternate "UART1_RX" input line)
+      (alternate "USB_VBUS_EN" output line)
+      (alternate "~{SPI0_CSn}" bidirectional line))
+    (pin passive line
+      (at 0 -35.56 90)
+      (length 3.81)
+      (hide yes)
+      (name "GND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "8"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin bidirectional line
+      (at -22.86 0 0)
+      (length 3.81)
+      (name "GPIO6"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "9"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SDA" bidirectional line)
+      (alternate "PWM3_A" output line)
+      (alternate "SPI0_SCK" bidirectional clock)
+      (alternate "UART1_CTS" input line)
+      (alternate "USB_OVCUR_DET" input line))
+    (pin bidirectional line
+      (at -22.86 -2.54 0)
+      (length 3.81)
+      (name "GPIO7"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "10"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SCL" bidirectional clock)
+      (alternate "PWM3_B" bidirectional line)
+      (alternate "SPI0_TX" output line)
+      (alternate "UART1_RTS" output line)
+      (alternate "USB_VBUS_DET" input line))
+    (pin bidirectional line
+      (at -22.86 -5.08 0)
+      (length 3.81)
+      (name "GPIO8"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "11"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SDA" bidirectional line)
+      (alternate "PWM4_A" output line)
+      (alternate "SPI1_RX" input line)
+      (alternate "UART1_TX" output line)
+      (alternate "USB_VBUS_EN" output line))
+    (pin bidirectional line
+      (at -22.86 -7.62 0)
+      (length 3.81)
+      (name "GPIO9"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "12"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SCL" bidirectional clock)
+      (alternate "PWM4_B" bidirectional line)
+      (alternate "UART1_RX" input line)
+      (alternate "USB_OVCUR_DET" input line)
+      (alternate "~{SPI1_CSn}" bidirectional line))
+    (pin passive line
+      (at 0 -35.56 90)
+      (length 3.81)
+      (hide yes)
+      (name "GND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "13"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin bidirectional line
+      (at -22.86 -10.16 0)
+      (length 3.81)
+      (name "GPIO10"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "14"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SDA" bidirectional line)
+      (alternate "PWM5_A" output line)
+      (alternate "SPI1_SCK" bidirectional clock)
+      (alternate "UART1_CTS" input line)
+      (alternate "USB_VBUS_DET" input line))
+    (pin bidirectional line
+      (at -22.86 -12.7 0)
+      (length 3.81)
+      (name "GPIO11"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "15"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SCL" bidirectional clock)
+      (alternate "PWM5_B" bidirectional line)
+      (alternate "SPI1_TX" output line)
+      (alternate "UART1_RTS" output line)
+      (alternate "USB_VBUS_EN" output line))
+    (pin bidirectional line
+      (at -22.86 -15.24 0)
+      (length 3.81)
+      (name "GPIO12"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "16"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SDA" bidirectional line)
+      (alternate "PWM6_A" output line)
+      (alternate "SPI1_RX" input line)
+      (alternate "UART0_TX" output line)
+      (alternate "USB_OVCUR_DET" input line))
+    (pin bidirectional line
+      (at -22.86 -17.78 0)
+      (length 3.81)
+      (name "GPIO13"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "17"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SCL" bidirectional clock)
+      (alternate "PWM6_B" bidirectional line)
+      (alternate "UART0_RX" input line)
+      (alternate "USB_VBUS_DET" input line)
+      (alternate "~{SPI1_CSn}" bidirectional line))
+    (pin passive line
+      (at 0 -35.56 90)
+      (length 3.81)
+      (hide yes)
+      (name "GND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "18"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin bidirectional line
+      (at -22.86 -20.32 0)
+      (length 3.81)
+      (name "GPIO14"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "19"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SDA" bidirectional line)
+      (alternate "PWM7_A" output line)
+      (alternate "SPI1_SCK" bidirectional clock)
+      (alternate "UART0_CTS" input line)
+      (alternate "USB_VBUS_EN" output line))
+    (pin bidirectional line
+      (at -22.86 -22.86 0)
+      (length 3.81)
+      (name "GPIO15"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "20"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SCL" bidirectional clock)
+      (alternate "PWM7_B" bidirectional line)
+      (alternate "SPI1_TX" output line)
+      (alternate "UART0_RTS" output line)
+      (alternate "USB_OVCUR_DET" input line))
+    (pin bidirectional line
+      (at 22.86 12.7 180)
+      (length 3.81)
+      (name "GPIO16"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "21"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SDA" bidirectional line)
+      (alternate "PWM0_A" output line)
+      (alternate "SPI0_RX" input line)
+      (alternate "UART0_TX" output line)
+      (alternate "USB_VBUS_DET" input line))
+    (pin bidirectional line
+      (at 22.86 10.16 180)
+      (length 3.81)
+      (name "GPIO17"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "22"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C0_SCL" bidirectional clock)
+      (alternate "PWM0_B" bidirectional line)
+      (alternate "UART0_RX" input line)
+      (alternate "USB_VBUS_EN" output line)
+      (alternate "~{SPI0_CSn}" bidirectional line))
+    (pin passive line
+      (at 0 -35.56 90)
+      (length 3.81)
+      (hide yes)
+      (name "GND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "23"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin bidirectional line
+      (at 22.86 7.62 180)
+      (length 3.81)
+      (name "GPIO18"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "24"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SDA" bidirectional line)
+      (alternate "PWM1_A" output line)
+      (alternate "SPI0_SCK" bidirectional clock)
+      (alternate "UART0_CTS" input line)
+      (alternate "USB_OVCUR_DET" input line))
+    (pin bidirectional line
+      (at 22.86 5.08 180)
+      (length 3.81)
+      (name "GPIO19"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "25"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "I2C1_SCL" bidirectional clock)
+      (alternate "PWM1_B" bidirectional line)
+      (alternate "SPI0_TX" output line)
+      (alternate "UART0_RTS" output line)
+      (alternate "USB_VBUS_DET" input line))
+    (pin bidirectional line
+      (at 22.86 2.54 180)
+      (length 3.81)
+      (name "GPIO20"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "26"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "CLOCK_GPIN0" input clock)
+      (alternate "I2C0_SDA" bidirectional line)
+      (alternate "PWM2_A" output line)
+      (alternate "SPI0_RX" input line)
+      (alternate "UART1_TX" output line)
+      (alternate "USB_VBUS_EN" output line))
+    (pin bidirectional line
+      (at 22.86 0 180)
+      (length 3.81)
+      (name "GPIO21"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "27"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "CLOCK_GPOUT0" output clock)
+      (alternate "I2C0_SCL" bidirectional clock)
+      (alternate "PWM2_B" bidirectional line)
+      (alternate "UART1_RX" input line)
+      (alternate "USB_OVCUR_DET" input line)
+      (alternate "~{SPI0_CSn}" bidirectional line))
+    (pin passive line
+      (at 0 -35.56 90)
+      (length 3.81)
+      (hide yes)
+      (name "GND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "28"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin bidirectional line
+      (at 22.86 -2.54 180)
+      (length 3.81)
+      (name "GPIO22"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "29"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "CLOCK_GPIN1" input clock)
+      (alternate "I2C1_SDA" bidirectional line)
+      (alternate "PWM3_A" output line)
+      (alternate "SPI0_SCK" bidirectional clock)
+      (alternate "UART1_CTS" input line)
+      (alternate "USB_VBUS_DET" input line))
+    (pin passive line
+      (at -22.86 22.86 0)
+      (length 3.81)
+      (name "RUN"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "30"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "~{RESET}" passive line))
+    (pin bidirectional line
+      (at 22.86 -12.7 180)
+      (length 3.81)
+      (name "GPIO26_ADC0"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "31"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "ADC0" input line)
+      (alternate "GPIO26" bidirectional line)
+      (alternate "I2C1_SDA" bidirectional line)
+      (alternate "PWM5_A" output line)
+      (alternate "SPI1_SCK" bidirectional clock)
+      (alternate "UART1_CTS" input line)
+      (alternate "USB_VBUS_EN" output line))
+    (pin bidirectional line
+      (at 22.86 -15.24 180)
+      (length 3.81)
+      (name "GPIO27_ADC1"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "32"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "ADC1" input line)
+      (alternate "GPIO27" bidirectional line)
+      (alternate "I2C1_SCL" bidirectional clock)
+      (alternate "PWM5_B" bidirectional line)
+      (alternate "SPI1_TX" output line)
+      (alternate "UART1_RTS" output line)
+      (alternate "USB_OVCUR_DET" input line))
+    (pin passive line
+      (at 22.86 -22.86 180)
+      (length 3.81)
+      (name "AGND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "33"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "GND" passive line))
+    (pin bidirectional line
+      (at 22.86 -17.78 180)
+      (length 3.81)
+      (name "GPIO28_ADC2"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "34"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "ADC2" input line)
+      (alternate "GPIO28" bidirectional line)
+      (alternate "I2C0_SDA" bidirectional line)
+      (alternate "PWM6_A" output line)
+      (alternate "SPI1_RX" input line)
+      (alternate "UART0_TX" output line)
+      (alternate "USB_VBUS_DET" input line))
+    (pin power_in line
+      (at 22.86 -7.62 180)
+      (length 3.81)
+      (name "ADC_VREF"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "35"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin power_out line
+      (at 5.08 38.1 270)
+      (length 3.81)
+      (name "3V3"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "36"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at -22.86 20.32 0)
+      (length 3.81)
+      (name "3V3_EN"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "37"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "~{3V3_DISABLE}" passive line))
+    (pin passive line
+      (at 0 -35.56 90)
+      (length 3.81)
+      (hide yes)
+      (name "GND"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "38"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin power_in line
+      (at -5.08 38.1 270)
+      (length 3.81)
+      (name "VSYS"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "39"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "VSYS_OUT" power_out line))
+    (pin power_out line
+      (at 0 38.1 270)
+      (length 3.81)
+      (name "VBUS"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "40"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (alternate "VBUS_IN" power_in line)))
+  (embedded_fonts no))(symbol "Sphinx_V2:TLP293" (pin_names (offset 0.8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 18.24 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "TLP293" (at 0 16.24 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Optical coupling only: input powered solely by ZedBoard; output sinks RESET_BASE" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(symbol "TLP293_0_1" (rectangle (start -12.7 15.24) (end 12.7 -15.24) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TLP293_1_1"
+(pin passive line (at -17.78 10.16 0) (length 5.08)  (name "A" (effects (font (size 1 1))  )) (number "1" (effects (font (size 0.9 0.9))  )))
+(pin passive line (at -17.78 -10.16 0) (length 5.08)  (name "K" (effects (font (size 1 1))  )) (number "2" (effects (font (size 0.9 0.9))  )))
+(pin open_collector line (at 17.78 10.16 180) (length 5.08)  (name "C" (effects (font (size 1 1))  )) (number "4" (effects (font (size 0.9 0.9))  )))
+(pin passive line (at 17.78 -10.16 180) (length 5.08)  (name "E" (effects (font (size 1 1))  )) (number "3" (effects (font (size 0.9 0.9))  )))
+)))
+        (text "Raspberry Pi Pico module: USB CDC + MicroPython controller; no proprietary USB/PMBus adapter required." (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top) ) (uuid "46796dd3-2aaa-5f5c-be23-5ffd715aaffd"))
+(text "USB commands: SET / ON / OFF / STATUS. ON includes startup authorization. Hardware controls: STOP and DUT RESET." (at 15 23 0) (effects (font (size 1.27 1.27)) (justify left top) ) (uuid "5f944027-ecc7-5590-8fdf-4b48bbdb6810"))
+(symbol (lib_id "Sphinx_V2:MCU_Module__RaspberryPi_Pico") (at 85.09 97.79 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a71197a7-35d3-5247-ab56-4f66e3a79dde")
+(property "Reference" "U401" (at 115.09 51.79 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "Raspberry Pi Pico" (at 115.09 54.29 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Module__RaspberryPi_Pico_Common_THT" (at 85.09 97.79 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf" (at 85.09 97.79 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "SC0915" (at 85.09 97.79 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "USB is physically on the module; VBUS must not connect to AUX5V | Original Raspberry Pi Pico RP2040, bare headers; VSYS1.8-5.5V, GPIO3.3V; 40-pin 2.54mm" (at 85.09 97.79 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "c7390bb8-abce-5c55-8e8d-e219615bb722"))
+(pin "2" (uuid "c48f288b-6914-5a1d-bc24-d9afa93dbfed"))
+(pin "3" (uuid "998d5c98-e3f0-5d60-a540-717955b72ba5"))
+(pin "4" (uuid "376a3939-cfc5-51d7-918c-0909d1e7357b"))
+(pin "5" (uuid "79bc366b-66e0-5b83-85a3-458be3c2c0e8"))
+(pin "6" (uuid "e21bef2e-5224-5104-ab05-45fe2a01ac0e"))
+(pin "7" (uuid "987ff06b-82a5-577b-a4e8-61eb16b74685"))
+(pin "8" (uuid "00cd6aea-e2fe-5913-9b3e-a39e3a4977ec"))
+(pin "9" (uuid "e4994cc2-4a84-5716-9cda-b6ad09f08cab"))
+(pin "10" (uuid "9fd75ae4-146e-5103-8799-b9c7fb69c923"))
+(pin "11" (uuid "1ff78976-23bf-5f61-873f-f3b9cbbb008e"))
+(pin "12" (uuid "a68b21a6-c64b-56c4-9f4f-ef6b6e9b982c"))
+(pin "13" (uuid "ba620588-5238-5dec-af6c-24fb7dad6c80"))
+(pin "14" (uuid "713cdd2f-ac32-55f4-bd32-6df8c8b84231"))
+(pin "15" (uuid "0e272afc-f8b7-585f-a4e8-b8ec35c5d19f"))
+(pin "16" (uuid "25b4d0b7-5288-5f62-b033-b1c89234569b"))
+(pin "17" (uuid "1b2c2a81-e967-58ee-9f59-f890e6e29b87"))
+(pin "18" (uuid "1cc6a409-a8ab-5640-8620-20b6a8402572"))
+(pin "19" (uuid "2bc36005-e9c8-54d6-b4f2-f7c2c3f16aa7"))
+(pin "20" (uuid "efdcfce8-0bdd-59fb-a97c-2ee89aea2c82"))
+(pin "21" (uuid "9dc120ff-ab22-5a14-9122-2786b423d0d7"))
+(pin "22" (uuid "f3568c12-9467-52b8-9490-d78dd7bf4766"))
+(pin "23" (uuid "aab45a23-596c-5a66-8341-e50f21b16ad8"))
+(pin "24" (uuid "36bd6832-ae9a-5485-85fa-a2ee60c90f1e"))
+(pin "25" (uuid "2c6bf11e-c203-5608-a886-ef8663feafac"))
+(pin "26" (uuid "acb1dc21-1986-5549-abe6-bdc971783505"))
+(pin "27" (uuid "704bafa0-14fb-539f-ad0e-76764ed0de58"))
+(pin "28" (uuid "fb961a0c-7a0a-5668-a01e-e6a21a37e417"))
+(pin "29" (uuid "bde2147a-4d9d-53bf-9de9-5dd2ad1a2838"))
+(pin "30" (uuid "7988490e-b6fa-5fe1-a63c-21e3168fd076"))
+(pin "31" (uuid "9376712b-ae73-5909-b5c9-900664501cab"))
+(pin "32" (uuid "09e5c67e-2205-5fea-ac7a-227a76ff817a"))
+(pin "33" (uuid "8fd60889-31a9-5248-bd1f-3b2fabbb2bd0"))
+(pin "34" (uuid "db396036-b635-57f9-ab6d-2121cf55875e"))
+(pin "35" (uuid "4ad58e85-4bf3-5f9c-b660-6e859ddbd946"))
+(pin "36" (uuid "47e44c98-9d42-5617-ac41-9ac1c776b0e1"))
+(pin "37" (uuid "a17304fb-4008-54df-9252-73bdc38beb16"))
+(pin "38" (uuid "c7ec9b56-d5a3-585f-8496-da9b9a1b35b3"))
+(pin "39" (uuid "ccc0badb-b149-52dd-8c85-2eb10ed5c28d"))
+(pin "40" (uuid "213d2e25-35ab-5483-ba7d-dfb7ca5ab5d0"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "U401") (unit 1)))) )
+(wire (pts (xy 62.23 82.55) (xy 57.15 82.55)) (stroke (width 0) (type default)) (uuid "ad282b36-9e84-51be-958d-f76e65c2e596"))
+(global_label "PMBUS_SDA" (shape passive) (at 57.15 82.55 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ba3afe13-9921-5941-888a-842c44936713") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 82.55 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 85.09) (xy 57.15 85.09)) (stroke (width 0) (type default)) (uuid "327551f0-9a5d-5b48-8f02-1c3bfc549bf4"))
+(global_label "PMBUS_SCL" (shape passive) (at 57.15 85.09 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "98afb789-9343-5bd0-8e32-e0c1da597201") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 85.09 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 85.09 133.35) (xy 85.09 138.43)) (stroke (width 0) (type default)) (uuid "494826e9-f52c-52bb-8e4c-84081afca123"))
+(global_label "GND" (shape passive) (at 85.09 138.43 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b10cc384-668b-5d15-a4a0-be45e958ccea") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 85.09 138.43 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 87.63) (xy 57.15 87.63)) (stroke (width 0) (type default)) (uuid "5e3c8ba6-b444-5e68-bef8-1d9ffcb46349"))
+(global_label "CORE_REQ" (shape passive) (at 57.15 87.63 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "1a1bec91-436c-55db-9c79-1d1f27ebca69") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 87.63 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 90.17) (xy 57.15 90.17)) (stroke (width 0) (type default)) (uuid "4e95967a-5ca3-5645-96ae-a7f116f86c74"))
+(global_label "IO_REQ" (shape passive) (at 57.15 90.17 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b67f7ace-b041-529a-ae61-5cc307d35de2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 90.17 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 92.71) (xy 57.15 92.71)) (stroke (width 0) (type default)) (uuid "cee36bee-41ad-5362-bfee-0c24b8c8e52c"))
+(global_label "RESET_RELEASE" (shape passive) (at 57.15 92.71 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "42b3430c-2505-5663-818c-bc8748c77d2b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 92.71 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 95.25) (xy 57.15 95.25)) (stroke (width 0) (type default)) (uuid "e129aa95-eaec-5f84-8610-ef44fb6abee5"))
+(global_label "RUN_LATCH" (shape passive) (at 57.15 95.25 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "48667d5b-d58d-5d9c-8c02-d8a93da7de44") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 95.25 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 97.79) (xy 57.15 97.79)) (stroke (width 0) (type default)) (uuid "f84e71c5-18e4-5709-9955-4b548db83586"))
+(global_label "CORE_PG" (shape passive) (at 57.15 97.79 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ee584eb3-5964-5861-b33e-661962c7011d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 97.79 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 100.33) (xy 57.15 100.33)) (stroke (width 0) (type default)) (uuid "af129170-0d8d-5409-af61-207278811a1f"))
+(global_label "IO_VALID" (shape passive) (at 57.15 100.33 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "fe87f209-71a7-59e6-b944-00d768741a23") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 100.33 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 102.87) (xy 57.15 102.87)) (stroke (width 0) (type default)) (uuid "61a23ae6-d588-52bb-b3c4-2b037896d5ed"))
+(global_label "HW_FAULT_N" (shape passive) (at 57.15 102.87 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "d4bd97a3-c2de-5604-aeb6-4d3b1c0bb03f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 102.87 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 62.23 105.41) (xy 57.15 105.41)) (stroke (width 0) (type default)) (uuid "4f84694b-180b-54fe-820e-6d21a5683f5d"))
+(global_label "CORE_ALERT_N" (shape passive) (at 57.15 105.41 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ff881047-1050-579e-b8b7-19ca3c5b83f8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 105.41 180) (effects (font (size 0.8 0.8))  (hide yes))))
+
+(wire (pts (xy 62.23 110.49) (xy 57.15 110.49)) (stroke (width 0) (type default)) (uuid "100d88b6-f206-52cb-aae3-dc921a1fda3a"))
+(global_label "MON_ALERT_N" (shape passive) (at 57.15 110.49 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "9d01dcfc-4a86-506b-9640-158318017cb0") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 110.49 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(no_connect (at 62.23 113.03) (uuid "15ee1beb-153f-5033-832d-6c32f558959e"))
+(no_connect (at 62.23 115.57) (uuid "de01cd78-8b1f-543f-9fa4-2cea4913783c"))
+(no_connect (at 62.23 118.11) (uuid "a6a044ee-2db4-551d-9248-2c873e713eeb"))
+(wire (pts (xy 62.23 120.65) (xy 57.15 120.65)) (stroke (width 0) (type default)) (uuid "75b29040-f96c-5872-83a8-d14849e91540"))
+(global_label "HW_FAULT_N" (shape passive) (at 57.15 120.65 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "76e9c432-95b2-526c-b70f-d3a5e97a5304") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 120.65 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(no_connect (at 107.95 85.09) (uuid "4a456442-3e49-58bc-98ac-79457b839c9f"))
+(no_connect (at 107.95 87.63) (uuid "587fc17a-2fcb-5642-af06-d303d0328059"))
+(no_connect (at 107.95 90.17) (uuid "3ea74e8f-e15c-515f-936c-fd35b3203b4f"))
+(no_connect (at 107.95 92.71) (uuid "802e68be-aa85-5033-bd6c-dca53124d707"))
+(no_connect (at 107.95 95.25) (uuid "2807265f-cd1d-577f-9858-7e18930ede95"))
+(no_connect (at 107.95 97.79) (uuid "fe3054fb-f940-5b11-bac5-0933889e72b2"))
+(no_connect (at 107.95 100.33) (uuid "cee44dcb-b04b-5782-9d17-6021049c54cb"))
+(no_connect (at 62.23 74.93) (uuid "ee492dfc-c9d2-531d-8023-838ce44c5b7e"))
+(no_connect (at 107.95 110.49) (uuid "dcaa4089-ffc2-5d13-83c8-c1f6dde6ccdc"))
+(wire (pts (xy 107.95 113.03) (xy 113.03 113.03)) (stroke (width 0) (type default)) (uuid "0a60966d-bfe5-5bd6-96ab-e1e4028c0713"))
+(global_label "BOARD_NTC" (shape passive) (at 113.03 113.03 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "238ca187-4a00-54c2-881e-6c5b26a5d2a6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 113.03 113.03 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 107.95 120.65) (xy 113.03 120.65)) (stroke (width 0) (type default)) (uuid "6488caf0-02f2-5512-9bf0-d29df27d5d5c"))
+(global_label "GND" (shape passive) (at 113.03 120.65 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "08c6533b-c096-55d3-b8f0-7a21b75d82ee") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 113.03 120.65 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(no_connect (at 107.95 115.57) (uuid "193adcb9-4446-5fd2-ba97-2b876f0f7b57"))
+(no_connect (at 107.95 105.41) (uuid "d43e519a-f927-5db2-bf37-f8e3289c77f5"))
+(wire (pts (xy 90.17 59.69) (xy 90.17 54.61)) (stroke (width 0) (type default)) (uuid "c7cf88c2-3154-58b0-a2cb-b332a89c5e89"))
+(global_label "3V3_CTRL" (shape passive) (at 90.17 54.61 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "eb3705d9-9be7-569a-bd60-4bcc48f525b4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.17 54.61 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(no_connect (at 62.23 77.47) (uuid "224e54fe-8c26-5028-91e3-a3b521496d83"))
+(wire (pts (xy 80.01 59.69) (xy 80.01 54.61)) (stroke (width 0) (type default)) (uuid "a9d4e83b-217a-5f71-bd4f-e05730208210"))
+(global_label "PICO_VSYS" (shape passive) (at 80.01 54.61 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "adc54c6b-73dd-546f-be76-5e55101ce583") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 80.01 54.61 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(no_connect (at 85.09 59.69) (uuid "3a2a0061-1c22-5c0d-9898-e449ebb288cc"))
+(symbol (lib_id "Sphinx_V2:Device__D_Schottky") (at 171.45 53.34 180) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "039e6435-e507-5adc-bc27-2bb0f70e5d6b")
+(property "Reference" "D401" (at 171.45 47.34 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "SS14" (at 171.45 49.84 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Diode_SMD__D_SMA" (at 171.45 53.34 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.vishay.com/docs/88746/ss12.pdf" (at 171.45 53.34 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "SS14-E3/61T" (at 171.45 53.34 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Anode AUX5V; cathode VSYS; prevents USB backfeeding auxiliary rail | 1A 40V Schottky SMA; pad1=cathode VSYS; pad2=anode AUX5V" (at 171.45 53.34 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "dbb9e3f4-b4c2-59fa-91ee-8dd81c6e6090"))
+(pin "2" (uuid "fa037ab6-2ce0-54c2-8b52-58f48a2cdd5e"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "D401") (unit 1)))) )
+(wire (pts (xy 175.26 53.34) (xy 180.34 53.34)) (stroke (width 0) (type default)) (uuid "3eb757b1-e07c-5427-ad78-0c0ec6091185"))
+(global_label "PICO_VSYS" (shape passive) (at 180.34 53.34 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "e545d84e-2dda-5029-bdaa-4217029a7c13") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 180.34 53.34 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 167.64 53.34) (xy 162.56 53.34)) (stroke (width 0) (type default)) (uuid "d78440db-791e-51e1-8f0d-898fefc656e3"))
+(global_label "AUX5V" (shape passive) (at 162.56 53.34 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "228a1604-25ea-55c3-94f2-793447f82fc8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 162.56 53.34 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__C") (at 232.41 54.61 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "49cd7ed5-e9e4-5c91-8325-9abb6c0a2572")
+(property "Reference" "C401" (at 236.41 53.36 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "22u / 10V" (at 236.41 55.86 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric" (at 232.41 54.61 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://product.samsungsem.com/mlcc/CL21A226MPQNNN.do" (at 232.41 54.61 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "CL21A226MPQNNNE" (at 232.41 54.61 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "22uF +/-20% 10V X5R 0805" (at 232.41 54.61 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "bf3523b8-a52e-5eee-9944-60ca00cd7db5"))
+(pin "2" (uuid "36b17250-03a4-5ba6-a382-8ddee8d5ef7c"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "C401") (unit 1)))) )
+(wire (pts (xy 232.41 50.8) (xy 232.41 45.72)) (stroke (width 0) (type default)) (uuid "cb10dc72-433c-5a5b-a5e8-786b51158e32"))
+(global_label "PICO_VSYS" (shape passive) (at 232.41 45.72 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "86de01e9-f3bd-5275-b162-231a9ba56206") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 232.41 45.72 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 232.41 58.42) (xy 232.41 63.5)) (stroke (width 0) (type default)) (uuid "60c789f8-4f6a-5f28-8aff-5ddc7d130671"))
+(global_label "GND" (shape passive) (at 232.41 63.5 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "a1d0cc64-7cae-502f-b43a-2f63ab07195d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 232.41 63.5 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 170.18 102.87 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "809ea32f-2fa3-5ecc-afbe-92b6918414af")
+(property "Reference" "R401" (at 174.18 101.62 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "2.2k" (at 174.18 104.12 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 170.18 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L" (at 170.18 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-072K2L" (at 170.18 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "2.2k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 170.18 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "702b7d61-4ccd-5065-bf73-79a07cd65e6c"))
+(pin "2" (uuid "7225ce53-3a69-50da-b878-d9f3546c637f"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R401") (unit 1)))) )
+(wire (pts (xy 170.18 99.06) (xy 170.18 93.98)) (stroke (width 0) (type default)) (uuid "02b5991a-ad37-5a0f-aba6-ad528d8de3a1"))
+(global_label "3V3_CTRL" (shape passive) (at 170.18 93.98 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "86126687-3a87-5962-9d0e-d62e2d14e8eb") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 170.18 93.98 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 170.18 106.68) (xy 170.18 111.76)) (stroke (width 0) (type default)) (uuid "b233f4f1-7ed0-579e-8eeb-2ca001ced72f"))
+(global_label "PMBUS_SDA" (shape passive) (at 170.18 111.76 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "0d0669f6-ba26-5034-a6bd-6dbeb5c443c8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 170.18 111.76 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 219.71 102.87 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1813a1bd-8853-5ed9-b38a-460d3efc5355")
+(property "Reference" "R402" (at 223.71 101.62 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "2.2k" (at 223.71 104.12 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 219.71 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L" (at 219.71 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-072K2L" (at 219.71 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "2.2k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 219.71 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "3e503a4d-a3ab-541f-b6a4-7d478618ed4c"))
+(pin "2" (uuid "0458f2ef-b306-5d3c-a451-9ec92669b818"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R402") (unit 1)))) )
+(wire (pts (xy 219.71 99.06) (xy 219.71 93.98)) (stroke (width 0) (type default)) (uuid "eefc8d9f-345a-5103-aca5-e3e0510a3764"))
+(global_label "3V3_CTRL" (shape passive) (at 219.71 93.98 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "a59a653d-b3f3-51f4-9806-a578639b5dff") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 219.71 93.98 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 219.71 106.68) (xy 219.71 111.76)) (stroke (width 0) (type default)) (uuid "5c6c4957-aaf6-550d-9000-a6d9e60167bf"))
+(global_label "PMBUS_SCL" (shape passive) (at 219.71 111.76 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "dc0db4bd-30ff-5a58-a1dd-7b6c839ec2d0") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 219.71 111.76 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 270.51 102.87 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9ebf693d-26ee-5940-aaf0-025d32027fcf")
+(property "Reference" "R403" (at 274.51 101.62 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "10k" (at 274.51 104.12 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 270.51 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 270.51 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-0710KL" (at 270.51 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "10k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 270.51 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "702cc2fd-e92e-57d5-a57c-0f4809416d75"))
+(pin "2" (uuid "dfa3f207-f9ed-54cd-a39c-a1fc592f106a"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R403") (unit 1)))) )
+(wire (pts (xy 270.51 99.06) (xy 270.51 93.98)) (stroke (width 0) (type default)) (uuid "11bcad53-3b9c-5ca4-a22c-ccc19a7524ef"))
+(global_label "3V3_CTRL" (shape passive) (at 270.51 93.98 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "8e614c1e-d628-5a64-95da-0454c213f0cb") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 270.51 93.98 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 270.51 106.68) (xy 270.51 111.76)) (stroke (width 0) (type default)) (uuid "f9532dde-99bc-5eb0-9d18-2727f5489832"))
+(global_label "CORE_ALERT_N" (shape passive) (at 270.51 111.76 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ddc51229-9b7a-5121-91ef-3cfddd1a9f42") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 270.51 111.76 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 320.04 102.87 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "857d051e-645f-5385-b681-7a052b53bcc3")
+(property "Reference" "R404" (at 324.04 101.62 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "10k" (at 324.04 104.12 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 320.04 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 320.04 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-0710KL" (at 320.04 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "10k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 320.04 102.87 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "3163087d-c651-5c26-bf63-ebedbdaf8640"))
+(pin "2" (uuid "610f0e35-e003-58c8-9e5a-41b2374da8a8"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R404") (unit 1)))) )
+(wire (pts (xy 320.04 99.06) (xy 320.04 93.98)) (stroke (width 0) (type default)) (uuid "cd84e224-c627-58bc-8502-34c420bab192"))
+(global_label "3V3_CTRL" (shape passive) (at 320.04 93.98 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "1d97cbea-cbf6-5cfd-98d4-71062074108b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 320.04 93.98 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 320.04 106.68) (xy 320.04 111.76)) (stroke (width 0) (type default)) (uuid "c66f5389-99e8-5952-979f-9a3bd1261a9b"))
+(global_label "MON_ALERT_N" (shape passive) (at 320.04 111.76 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "f9cb4e89-ece6-523e-9be0-30194023f9cc") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 320.04 111.76 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Connector_Generic__Conn_01x05") (at 355.6 48.26 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "63ef836d-afd5-5761-80dc-5e3a60f7ad5b")
+(property "Reference" "J401" (at 355.6 37.18 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "PMBus debug (3.3V)" (at 355.6 39.68 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x05_P2.54mm_Vertical" (at 355.6 48.26 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.harwin.com/products/M20-9990546" (at 355.6 48.26 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "M20-9990546" (at 355.6 48.26 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "1x5 2.54mm vertical THT male header; tail3mm; square0.64mm" (at 355.6 48.26 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "7a5ed6ef-3c7d-50ea-a9a3-7cdd5766424f"))
+(pin "2" (uuid "3a3d3c05-69bb-5944-9dea-91079e8d4dc3"))
+(pin "3" (uuid "503444c9-c77c-54dc-847a-7519077c9a6e"))
+(pin "4" (uuid "298edf45-44c2-5124-b944-c281f96db56c"))
+(pin "5" (uuid "021e7a0a-f8e7-5b54-9bf7-a52c1035454b"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "J401") (unit 1)))) )
+(wire (pts (xy 350.52 43.18) (xy 345.44 43.18)) (stroke (width 0) (type default)) (uuid "9611efc6-a018-5572-8dc2-a6250217e6c1"))
+(global_label "GND" (shape passive) (at 345.44 43.18 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "393740e0-fe0d-5ca9-910b-9508cbdf0a49") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 345.44 43.18 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 350.52 45.72) (xy 345.44 45.72)) (stroke (width 0) (type default)) (uuid "3944cd25-e4e0-5058-b77a-584b5c29e6e1"))
+(global_label "PMBUS_SCL" (shape passive) (at 345.44 45.72 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "eb6f01a2-0b0c-51ab-b46d-a180d956f536") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 345.44 45.72 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 350.52 48.26) (xy 345.44 48.26)) (stroke (width 0) (type default)) (uuid "450b1ea1-fdfc-5798-b9e3-425d6e9658ba"))
+(global_label "PMBUS_SDA" (shape passive) (at 345.44 48.26 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b27337f7-e735-53b1-a429-f88c9c6b98a8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 345.44 48.26 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 350.52 50.8) (xy 345.44 50.8)) (stroke (width 0) (type default)) (uuid "deda7200-77f7-5c59-8816-a7177e4f762b"))
+(global_label "CORE_ALERT_N" (shape passive) (at 345.44 50.8 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "768b9018-c914-529b-8a5a-ed2be344f945") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 345.44 50.8 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 350.52 53.34) (xy 345.44 53.34)) (stroke (width 0) (type default)) (uuid "b8ed49d3-5204-5075-8db2-d944f25eb0fe"))
+(global_label "3V3_CTRL" (shape passive) (at 345.44 53.34 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "80d8b715-a9e0-5975-8210-1b8baa2ca13a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 345.44 53.34 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 355.6 212.09 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3031b51a-4e88-5f62-9937-679f5cd48b02")
+(property "Reference" "R408" (at 359.6 210.84 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100k" (at 359.6 213.34 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 355.6 212.09 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL" (at 355.6 212.09 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-07100KL" (at 355.6 212.09 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "R409 NTC100k B4250; board temperature proxy, not die temperature | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 355.6 212.09 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "ca6cda7e-323f-59eb-92c0-beb78ae761b2"))
+(pin "2" (uuid "4a17944e-4048-5d98-9d70-01842b899035"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R408") (unit 1)))) )
+(wire (pts (xy 355.6 208.28) (xy 355.6 203.2)) (stroke (width 0) (type default)) (uuid "a910d6fb-963e-54ca-b852-b5cf3e4b2f18"))
+(global_label "3V3_CTRL" (shape passive) (at 355.6 203.2 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "4aa995ae-39f7-57c6-9665-a329dc2069cd") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 355.6 203.2 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 355.6 215.9) (xy 355.6 220.98)) (stroke (width 0) (type default)) (uuid "21591dfb-a7ac-5869-ba3b-1e820a66992c"))
+(global_label "BOARD_NTC" (shape passive) (at 355.6 220.98 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "332a7d6a-7f04-54c0-8fef-6d0f684e5d36") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 355.6 220.98 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 355.6 234.95 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "aab9ef25-e0b8-51c7-bbcc-69bd9b94287d")
+(property "Reference" "R409" (at 359.6 233.7 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100k NTC B4250" (at 359.6 236.2 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 355.6 234.95 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.murata.com/-/media/webrenewal/products/thermistor/ntc/ncu/ncu18.ashx?cvid=20240402040000000000&la=en" (at 355.6 234.95 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "NCU18WF104J60RB" (at 355.6 234.95 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "R409 NTC100k B4250; board temperature proxy, not die temperature | 100kOhm NTC +/-5%; B25/50=4250K +/-2%; 0603; board temperature proxy" (at 355.6 234.95 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "dcc31d01-ab31-559d-8aab-48ddc0f18999"))
+(pin "2" (uuid "5176e3eb-705c-516e-93b7-17917632c84f"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R409") (unit 1)))) )
+(wire (pts (xy 355.6 231.14) (xy 355.6 226.06)) (stroke (width 0) (type default)) (uuid "13caee53-168a-5422-adba-97fe9d3b1ad0"))
+(global_label "BOARD_NTC" (shape passive) (at 355.6 226.06 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "23408f02-340f-5d2b-b3ea-2e6568726e69") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 355.6 226.06 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 355.6 238.76) (xy 355.6 243.84)) (stroke (width 0) (type default)) (uuid "f5399c0d-26b6-5916-9e45-087f64854bb7"))
+(global_label "GND" (shape passive) (at 355.6 243.84 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "d761bc19-69d2-58c1-be40-87a03c8e22cb") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 355.6 243.84 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(text "USB host controls the sweep. Pico implements output sequencing, fault handling, and watchdog.\n19 points: 0.30-1.20V / 0.05V steps. Scale changes perform a controlled power-cycle.\nJ401 exposes only the debug bus; it does not replace the Pico safety state machine.\nAUX5V keeps control power independent of the PC connection." (at 25 196 0) (effects (font (size 1.1 1.1)) (justify left top) ) (uuid "f8d1be2c-4675-5c4d-8b59-0a61aed5e270"))
+(text "No VIN/current telemetry: shared HW_FAULT_N indicates U509 input-low or another hardware fault." (at 150 268 0) (effects (font (size 0.95 0.95)) (justify left top) ) (uuid "c4a1e67c-b75d-56d0-974e-9642500afb2f"))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 129.54 153.67 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b58c615f-3124-5ae9-b662-28c30d62c48f")
+(property "Reference" "R411" (at 133.54 152.42 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "100k" (at 133.54 154.92 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-07100KL" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "100k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "83b44844-1376-5380-a9e4-c90ba88d9b24"))
+(pin "2" (uuid "d2cd4a27-6109-51e1-89e9-0b1fa77953a5"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R411") (unit 1)))) )
+(wire (pts (xy 129.54 149.86) (xy 129.54 144.78)) (stroke (width 0) (type default)) (uuid "4eeb49a6-6ffd-55be-930f-2c90aa877579"))
+(global_label "RESET_RELEASE" (shape passive) (at 129.54 144.78 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "59bad3be-62c0-5cfe-bf61-2f33c43b357b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 129.54 144.78 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 129.54 157.48) (xy 129.54 162.56)) (stroke (width 0) (type default)) (uuid "06eb73bc-86f3-51bf-b73d-e67fd4603b23"))
+(global_label "GND" (shape passive) (at 129.54 162.56 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "9bc7ec82-fb03-5483-ab27-8e130ce8f750") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 129.54 162.56 180) (effects (font (size 0.8 0.8))  (hide yes))))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(symbol (lib_id "Sphinx_V2:Connector_Generic__Conn_01x02") (at 175.26 240.03 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a178db16-14e6-54b4-805c-235201165c55")
+(property "Reference" "J602" (at 175.26 234.03 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "ZED REMOTE RESET" (at 175.26 236.53 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical" (at 175.26 240.03 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.harwin.com/products/M20-9990246" (at 175.26 240.03 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "M20-9990246" (at 175.26 240.03 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "1x2 2.54mm vertical THT male header; tail3mm; square0.64mm" (at 175.26 240.03 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "432f9a2d-5e8a-5e31-8b10-a2d3c2e419af"))
+(pin "2" (uuid "8f3c2064-ccd3-55e1-b981-335aa420317e"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "J602") (unit 1)))) )
+(wire (pts (xy 170.18 240.03) (xy 165.1 240.03)) (stroke (width 0) (type default)) (uuid "4c96e36d-916b-5802-ac06-750eb2375151"))
+(global_label "ZED_3V3" (shape passive) (at 165.1 240.03 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "7d81ddf4-f4dd-500c-8148-bf648c2d3b14") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 165.1 240.03 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 170.18 242.57) (xy 165.1 242.57)) (stroke (width 0) (type default)) (uuid "19889241-dc39-581b-abab-7852d336dba5"))
+(global_label "ZED_RESET_OD" (shape passive) (at 165.1 242.57 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b00afb7c-071b-540f-afe0-a4ddccc25e6b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 165.1 242.57 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 228.6 218.44 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "37fbde87-6bf7-5b02-9155-e4c259a16495")
+(property "Reference" "R605" (at 228.6 212.44 90) (effects (font (size 1.0 1.0))  ))
+(property "Value" "750R" (at 228.6 214.94 90) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 228.6 218.44 90) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-13750RL" (at 228.6 218.44 90) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "RC0603FR-13750RL" (at 228.6 218.44 90) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Optocoupler LED current; includes allowance for Zed JA/JB/JE200R series. Source is ZedBoard3.3V, not this board | 750Ohm +/-1% 0.1W at70C, 0603 thick film, +/-100ppm/C; 13=330mm reel, cut tape MOQ1" (at 228.6 218.44 90) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "917efc82-a329-56b8-9bd2-9b3ef52f5220"))
+(pin "2" (uuid "5ea3fe46-e8be-51fd-a9cb-50546340fab6"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R605") (unit 1)))) )
+(wire (pts (xy 224.79 218.44) (xy 219.71 218.44)) (stroke (width 0) (type default)) (uuid "56a3a9e5-cabd-536f-a067-6b25b0a19d72"))
+(global_label "ZED_3V3" (shape passive) (at 219.71 218.44 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "4b2334c3-6c63-5c4e-aea7-886d79bb2413") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 219.71 218.44 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 232.41 218.44) (xy 237.49 218.44)) (stroke (width 0) (type default)) (uuid "4c00cbcd-b2be-5f70-9cce-c0b2a27aa32d"))
+(global_label "ZED_OPTO_A" (shape passive) (at 237.49 218.44 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "90d51fef-3731-5c51-b95a-2bf578c73b60") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.49 218.44 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(symbol (lib_id "Sphinx_V2:TLP293") (at 279.4 237.49 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "ea086611-3d09-59b6-9e67-aef9833c3191")
+(property "Reference" "U601" (at 279.4 221.33 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "TLP293 GB" (at 279.4 223.83 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "Sphinx_V2:Package_SO__SOIC-4_4.55x2.6mm_P1.27mm" (at 279.4 237.49 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://toshiba.semicon-storage.com/info/docget.jsp?did=14419&prodName=TLP293" (at 279.4 237.49 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "TLP293(GB-TPL,E" (at 279.4 237.49 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Phototransistor in parallel with SW601: input LED on asserts active-high DUT reset; no run-latch clear or rail shutdown | GB rank phototransistor optocoupler, SO4 4.55x2.6mm pitch1.27mm; 1=A,2=K,3=E,4=C; VCEsat max0.3V at IF1mA/IC0.2mA,25C" (at 279.4 237.49 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "21fb2276-4680-533a-b04c-1bc56989cfb4"))
+(pin "2" (uuid "6c874cc7-3b56-56de-afc6-ffcfb428c937"))
+(pin "4" (uuid "78fc1b21-c9e7-538a-b290-a50a6c0f5cd9"))
+(pin "3" (uuid "cefaee48-63b1-5cb0-a7dc-058f95bdf996"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "U601") (unit 1)))) )
+(wire (pts (xy 261.62 227.33) (xy 256.54 227.33)) (stroke (width 0) (type default)) (uuid "793e2657-ae09-5561-a72b-745d301ab98a"))
+(global_label "ZED_OPTO_A" (shape passive) (at 256.54 227.33 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "879919a7-1dbc-5b5b-9d43-0af3ab8bc16c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 256.54 227.33 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 261.62 247.65) (xy 256.54 247.65)) (stroke (width 0) (type default)) (uuid "17320090-0bd4-5481-957c-d3f885fd3b7d"))
+(global_label "ZED_RESET_OD" (shape passive) (at 256.54 247.65 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "1f090252-205a-5161-adec-7a544d7220e8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 256.54 247.65 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 297.18 227.33) (xy 302.26 227.33)) (stroke (width 0) (type default)) (uuid "5166675c-2119-50f3-a7b1-1a79eef1bc21"))
+(global_label "RESET_BASE" (shape passive) (at 302.26 227.33 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "18dadae0-94ab-5ff6-a70d-610be26f0785") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 302.26 227.33 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(wire (pts (xy 297.18 247.65) (xy 302.26 247.65)) (stroke (width 0) (type default)) (uuid "3326b740-986f-52f7-94c4-8c64c91ab0d0"))
+(global_label "GND" (shape passive) (at 302.26 247.65 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "b4dfbb14-6d09-5930-aa96-ac622e55c546") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 302.26 247.65 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(text "J602: 1 = Zed Pmod3.3V; 2 = Zed GPIO LOW/Z (NOT GND).\nLOW asserts reset; Z/unplugged leaves local control unchanged.\nNo conductive connection from either input pin to board power/GND." (at 170 258 0) (effects (font (size 0.9 0.9)) (justify left top) ) (uuid "fff25c39-f4f5-57fe-bab5-365537bbdfc6"))
+(text "GP15: OPEN-DRAIN shutdown; LOW clears RUN_LATCH. Never drive HW_FAULT_N push-pull HIGH." (at 15 276 0) (effects (font (size 1.0 1.0)) (justify left top) ) (uuid "04a038d2-0a0b-53d8-90bb-53929b0dfa9b"))(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (page "5"))) (embedded_fonts no)
+(wire (pts (xy 62.23 107.95) (xy 57.15 107.95)) (stroke (width 0) (type default)) (uuid "007d2eef-c648-5ee4-b4cb-94ad44e93d2a"))
+(global_label "RUN_SET" (shape passive) (at 57.15 107.95 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "31b0cce7-9f50-5e7b-af10-6d8e7023b8e6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 107.95 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(text "ON performs configuration and a single RUN_SET pulse.\nOFF and faults clear the run latch; recovery needs a new ON.\nGP10 output: RUN_SET. GP5 input: RUN_LATCH.\nNo manual ARM control or dedicated ARM indicators." (at 160 147 0) (effects (font (size 1.1 1.1)) (justify left top) ) (uuid "c7cbe1f8-bdfd-5f64-884f-6dc15303a7ec")))

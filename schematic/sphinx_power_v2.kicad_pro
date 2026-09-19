@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "filename": "sphinx_power_v2.kicad_pro",
+    "version": 1
+  },
+  "schematic": {
+    "annotate_start_num": 0,
+    "drawing": {
+      "default_line_thickness": 6,
+      "default_text_size": 50
+    },
+    "meta": {
+      "version": 1
+    }
+  },
+  "erc": {
+    "erc_exclusions": [],
+    "meta": {
+      "version": 0
+    },
+    "pin_map": [],
+    "rule_severities": {}
+  },
+  "net_settings": {
+    "classes": [
+      {
+        "name": "Default",
+        "clearance": 0.2,
+        "track_width": 0.25,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "name": "CorePower",
+        "clearance": 0.25,
+        "track_width": 2.0,
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "name": "KelvinSense",
+        "clearance": 0.2,
+        "track_width": 0.2,
+        "via_diameter": 0.5,
+        "via_drill": 0.25
+      }
+    ],
+    "netclass_patterns": [
+      {
+        "netclass": "CorePower",
+        "pattern": "0V75"
+      },
+      {
+        "netclass": "CorePower",
+        "pattern": "CORE_PRE_SHUNT"
+      },
+      {
+        "netclass": "KelvinSense",
+        "pattern": "CORE_SENSE_*"
+      }
+    ],
+    "meta": {
+      "version": 4
+    }
+  }
+}

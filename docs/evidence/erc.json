@@ -1,0 +1,77 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-19T03:48:18",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02",
+            "violations": []
+        },
+        {
+            "path": "/Protected input and auxiliary supply/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/3327f699-d727-53bb-b8ba-2166e7eea231",
+            "violations": []
+        },
+        {
+            "path": "/PMBus core regulator, 0.30-1.20 V/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/1dc295be-dbf0-5a79-bf0b-3353433b41ed",
+            "violations": []
+        },
+        {
+            "path": "/Fixed 1.8 V I/O and calibrated telemetry/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/396d387d-800b-5ee0-a374-8362af726b6a",
+            "violations": []
+        },
+        {
+            "path": "/USB control and remote reset/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35",
+            "violations": []
+        },
+        {
+            "path": "/Fault shutdown latch and power-qualified reset/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de",
+            "violations": []
+        },
+        {
+            "path": "/Socket pinout and signal interfaces/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/d57f165e-6d05-5f9f-9c4a-9dc401e097b2",
+            "violations": []
+        },
+        {
+            "path": "/Distributed core decoupling and test access/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/7aee8762-0c12-54e1-88b6-7ccb4b040077",
+            "violations": []
+        },
+        {
+            "path": "/I/O decoupling and undervoltage reset interlock/",
+            "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/36761b75-2b3e-5b16-bc66-e4b7245270a9",
+            "violations": []
+        }
+    ],
+    "source": "sphinx_power_v2.kicad_sch"
+}

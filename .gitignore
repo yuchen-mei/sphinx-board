@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+*.kicad_prl
+*.kicad_sch.lck
+*.kicad_pcb.lck
+*.lck
+~*.lck
+*-backups/
+*.bak
+*.zip
+*.pyc
+__pycache__/
+.history/
+output/
+.cache/
+.vscode/
+.idea/

@@ -1,0 +1,447 @@
+{
+  "review": "Current V2 hardware control electrical contract and BOM audit",
+  "generated_at_utc": "2026-09-19T10:53:32.165271+00:00",
+  "result": "PASS",
+  "reproduce": "python3 tools/verify_control_connectivity.py",
+  "current": {
+    "path": "schematic/exports/sphinx_power_v2.net.xml",
+    "sha256": "5408dd33b4aec6c27b180128e6693e8039145f7b041c027542cdb8ffb73db9aa",
+    "components": 219,
+    "nets": 119
+  },
+  "connectivity": {
+    "netlist_pins": 703,
+    "contract_pins_checked": 156,
+    "full_control_pin_contract": {
+      "C306": {
+        "1": "VIN12",
+        "2": "IO_EN_INHIBIT"
+      },
+      "C307": {
+        "1": "IO_EN",
+        "2": "GND"
+      },
+      "C506": {
+        "1": "3V3_CTRL",
+        "2": "GND"
+      },
+      "J1": {
+        "54": "reset"
+      },
+      "J602": {
+        "1": "ZED_3V3",
+        "2": "ZED_RESET_OD"
+      },
+      "Q301": {
+        "1": "IO_EN_CTRL",
+        "2": "GND",
+        "3": "IO_EN_PULLDOWN"
+      },
+      "Q302": {
+        "1": "IO_EN_INHIBIT",
+        "2": "GND",
+        "3": "IO_EN"
+      },
+      "Q601": {
+        "1": "RESET_BASE",
+        "2": "GND",
+        "3": "reset"
+      },
+      "R210": {
+        "1": "CORE_EN",
+        "2": "GND"
+      },
+      "R211": {
+        "1": "3V3_CTRL",
+        "2": "CORE_PG"
+      },
+      "R303": {
+        "1": "IO_EN",
+        "2": "GND"
+      },
+      "R305": {
+        "1": "VIN12",
+        "2": "IO_EN"
+      },
+      "R306": {
+        "1": "VIN12",
+        "2": "IO_EN_INHIBIT"
+      },
+      "R307": {
+        "1": "IO_EN_CTRL",
+        "2": "GND"
+      },
+      "R308": {
+        "1": "IO_EN_INHIBIT",
+        "2": "IO_EN_PULLDOWN"
+      },
+      "R411": {
+        "1": "RESET_RELEASE",
+        "2": "GND"
+      },
+      "R503": {
+        "1": "0V75",
+        "2": "CORE_OV_SENSE"
+      },
+      "R504": {
+        "1": "CORE_OV_SENSE",
+        "2": "GND"
+      },
+      "R506": {
+        "1": "3V3_CTRL",
+        "2": "HW_FAULT_N"
+      },
+      "R507": {
+        "1": "RUN_SET",
+        "2": "GND"
+      },
+      "R509": {
+        "1": "CORE_REQ",
+        "2": "GND"
+      },
+      "R510": {
+        "1": "IO_REQ",
+        "2": "GND"
+      },
+      "R511": {
+        "1": "1V8",
+        "2": "IO_UV_SENSE"
+      },
+      "R512": {
+        "1": "IO_UV_SENSE",
+        "2": "GND"
+      },
+      "R513": {
+        "1": "3V3_CTRL",
+        "2": "IO_VALID"
+      },
+      "R514": {
+        "1": "VIN12",
+        "2": "VIN12_UV_SENSE"
+      },
+      "R515": {
+        "1": "VIN12_UV_SENSE",
+        "2": "GND"
+      },
+      "R602": {
+        "1": "1V8",
+        "2": "reset"
+      },
+      "R603": {
+        "1": "RESET_RELEASE_OK",
+        "2": "RESET_BASE"
+      },
+      "R604": {
+        "1": "RESET_BASE",
+        "2": "GND"
+      },
+      "R605": {
+        "1": "ZED_3V3",
+        "2": "ZED_OPTO_A"
+      },
+      "SW502": {
+        "1": "HW_FAULT_N",
+        "2": "GND"
+      },
+      "SW601": {
+        "1": "RESET_BASE",
+        "2": "GND"
+      },
+      "U101": {
+        "1": "INPUT_UVLO",
+        "2": "INPUT_OVLO",
+        "3": "unconnected-(U101-AUXOFF-Pad3)",
+        "4": "HW_FAULT_N",
+        "5": "VIN_FUSED",
+        "6": "VIN12",
+        "7": "INPUT_DVDT",
+        "8": "GND",
+        "9": "INPUT_ILM",
+        "10": "unconnected-(U101-ITIMER-Pad10)"
+      },
+      "U201": {
+        "1": "CORE_PG",
+        "27": "CORE_EN",
+        "33": "CORE_SENSE_P",
+        "34": "CORE_SENSE_N"
+      },
+      "U301": {
+        "13": "IO_EN",
+        "14": "1V8"
+      },
+      "U401": {
+        "4": "CORE_REQ",
+        "5": "IO_REQ",
+        "6": "RESET_RELEASE",
+        "7": "RUN_LATCH",
+        "9": "CORE_PG",
+        "10": "IO_VALID",
+        "11": "HW_FAULT_N",
+        "14": "RUN_SET",
+        "20": "HW_FAULT_N",
+        "36": "3V3_CTRL"
+      },
+      "U501": {
+        "1": "HW_FAULT_N",
+        "2": "GND",
+        "3": "REF1V242",
+        "4": "CORE_OV_SENSE",
+        "5": "REF1V242",
+        "6": "3V3_CTRL"
+      },
+      "U502": {
+        "1": "HW_FAULT_N",
+        "2": "GND",
+        "3": "3V3_CTRL",
+        "4": "unconnected-(U502-CT-Pad4)",
+        "5": "3V3_CTRL",
+        "6": "3V3_CTRL"
+      },
+      "U503": {
+        "1": "RUN_SET_CLEAN",
+        "2": "3V3_CTRL",
+        "3": "unconnected-(U503-Q_N-Pad3)",
+        "4": "GND",
+        "5": "RUN_LATCH",
+        "6": "HW_CLEAR_N",
+        "7": "3V3_CTRL",
+        "8": "3V3_CTRL"
+      },
+      "U504": {
+        "1": "RUN_LATCH",
+        "2": "CORE_REQ",
+        "3": "CORE_EN",
+        "4": "RUN_LATCH",
+        "5": "IO_REQ",
+        "6": "IO_EN_CTRL",
+        "7": "GND",
+        "8": "RESET_PERMIT",
+        "9": "RUN_LATCH",
+        "10": "RESET_RELEASE",
+        "11": "unconnected-(U504-4Y-Pad11)",
+        "12": "GND",
+        "13": "GND",
+        "14": "3V3_CTRL"
+      },
+      "U506": {
+        "1": "CORE_PG",
+        "2": "GND",
+        "3": "IO_VALID",
+        "4": "RESET_RELEASE_OK",
+        "5": "3V3_CTRL",
+        "6": "RESET_PERMIT"
+      },
+      "U507": {
+        "1": "RUN_SET",
+        "2": "GND",
+        "3": "HW_FAULT_N",
+        "4": "HW_CLEAR_N",
+        "5": "3V3_CTRL",
+        "6": "RUN_SET_CLEAN"
+      },
+      "U508": {
+        "1": "IO_VALID",
+        "2": "GND",
+        "3": "IO_UV_SENSE",
+        "4": "IO_UV_REF",
+        "5": "IO_UV_REF",
+        "6": "3V3_CTRL"
+      },
+      "U509": {
+        "1": "HW_FAULT_N",
+        "2": "GND",
+        "3": "VIN12_UV_SENSE",
+        "4": "VIN12_UV_REF",
+        "5": "VIN12_UV_REF",
+        "6": "3V3_CTRL"
+      },
+      "U601": {
+        "1": "ZED_OPTO_A",
+        "2": "ZED_RESET_OD",
+        "3": "GND",
+        "4": "RESET_BASE"
+      }
+    },
+    "exact_net_membership_checked": [
+      "RUN_SET",
+      "RUN_SET_CLEAN",
+      "RUN_LATCH",
+      "HW_FAULT_N",
+      "HW_CLEAR_N",
+      "CORE_EN",
+      "CORE_REQ",
+      "IO_REQ",
+      "IO_EN_CTRL",
+      "IO_EN",
+      "IO_EN_PULLDOWN",
+      "IO_EN_INHIBIT",
+      "RESET_PERMIT",
+      "RESET_RELEASE",
+      "RESET_RELEASE_OK",
+      "RESET_BASE",
+      "ZED_OPTO_A",
+      "ZED_3V3",
+      "ZED_RESET_OD",
+      "reset",
+      "CORE_PG",
+      "IO_VALID",
+      "CORE_OV_SENSE",
+      "VIN12_UV_SENSE",
+      "IO_UV_SENSE"
+    ],
+    "pin_differences": [],
+    "net_member_differences": [],
+    "scope": "Fault detectors, STOP, hardware clear, run-set pulse, run latch, all enable/reset gates, I/O-enable interface, local/remote reset, and controller interfaces."
+  },
+  "U504": {
+    "manufacturer": "Diodes Incorporated",
+    "mpn": "74LVC08AT14-13",
+    "package": "TSSOP-14; 4.4 x 5 mm body; 0.65 mm pitch",
+    "datasheet": "https://www.diodes.com/datasheet/download/74LVC08A.pdf",
+    "datasheet_revision": "DS35261 Rev. 4-2, September 2023",
+    "source_checked_on": "2026-09-19",
+    "datasheet_pages": {
+      "pinmap": 2,
+      "drive_and_Ioff": 4,
+      "ordering": 7,
+      "package": 8
+    },
+    "physical_pinmap": {
+      "1": {
+        "function": "1A",
+        "net": "RUN_LATCH",
+        "type": "input"
+      },
+      "2": {
+        "function": "1B",
+        "net": "CORE_REQ",
+        "type": "input"
+      },
+      "3": {
+        "function": "1Y",
+        "net": "CORE_EN",
+        "type": "output"
+      },
+      "4": {
+        "function": "2A",
+        "net": "RUN_LATCH",
+        "type": "input"
+      },
+      "5": {
+        "function": "2B",
+        "net": "IO_REQ",
+        "type": "input"
+      },
+      "6": {
+        "function": "2Y",
+        "net": "IO_EN_CTRL",
+        "type": "output"
+      },
+      "7": {
+        "function": "GND",
+        "net": "GND",
+        "type": "power_in"
+      },
+      "8": {
+        "function": "3Y",
+        "net": "RESET_PERMIT",
+        "type": "output"
+      },
+      "9": {
+        "function": "3A",
+        "net": "RUN_LATCH",
+        "type": "input"
+      },
+      "10": {
+        "function": "3B",
+        "net": "RESET_RELEASE",
+        "type": "input"
+      },
+      "11": {
+        "function": "4Y",
+        "net": "unconnected-(U504-4Y-Pad11)",
+        "type": "output+no_connect"
+      },
+      "12": {
+        "function": "4A",
+        "net": "GND",
+        "type": "input"
+      },
+      "13": {
+        "function": "4B",
+        "net": "GND",
+        "type": "input"
+      },
+      "14": {
+        "function": "VCC",
+        "net": "3V3_CTRL",
+        "type": "power_in"
+      }
+    },
+    "physical_pin_differences": [],
+    "drive_assessment": "R307 load <=3.6/(270*0.99)=13.47 mA. At VCC=3 V, the conservative 24 mA drive row specifies VOH >=2.2 V through 85 C and >=2.0 V through 125 C, above Q301's 1.8 V gate-drive test point. This does not establish full-temperature MOSFET or transient performance.",
+    "power_off_assessment": "At VCC=0 and VI/VO=0..3.6 V, Ioff <=10 uA through 85 C and <=20 uA through 125 C. Existing output pull-downs remain. This is not a brownout or board-transient guarantee."
+  },
+  "fault_behavior": {
+    "assessment": "STOP and hardware-fault detectors clear U503 asynchronously through U507. Fault recovery creates no RUN_SET rising edge and therefore does not set the latch by itself.",
+    "firmware_condition": "No automatic RUN_SET pulses after a fault, boot or reconnect; a fresh ON request is required. A faulty controller can issue another pulse, so the circuit is not an independent prohibition of all controller-initiated restarts.",
+    "reset_qualifier_limit": "CORE_PG and IO_VALID are combinational reset qualifiers; their recovery is not latched by U503."
+  },
+  "bom": {
+    "catalog_path": "schematic/bom/parts_catalog.json",
+    "catalog_sha256": "f7717c7677199c2ae28277394a59537004aca6b60970f6865db39cca00653d5c",
+    "buy_list_path": "schematic/bom/BUY_LIST.csv",
+    "buy_list_sha256": "142415993e41fbf8c50586f78f8ac6d5693b54cfc4ad2e7791536b65f5306655",
+    "catalog_order_lines": 70,
+    "csv_order_lines": 70,
+    "purchased_component_references": 208,
+    "nonpurchase_references": [
+      "NT601",
+      "NT602",
+      "TP4",
+      "TP607",
+      "TP7",
+      "TP801",
+      "TP802",
+      "TP803",
+      "TP804",
+      "TP805",
+      "TP806"
+    ],
+    "mpn_references_checked": 208,
+    "alignment_differences": []
+  },
+  "erc": {
+    "path": "docs/evidence/erc.json",
+    "sha256": "11077382dc18b6d8008a8be57aac1264d3295f4b4482a9a2ad7fe213e34e3365",
+    "reported_violations": 0,
+    "reported_date": "2026-09-19T03:48:18",
+    "ignored_checks": [
+      {
+        "description": "Global label only appears once in the schematic",
+        "key": "single_global_label"
+      },
+      {
+        "description": "Four connection points are joined together",
+        "key": "four_way_junction"
+      },
+      {
+        "description": "SPICE model issue",
+        "key": "simulation_model_issue"
+      },
+      {
+        "description": "Assigned footprint doesn't match footprint filters",
+        "key": "footprint_filter"
+      }
+    ],
+    "regenerated_by_this_script": false
+  },
+  "physical_tests_performed": false,
+  "firmware_tests_performed_by_this_script": false,
+  "limitations": [
+    "No board measurements, analog simulation, thermal qualification, or real-device firmware execution.",
+    "The script checks exported XML and existing ERC evidence; regenerate both after schematic edits. Firmware tests and visual review are separate checks.",
+    "Datasheet drive and power-off review is recorded here; no network or stock check is performed by this script."
+  ],
+  "errors": []
+}

@@ -1,0 +1,12 @@
+*.kicad_sch text eol=lf
+*.kicad_pro text eol=lf
+*.kicad_sym text eol=lf
+*.kicad_mod text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.pdf binary
+*.png binary
+*.xlsx binary
+*.csv -text whitespace=cr-at-eol
+docs/evidence/*.txt -whitespace

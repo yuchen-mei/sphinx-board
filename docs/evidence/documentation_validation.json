@@ -1,0 +1,16 @@
+{
+  "checked_on": "2026-09-19",
+  "project": "Sphinx V2",
+  "scope": "Current schematic, component catalog, documentation and PDF consistency",
+  "erc_violations": 0,
+  "netlisted_components": 219,
+  "nets": 119,
+  "netlisted_pin_connections": 703,
+  "pdf_pages": 9,
+  "pdf_visual_review": "All nine pages reviewed; control and fault-latch pages inspected individually.",
+  "controller_test_count": 25,
+  "controller_tests": "Passed host simulation; companion source and test report are in workspace/controller.",
+  "documentation_language": "English",
+  "physical_board_measurements_performed": false,
+  "verification_scope": "ERC and exported-net connectivity do not establish analog timing, PCB layout or assembled-board behavior."
+}

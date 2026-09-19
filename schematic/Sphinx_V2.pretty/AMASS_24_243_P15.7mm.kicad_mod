@@ -1,0 +1,174 @@
+(footprint "AMASS_24_243_P15.7mm"
+  (version 20260206)
+  (generator "pcbnew")
+  (layer "F.Cu")
+  (property "Reference" "REF**"
+    (at -0.3 -9 0)
+    (unlocked yes)
+    (layer "F.SilkS")
+    (hide yes)
+    (uuid "5274a53f-23bf-4504-8cf9-09a17a96f01f")
+    (effects
+      (font
+        (face "KiCad Font")
+        (size 1 1)
+        (thickness 0.2))))
+  (property "Value" "24.243.x"
+    (at 0.275 22.775 0)
+    (unlocked yes)
+    (layer "F.Fab")
+    (uuid "496f7ea1-025b-4bbb-964e-e1fea56ae478")
+    (effects
+      (font
+        (size 1 1)
+        (thickness 0.15))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (uuid "79aa6a9a-1df5-4394-8f93-1d42e91bf30d")
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Single-pole4mm banana socket; both solder legs electrically common"
+    (at 0 0 0)
+    (layer "F.Fab")
+    (hide yes)
+    (uuid "afa2267c-cf26-4502-bd1d-bb49526dce63")
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (units
+    (unit
+      (name "A")
+      (pins "1" "2")))
+  (attr through_hole)
+  (duplicate_pad_numbers_are_jumpers no)
+  (fp_line
+    (start -5.7737 -3.627)
+    (end -5.7737 20.63)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS")
+    (uuid "44dddf95-7f01-4fe1-9b89-1a00c9391084"))
+  (fp_line
+    (start -5.7737 20.63)
+    (end 5.1737 20.63)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS")
+    (uuid "b8769efd-f7a4-4cf6-a863-d1fdab8a465d"))
+  (fp_line
+    (start 5.1737 -3.627)
+    (end -5.7737 -3.627)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS")
+    (uuid "4cae4657-5321-4de2-bba3-c77a2918f311"))
+  (fp_line
+    (start 5.1737 20.63)
+    (end 5.1737 -3.627)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.SilkS")
+    (uuid "a76fb41b-b3a1-4254-a1db-4903e95d6de3"))
+  (fp_line
+    (start -5.9007 -3.754)
+    (end -5.9007 20.757)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.CrtYd")
+    (uuid "49506947-3c4f-41b1-9812-d93cdf0a6e1f"))
+  (fp_line
+    (start -5.9007 20.757)
+    (end 5.3007 20.757)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.CrtYd")
+    (uuid "dccdefbe-fd9f-4bb9-bcaf-843edcef29f8"))
+  (fp_line
+    (start 5.3007 -3.754)
+    (end -5.9007 -3.754)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.CrtYd")
+    (uuid "5a309200-ff6d-4eac-b5e1-145567411c3d"))
+  (fp_line
+    (start 5.3007 20.757)
+    (end 5.3007 -3.754)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (layer "F.CrtYd")
+    (uuid "eba1c04f-43da-4c48-89cc-dcfef2291c82"))
+  (fp_line
+    (start -5.6467 -3.5)
+    (end -5.6467 20.503)
+    (stroke
+      (width 0.0254)
+      (type solid))
+    (layer "F.Fab")
+    (uuid "2a6bda0a-d29c-4794-b9d5-32a460838a4b"))
+  (fp_line
+    (start -5.6467 20.503)
+    (end 5.0467 20.503)
+    (stroke
+      (width 0.0254)
+      (type solid))
+    (layer "F.Fab")
+    (uuid "333710bc-6b81-4649-941c-784484f5cb0f"))
+  (fp_line
+    (start 5.0467 -3.5)
+    (end -5.6467 -3.5)
+    (stroke
+      (width 0.0254)
+      (type solid))
+    (layer "F.Fab")
+    (uuid "faa166e6-e1bf-48e9-be46-9c9ffb995e48"))
+  (fp_line
+    (start 5.0467 20.503)
+    (end 5.0467 -3.5)
+    (stroke
+      (width 0.0254)
+      (type solid))
+    (layer "F.Fab")
+    (uuid "ceefadce-3360-4887-bb1e-3f2f90434396"))
+  (fp_circle
+    (center 0 -1.905)
+    (end 0.381 -1.905)
+    (stroke
+      (width 0.508)
+      (type solid))
+    (fill no)
+    (layer "F.Fab")
+    (uuid "ef6cf932-12bf-4375-bcf3-744efa458517"))
+  (fp_text user "${REFERENCE}"
+    (at 0.275 24.775 0)
+    (unlocked yes)
+    (layer "F.Fab")
+    (uuid "c6726bfe-039e-41c2-95ba-c3b5040512ce")
+    (effects
+      (font
+        (face "KiCad Font")
+        (size 1 1)
+        (thickness 0.2))))
+  (pad "1" thru_hole circle
+    (at 0 0)
+    (size 3.5 3.5)
+    (drill 2.5)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no))
+  (pad "2" thru_hole circle
+    (at 0 15.7)
+    (size 3.5 3.5)
+    (drill 2.5)
+    (layers "*.Cu" "*.Mask")
+    (remove_unused_layers no))
+  (descr "AMASS 24.243.x; original-board geometry with pitch corrected to15.7mm per VER2.0. Hole2.5mm and body outline require physical/vendor fit check before fabrication."))
