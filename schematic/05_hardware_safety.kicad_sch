@@ -1,6 +1,6 @@
 (kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0")
         (uuid "95ce739b-4eee-5f42-a669-179a7d0060de") (paper "A3")
-        (title_block (title "05 | Fault shutdown latch and power-qualified reset") (date "2026-09-19") (rev "V2")
+        (title_block (title "05 | Hardware power shutdown latch") (date "2026-09-20") (rev "V2")
         (company "Sphinx | Programmable power test board")
         (comment 1 "Review package: PCB, PI, SI, thermal and ASIC limits require qualification")
         (comment 2 "12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V")
@@ -553,8 +553,8 @@
 (pin open_collector line (at 17.78 0 180) (length 5.08)  (name "RESET_N" (effects (font (size 1 1))  )) (number "1" (effects (font (size 0.9 0.9))  )))
 (pin power_in line (at 17.78 -10.16 180) (length 5.08)  (name "GND" (effects (font (size 1 1))  )) (number "2" (effects (font (size 0.9 0.9))  )))
 )))
-        (text "ON sets the run latch automatically. STOP or a hardware fault clears it; recovery requires a new ON command." (at 15 15 0) (effects (font (size 1.65 1.65)) (justify left top) ) (uuid "655445f8-5cc1-521f-9786-cc602597f84e"))
-(text "No manual ARM step. Core OVP, VIN12 loss, eFuse fault and control brownout still shut down both rails in hardware." (at 15 23 0) (effects (font (size 1.15 1.15)) (justify left top) ) (uuid "7077fdbb-d2e1-58ba-82ca-7e486944a97b"))
+        (text "ON sets the run latch. STOP, damage-risk faults or control brownout clear it; recovery requires a new ON command." (at 15 15 0) (effects (font (size 1.65 1.65)) (justify left top) ) (uuid "655445f8-5cc1-521f-9786-cc602597f84e"))
+(text "Core OVP and eFuse FLT retain hardware shutdown. VIN12_VALID, CORE_PG and IO_VALID are monitor-only." (at 15 23 0) (effects (font (size 1.15 1.15)) (justify left top) ) (uuid "7077fdbb-d2e1-58ba-82ca-7e486944a97b"))
 (symbol (lib_id "Sphinx_V2:TLV3011") (at 72.39 69.85 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "3213d0c9-6ecf-5976-b455-412d9b7c439b")
 (property "Reference" "U501" (at 72.39 43.53 0) (effects (font (size 1.0 1.0))  ))
 (property "Value" "TLV3011AIDBVR" (at 72.39 46.03 0) (effects (font (size 1.0 1.0))  ))
@@ -740,7 +740,7 @@
 (property "Footprint" "Sphinx_V2:Package_SO__TSSOP-14_4.4x5mm_P0.65mm" (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "Datasheet" "https://www.diodes.com/datasheet/download/74LVC08A.pdf" (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "MPN" "74LVC08AT14-13" (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Description" "Quad AND; three channels gate Core, I/O and reset with RUN_LATCH. Fourth channel inputs grounded, output NC. IO_EN_CTRL drives Q301 gate only; decouple with C506." (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Quad AND; two channels gate Core and I/O with RUN_LATCH. Third and fourth channel inputs grounded, outputs NC. IO_EN_CTRL drives Q301 gate only; decouple with C506." (at 91.44 213.36 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (pin "1" (uuid "7433e3d3-b297-5b3a-bf48-0634b6d2bb69"))
 (pin "2" (uuid "92c5fe8f-083a-5103-99b4-8f7416c9bc78"))
 (pin "3" (uuid "43f105b8-dfa1-57fe-a4f5-5ef1bea998e5"))
@@ -769,11 +769,11 @@
 (wire (pts (xy 114.3 205.74) (xy 119.38 205.74)) (stroke (width 0) (type default)) (uuid "c443a431-2a34-5795-a640-eb771c89cf33"))
 (global_label "IO_EN_CTRL" (shape passive) (at 119.38 205.74 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "73fb6edb-b310-5560-b180-c97f80965fe4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 205.74 0) (effects (font (size 0.8 0.8))  (hide yes))))
 (wire (pts (xy 68.58 218.44) (xy 63.5 218.44)) (stroke (width 0) (type default)) (uuid "683a6b67-272e-5595-b7f2-c1cecdf7caa5"))
-(global_label "RUN_LATCH" (shape passive) (at 63.5 218.44 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "d0f4481e-d289-5360-8d8b-b336a342c82a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 218.44 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(global_label "GND" (shape passive) (at 63.5 218.44 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "d0f4481e-d289-5360-8d8b-b336a342c82a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 218.44 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (wire (pts (xy 68.58 223.52) (xy 63.5 223.52)) (stroke (width 0) (type default)) (uuid "bd756c1c-c4bc-529f-b341-722f6f390cfa"))
-(global_label "RESET_RELEASE" (shape passive) (at 63.5 223.52 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "e745ab67-7695-5cb8-8f8d-4fd44eefde98") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 223.52 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 114.3 220.98) (xy 119.38 220.98)) (stroke (width 0) (type default)) (uuid "91ed999c-4167-58d7-ab19-22ede3cf5296"))
-(global_label "RESET_PERMIT" (shape passive) (at 119.38 220.98 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "e7dbe480-72cf-5974-9b0e-13791bd4bf03") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 220.98 0) (effects (font (size 0.8 0.8))  (hide yes))))
+(global_label "GND" (shape passive) (at 63.5 223.52 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "e745ab67-7695-5cb8-8f8d-4fd44eefde98") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 223.52 180) (effects (font (size 0.8 0.8))  (hide yes))))
+
+
 (wire (pts (xy 68.58 233.68) (xy 63.5 233.68)) (stroke (width 0) (type default)) (uuid "be97df3e-c1e9-5305-acc8-21d3f2129356"))
 (global_label "GND" (shape passive) (at 63.5 233.68 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b9065b7b-f48d-5f37-876c-a70b88790ba7") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 63.5 233.68 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (wire (pts (xy 68.58 238.76) (xy 63.5 238.76)) (stroke (width 0) (type default)) (uuid "0a98845f-a152-523f-972b-cc2a37ad37b9"))
@@ -783,32 +783,19 @@
 (global_label "3V3_CTRL" (shape passive) (at 119.38 180.34 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "b75bb9a8-e137-5049-8242-fe5f04e40a23") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 180.34 0) (effects (font (size 0.8 0.8))  (hide yes))))
 (wire (pts (xy 114.3 246.38) (xy 119.38 246.38)) (stroke (width 0) (type default)) (uuid "6eba354b-6ae2-560f-ba30-128e971463b2"))
 (global_label "GND" (shape passive) (at 119.38 246.38 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "a560b7af-a5e5-589b-aa9e-d8b478bada66") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 246.38 0) (effects (font (size 0.8 0.8))  (hide yes))))
-(symbol (lib_id "Sphinx_V2:74xGxx__74LVC1G11") (at 256.54 228.6 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "64a9dd6b-23fa-5075-9fc3-2d3083fbf6d8")
-(property "Reference" "U506" (at 266.54 218.6 0) (effects (font (size 1.0 1.0)) (justify left) ))
-(property "Value" "SN74LVC1G11DCKR" (at 266.54 221.1 0) (effects (font (size 1.0 1.0)) (justify left) ))
-(property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-363_SC-70-6" (at 256.54 228.6 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Datasheet" "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf" (at 256.54 228.6 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "MPN" "SN74LVC1G11DCKR" (at 256.54 228.6 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Description" "1.65-5.5V single 3-input AND; DCK SC70-6" (at 256.54 228.6 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(pin "1" (uuid "0380c69a-0ffa-5090-9d2b-205beaa09c78"))
-(pin "2" (uuid "bb6d307d-025d-5a17-a9d9-d104a75cbc58"))
-(pin "3" (uuid "6ef73002-8cbe-51b6-acea-d4dddb9f0a4f"))
-(pin "4" (uuid "be88f1e2-1074-5556-915f-f6f8b7b37fb6"))
-(pin "5" (uuid "7b6ff99c-9842-52c8-97d4-09cdf0e6bb37"))
-(pin "6" (uuid "18c3b13c-a280-50ff-90b6-114cb70b7203"))
-(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "U506") (unit 1)))) )
-(wire (pts (xy 241.3 228.6) (xy 236.22 228.6)) (stroke (width 0) (type default)) (uuid "354e8f5a-0891-5a0e-8c39-efeb0052695e"))
-(global_label "CORE_PG" (shape passive) (at 236.22 228.6 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "1864cdfc-a25b-58cd-8dfa-185bc10b049f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 228.6 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 256.54 238.76) (xy 256.54 243.84)) (stroke (width 0) (type default)) (uuid "55a6162d-fd1e-570b-96e4-f5ddcc52a60b"))
-(global_label "GND" (shape passive) (at 256.54 243.84 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "197428a6-df9a-53a7-892d-10d9576089ce") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 256.54 243.84 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 241.3 233.68) (xy 236.22 233.68)) (stroke (width 0) (type default)) (uuid "dc2b453d-2b24-5da9-8517-62c34620021c"))
-(global_label "IO_VALID" (shape passive) (at 236.22 233.68 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "baf7ed11-14e9-5f6a-81b8-1d87ecd4a6d8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 233.68 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 269.24 228.6) (xy 274.32 228.6)) (stroke (width 0) (type default)) (uuid "7854a941-b959-5de8-b82b-35b435462811"))
-(global_label "RESET_RELEASE_OK" (shape passive) (at 274.32 228.6 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "97010859-f42b-5931-bd79-73c3775e0600") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 274.32 228.6 0) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 256.54 218.44) (xy 256.54 213.36)) (stroke (width 0) (type default)) (uuid "3eebb0e3-1eaa-5fed-9b6a-f0a593416552"))
-(global_label "3V3_CTRL" (shape passive) (at 256.54 213.36 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b8e3cf59-8823-5cf4-b9e6-73c72e2d3516") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 256.54 213.36 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 241.3 223.52) (xy 236.22 223.52)) (stroke (width 0) (type default)) (uuid "8a7d7e53-eda4-5a05-bc2a-c2bf81b19fd6"))
-(global_label "RESET_PERMIT" (shape passive) (at 236.22 223.52 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "42cbf7cf-2280-51f1-8ccf-8ac0f6bc8cec") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 236.22 223.52 180) (effects (font (size 0.8 0.8))  (hide yes))))
+
+
+
+
+
+
+
+
+
+
+
+
+
 (symbol (lib_id "Sphinx_V2:Device__R") (at 353.06 231.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "9015e99e-25c0-5209-ac74-3ea44a630cc8")
 (property "Reference" "R509" (at 357.06 229.89 0) (effects (font (size 1.0 1.0)) (justify left) ))
 (property "Value" "100k" (at 357.06 232.39 0) (effects (font (size 1.0 1.0)) (justify left) ))
@@ -877,16 +864,7 @@
 (pin "1" (uuid "351fd116-45ec-5423-b0ba-baebd878b0aa"))
 (pin "2" (uuid "43b961d3-b209-57a7-8ed8-86d4674e775c"))
 (instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "C506") (unit 1)))) )
-(symbol (lib_id "Sphinx_V2:Device__C") (at 165.1 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "bf96e47c-433a-50ac-84a6-0ea29be01da7")
-(property "Reference" "C507" (at 169.1 269.26 0) (effects (font (size 1.0 1.0)) (justify left) ))
-(property "Value" "100n / 16V" (at 169.1 271.76 0) (effects (font (size 1.0 1.0)) (justify left) ))
-(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric" (at 165.1 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Datasheet" "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do" (at 165.1 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "MPN" "CL05B104KO5NNNC" (at 165.1 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Description" "100nF +/-10% 16V X7R 0402" (at 165.1 270.51 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(pin "1" (uuid "d12ddc83-07c9-5f84-b957-f4d5140e67c0"))
-(pin "2" (uuid "a35d863b-b3c5-59ed-a5da-24dcb2afd8e9"))
-(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (reference "C507") (unit 1)))) )
+
 (symbol (lib_id "Sphinx_V2:Device__C") (at 199.39 270.51 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "7190ddbf-7aeb-5a8c-892d-0c36171ba11e")
 (property "Reference" "C508" (at 203.39 269.26 0) (effects (font (size 1.0 1.0)) (justify left) ))
 (property "Value" "100n / 16V" (at 203.39 271.76 0) (effects (font (size 1.0 1.0)) (justify left) ))
@@ -906,8 +884,8 @@
 (junction (at 95.25 260.35) (diameter 0) (color 0 0 0 0) (uuid "b3a63cb3-af7e-545f-9ab6-39e612db650c"))
 (wire (pts (xy 129.54 266.7) (xy 129.54 260.35)) (stroke (width 0) (type default)) (uuid "7cb6963f-fd0c-5a0f-9975-b3445b2bb4e8"))
 (junction (at 129.54 260.35) (diameter 0) (color 0 0 0 0) (uuid "019bd2ed-625d-58cd-901a-2cbeb950c86b"))
-(wire (pts (xy 165.1 266.7) (xy 165.1 260.35)) (stroke (width 0) (type default)) (uuid "ba80019a-dcba-5183-995b-4e0f2986b760"))
-(junction (at 165.1 260.35) (diameter 0) (color 0 0 0 0) (uuid "8dc539f0-c0c3-5a8b-a980-5320bfb4598b"))
+
+
 (wire (pts (xy 199.39 266.7) (xy 199.39 260.35)) (stroke (width 0) (type default)) (uuid "d886a294-f713-5a79-907c-8d02cb2207ee"))
 (wire (pts (xy 25.4 280.67) (xy 199.39 280.67)) (stroke (width 0) (type default)) (uuid "ca10b392-1741-5a55-938e-55cb4189a521"))
 (global_label "GND" (shape passive) (at 25.4 280.67 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "6e03e0dc-f3c3-5a00-aaef-ebaa64f13088") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 25.4 280.67 180) (effects (font (size 0.8 0.8))  (hide yes))))
@@ -918,7 +896,11 @@
 (junction (at 95.25 280.67) (diameter 0) (color 0 0 0 0) (uuid "09cb00b4-e4d2-522a-af00-ad1e720aa09e"))
 (wire (pts (xy 129.54 274.32) (xy 129.54 280.67)) (stroke (width 0) (type default)) (uuid "b1dc3774-4703-5d3a-80ea-4e743bbb7f5a"))
 (junction (at 129.54 280.67) (diameter 0) (color 0 0 0 0) (uuid "e5c7c229-fcd7-508c-aecf-8ead99244720"))
-(wire (pts (xy 165.1 274.32) (xy 165.1 280.67)) (stroke (width 0) (type default)) (uuid "b507820d-c3ed-5a45-88f7-01baefe143e2"))
-(junction (at 165.1 280.67) (diameter 0) (color 0 0 0 0) (uuid "b9618338-17cd-5c30-9413-c86f6d160ee2"))
+
+
 (wire (pts (xy 199.39 274.32) (xy 199.39 280.67)) (stroke (width 0) (type default)) (uuid "9a32cc00-c319-50a7-a433-7ef559d3b558"))
-(text "C502-U501; C503-U502; C504-U503.\nC506-U504; C507-U506; C508-U507.\nPlace each bypass capacitor at its IC." (at 215 250 0) (effects (font (size 0.9 0.9)) (justify left top) ) (uuid "941681dc-6d62-5e95-b868-7196cbb4ac58"))(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (page "6"))) (embedded_fonts no))
+(text "C502-U501; C503-U502; C504-U503.\nC506-U504; C508-U507.\nPlace each bypass capacitor at its IC." (at 215 250 0) (effects (font (size 0.9 0.9)) (justify left top) ) (uuid "941681dc-6d62-5e95-b868-7196cbb4ac58"))(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de" (page "6"))) (embedded_fonts no)
+(no_connect (at 114.3 220.98) (uuid "76607ec7-5538-430e-a06e-6d68e038f947"))
+
+(text "DUT reset is independent of RUN_LATCH and PG.\nAt valid 1.8V, reset defaults LOW (released).\nOnly SW601, U601 or Pico RESET_ASSERT assert reset." (at 210 208 0) (effects (font (size 1.0 1.0)) (justify left top)) (uuid "174c3666-985f-4490-af98-9569f89109fb"))
+)

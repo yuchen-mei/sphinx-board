@@ -1,7 +1,7 @@
 {
   "project": "Sphinx V2",
   "hardware_revision": "V2",
-  "updated_on": "2026-09-19",
+  "updated_on": "2026-09-20",
   "maintenance": "Update the current design in place.",
   "repository_scope": "Current KiCad schematic project, local libraries, BOM, exports, verification and design documentation",
   "new_pcb_included": false,
@@ -13,7 +13,7 @@
   "current_design_files": [
     {
       "path": "schematic/01_input_aux.kicad_sch",
-      "sha256": "0d16ff7ee4f8fde23152f28fbf0f9f659490617f52fb6f11cae8a14473ef3595"
+      "sha256": "ef517cfa1d284a4cef41036dd167dd9a463b8abc7a96098b7427e7381a84d759"
     },
     {
       "path": "schematic/02_core_regulator.kicad_sch",
@@ -21,19 +21,19 @@
     },
     {
       "path": "schematic/03_io_and_telemetry.kicad_sch",
-      "sha256": "2587125eb74c6fc8a722f30b14e6fbff6177ec6ddd83e2009d82b1367dfe56e4"
+      "sha256": "227f307cd751ee0e37c7aff660f1158c9f23c0b197b4af7cafa54927213b229a"
     },
     {
       "path": "schematic/04_usb_control.kicad_sch",
-      "sha256": "b950d5bf1054d08e7fccb16599e7db4b74258c9ca98f6434498773a1f9341af6"
+      "sha256": "0864a7ff21308e3ca47fea3cd2b59c4d13f9bb9558b21856e79d5dfb4bf2d2e6"
     },
     {
       "path": "schematic/05_hardware_safety.kicad_sch",
-      "sha256": "971eeeb1b3919a7e38c5e8043a924435893cc47fe9879a86747fcab3793196a0"
+      "sha256": "b11502ca8e37fa7e2428d1d5cc858089a6001e808409282cbb3949401614363d"
     },
     {
       "path": "schematic/06_socket_and_signals.kicad_sch",
-      "sha256": "5cde48270e3bcbdbb7f9ea8a02279e23131f90b31282bf00b03881c33655ec72"
+      "sha256": "25e15d7a5127405ff04e3c133fc55c9722eb48482d6679c4425155736e8dcb4a"
     },
     {
       "path": "schematic/07_core_decoupling.kicad_sch",
@@ -41,7 +41,7 @@
     },
     {
       "path": "schematic/08_io_decoupling.kicad_sch",
-      "sha256": "2f912f9573378c8a48a7bcea648fed951db02a21d9280efc2fc2c420fdf0935c"
+      "sha256": "9fde11466e83cd683ded388f239fe9c9b067ccea92cae5fd3d51322a4b6bfb47"
     },
     {
       "path": "schematic/Sphinx_V2.kicad_sym",
@@ -217,23 +217,23 @@
     },
     {
       "path": "schematic/bom/BUY_LIST.csv",
-      "sha256": "142415993e41fbf8c50586f78f8ac6d5693b54cfc4ad2e7791536b65f5306655"
+      "sha256": "86e6221e4c37f463b927ed26906e6bec2e59c78fc209a77b801286fa7f30ec5e"
     },
     {
       "path": "schematic/bom/component_list.csv",
-      "sha256": "11b2ac8a9ecb9e6723fa18d94aed1e56347c9a523e36c3eb4e4e5719a4dd2703"
+      "sha256": "55b154b3a6ffaf9d7c07ebfe0414c67d5a22e808152b60ccee1504bfbbb6dec5"
     },
     {
       "path": "schematic/bom/parts_catalog.json",
-      "sha256": "f7717c7677199c2ae28277394a59537004aca6b60970f6865db39cca00653d5c"
+      "sha256": "561b5db648c15066ec9b0e191b1d8faa88502946b4b31d37eda42f3403a21d93"
     },
     {
       "path": "schematic/exports/sphinx_power_v2.net.xml",
-      "sha256": "5408dd33b4aec6c27b180128e6693e8039145f7b041c027542cdb8ffb73db9aa"
+      "sha256": "f18db4235cdf11ca63ef6614f194fd8517d830ad70e96b1d3e77360231026d8d"
     },
     {
       "path": "schematic/exports/sphinx_power_v2.pdf",
-      "sha256": "14245cdc3e5366d69d70ecdd25406a2957f7470d00d47923a431a3777b145026"
+      "sha256": "e5e7a9aa9eb0aae3e9f4ab96a0a29bae64d7fe33bfa256a472406164d360ffa4"
     },
     {
       "path": "schematic/fp-lib-table",
@@ -245,11 +245,69 @@
     },
     {
       "path": "schematic/sphinx_power_v2.kicad_sch",
-      "sha256": "b22e2ff266de1a9e4133c27594f79b4f446d7a4b6125878ac89e2a6dc9204edf"
+      "sha256": "2a530464be29fdc19fa6fd46032a1a2dddc059ffa2be4d2e5abe02e35559917a"
     },
     {
       "path": "schematic/sym-lib-table",
       "sha256": "66fe5541a9b776a8ec3a4a45aef70110c8b2212cb4e51e8be5d0ed08816eb40a"
+    }
+  ],
+  "reviewed_documentation_and_checks": [
+    {
+      "path": "README.md",
+      "sha256": "ad9c5d06e07aef0596355eb0b7d287e6e704b8a2910c55679a9a9d139f833902"
+    },
+    {
+      "path": "docs/DESIGN.md",
+      "sha256": "31a68b1366fe00e6b69d4dd0222fbd28896d27c35f688b94c98e523c90cc1034"
+    },
+    {
+      "path": "docs/IO_ENABLE.md",
+      "sha256": "a567198a1faeecb9148ce4579a1b1bb3d70b4a54f01b64d33db3b05b232669e8"
+    },
+    {
+      "path": "docs/LAYOUT_HANDOFF.md",
+      "sha256": "514d9acd23887a6495de7ff068af0abe87a6c107f1df4c7120c877aa14b67891"
+    },
+    {
+      "path": "docs/POWER_CONFIGURATION.md",
+      "sha256": "c2ed5c323317462f7d03fff5c0a5732465fbb5c42a11968c8211d24248480fd1"
+    },
+    {
+      "path": "docs/README.md",
+      "sha256": "42a309d245c3f136e9a82c3759260d91effb8b210d6775bbe52bce2c663c8350"
+    },
+    {
+      "path": "docs/REFERENCES.md",
+      "sha256": "08ba8e63aba8f752aba95a3c8501fe76342d1105ec9a8e1c883b0df070d6944b"
+    },
+    {
+      "path": "docs/REQUIREMENTS.md",
+      "sha256": "436a119fef013be738d81800640f15779f1eaf4ffeee9b6c72d52963b121d876"
+    },
+    {
+      "path": "docs/RESET_AND_CONTROL.md",
+      "sha256": "9810296e22aeeff50dfe0d96ac0d06dcb958d948a17e81734f16a6868a0ba59f"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "sha256": "1cde091f46d5ee8463ea5ce50e3542ffc368708ee6aa12c9159abf0279bb845b"
+    },
+    {
+      "path": "tools/verify_control_connectivity.py",
+      "sha256": "0d2695a8d2c498b235a9751aff4e032c37d8f5f99fe36da3b31fec4415713e8c"
+    },
+    {
+      "path": "docs/evidence/documentation_validation.json",
+      "sha256": "fa5f05713b22041352789358cbc96fecb74549e770f54b9a27f1dc16be2d029c"
+    },
+    {
+      "path": "docs/evidence/erc.json",
+      "sha256": "54e97fbc97f63037c84b8f0f3f0ae2498385ae5b4ad662c21b1e012c930ef0c5"
+    },
+    {
+      "path": "docs/evidence/hardware_review.json",
+      "sha256": "a10ae30a9949f8be99422f3a38fdbee6670fa9382bac4772d080372be5c13184"
     }
   ]
 }

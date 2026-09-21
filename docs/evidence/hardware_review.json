@@ -1,16 +1,16 @@
 {
   "review": "Current V2 hardware control electrical contract and BOM audit",
-  "generated_at_utc": "2026-09-19T10:53:32.165271+00:00",
+  "generated_at_utc": "2026-09-20T08:37:23.121213+00:00",
   "result": "PASS",
   "reproduce": "python3 tools/verify_control_connectivity.py",
   "current": {
     "path": "schematic/exports/sphinx_power_v2.net.xml",
-    "sha256": "5408dd33b4aec6c27b180128e6693e8039145f7b041c027542cdb8ffb73db9aa",
+    "sha256": "f18db4235cdf11ca63ef6614f194fd8517d830ad70e96b1d3e77360231026d8d",
     "components": 219,
-    "nets": 119
+    "nets": 118
   },
   "connectivity": {
-    "netlist_pins": 703,
+    "netlist_pins": 700,
     "contract_pins_checked": 156,
     "full_control_pin_contract": {
       "C306": {
@@ -47,6 +47,11 @@
         "2": "GND",
         "3": "reset"
       },
+      "Q602": {
+        "1": "RESET_ASSERT",
+        "2": "GND",
+        "3": "RESET_BASE"
+      },
       "R210": {
         "1": "CORE_EN",
         "2": "GND"
@@ -76,7 +81,7 @@
         "2": "IO_EN_PULLDOWN"
       },
       "R411": {
-        "1": "RESET_RELEASE",
+        "1": "RESET_ASSERT",
         "2": "GND"
       },
       "R503": {
@@ -123,12 +128,16 @@
         "1": "VIN12_UV_SENSE",
         "2": "GND"
       },
+      "R516": {
+        "1": "3V3_CTRL",
+        "2": "VIN12_VALID"
+      },
       "R602": {
         "1": "1V8",
         "2": "reset"
       },
       "R603": {
-        "1": "RESET_RELEASE_OK",
+        "1": "1V8",
         "2": "RESET_BASE"
       },
       "R604": {
@@ -172,12 +181,13 @@
       "U401": {
         "4": "CORE_REQ",
         "5": "IO_REQ",
-        "6": "RESET_RELEASE",
+        "6": "RESET_ASSERT",
         "7": "RUN_LATCH",
         "9": "CORE_PG",
         "10": "IO_VALID",
         "11": "HW_FAULT_N",
         "14": "RUN_SET",
+        "16": "VIN12_VALID",
         "20": "HW_FAULT_N",
         "36": "3V3_CTRL"
       },
@@ -215,21 +225,13 @@
         "5": "IO_REQ",
         "6": "IO_EN_CTRL",
         "7": "GND",
-        "8": "RESET_PERMIT",
-        "9": "RUN_LATCH",
-        "10": "RESET_RELEASE",
+        "8": "unconnected-(U504-3Y-Pad8)",
+        "9": "GND",
+        "10": "GND",
         "11": "unconnected-(U504-4Y-Pad11)",
         "12": "GND",
         "13": "GND",
         "14": "3V3_CTRL"
-      },
-      "U506": {
-        "1": "CORE_PG",
-        "2": "GND",
-        "3": "IO_VALID",
-        "4": "RESET_RELEASE_OK",
-        "5": "3V3_CTRL",
-        "6": "RESET_PERMIT"
       },
       "U507": {
         "1": "RUN_SET",
@@ -248,7 +250,7 @@
         "6": "3V3_CTRL"
       },
       "U509": {
-        "1": "HW_FAULT_N",
+        "1": "VIN12_VALID",
         "2": "GND",
         "3": "VIN12_UV_SENSE",
         "4": "VIN12_UV_REF",
@@ -275,9 +277,8 @@
       "IO_EN",
       "IO_EN_PULLDOWN",
       "IO_EN_INHIBIT",
-      "RESET_PERMIT",
-      "RESET_RELEASE",
-      "RESET_RELEASE_OK",
+      "RESET_ASSERT",
+      "VIN12_VALID",
       "RESET_BASE",
       "ZED_OPTO_A",
       "ZED_3V3",
@@ -344,17 +345,17 @@
       },
       "8": {
         "function": "3Y",
-        "net": "RESET_PERMIT",
-        "type": "output"
+        "net": "unconnected-(U504-3Y-Pad8)",
+        "type": "output+no_connect"
       },
       "9": {
         "function": "3A",
-        "net": "RUN_LATCH",
+        "net": "GND",
         "type": "input"
       },
       "10": {
         "function": "3B",
-        "net": "RESET_RELEASE",
+        "net": "GND",
         "type": "input"
       },
       "11": {
@@ -385,15 +386,16 @@
   "fault_behavior": {
     "assessment": "STOP and hardware-fault detectors clear U503 asynchronously through U507. Fault recovery creates no RUN_SET rising edge and therefore does not set the latch by itself.",
     "firmware_condition": "No automatic RUN_SET pulses after a fault, boot or reconnect; a fresh ON request is required. A faulty controller can issue another pulse, so the circuit is not an independent prohibition of all controller-initiated restarts.",
-    "reset_qualifier_limit": "CORE_PG and IO_VALID are combinational reset qualifiers; their recovery is not latched by U503."
+    "reset_policy": "With valid VIO, reset is asserted only by SW601, U601, or Q602. R603 biases Q601 on from VIO by default. PG, VIN12_VALID, and RUN_LATCH do not qualify reset release.",
+    "input_loss_limit": "U509 reports VIN12_VALID only. Intrinsic eFuse UVLO/OVLO can recover without a new ON if control power and U503 remain valid; eFuse FLT or control brownout still clears U503."
   },
   "bom": {
     "catalog_path": "schematic/bom/parts_catalog.json",
-    "catalog_sha256": "f7717c7677199c2ae28277394a59537004aca6b60970f6865db39cca00653d5c",
+    "catalog_sha256": "561b5db648c15066ec9b0e191b1d8faa88502946b4b31d37eda42f3403a21d93",
     "buy_list_path": "schematic/bom/BUY_LIST.csv",
-    "buy_list_sha256": "142415993e41fbf8c50586f78f8ac6d5693b54cfc4ad2e7791536b65f5306655",
-    "catalog_order_lines": 70,
-    "csv_order_lines": 70,
+    "buy_list_sha256": "86e6221e4c37f463b927ed26906e6bec2e59c78fc209a77b801286fa7f30ec5e",
+    "catalog_order_lines": 69,
+    "csv_order_lines": 69,
     "purchased_component_references": 208,
     "nonpurchase_references": [
       "NT601",
@@ -413,9 +415,9 @@
   },
   "erc": {
     "path": "docs/evidence/erc.json",
-    "sha256": "11077382dc18b6d8008a8be57aac1264d3295f4b4482a9a2ad7fe213e34e3365",
+    "sha256": "54e97fbc97f63037c84b8f0f3f0ae2498385ae5b4ad662c21b1e012c930ef0c5",
     "reported_violations": 0,
-    "reported_date": "2026-09-19T03:48:18",
+    "reported_date": "2026-09-20T01:33:02",
     "ignored_checks": [
       {
         "description": "Global label only appears once in the schematic",

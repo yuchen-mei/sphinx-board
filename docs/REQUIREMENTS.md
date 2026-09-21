@@ -2,7 +2,7 @@
 
 ## Experiment
 
-The board supports characterization of a TSMC N7 ASIC across core voltage, clock frequency, and workload. Kernel execution lasts tens of thousands to hundreds of thousands of cycles. Power delivery must accommodate both the active load and the transitions at kernel start and completion.
+The board supports characterization of a TSMC N7 ASIC across core voltage, clock frequency, and workload. Functionality testing runs a kernel once and compares its output with the expected result. Power testing runs the kernel in a large back-to-back loop, waits for steady operation, and reads averaged voltage, current, and power. Power delivery must accommodate both the sustained load and the transitions at kernel start and completion.
 
 | Parameter | Requirement or experiment input |
 |---|---|
@@ -22,7 +22,9 @@ The adjustment range is a superset of the intended experimental operating points
 
 I/O voltage is fixed because the experiment does not require an I/O voltage sweep and the I/O load is small. The 1 A budget is provisioning, not a measured I/O consumption value.
 
-Minimize routine experiment steps: one `ON` command performs configuration checks and starts the supplies. Hardware faults must stop the supplies independently of software and must not automatically restart them when the fault clears. A new explicit `ON` command from the user or experiment script requests recovery.
+Minimize routine experiment steps: one `ON` command performs configuration checks and starts the supplies. Reset is a separate explicit user or experiment-script action. Ordinary power-good loss, undervoltage, voltage deviation, PMBus warnings, and a missing USB host heartbeat are recorded without resetting the DUT or stopping an ongoing experiment. These observations can be the intended result of voltage/frequency characterization.
+
+Retain protection against damaging overvoltage, overtemperature, and excessive current, together with explicit `OFF` and hardware STOP. A latched protective trip or STOP must not restart the supplies automatically when its cause clears; a new explicit `ON` requests recovery. Regulator/eFuse intrinsic undervoltage lockout and loss of control power remain physical operating constraints. An intrinsic input UVLO interruption can recover if the control supply and run latch remain valid; it is not an ASIC power-good interlock or an explicit reset request.
 
 ## Power delivery
 
@@ -34,7 +36,9 @@ The feedback endpoint is on the PCB. Socket contacts, bond wires, and the on-chi
 
 DUT reset is active high at 1.8 V. The clock must run during reset. Reset release is asynchronous; no clock-synchronized release is required by the experiment. Manual reset and remote reset use pulses with ample duration rather than a minimum-cycle pulse. No numerical minimum pulse width is specified.
 
-There is no experiment-specific requirement for the relative Core/I/O power sequence or inter-rail delay. The controller must maintain reset during power transitions and establish valid supplies and a running clock before completing the DUT reset procedure. Hardware reset on invalid power remains part of the design.
+There is no experiment-specific requirement for the relative Core/I/O power sequence or inter-rail delay. With valid VIO and no explicit reset request, the hardware holds DUT reset released, including when the Pico is unprogrammed or its GPIO is high impedance. Neither power-good signals, the run latch, voltage deviations, nor automatic power sequencing asserts reset. Reset is asserted only by the local button, remote optocoupler input, or an explicit Pico reset command. Its 1.8 V high level depends on VIO being present; behavior during a collapsing or absent VIO is not a guaranteed logic level.
+
+For an intentional DUT reset, establish the supplies and run the external clock, then explicitly assert and release reset. `ON`, `OFF`, and a voltage-range change do not insert a reset pulse. A range change that requires disabling the supplies can destroy DUT state; the experiment script decides when to reset and reload the kernel afterward.
 
 ## Thermal characterization
 

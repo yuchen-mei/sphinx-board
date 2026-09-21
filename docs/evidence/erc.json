@@ -1,7 +1,7 @@
 {
     "$schema": "https://schemas.kicad.org/erc.v1.json",
     "coordinate_units": "mm",
-    "date": "2026-09-19T03:48:18",
+    "date": "2026-09-20T01:33:02",
     "ignored_checks": [
         {
             "description": "Global label only appears once in the schematic",
@@ -53,7 +53,7 @@
             "violations": []
         },
         {
-            "path": "/Fault shutdown latch and power-qualified reset/",
+            "path": "/Hardware power shutdown latch/",
             "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/95ce739b-4eee-5f42-a669-179a7d0060de",
             "violations": []
         },
@@ -68,7 +68,7 @@
             "violations": []
         },
         {
-            "path": "/I/O decoupling and undervoltage reset interlock/",
+            "path": "/I/O decoupling and voltage monitor/",
             "uuid_path": "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/36761b75-2b3e-5b16-bc66-e4b7245270a9",
             "violations": []
         }

@@ -26,6 +26,7 @@ CONTROL_PIN_CONTRACT = {'C306': {'1': 'VIN12', '2': 'IO_EN_INHIBIT'},
  'Q301': {'1': 'IO_EN_CTRL', '2': 'GND', '3': 'IO_EN_PULLDOWN'},
  'Q302': {'1': 'IO_EN_INHIBIT', '2': 'GND', '3': 'IO_EN'},
  'Q601': {'1': 'RESET_BASE', '2': 'GND', '3': 'reset'},
+ 'Q602': {'1': 'RESET_ASSERT', '2': 'GND', '3': 'RESET_BASE'},
  'R210': {'1': 'CORE_EN', '2': 'GND'},
  'R211': {'1': '3V3_CTRL', '2': 'CORE_PG'},
  'R303': {'1': 'IO_EN', '2': 'GND'},
@@ -33,7 +34,7 @@ CONTROL_PIN_CONTRACT = {'C306': {'1': 'VIN12', '2': 'IO_EN_INHIBIT'},
  'R306': {'1': 'VIN12', '2': 'IO_EN_INHIBIT'},
  'R307': {'1': 'IO_EN_CTRL', '2': 'GND'},
  'R308': {'1': 'IO_EN_INHIBIT', '2': 'IO_EN_PULLDOWN'},
- 'R411': {'1': 'RESET_RELEASE', '2': 'GND'},
+ 'R411': {'1': 'RESET_ASSERT', '2': 'GND'},
  'R503': {'1': '0V75', '2': 'CORE_OV_SENSE'},
  'R504': {'1': 'CORE_OV_SENSE', '2': 'GND'},
  'R506': {'1': '3V3_CTRL', '2': 'HW_FAULT_N'},
@@ -45,8 +46,9 @@ CONTROL_PIN_CONTRACT = {'C306': {'1': 'VIN12', '2': 'IO_EN_INHIBIT'},
  'R513': {'1': '3V3_CTRL', '2': 'IO_VALID'},
  'R514': {'1': 'VIN12', '2': 'VIN12_UV_SENSE'},
  'R515': {'1': 'VIN12_UV_SENSE', '2': 'GND'},
+ 'R516': {'1': '3V3_CTRL', '2': 'VIN12_VALID'},
  'R602': {'1': '1V8', '2': 'reset'},
- 'R603': {'1': 'RESET_RELEASE_OK', '2': 'RESET_BASE'},
+ 'R603': {'1': '1V8', '2': 'RESET_BASE'},
  'R604': {'1': 'RESET_BASE', '2': 'GND'},
  'R605': {'1': 'ZED_3V3', '2': 'ZED_OPTO_A'},
  'SW502': {'1': 'HW_FAULT_N', '2': 'GND'},
@@ -65,12 +67,13 @@ CONTROL_PIN_CONTRACT = {'C306': {'1': 'VIN12', '2': 'IO_EN_INHIBIT'},
  'U301': {'13': 'IO_EN', '14': '1V8'},
  'U401': {'4': 'CORE_REQ',
           '5': 'IO_REQ',
-          '6': 'RESET_RELEASE',
+          '6': 'RESET_ASSERT',
           '7': 'RUN_LATCH',
           '9': 'CORE_PG',
           '10': 'IO_VALID',
           '11': 'HW_FAULT_N',
           '14': 'RUN_SET',
+          '16': 'VIN12_VALID',
           '20': 'HW_FAULT_N',
           '36': '3V3_CTRL'},
  'U501': {'1': 'HW_FAULT_N',
@@ -100,19 +103,13 @@ CONTROL_PIN_CONTRACT = {'C306': {'1': 'VIN12', '2': 'IO_EN_INHIBIT'},
           '5': 'IO_REQ',
           '6': 'IO_EN_CTRL',
           '7': 'GND',
-          '8': 'RESET_PERMIT',
-          '9': 'RUN_LATCH',
-          '10': 'RESET_RELEASE',
+          '8': 'unconnected-(U504-3Y-Pad8)',
+          '9': 'GND',
+          '10': 'GND',
           '11': 'unconnected-(U504-4Y-Pad11)',
           '12': 'GND',
           '13': 'GND',
           '14': '3V3_CTRL'},
- 'U506': {'1': 'CORE_PG',
-          '2': 'GND',
-          '3': 'IO_VALID',
-          '4': 'RESET_RELEASE_OK',
-          '5': '3V3_CTRL',
-          '6': 'RESET_PERMIT'},
  'U507': {'1': 'RUN_SET',
           '2': 'GND',
           '3': 'HW_FAULT_N',
@@ -125,7 +122,7 @@ CONTROL_PIN_CONTRACT = {'C306': {'1': 'VIN12', '2': 'IO_EN_INHIBIT'},
           '4': 'IO_UV_REF',
           '5': 'IO_UV_REF',
           '6': '3V3_CTRL'},
- 'U509': {'1': 'HW_FAULT_N',
+ 'U509': {'1': 'VIN12_VALID',
           '2': 'GND',
           '3': 'VIN12_UV_SENSE',
           '4': 'VIN12_UV_REF',
@@ -141,9 +138,9 @@ U504_PINMAP = {
     "5": ("2B", "IO_REQ", "input"),
     "6": ("2Y", "IO_EN_CTRL", "output"),
     "7": ("GND", "GND", "power_in"),
-    "8": ("3Y", "RESET_PERMIT", "output"),
-    "9": ("3A", "RUN_LATCH", "input"),
-    "10": ("3B", "RESET_RELEASE", "input"),
+    "8": ("3Y", "unconnected-(U504-3Y-Pad8)", "output+no_connect"),
+    "9": ("3A", "GND", "input"),
+    "10": ("3B", "GND", "input"),
     "11": ("4Y", "unconnected-(U504-4Y-Pad11)", "output+no_connect"),
     "12": ("4A", "GND", "input"),
     "13": ("4B", "GND", "input"),
@@ -201,7 +198,7 @@ def main():
     exact_nets = (
         "RUN_SET", "RUN_SET_CLEAN", "RUN_LATCH", "HW_FAULT_N", "HW_CLEAR_N",
         "CORE_EN", "CORE_REQ", "IO_REQ", "IO_EN_CTRL", "IO_EN", "IO_EN_PULLDOWN",
-        "IO_EN_INHIBIT", "RESET_PERMIT", "RESET_RELEASE", "RESET_RELEASE_OK",
+        "IO_EN_INHIBIT", "RESET_ASSERT", "VIN12_VALID",
         "RESET_BASE", "ZED_OPTO_A", "ZED_3V3", "ZED_RESET_OD", "reset",
         "CORE_PG", "IO_VALID", "CORE_OV_SENSE", "VIN12_UV_SENSE", "IO_UV_SENSE",
     )
@@ -217,8 +214,25 @@ def main():
                                            "unexpected": sorted(actual-wanted)})
     if pin_differences or net_member_differences:
         errors.append("The current netlist differs from the reviewed control electrical contract.")
-    if len(new_comps) != 219 or len(new_nets) != 119:
-        errors.append("Current V2 component/net counts differ from 219/119.")
+    obsolete_nets = {"RESET_PERMIT", "RESET_RELEASE", "RESET_RELEASE_OK"} & set(new_nets)
+    obsolete_parts = {"U506", "C507"} & set(new_comps)
+    if obsolete_nets or obsolete_parts:
+        errors.append("Obsolete power-qualified reset gates or nets are still present.")
+    reset_parts = {
+        "Q601": "MMBT3904-7-F", "Q602": "DMN62D2UQ-7",
+        "R411": "RC0603FR-07100KL", "R602": "RC0603FR-0710KL",
+        "R603": "RC0603FR-0721K5L", "R604": "RC0603FR-07100KL",
+        "R516": "RC0603FR-0710KL",
+    }
+    for ref, expected_mpn in reset_parts.items():
+        if ref not in new_comps or mpn(new_comps[ref]) != expected_mpn:
+            errors.append(f"Reset/monitor bias part mismatch: {ref} must be {expected_mpn}.")
+    for pin, function in (("1", "G"), ("2", "S"), ("3", "D")):
+        node = new_nodes.get(("Q602", pin))
+        if node is None or node.get("pinfunction") != f"{function}_{pin}":
+            errors.append(f"Q602 physical pin {pin} must be {function}.")
+    if len(new_comps) != 219 or len(new_nets) != 118:
+        errors.append("Current V2 component/net counts differ from 219/118.")
     physical_pin_differences = []
     for pin, (function, net, pin_type) in U504_PINMAP.items():
         node = new_nodes.get(("U504", pin))
@@ -310,7 +324,8 @@ def main():
         "fault_behavior": {
             "assessment": "STOP and hardware-fault detectors clear U503 asynchronously through U507. Fault recovery creates no RUN_SET rising edge and therefore does not set the latch by itself.",
             "firmware_condition": "No automatic RUN_SET pulses after a fault, boot or reconnect; a fresh ON request is required. A faulty controller can issue another pulse, so the circuit is not an independent prohibition of all controller-initiated restarts.",
-            "reset_qualifier_limit": "CORE_PG and IO_VALID are combinational reset qualifiers; their recovery is not latched by U503.",
+            "reset_policy": "With valid VIO, reset is asserted only by SW601, U601, or Q602. R603 biases Q601 on from VIO by default. PG, VIN12_VALID, and RUN_LATCH do not qualify reset release.",
+            "input_loss_limit": "U509 reports VIN12_VALID only. Intrinsic eFuse UVLO/OVLO can recover without a new ON if control power and U503 remain valid; eFuse FLT or control brownout still clears U503.",
         },
         "bom": {
             "catalog_path": "schematic/bom/parts_catalog.json", "catalog_sha256": sha256(catalog_bytes),

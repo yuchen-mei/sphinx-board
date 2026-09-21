@@ -1,16 +1,69 @@
 {
-  "checked_on": "2026-09-19",
+  "checked_on": "2026-09-20",
   "project": "Sphinx V2",
-  "scope": "Current schematic, component catalog, documentation and PDF consistency",
+  "scope": "Explicit-request reset and warning-only experiment diagnostics revision",
   "erc_violations": 0,
+  "erc_ignored_checks": [
+    "single_global_label",
+    "four_way_junction",
+    "simulation_model_issue",
+    "footprint_filter"
+  ],
   "netlisted_components": 219,
-  "nets": 119,
-  "netlisted_pin_connections": 703,
+  "nets": 118,
+  "netlisted_pin_connections": 700,
+  "contract_pins_checked": 156,
+  "independent_netlist_diff": "21 expected pin changes only; high-current power path unchanged",
   "pdf_pages": 9,
-  "pdf_visual_review": "All nine pages reviewed; control and fault-latch pages inspected individually.",
-  "controller_test_count": 25,
-  "controller_tests": "Passed host simulation; companion source and test report are in workspace/controller.",
+  "pdf_visual_review": "All nine final pages inspected; new Q602 and R516 placements clear of title blocks.",
+  "bom_order_lines": 69,
+  "bom_purchased_component_references": 208,
+  "controller_test_count": 42,
+  "controller_tests": "PASS; host fault injection, including physical USB poll/read/write errors. No real Pico execution.",
+  "controller_test_runtime": "CPython 3.13.5",
+  "independent_usb_transport_tests": {
+    "cases": 6,
+    "result": "PASS",
+    "evidence": "../review/evidence/usb_transport_review.json",
+    "sha256": "af2b475277352c1d429c8d32f9ba8f8bc34c189c92c90292a01f8c2b817e53a8",
+    "scope": "Run-loop poll/read/write OSError injection, with and without overtemperature; mocked hardware."
+  },
+  "controller_test_command": "python3 -m unittest discover -s controller/tests -v (from workspace root)",
+  "companion_firmware_location": "../controller",
+  "companion_firmware_files": [
+    {
+      "path": "../controller/main.py",
+      "sha256": "b25818920e62691e8c2b8141cdaeaa919a424d8c2b55ad683b2b448628debf47"
+    },
+    {
+      "path": "../controller/power.py",
+      "sha256": "c56a75029ab488de5fb79fcbbb20ff7e4fb9f29fd264844521fa792eea44215e"
+    },
+    {
+      "path": "../controller/profile.py",
+      "sha256": "948da737cd515349800494400908b12b1886d8a87748f1b10cdedf76f09fe043"
+    },
+    {
+      "path": "../controller/README.md",
+      "sha256": "9162d426d383b1ae465028fe7f420e7e9d7537351e65f5c30ddbbcad6330c97f"
+    },
+    {
+      "path": "../controller/tests/test_controller.py",
+      "sha256": "df7019d6fefe44279e30c05e1f8d30fd64d577d4d3327a99c984ad13accaddeb"
+    },
+    {
+      "path": "../controller/test_results.txt",
+      "sha256": "1d2159f1ca72617497f41afb4a59dc3a9c8be305493f67dc365394bbe6963b99"
+    }
+  ],
   "documentation_language": "English",
   "physical_board_measurements_performed": false,
-  "verification_scope": "ERC and exported-net connectivity do not establish analog timing, PCB layout or assembled-board behavior."
+  "real_micropython_execution_performed": false,
+  "unresolved_prior_review_items": [
+    "Complete host ASIC/kernel/steady-state-power application is not present.",
+    "Existing socket footprint keepout coordinate defect remains outside this reset revision.",
+    "No V2 PCB or assembled-board evidence establishing 10 A continuous qualification.",
+    "TI scale=1 endpoint at 0.70-0.75 V remains a commissioning limitation."
+  ],
+  "verification_scope": "ERC, exact net membership, BOM checks and host simulations do not establish analog reset timing, physical USB behavior, ASIC limits, PCB layout or assembled-board operation."
 }

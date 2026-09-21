@@ -1,6 +1,6 @@
 (kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0")
         (uuid "d57f165e-6d05-5f9f-9c4a-9dc401e097b2") (paper "A3")
-        (title_block (title "06 | Socket pinout and signal interfaces") (date "2026-09-19") (rev "V2")
+        (title_block (title "06 | Socket pinout and signal interfaces") (date "2026-09-20") (rev "V2")
         (company "Sphinx | Programmable power test board")
         (comment 1 "Review package: PCB, PI, SI, thermal and ASIC limits require qualification")
         (comment 2 "12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V")
@@ -2379,7 +2379,231 @@
         (effects
           (font
             (size 1.27 1.27))))))
-  (embedded_fonts no)))
+  (embedded_fonts no))
+(symbol "Sphinx_V2:Transistor_FET__Q_NMOS_GSD"
+  (pin_names
+    (offset 0)
+    (hide yes))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "Q"
+    (at 5.08 1.905 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Value" "Q_NMOS_GSD"
+    (at 5.08 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Footprint" ""
+    (at 5.08 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "N-MOSFET transistor, gate/source/drain"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Transistor_FET__Q_NMOS_GSD_0_1"
+    (polyline
+      (pts
+        (xy 0.254 1.905)
+        (xy 0.254 -1.905))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0.254 0)
+        (xy -2.54 0))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0.762 2.286)
+        (xy 0.762 1.27))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0.762 0.508)
+        (xy 0.762 -0.508))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0.762 -1.27)
+        (xy 0.762 -2.286))
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 0.762 -1.778)
+        (xy 3.302 -1.778)
+        (xy 3.302 1.778)
+        (xy 0.762 1.778))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 1.016 0)
+        (xy 2.032 0.381)
+        (xy 2.032 -0.381)
+        (xy 1.016 0))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type outline)))
+    (circle
+      (center 1.651 0)
+      (radius 2.794)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 2.54 2.54)
+        (xy 2.54 1.778))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (circle
+      (center 2.54 1.778)
+      (radius 0.254)
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type outline)))
+    (circle
+      (center 2.54 -1.778)
+      (radius 0.254)
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type outline)))
+    (polyline
+      (pts
+        (xy 2.54 -2.54)
+        (xy 2.54 0)
+        (xy 0.762 0))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 2.921 0.381)
+        (xy 3.683 0.381))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy 3.302 0.381)
+        (xy 2.921 -0.254)
+        (xy 3.683 -0.254)
+        (xy 3.302 0.381))
+      (stroke
+        (width 0)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Transistor_FET__Q_NMOS_GSD_1_1"
+    (pin input line
+      (at -5.08 0 0)
+      (length 2.54)
+      (name "G"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 2.54 -5.08 90)
+      (length 2.54)
+      (name "S"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 2.54 5.08 270)
+      (length 2.54)
+      (name "D"
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "3"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+)
         (text "J1: QFN80 socket, 29 VDD, 25 VSS, 10 VDDPST, 7 signals, and 9 NC positions." (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top) ) (uuid "446d1fcd-0828-5cc9-9a65-5951566ef269"))
 (text "Net 0V75 carries adjustable VCORE. NC positions and the center thermal probe have no electrical connection." (at 15 23 0) (effects (font (size 1.27 1.27)) (justify left top) ) (uuid "626a384f-9f4f-5fee-8364-47f09de8cad2"))
 (symbol (lib_id "Sphinx_V2:Sphinx_socket") (at 38.1 53.34 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "8678d2dd-e660-5793-8f70-c0c460533c82")
@@ -2791,7 +3015,7 @@
 (property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 180.34 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 180.34 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "MPN" "RC0603FR-0710KL" (at 180.34 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Description" "Active-high reset: pull high while control not ready | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 180.34 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Pulls active-high DUT reset up when Q601 is inhibited by an explicit reset request | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 180.34 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (pin "1" (uuid "f3ba1377-10a8-5e85-802e-c832f8f02fb2"))
 (pin "2" (uuid "ee4163f0-cb50-5996-9627-4f2c2d61b09e"))
 (instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/d57f165e-6d05-5f9f-9c4a-9dc401e097b2" (reference "R602") (unit 1)))) )
@@ -2805,12 +3029,12 @@
 (property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 237.49 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0721K5L" (at 237.49 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "MPN" "RC0603FR-0721K5L" (at 237.49 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Description" "Limits optocoupler sink demand below0.2mA; retains Q601 base drive for the0.18mA reset pull-up | 21.5k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 237.49 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "VIO bias defaults Q601 on and reset released; explicit reset sink current about84uA at1.8V | 21.5k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 237.49 205.74 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (pin "1" (uuid "599ab400-d2d5-5778-b0b8-38cc156f61ff"))
 (pin "2" (uuid "db7318c6-b187-50a5-8901-41ba7ba03cc8"))
 (instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/d57f165e-6d05-5f9f-9c4a-9dc401e097b2" (reference "R603") (unit 1)))) )
 (wire (pts (xy 237.49 201.93) (xy 237.49 196.85)) (stroke (width 0) (type default)) (uuid "51faf6a1-7459-55a4-b3fa-bddcdac0d9cf"))
-(global_label "RESET_RELEASE_OK" (shape passive) (at 237.49 196.85 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "20297532-4421-5d88-b7aa-1b34edd33b91") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.49 196.85 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(global_label "1V8" (shape passive) (at 237.49 196.85 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "20297532-4421-5d88-b7aa-1b34edd33b91") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.49 196.85 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (wire (pts (xy 237.49 209.55) (xy 237.49 214.63)) (stroke (width 0) (type default)) (uuid "69d4f816-52b5-5ff3-8987-77c070f45c4e"))
 (global_label "RESET_BASE" (shape passive) (at 237.49 214.63 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "7d3b35d2-5b19-5899-a19d-cff79c7b75ee") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 237.49 214.63 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (symbol (lib_id "Sphinx_V2:Transistor_BJT__Q_NPN_BEC") (at 284.48 226.06 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "2985aed2-a8f8-504c-a01c-e2f28b555365")
@@ -2819,7 +3043,7 @@
 (property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-23" (at 284.48 226.06 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "Datasheet" "https://www.diodes.com/assets/Datasheets/MMBT3904.pdf" (at 284.48 226.06 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "MPN" "MMBT3904-7-F" (at 284.48 226.06 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Description" "Open collector reset release. No3.3V connection to DUT reset pin. | NPN SOT23; pin1=B, pin2=E, pin3=C" (at 284.48 226.06 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "VIO-biased default reset release; SW601, U601 or Q602 sink its base to assert reset. No3.3V connection to DUT reset pin. | NPN SOT23; pin1=B, pin2=E, pin3=C" (at 284.48 226.06 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (pin "1" (uuid "8e629bc4-8bb3-5197-a65e-0fbd8d880aca"))
 (pin "2" (uuid "1dd96a92-503b-5586-9a38-b7f9b215cdbf"))
 (pin "3" (uuid "79c1e6c4-9d9d-5393-9472-a1fdfbea60c6"))
@@ -2895,4 +3119,24 @@
 (wire (pts (xy 162.56 229.87) (xy 162.56 234.95)) (stroke (width 0) (type default)) (uuid "ba775fd3-75b1-55c8-9b0a-b0720ee09aba"))
 (global_label "GND" (shape passive) (at 162.56 234.95 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "c03171f7-06ab-545f-9947-098fcc6b502d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 162.56 234.95 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (text "TP7 + TP607: by J1.54, <=2mm pad centres.\nHigh-Z probe; no 50ohm termination." (at 102 248 0) (effects (font (size 0.85 0.85)) (justify left top) ) (uuid "7572a180-17e6-5574-8819-7846e63a1028"))
-(text "JTAG and clock source must use1.8V logic and be high-Z while VIO is off. Do not connect a50ohm scope input across VCORE." (at 135 275 0) (effects (font (size 0.95 0.95)) (justify left top) ) (uuid "d2d7863d-8376-54b7-897d-e7bfddebf772"))(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/d57f165e-6d05-5f9f-9c4a-9dc401e097b2" (page "7"))) (embedded_fonts no))
+(text "JTAG and clock source must use1.8V logic and be high-Z while VIO is off. Do not connect a50ohm scope input across VCORE." (at 135 275 0) (effects (font (size 0.95 0.95)) (justify left top) ) (uuid "d2d7863d-8376-54b7-897d-e7bfddebf772"))(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/d57f165e-6d05-5f9f-9c4a-9dc401e097b2" (page "7"))) (embedded_fonts no)
+(symbol (lib_id "Sphinx_V2:Transistor_FET__Q_NMOS_GSD") (at 294.64 185.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "a10c5f93-5c16-4873-8c02-59969b951a5b")
+(property "Reference" "Q602" (at 302.26 184.17 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Value" "DMN62D2UQ-7" (at 302.26 186.67 0) (effects (font (size 1.0 1.0)) (justify left) ))
+(property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-23" (at 294.64 185.42 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "https://www.diodes.com/assets/Datasheets/DMN62D2UQ.pdf" (at 294.64 185.42 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "MPN" "DMN62D2UQ-7" (at 294.64 185.42 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Pico active-high reset request sinks RESET_BASE; R411100k gate pulldown must be placed next to Q602. | 60V NMOS, +/-20V VGS, SOT23 G1/S2/D3; RDS(on)<=4Ohm atVGS1.8V/25C; -55..150C operating range; full-temperature electrical maxima not generally specified" (at 294.64 185.42 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(pin "1" (uuid "ffd9a4fb-ce6c-4ec2-9fc4-4cc5f9363fbf"))
+(pin "2" (uuid "b056ad22-e321-4402-81fd-3e1ebbe360de"))
+(pin "3" (uuid "6ba94d76-7e72-4e19-855f-aae505beed98"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/d57f165e-6d05-5f9f-9c4a-9dc401e097b2" (reference "Q602") (unit 1)))) )
+
+(wire (pts (xy 289.56 185.42) (xy 284.48 185.42)) (stroke (width 0) (type default)) (uuid "fdc3d19f-4f9e-4903-8165-5fe0cb4264dc"))
+(global_label "RESET_ASSERT" (shape passive) (at 284.48 185.42 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "372024c4-13cd-4e52-aff6-7a3ce44e78e8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 284.48 185.42 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 297.18 180.34) (xy 297.18 175.26)) (stroke (width 0) (type default)) (uuid "00f01e4e-d371-423a-a390-0e93a1d490e9"))
+(global_label "RESET_BASE" (shape passive) (at 297.18 175.26 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "b269e113-aab6-48b5-ab71-1680fda89a43") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 297.18 175.26 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 297.18 190.50) (xy 297.18 195.58)) (stroke (width 0) (type default)) (uuid "7712ae90-9663-40de-a970-a093cabdd40b"))
+(global_label "GND" (shape passive) (at 297.18 195.58 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "294b02d9-9289-4640-bbe5-ba6ce906994a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 297.18 195.58 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(text "Valid VIO: reset LOW by default; any explicit request asserts HIGH.\nGP4 LOW / high-Z releases its request. Place R411 at Q602 gate." (at 100 261 0) (effects (font (size 0.9 0.9)) (justify left top)) (uuid "4d16f9e6-cf5b-4ee8-aae5-e5c36a0ad899"))
+)

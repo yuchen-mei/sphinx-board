@@ -14,39 +14,40 @@ U102 supplies AUX5V through the 73.2 kΩ / 10 kΩ feedback network. D401 supplie
 
 F101 is a 3.15 A backup fuse. U101 is a TPS259470L eFuse. Its 1.24 kΩ ILM resistor sets a nominal 2.69 A current limit. Input UVLO and OVLO are approximately 10.64 V and 14.4 V. These are nominal circuit thresholds; evaluate tolerances and fault transients during verification.
 
-U509 senses VIN12 after the eFuse and clears the run latch through `HW_FAULT_N`. U503 is the hardware fault latch: pin 5 is Q (`RUN_LATCH`), and its unused Q-bar output is left unconnected. STOP, input loss, eFuse fault, control-supply brownout, and independent core overvoltage participate in the hardware clear path. U507 conditions the fault bus into `HW_CLEAR_N`, which asynchronously clears U503.
+U509 senses VIN12 after the eFuse and reports `VIN12_VALID` to Pico GP12, with R516 providing its 10 kΩ pull-up. This input-voltage observation does not clear the run latch. U503 is the hardware fault latch: pin 5 is Q (`RUN_LATCH`), and its unused Q-bar output is left unconnected. STOP, an asserted eFuse fault output, control-supply brownout, and independent core overvoltage participate in the hardware clear path. U507 conditions the fault bus into `HW_CLEAR_N`, which asynchronously clears U503.
 
-The controller sets U503 by pulsing GP10 (`RUN_SET`) through U507 during startup. R507 holds this input low while GP10 is high impedance. Hardware faults clear the latch even if the controller stalls or its enable requests remain high; fault recovery alone cannot set it again. An `ON` command from the off state verifies discharge and configuration, checks the fault bus, and generates a single set pulse. During healthy operation, an explicit `SET` across feedback scales uses the same checked startup after a controlled shutdown. Repeated `ON` while running only checks the operating state. `OFF` clears the latch through GP15 and holds it clear until the next startup. See [RESET_AND_CONTROL.md](RESET_AND_CONTROL.md) for the controller contract. The eFuse has its own fault behavior; an internally latched eFuse fault may still require cycling the 12 V input.
+The controller sets U503 by pulsing GP10 (`RUN_SET`) through U507 during startup. R507 holds this input low while GP10 is high impedance. A hardware clear acts even if the controller stalls or its enable requests remain high; recovery alone cannot set the cleared latch again. An `ON` command from the off state verifies discharge and configuration, checks the fault bus, and generates a single set pulse. An explicit `SET` across feedback scales uses the same checked startup after a controlled shutdown, provided no protective trip is latched. Repeated `ON` while running checks the operating state without cycling power. `OFF` clears the latch through GP15 and holds it clear until the next startup. These actions leave the explicit DUT reset request unchanged.
 
-U504, a Diodes Incorporated 74LVC08AT14-13 in TSSOP-14, combines the three enable/reset AND functions in one quad gate package:
+The eFuse has its own operating and fault behavior. UVLO and OVLO inhibit its output without necessarily asserting its fault output; after an intrinsic UVLO interruption the supplies can recover if USB keeps the control supply alive and the run latch remains set. An asserted eFuse fault or control-supply brownout clears the run latch and requires a new explicit `ON`. An internally latched eFuse fault can also require cycling the 12 V input. See [RESET_AND_CONTROL.md](RESET_AND_CONTROL.md) for the controller contract.
+
+U504, a Diodes Incorporated 74LVC08AT14-13 in TSSOP-14, implements the two supply-enable AND functions:
 
 ```text
 CORE_EN      = RUN_LATCH AND CORE_REQ
 IO_EN_CTRL   = RUN_LATCH AND IO_REQ
-RESET_PERMIT = RUN_LATCH AND RESET_RELEASE
 ```
 
-The unused fourth gate has both inputs grounded and its output unconnected. U506 combines `RESET_PERMIT`, `CORE_PG`, and `IO_VALID`.
+The unused third and fourth gates have their inputs grounded and outputs unconnected. U506 and C507 are absent; no logic gate combines power-good or run-latch signals with DUT reset. U507 remains part of the power-latch circuit.
 
 | Detector | Sense network | Nominal threshold | Function |
 |---|---|---:|---|
 | U501 | 1.24 kΩ / 20 kΩ | 1.319 V | Independent core overvoltage, clears run latch |
-| U509 | 73.2 kΩ / 10 kΩ | 10.333 V | Post-eFuse input undervoltage, clears run latch |
-| U508 | 6.19 kΩ / 20 kΩ | 1.626 V | I/O voltage qualifier for reset |
+| U509 | 73.2 kΩ / 10 kΩ | 10.333 V | Post-eFuse input-voltage observation on `VIN12_VALID`; warning only |
+| U508 | 6.19 kΩ / 20 kΩ | 1.626 V | I/O voltage observation on `IO_VALID`; warning only |
 
-The fixed core OVP is a board fault threshold. Configure the regulator's relative voltage and current protection for each experiment. An ASIC absolute-maximum rating is not defined by either protection mechanism.
+The fixed core OVP is a board fault threshold. The controller also configures regulator overvoltage, overtemperature, and excessive-current protection. Ordinary PG loss, undervoltage, voltage deviation, PMBus warnings, and USB inactivity are diagnostic observations; they do not request shutdown or reset. The 10 A continuous target and routine current budgets are qualification limits and warnings, not instantaneous current clamps. No protection threshold establishes an ASIC absolute-maximum rating.
 
 Take the U501 sense connection independently from the socket core plane. A break in the narrow feedback branch must not also disconnect the OVP sense path. U508 directly measures I/O voltage; U301 PG alone does not establish that an operating I/O supply is present.
 
 ## Reset
 
-R602 pulls J1.54 to I/O voltage through 10 kΩ. Q601 pulls the node low to release reset. The release condition is:
+R602 pulls J1.54 to I/O voltage through 10 kΩ. R603 biases Q601's base from VIO through 21.5 kΩ; R604 provides the 100 kΩ base pull-down. With valid VIO, Q601 normally conducts and pulls J1.54 low to release reset. SW601, optocoupler U601, and Pico-controlled Q602 independently pull `RESET_BASE` low to turn Q601 off and assert the active-high reset:
 
 ```text
-RESET_RELEASE_OK = RUN_LATCH AND RESET_RELEASE AND CORE_PG AND IO_VALID
+RESET_ASSERTED = LOCAL_RESET OR REMOTE_RESET OR PICO_RESET_ASSERT
 ```
 
-SW601 or U601 pulls Q601's base low and asserts DUT reset. A reset command leaves the run latch and power rails enabled. Loss of `CORE_PG` or `IO_VALID` inhibits reset release independently of software. These two qualifiers are combinational: recovery can release reset when the other conditions remain true. The circuit has no separate event latch or pulse stretcher for these qualifiers. The direct `RUN_LATCH` condition asserts reset when STOP or a latched fault disables the supplies, before output capacitors necessarily discharge.
+This expression applies while VIO provides valid logic levels. GP4 is `RESET_ASSERT`: high requests reset, and low or a high-impedance Pico output leaves that request inactive. Reset release requires no firmware execution, PG signal, or run latch. An explicit reset command leaves the power requests and latch unchanged; power commands and protective shutdown leave the Pico reset request unchanged. Reset is not driven automatically in response to invalid power. Its high level is unavailable when VIO is absent. The circuit has no pulse stretcher or clock synchronizer; the operator supplies an adequate explicit pulse with the external clock running.
 
 TP7 measures the actual J1.54 reset node; TP607 supplies the adjacent probe ground. See [RESET_AND_CONTROL.md](RESET_AND_CONTROL.md).
 
@@ -58,4 +59,4 @@ R212 (47 Ω) and R304 (100 Ω) discharge Core and I/O. Confirm output voltage be
 
 Two INA226 devices measure core and I/O voltage and current. With configuration `0x4297`, four averages of 332 µs bus and 332 µs shunt conversions give a nominal 2.656 ms update period. Use these readings for averaged telemetry. Use an oscilloscope for kernel transients and reset pulses.
 
-The core shunt measures regulator current before local decoupling. Capacitor-supplied load current is not measured directly at that shunt. INA226 VBUS is referenced to its local ground; it is not a die-side differential voltage measurement. Input current requires an external instrument.
+The core shunt measures regulator current before local decoupling. Capacitor-supplied load current is not measured directly at that shunt. During a sustained back-to-back kernel loop, average capacitor charging current approaches zero, so averaged shunt current is useful for steady rail-power measurement. INA226 VBUS is referenced to its local ground; it is not a die-side differential voltage measurement. The reported rail power includes downstream board loads and socket/package losses. R212 consumes about 12 mW at 0.75 V and R304 consumes 32.4 mW at 1.8 V; account for these loads when estimating DUT supply power. Input current requires an external instrument.

@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/Users/yuchen/Documents/Stanford-Document/Research/sphinx-board/main/schematic/sphinx_power_v2.kicad_sch</source>
-    <date>2026-09-19T03:51:13</date>
+    <date>2026-09-20T01:33:03</date>
     <tool>Eeschema 10.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Sphinx V2 | Programmable power test platform</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-19</date>
+        <date>2026-09-20</date>
         <source>sphinx_power_v2.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -27,7 +27,7 @@
         <title>01 | Protected input and auxiliary supply</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-19</date>
+        <date>2026-09-20</date>
         <source>01_input_aux.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -63,7 +63,7 @@
         <title>03 | Fixed 1.8 V I/O and calibrated telemetry</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-19</date>
+        <date>2026-09-20</date>
         <source>03_io_and_telemetry.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -81,7 +81,7 @@
         <title>04 | USB control and remote reset</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-19</date>
+        <date>2026-09-20</date>
         <source>04_usb_control.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -94,12 +94,12 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="6" name="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/">
+    <sheet number="6" name="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/">
       <title_block>
-        <title>05 | Fault shutdown latch and power-qualified reset</title>
+        <title>05 | Hardware power shutdown latch</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-19</date>
+        <date>2026-09-20</date>
         <source>05_hardware_safety.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -117,7 +117,7 @@
         <title>06 | Socket pinout and signal interfaces</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-19</date>
+        <date>2026-09-20</date>
         <source>06_socket_and_signals.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -148,12 +148,12 @@
         <comment number="9" value=""/>
       </title_block>
     </sheet>
-    <sheet number="9" name="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/">
+    <sheet number="9" name="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/">
       <title_block>
-        <title>08 | I/O decoupling and undervoltage reset interlock</title>
+        <title>08 | I/O decoupling and voltage monitor</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-19</date>
+        <date>2026-09-20</date>
         <source>08_io_decoupling.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -2313,6 +2313,34 @@
         </unit>
       </units>
     </comp>
+    <comp ref="R516">
+      <value>10k / 1%</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
+      <description>Pullup for U509 VIN12_VALID monitor output to Pico GP12 | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
+        <field name="Description">Pullup for U509 VIN12_VALID monitor output to Pico GP12 | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Sheetname" value="Fixed 1.8 V I/O and calibrated telemetry"/>
+      <property name="Sheetfile" value="03_io_and_telemetry.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/Fixed 1.8 V I/O and calibrated telemetry/" tstamps="/396d387d-800b-5ee0-a374-8362af726b6a/"/>
+      <tstamps>e603ffbe-fcb4-4737-ae51-820efd61951e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
     <comp ref="U301">
       <value>TPS62131RGTR</value>
       <footprint>Sphinx_V2:Package_DFN_QFN__VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm_ThermalVias</footprint>
@@ -2426,12 +2454,12 @@
       <value>TLV3011AIDBVR</value>
       <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tlv3011.pdf</datasheet>
-      <description>Post-eFuse VIN12 undervoltage clears RUN_LATCH even if USB keeps Pico alive; nominal10.333V, static screening9.75-10.94V. Shared fault line is not a separate input-voltage reading. | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</description>
+      <description>Post-eFuse VIN12 voltage monitor to Pico GP12 only; nominal10.333V, static screening9.75-10.94V. Does not clear RUN_LATCH or assert reset. | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</description>
       <fields>
         <field name="MPN">TLV3011AIDBVR</field>
         <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv3011.pdf</field>
-        <field name="Description">Post-eFuse VIN12 undervoltage clears RUN_LATCH even if USB keeps Pico alive; nominal10.333V, static screening9.75-10.94V. Shared fault line is not a separate input-voltage reading. | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</field>
+        <field name="Description">Post-eFuse VIN12 voltage monitor to Pico GP12 only; nominal10.333V, static screening9.75-10.94V. Does not clear RUN_LATCH or assert reset. | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</field>
       </fields>
       <libsource lib="Sphinx_V2" part="TLV3011" description=""/>
       <property name="MPN" value="TLV3011AIDBVR"/>
@@ -2739,12 +2767,12 @@
       <value>100k</value>
       <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
       <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL</datasheet>
-      <description>100k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
+      <description>Pico RESET_ASSERT gate pulldown; place next to Q602 to keep reset request inactive with GPIO unpowered or high-Z | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
       <fields>
         <field name="MPN">RC0603FR-07100KL</field>
         <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
         <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL</field>
-        <field name="Description">100k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
+        <field name="Description">Pico RESET_ASSERT gate pulldown; place next to Q602 to keep reset request inactive with GPIO unpowered or high-Z | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-07100KL"/>
@@ -2898,11 +2926,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>0c51daa2-8afa-5c47-8aa5-bfbd9c248c81</tstamps>
       <units>
         <unit name="A">
@@ -2926,11 +2954,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>2cddfd77-8bfb-5bbe-bb94-5f988e093061</tstamps>
       <units>
         <unit name="A">
@@ -2954,11 +2982,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>57fd63c5-f507-5c59-ae2c-aa3783adeffb</tstamps>
       <units>
         <unit name="A">
@@ -2982,40 +3010,12 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>4be391c3-deb8-58ac-95f8-c9a0f6ec48ab</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="1"/>
-            <pin num="2"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
-    <comp ref="C507">
-      <value>100n / 16V</value>
-      <footprint>Sphinx_V2:Capacitor_SMD__C_0402_1005Metric</footprint>
-      <datasheet>https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do</datasheet>
-      <description>100nF +/-10% 16V X7R 0402</description>
-      <fields>
-        <field name="MPN">CL05B104KO5NNNC</field>
-        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0402_1005Metric</field>
-        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do</field>
-        <field name="Description">100nF +/-10% 16V X7R 0402</field>
-      </fields>
-      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
-      <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
-      <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
-      <property name="ki_keywords" value="cap capacitor"/>
-      <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
-      <tstamps>bf96e47c-433a-50ac-84a6-0ea29be01da7</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -3038,11 +3038,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>7190ddbf-7aeb-5a8c-892d-0c36171ba11e</tstamps>
       <units>
         <unit name="A">
@@ -3066,11 +3066,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-071K24L"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>7977cbff-2caa-5193-9dba-9b4eac77b165</tstamps>
       <units>
         <unit name="A">
@@ -3094,11 +3094,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RT0603BRD0720KL"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>9e7be1e0-1b70-54ac-9e72-f8fde3813270</tstamps>
       <units>
         <unit name="A">
@@ -3122,11 +3122,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>0fcb722b-fd38-5c0e-9f19-2080e384f9cc</tstamps>
       <units>
         <unit name="A">
@@ -3150,11 +3150,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>b0367f4d-3c1a-55d3-9688-866e8d9cb895</tstamps>
       <units>
         <unit name="A">
@@ -3178,11 +3178,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-07100KL"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>9015e99e-25c0-5209-ac74-3ea44a630cc8</tstamps>
       <units>
         <unit name="A">
@@ -3206,11 +3206,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-07100KL"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>a13e9346-bf4c-5ace-812b-58c9f64d3210</tstamps>
       <units>
         <unit name="A">
@@ -3234,10 +3234,10 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Switch__SW_Push" description="Push button switch, generic, two pins"/>
       <property name="MPN" value="TL3342F160QG/TR"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
       <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>6a4d2c83-be04-56ae-a820-729aac69b928</tstamps>
       <units>
         <unit name="A">
@@ -3261,9 +3261,9 @@
       </fields>
       <libsource lib="Sphinx_V2" part="TLV3011" description=""/>
       <property name="MPN" value="TLV3011AIDBVR"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>3213d0c9-6ecf-5976-b455-412d9b7c439b</tstamps>
       <units>
         <unit name="A">
@@ -3291,9 +3291,9 @@
       </fields>
       <libsource lib="Sphinx_V2" part="TPS3808G33" description=""/>
       <property name="MPN" value="TPS3808G33DBVR"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>1b018c43-e6b2-5012-bce4-8a8d35f21f17</tstamps>
       <units>
         <unit name="A">
@@ -3321,9 +3321,9 @@
       </fields>
       <libsource lib="Sphinx_V2" part="SN74LVC1G74" description=""/>
       <property name="MPN" value="SN74LVC1G74DCUR"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>34104570-ee87-515c-bb13-831bc041df24</tstamps>
       <units>
         <unit name="A">
@@ -3344,18 +3344,18 @@
       <value>74LVC08AT14-13</value>
       <footprint>Sphinx_V2:Package_SO__TSSOP-14_4.4x5mm_P0.65mm</footprint>
       <datasheet>https://www.diodes.com/datasheet/download/74LVC08A.pdf</datasheet>
-      <description>Quad AND; three channels gate Core, I/O and reset with RUN_LATCH. Fourth channel inputs grounded, output NC. IO_EN_CTRL drives Q301 gate only; decouple with C506.</description>
+      <description>Quad AND; two channels gate Core and I/O with RUN_LATCH. Third and fourth channel inputs grounded, outputs NC. IO_EN_CTRL drives Q301 gate only; decouple with C506.</description>
       <fields>
         <field name="MPN">74LVC08AT14-13</field>
         <field name="Footprint">Sphinx_V2:Package_SO__TSSOP-14_4.4x5mm_P0.65mm</field>
         <field name="Datasheet">https://www.diodes.com/datasheet/download/74LVC08A.pdf</field>
-        <field name="Description">Quad AND; three channels gate Core, I/O and reset with RUN_LATCH. Fourth channel inputs grounded, output NC. IO_EN_CTRL drives Q301 gate only; decouple with C506.</field>
+        <field name="Description">Quad AND; two channels gate Core and I/O with RUN_LATCH. Third and fourth channel inputs grounded, outputs NC. IO_EN_CTRL drives Q301 gate only; decouple with C506.</field>
       </fields>
       <libsource lib="Sphinx_V2" part="74LVC08A_TSSOP14" description="Diodes 74LVC08AT14-13 quad AND, TSSOP14; power-off output leakage specified"/>
       <property name="MPN" value="74LVC08AT14-13"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>38fa4fba-083f-5ef2-8f68-3245823b991a</tstamps>
       <units>
         <unit name="A">
@@ -3378,38 +3378,6 @@
         </unit>
       </units>
     </comp>
-    <comp ref="U506">
-      <value>SN74LVC1G11DCKR</value>
-      <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-363_SC-70-6</footprint>
-      <datasheet>https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf</datasheet>
-      <description>1.65-5.5V single 3-input AND; DCK SC70-6</description>
-      <fields>
-        <field name="MPN">SN74LVC1G11DCKR</field>
-        <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-363_SC-70-6</field>
-        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf</field>
-        <field name="Description">1.65-5.5V single 3-input AND; DCK SC70-6</field>
-      </fields>
-      <libsource lib="Sphinx_V2" part="74xGxx__74LVC1G11" description="Single AND 3-Input Gate, Low-Voltage CMOS"/>
-      <property name="MPN" value="SN74LVC1G11DCKR"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
-      <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
-      <property name="ki_keywords" value="Single Gate AND triple LVC CMOS"/>
-      <property name="ki_fp_filters" value="SOT* SG-*"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
-      <tstamps>64a9dd6b-23fa-5075-9fc3-2d3083fbf6d8</tstamps>
-      <units>
-        <unit name="A">
-          <pins>
-            <pin num="6"/>
-            <pin num="1"/>
-            <pin num="3"/>
-            <pin num="5"/>
-            <pin num="2"/>
-            <pin num="4"/>
-          </pins>
-        </unit>
-      </units>
-    </comp>
     <comp ref="U507">
       <value>SN74LVC2G17DBVT</value>
       <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</footprint>
@@ -3423,9 +3391,9 @@
       </fields>
       <libsource lib="Sphinx_V2" part="SN74LVC2G17" description=""/>
       <property name="MPN" value="SN74LVC2G17DBVT"/>
-      <property name="Sheetname" value="Fault shutdown latch and power-qualified reset"/>
+      <property name="Sheetname" value="Hardware power shutdown latch"/>
       <property name="Sheetfile" value="05_hardware_safety.kicad_sch"/>
-      <sheetpath names="/Fault shutdown latch and power-qualified reset/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
+      <sheetpath names="/Hardware power shutdown latch/" tstamps="/95ce739b-4eee-5f42-a669-179a7d0060de/"/>
       <tstamps>41801752-b0c2-5589-ba1f-7dcfbc7b67c4</tstamps>
       <units>
         <unit name="A">
@@ -3736,12 +3704,12 @@
       <value>MMBT3904</value>
       <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23</footprint>
       <datasheet>https://www.diodes.com/assets/Datasheets/MMBT3904.pdf</datasheet>
-      <description>Open collector reset release. No3.3V connection to DUT reset pin. | NPN SOT23; pin1=B, pin2=E, pin3=C</description>
+      <description>VIO-biased default reset release; SW601, U601 or Q602 sink its base to assert reset. No3.3V connection to DUT reset pin. | NPN SOT23; pin1=B, pin2=E, pin3=C</description>
       <fields>
         <field name="MPN">MMBT3904-7-F</field>
         <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23</field>
         <field name="Datasheet">https://www.diodes.com/assets/Datasheets/MMBT3904.pdf</field>
-        <field name="Description">Open collector reset release. No3.3V connection to DUT reset pin. | NPN SOT23; pin1=B, pin2=E, pin3=C</field>
+        <field name="Description">VIO-biased default reset release; SW601, U601 or Q602 sink its base to assert reset. No3.3V connection to DUT reset pin. | NPN SOT23; pin1=B, pin2=E, pin3=C</field>
       </fields>
       <libsource lib="Sphinx_V2" part="Transistor_BJT__Q_NPN_BEC" description="NPN transistor, base/emitter/collector"/>
       <property name="MPN" value="MMBT3904-7-F"/>
@@ -3750,6 +3718,34 @@
       <property name="ki_keywords" value="BJT"/>
       <sheetpath names="/Socket pinout and signal interfaces/" tstamps="/d57f165e-6d05-5f9f-9c4a-9dc401e097b2/"/>
       <tstamps>2985aed2-a8f8-504c-a01c-e2f28b555365</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q602">
+      <value>DMN62D2UQ-7</value>
+      <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/DMN62D2UQ.pdf</datasheet>
+      <description>Pico active-high reset request sinks RESET_BASE; R411100k gate pulldown must be placed next to Q602. | 60V NMOS, +/-20V VGS, SOT23 G1/S2/D3; RDS(on)&lt;=4Ohm atVGS1.8V/25C; -55..150C operating range; full-temperature electrical maxima not generally specified</description>
+      <fields>
+        <field name="MPN">DMN62D2UQ-7</field>
+        <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/DMN62D2UQ.pdf</field>
+        <field name="Description">Pico active-high reset request sinks RESET_BASE; R411100k gate pulldown must be placed next to Q602. | 60V NMOS, +/-20V VGS, SOT23 G1/S2/D3; RDS(on)&lt;=4Ohm atVGS1.8V/25C; -55..150C operating range; full-temperature electrical maxima not generally specified</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Transistor_FET__Q_NMOS_GSD" description="N-MOSFET transistor, gate/source/drain"/>
+      <property name="MPN" value="DMN62D2UQ-7"/>
+      <property name="Sheetname" value="Socket pinout and signal interfaces"/>
+      <property name="Sheetfile" value="06_socket_and_signals.kicad_sch"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+      <sheetpath names="/Socket pinout and signal interfaces/" tstamps="/d57f165e-6d05-5f9f-9c4a-9dc401e097b2/"/>
+      <tstamps>a10c5f93-5c16-4873-8c02-59969b951a5b</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -3793,12 +3789,12 @@
       <value>10k</value>
       <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
       <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
-      <description>Active-high reset: pull high while control not ready | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
+      <description>Pulls active-high DUT reset up when Q601 is inhibited by an explicit reset request | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
         <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
         <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
-        <field name="Description">Active-high reset: pull high while control not ready | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
+        <field name="Description">Pulls active-high DUT reset up when Q601 is inhibited by an explicit reset request | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
@@ -3821,12 +3817,12 @@
       <value>21.5k</value>
       <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
       <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0721K5L</datasheet>
-      <description>Limits optocoupler sink demand below0.2mA; retains Q601 base drive for the0.18mA reset pull-up | 21.5k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
+      <description>VIO bias defaults Q601 on and reset released; explicit reset sink current about84uA at1.8V | 21.5k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
       <fields>
         <field name="MPN">RC0603FR-0721K5L</field>
         <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
         <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0721K5L</field>
-        <field name="Description">Limits optocoupler sink demand below0.2mA; retains Q601 base drive for the0.18mA reset pull-up | 21.5k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
+        <field name="Description">VIO bias defaults Q601 on and reset released; explicit reset sink current about84uA at1.8V | 21.5k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0721K5L"/>
@@ -5790,11 +5786,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>098f703c-f267-5bb6-8517-a22f7b1098b8</tstamps>
       <units>
         <unit name="A">
@@ -5818,11 +5814,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="GRM31CR60J476ME19L"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>47f926ad-334a-5dfb-a695-71dab09d2dd8</tstamps>
       <units>
         <unit name="A">
@@ -5846,11 +5842,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="GRM31CR60J476ME19L"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>d9237dc9-d7fe-59d0-aa54-4ea6ec5a80cb</tstamps>
       <units>
         <unit name="A">
@@ -5874,11 +5870,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL10A475KO8NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>cc2469e6-608b-5c13-809a-915275011d6e</tstamps>
       <units>
         <unit name="A">
@@ -5902,11 +5898,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL10A475KO8NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>bdc1da70-9f17-57bc-81e9-2ef8d97765ad</tstamps>
       <units>
         <unit name="A">
@@ -5930,11 +5926,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL10A475KO8NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>0e7b5905-dbe9-53cc-8b27-593623c4473d</tstamps>
       <units>
         <unit name="A">
@@ -5958,11 +5954,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL10A475KO8NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>9e979cd2-b650-53a2-90c7-60eb1236281b</tstamps>
       <units>
         <unit name="A">
@@ -5986,11 +5982,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>22658d93-775c-5b03-bb5c-11ed4c0809a9</tstamps>
       <units>
         <unit name="A">
@@ -6014,11 +6010,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>b5197ce7-9a8f-5f05-ac04-ea3e17fa829a</tstamps>
       <units>
         <unit name="A">
@@ -6042,11 +6038,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>9080e8a0-d3af-51dd-8712-eaedf66b273b</tstamps>
       <units>
         <unit name="A">
@@ -6070,11 +6066,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>61c1e4eb-acd9-5b14-9528-7ecf725162e8</tstamps>
       <units>
         <unit name="A">
@@ -6098,11 +6094,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>c6256916-5dbc-5665-9c92-8931c018f5a2</tstamps>
       <units>
         <unit name="A">
@@ -6126,11 +6122,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>36529647-b652-5487-b25a-af5a66dbd846</tstamps>
       <units>
         <unit name="A">
@@ -6154,11 +6150,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>e55f625b-3aeb-552c-8fc6-8ab0a93447c1</tstamps>
       <units>
         <unit name="A">
@@ -6182,11 +6178,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>1c3c2f08-2cd4-56f2-8e36-abc91938b946</tstamps>
       <units>
         <unit name="A">
@@ -6210,11 +6206,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>44612cca-1888-5bf1-a7d3-6c6dad69f5a1</tstamps>
       <units>
         <unit name="A">
@@ -6238,11 +6234,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
       <property name="MPN" value="CL05B104KO5NNNC"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="cap capacitor"/>
       <property name="ki_fp_filters" value="C_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>f61c94f4-b4ae-520d-aa14-d5ae2c549f44</tstamps>
       <units>
         <unit name="A">
@@ -6266,11 +6262,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RT0603BRD076K19L"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>6cafdd0e-9e35-531a-a5ec-21a9d195d1da</tstamps>
       <units>
         <unit name="A">
@@ -6294,11 +6290,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RT0603BRD0720KL"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>53496d1b-de3f-5964-bd11-576f66bc2f85</tstamps>
       <units>
         <unit name="A">
@@ -6322,11 +6318,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="R res resistor"/>
       <property name="ki_fp_filters" value="R_*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>611cbfc0-4a3d-518b-a844-3cc8d207e1da</tstamps>
       <units>
         <unit name="A">
@@ -6348,11 +6344,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Connector__TestPoint" description="test point"/>
       <property name="MPN" value=""/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>a42a1316-5ce1-5c84-a7a8-e429de181feb</tstamps>
       <units>
         <unit name="A">
@@ -6373,11 +6369,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Connector__TestPoint" description="test point"/>
       <property name="MPN" value=""/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>0f506228-6ebd-5153-9028-7fce2fc88061</tstamps>
       <units>
         <unit name="A">
@@ -6398,11 +6394,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Connector__TestPoint" description="test point"/>
       <property name="MPN" value=""/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>a21ac3a8-418c-5701-a268-fb5dc042254c</tstamps>
       <units>
         <unit name="A">
@@ -6423,11 +6419,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Connector__TestPoint" description="test point"/>
       <property name="MPN" value=""/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>cffbf25d-9a71-5605-8d3a-c641977fee56</tstamps>
       <units>
         <unit name="A">
@@ -6448,11 +6444,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Connector__TestPoint" description="test point"/>
       <property name="MPN" value=""/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>23cae297-bd65-57a6-8e7b-ee08de28482d</tstamps>
       <units>
         <unit name="A">
@@ -6473,11 +6469,11 @@
       </fields>
       <libsource lib="Sphinx_V2" part="Connector__TestPoint" description="test point"/>
       <property name="MPN" value=""/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <property name="ki_keywords" value="test point tp"/>
       <property name="ki_fp_filters" value="Pin* Test*"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>0664b407-52d6-5d56-ac39-481cd1cf2fe7</tstamps>
       <units>
         <unit name="A">
@@ -6491,18 +6487,18 @@
       <value>TLV3011AIDBVR</value>
       <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tlv3011.pdf</datasheet>
-      <description>Independent VIO undervoltage qualifier, nominal1.626V; coarse backup, not ASIC rated threshold | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</description>
+      <description>Independent VIO monitor to Pico GP7 only, nominal1.626V; no reset or hardware shutdown action | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</description>
       <fields>
         <field name="MPN">TLV3011AIDBVR</field>
         <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv3011.pdf</field>
-        <field name="Description">Independent VIO undervoltage qualifier, nominal1.626V; coarse backup, not ASIC rated threshold | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</field>
+        <field name="Description">Independent VIO monitor to Pico GP7 only, nominal1.626V; no reset or hardware shutdown action | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</field>
       </fields>
       <libsource lib="Sphinx_V2" part="TLV3011" description=""/>
       <property name="MPN" value="TLV3011AIDBVR"/>
-      <property name="Sheetname" value="I/O decoupling and undervoltage reset interlock"/>
+      <property name="Sheetname" value="I/O decoupling and voltage monitor"/>
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
-      <sheetpath names="/I/O decoupling and undervoltage reset interlock/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
+      <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>2964b1f4-0aa3-53e6-ba49-1962013483bd</tstamps>
       <units>
         <unit name="A">
@@ -6543,29 +6539,6 @@
         <pin num="12" name="4A" type="input"/>
         <pin num="13" name="4B" type="input"/>
         <pin num="14" name="VCC" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="Sphinx_V2" part="74xGxx__74LVC1G11">
-      <description>Single AND 3-Input Gate, Low-Voltage CMOS</description>
-      <docs>http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</docs>
-      <footprints>
-        <fp>SOT*</fp>
-        <fp>SG-*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">74LVC1G11</field>
-        <field name="Footprint"/>
-        <field name="Datasheet">http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf</field>
-        <field name="Description">Single AND 3-Input Gate, Low-Voltage CMOS</field>
-      </fields>
-      <pins>
-        <pin num="1" name="" type="input"/>
-        <pin num="2" name="GND" type="power_in"/>
-        <pin num="3" name="" type="input"/>
-        <pin num="4" name="" type="output"/>
-        <pin num="5" name="VCC" type="power_in"/>
-        <pin num="6" name="" type="input"/>
       </pins>
     </libpart>
     <libpart lib="Sphinx_V2" part="Banana_4mm_TwoLegs">
@@ -7412,6 +7385,7 @@
       <node ref="R321" pin="1" pintype="passive"/>
       <node ref="R511" pin="1" pintype="passive"/>
       <node ref="R602" pin="1" pintype="passive"/>
+      <node ref="R603" pin="1" pintype="passive"/>
       <node ref="TP801" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U301" pin="14" pinfunction="VOS_14" pintype="input"/>
       <node ref="U303" pin="8" pinfunction="VBUS_8" pintype="input"/>
@@ -7423,7 +7397,6 @@
       <node ref="C503" pin="1" pintype="passive"/>
       <node ref="C504" pin="1" pintype="passive"/>
       <node ref="C506" pin="1" pintype="passive"/>
-      <node ref="C507" pin="1" pintype="passive"/>
       <node ref="C508" pin="1" pintype="passive"/>
       <node ref="C509" pin="1" pintype="passive"/>
       <node ref="C510" pin="1" pintype="passive"/>
@@ -7437,6 +7410,7 @@
       <node ref="R408" pin="1" pintype="passive"/>
       <node ref="R506" pin="1" pintype="passive"/>
       <node ref="R513" pin="1" pintype="passive"/>
+      <node ref="R516" pin="1" pintype="passive"/>
       <node ref="U302" pin="6" pinfunction="VS_6" pintype="power_in"/>
       <node ref="U303" pin="2" pinfunction="A0_2" pintype="input"/>
       <node ref="U303" pin="6" pinfunction="VS_6" pintype="power_in"/>
@@ -7449,7 +7423,6 @@
       <node ref="U503" pin="7" pinfunction="PRE_N_7" pintype="input"/>
       <node ref="U503" pin="8" pinfunction="VCC_8" pintype="power_in"/>
       <node ref="U504" pin="14" pinfunction="VCC_14" pintype="power_in"/>
-      <node ref="U506" pin="5" pinfunction="VCC_5" pintype="power_in"/>
       <node ref="U507" pin="5" pinfunction="VCC_5" pintype="power_in"/>
       <node ref="U508" pin="6" pinfunction="V+_6" pintype="power_in"/>
       <node ref="U509" pin="6" pinfunction="V+_6" pintype="power_in"/>
@@ -7533,7 +7506,6 @@
       <node ref="R211" pin="2" pintype="passive"/>
       <node ref="U201" pin="1" pinfunction="PGD_1" pintype="open_collector"/>
       <node ref="U401" pin="9" pinfunction="GPIO6_9" pintype="bidirectional"/>
-      <node ref="U506" pin="1" pintype="input"/>
     </net>
     <net code="20" name="CORE_PRE_SHUNT" class="CorePower,Default">
       <node ref="L201" pin="2" pinfunction="2_2" pintype="passive"/>
@@ -7604,7 +7576,6 @@
       <node ref="C503" pin="2" pintype="passive"/>
       <node ref="C504" pin="2" pintype="passive"/>
       <node ref="C506" pin="2" pintype="passive"/>
-      <node ref="C507" pin="2" pintype="passive"/>
       <node ref="C508" pin="2" pintype="passive"/>
       <node ref="C509" pin="2" pintype="passive"/>
       <node ref="C510" pin="2" pintype="passive"/>
@@ -7732,6 +7703,7 @@
       <node ref="Q301" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q302" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q601" pin="2" pinfunction="E_2" pintype="passive"/>
+      <node ref="Q602" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="R102" pin="2" pintype="passive"/>
       <node ref="R104" pin="2" pintype="passive"/>
       <node ref="R105" pin="2" pintype="passive"/>
@@ -7798,10 +7770,11 @@
       <node ref="U501" pin="2" pinfunction="V-_2" pintype="power_in"/>
       <node ref="U502" pin="2" pinfunction="GND_2" pintype="power_in"/>
       <node ref="U503" pin="4" pinfunction="GND_4" pintype="power_in"/>
+      <node ref="U504" pin="10" pinfunction="3B_10" pintype="input"/>
       <node ref="U504" pin="12" pinfunction="4A_12" pintype="input"/>
       <node ref="U504" pin="13" pinfunction="4B_13" pintype="input"/>
       <node ref="U504" pin="7" pinfunction="GND_7" pintype="power_in"/>
-      <node ref="U506" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U504" pin="9" pinfunction="3A_9" pintype="input"/>
       <node ref="U507" pin="2" pinfunction="GND_2" pintype="power_in"/>
       <node ref="U508" pin="2" pinfunction="V-_2" pintype="power_in"/>
       <node ref="U509" pin="2" pinfunction="V-_2" pintype="power_in"/>
@@ -7820,7 +7793,6 @@
       <node ref="U501" pin="1" pinfunction="OUT_OD_1" pintype="open_collector"/>
       <node ref="U502" pin="1" pinfunction="RESET_N_1" pintype="open_collector"/>
       <node ref="U507" pin="3" pinfunction="2A_3" pintype="input"/>
-      <node ref="U509" pin="1" pinfunction="OUT_OD_1" pintype="open_collector"/>
     </net>
     <net code="30" name="INPUT_DVDT" class="Default">
       <node ref="C103" pin="1" pintype="passive"/>
@@ -7909,7 +7881,6 @@
     <net code="47" name="IO_VALID" class="Default">
       <node ref="R513" pin="2" pintype="passive"/>
       <node ref="U401" pin="10" pinfunction="GPIO7_10" pintype="bidirectional"/>
-      <node ref="U506" pin="3" pintype="input"/>
       <node ref="U508" pin="1" pinfunction="OUT_OD_1" pintype="open_collector"/>
     </net>
     <net code="48" name="MON_ALERT_N" class="Default">
@@ -7953,43 +7924,35 @@
       <node ref="U501" pin="3" pinfunction="IN+_3" pintype="input"/>
       <node ref="U501" pin="5" pinfunction="REF_1V242_5" pintype="output"/>
     </net>
-    <net code="55" name="RESET_BASE" class="Default">
+    <net code="55" name="RESET_ASSERT" class="Default">
+      <node ref="Q602" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R411" pin="1" pintype="passive"/>
+      <node ref="U401" pin="6" pinfunction="GPIO4_6" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="RESET_BASE" class="Default">
       <node ref="Q601" pin="1" pinfunction="B_1" pintype="input"/>
+      <node ref="Q602" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R603" pin="2" pintype="passive"/>
       <node ref="R604" pin="1" pintype="passive"/>
       <node ref="SW601" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U601" pin="4" pinfunction="C_4" pintype="open_collector"/>
     </net>
-    <net code="56" name="RESET_PERMIT" class="Default">
-      <node ref="U504" pin="8" pinfunction="3Y_8" pintype="output"/>
-      <node ref="U506" pin="6" pintype="input"/>
-    </net>
-    <net code="57" name="RESET_RELEASE" class="Default">
-      <node ref="R411" pin="1" pintype="passive"/>
-      <node ref="U401" pin="6" pinfunction="GPIO4_6" pintype="bidirectional"/>
-      <node ref="U504" pin="10" pinfunction="3B_10" pintype="input"/>
-    </net>
-    <net code="58" name="RESET_RELEASE_OK" class="Default">
-      <node ref="R603" pin="1" pintype="passive"/>
-      <node ref="U506" pin="4" pintype="output"/>
-    </net>
-    <net code="59" name="RUN_LATCH" class="Default">
+    <net code="57" name="RUN_LATCH" class="Default">
       <node ref="U401" pin="7" pinfunction="GPIO5_7" pintype="bidirectional"/>
       <node ref="U503" pin="5" pinfunction="Q_5" pintype="output"/>
       <node ref="U504" pin="1" pinfunction="1A_1" pintype="input"/>
       <node ref="U504" pin="4" pinfunction="2A_4" pintype="input"/>
-      <node ref="U504" pin="9" pinfunction="3A_9" pintype="input"/>
     </net>
-    <net code="60" name="RUN_SET" class="Default">
+    <net code="58" name="RUN_SET" class="Default">
       <node ref="R507" pin="1" pintype="passive"/>
       <node ref="U401" pin="14" pinfunction="GPIO10_14" pintype="bidirectional"/>
       <node ref="U507" pin="1" pinfunction="1A_1" pintype="input"/>
     </net>
-    <net code="61" name="RUN_SET_CLEAN" class="Default">
+    <net code="59" name="RUN_SET_CLEAN" class="Default">
       <node ref="U503" pin="1" pinfunction="CLK_1" pintype="input"/>
       <node ref="U507" pin="6" pinfunction="1Y_6" pintype="output"/>
     </net>
-    <net code="62" name="VIN12" class="Default">
+    <net code="60" name="VIN12" class="Default">
       <node ref="C104" pin="1" pintype="passive"/>
       <node ref="C105" pin="1" pintype="passive"/>
       <node ref="C106" pin="1" pintype="passive"/>
@@ -8017,16 +7980,21 @@
       <node ref="U301" pin="11" pinfunction="PVIN/AVIN_11" pintype="power_in"/>
       <node ref="U301" pin="12" pinfunction="PVIN/AVIN_12" pintype="passive"/>
     </net>
-    <net code="63" name="VIN12_UV_REF" class="Default">
+    <net code="61" name="VIN12_UV_REF" class="Default">
       <node ref="U509" pin="4" pinfunction="IN-_4" pintype="input"/>
       <node ref="U509" pin="5" pinfunction="REF_1V242_5" pintype="output"/>
     </net>
-    <net code="64" name="VIN12_UV_SENSE" class="Default">
+    <net code="62" name="VIN12_UV_SENSE" class="Default">
       <node ref="R514" pin="2" pintype="passive"/>
       <node ref="R515" pin="1" pintype="passive"/>
       <node ref="U509" pin="3" pinfunction="IN+_3" pintype="input"/>
     </net>
-    <net code="65" name="VIN_FUSED" class="Default">
+    <net code="63" name="VIN12_VALID" class="Default">
+      <node ref="R516" pin="2" pintype="passive"/>
+      <node ref="U401" pin="16" pinfunction="GPIO12_16" pintype="bidirectional"/>
+      <node ref="U509" pin="1" pinfunction="OUT_OD_1" pintype="open_collector"/>
+    </net>
+    <net code="64" name="VIN_FUSED" class="Default">
       <node ref="C101" pin="1" pintype="passive"/>
       <node ref="C102" pin="1" pintype="passive"/>
       <node ref="F101" pin="2" pintype="passive"/>
@@ -8034,186 +8002,186 @@
       <node ref="R103" pin="1" pintype="passive"/>
       <node ref="U101" pin="5" pinfunction="IN_5" pintype="power_in"/>
     </net>
-    <net code="66" name="VIN_RAW" class="Default">
+    <net code="65" name="VIN_RAW" class="Default">
       <node ref="F101" pin="1" pintype="passive"/>
       <node ref="J101" pin="1" pinfunction="CONTACT_1" pintype="passive"/>
       <node ref="J101" pin="2" pinfunction="CONTACT_2" pintype="passive"/>
     </net>
-    <net code="67" name="VSEL" class="Default">
+    <net code="66" name="VSEL" class="Default">
       <node ref="R208" pin="1" pintype="passive"/>
       <node ref="U201" pin="30" pinfunction="VSEL_30" pintype="input"/>
     </net>
-    <net code="68" name="ZED_3V3" class="Default">
+    <net code="67" name="ZED_3V3" class="Default">
       <node ref="J602" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R605" pin="1" pintype="passive"/>
     </net>
-    <net code="69" name="ZED_OPTO_A" class="Default">
+    <net code="68" name="ZED_OPTO_A" class="Default">
       <node ref="R605" pin="2" pintype="passive"/>
       <node ref="U601" pin="1" pinfunction="A_1" pintype="passive"/>
     </net>
-    <net code="70" name="ZED_RESET_OD" class="Default">
+    <net code="69" name="ZED_RESET_OD" class="Default">
       <node ref="J602" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="U601" pin="2" pinfunction="K_2" pintype="passive"/>
     </net>
-    <net code="71" name="clock_tap" class="Default">
+    <net code="70" name="clock_tap" class="Default">
       <node ref="J1" pin="47" pinfunction="clock_tap_47" pintype="passive"/>
       <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="72" name="jtag_TDI" class="Default">
+    <net code="71" name="jtag_TDI" class="Default">
       <node ref="J1" pin="6" pinfunction="jtag_TDI_6" pintype="passive"/>
       <node ref="J2" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
       <node ref="J6" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
     </net>
-    <net code="73" name="jtag_TDO" class="Default">
+    <net code="72" name="jtag_TDO" class="Default">
       <node ref="J1" pin="7" pinfunction="jtag_TDO_7" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="J6" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
     </net>
-    <net code="74" name="jtag_TMS" class="Default">
+    <net code="73" name="jtag_TMS" class="Default">
       <node ref="J1" pin="14" pinfunction="jtag_TMS_14" pintype="passive"/>
       <node ref="J2" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="J6" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
     </net>
-    <net code="75" name="jtag_clk" class="Default">
+    <net code="74" name="jtag_clk" class="Default">
       <node ref="J1" pin="13" pinfunction="jtag_TCK_13" pintype="passive"/>
       <node ref="J2" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="J6" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
     </net>
-    <net code="76" name="master_clk" class="Default">
+    <net code="75" name="master_clk" class="Default">
       <node ref="J1" pin="48" pinfunction="clock_48" pintype="passive"/>
       <node ref="J5" pin="1" pinfunction="In_1" pintype="passive"/>
       <node ref="R601" pin="1" pintype="passive"/>
     </net>
-    <net code="77" name="reset" class="Default">
+    <net code="76" name="reset" class="Default">
       <node ref="J1" pin="54" pinfunction="reset_54" pintype="passive"/>
       <node ref="Q601" pin="3" pinfunction="C_3" pintype="passive"/>
       <node ref="R602" pin="2" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="78" name="unconnected-(J1-Hole_1-Pad81)" class="Default">
+    <net code="77" name="unconnected-(J1-Hole_1-Pad81)" class="Default">
       <node ref="J1" pin="81" pinfunction="Hole_1_81" pintype="passive+no_connect"/>
     </net>
-    <net code="79" name="unconnected-(J1-Hole_2-Pad82)" class="Default">
+    <net code="78" name="unconnected-(J1-Hole_2-Pad82)" class="Default">
       <node ref="J1" pin="82" pinfunction="Hole_2_82" pintype="passive+no_connect"/>
     </net>
-    <net code="80" name="unconnected-(J1-Hole_3-Pad83)" class="Default">
+    <net code="79" name="unconnected-(J1-Hole_3-Pad83)" class="Default">
       <node ref="J1" pin="83" pinfunction="Hole_3_83" pintype="passive+no_connect"/>
     </net>
-    <net code="81" name="unconnected-(J1-Standoff_1-Pad84)" class="Default">
+    <net code="80" name="unconnected-(J1-Standoff_1-Pad84)" class="Default">
       <node ref="J1" pin="84" pinfunction="Standoff_1_84" pintype="passive+no_connect"/>
     </net>
-    <net code="82" name="unconnected-(J1-UNCONNECTED-Pad2)" class="Default">
+    <net code="81" name="unconnected-(J1-UNCONNECTED-Pad2)" class="Default">
       <node ref="J1" pin="2" pinfunction="UNCONNECTED_2" pintype="passive+no_connect"/>
     </net>
-    <net code="83" name="unconnected-(J1-UNCONNECTED-Pad19)" class="Default">
+    <net code="82" name="unconnected-(J1-UNCONNECTED-Pad19)" class="Default">
       <node ref="J1" pin="19" pinfunction="UNCONNECTED_19" pintype="passive+no_connect"/>
     </net>
-    <net code="84" name="unconnected-(J1-UNCONNECTED-Pad22)" class="Default">
+    <net code="83" name="unconnected-(J1-UNCONNECTED-Pad22)" class="Default">
       <node ref="J1" pin="22" pinfunction="UNCONNECTED_22" pintype="passive+no_connect"/>
     </net>
-    <net code="85" name="unconnected-(J1-UNCONNECTED-Pad38)" class="Default">
+    <net code="84" name="unconnected-(J1-UNCONNECTED-Pad38)" class="Default">
       <node ref="J1" pin="38" pinfunction="UNCONNECTED_38" pintype="passive+no_connect"/>
     </net>
-    <net code="86" name="unconnected-(J1-UNCONNECTED-Pad39)" class="Default">
+    <net code="85" name="unconnected-(J1-UNCONNECTED-Pad39)" class="Default">
       <node ref="J1" pin="39" pinfunction="UNCONNECTED_39" pintype="passive+no_connect"/>
     </net>
-    <net code="87" name="unconnected-(J1-UNCONNECTED-Pad42)" class="Default">
+    <net code="86" name="unconnected-(J1-UNCONNECTED-Pad42)" class="Default">
       <node ref="J1" pin="42" pinfunction="UNCONNECTED_42" pintype="passive+no_connect"/>
     </net>
-    <net code="88" name="unconnected-(J1-UNCONNECTED-Pad59)" class="Default">
+    <net code="87" name="unconnected-(J1-UNCONNECTED-Pad59)" class="Default">
       <node ref="J1" pin="59" pinfunction="UNCONNECTED_59" pintype="passive+no_connect"/>
     </net>
-    <net code="89" name="unconnected-(J1-UNCONNECTED-Pad62)" class="Default">
+    <net code="88" name="unconnected-(J1-UNCONNECTED-Pad62)" class="Default">
       <node ref="J1" pin="62" pinfunction="UNCONNECTED_62" pintype="passive+no_connect"/>
     </net>
-    <net code="90" name="unconnected-(J1-UNCONNECTED-Pad79)" class="Default">
+    <net code="89" name="unconnected-(J1-UNCONNECTED-Pad79)" class="Default">
       <node ref="J1" pin="79" pinfunction="UNCONNECTED_79" pintype="passive+no_connect"/>
     </net>
-    <net code="91" name="unconnected-(J6-Pin_2-Pad2)" class="Default">
+    <net code="90" name="unconnected-(J6-Pin_2-Pad2)" class="Default">
       <node ref="J6" pin="2" pinfunction="Pin_2_2" pintype="passive+no_connect"/>
     </net>
-    <net code="92" name="unconnected-(J6-Pin_3-Pad3)" class="Default">
+    <net code="91" name="unconnected-(J6-Pin_3-Pad3)" class="Default">
       <node ref="J6" pin="3" pinfunction="Pin_3_3" pintype="passive+no_connect"/>
     </net>
-    <net code="93" name="unconnected-(J6-Pin_15-Pad15)" class="Default">
+    <net code="92" name="unconnected-(J6-Pin_15-Pad15)" class="Default">
       <node ref="J6" pin="15" pinfunction="Pin_15_15" pintype="passive+no_connect"/>
     </net>
-    <net code="94" name="unconnected-(J6-Pin_17-Pad17)" class="Default">
+    <net code="93" name="unconnected-(J6-Pin_17-Pad17)" class="Default">
       <node ref="J6" pin="17" pinfunction="Pin_17_17" pintype="passive+no_connect"/>
     </net>
-    <net code="95" name="unconnected-(J6-Pin_19-Pad19)" class="Default">
+    <net code="94" name="unconnected-(J6-Pin_19-Pad19)" class="Default">
       <node ref="J6" pin="19" pinfunction="Pin_19_19" pintype="passive+no_connect"/>
     </net>
-    <net code="96" name="unconnected-(U101-AUXOFF-Pad3)" class="Default">
+    <net code="95" name="unconnected-(U101-AUXOFF-Pad3)" class="Default">
       <node ref="U101" pin="3" pinfunction="AUXOFF_3" pintype="open_collector+no_connect"/>
     </net>
-    <net code="97" name="unconnected-(U101-ITIMER-Pad10)" class="Default">
+    <net code="96" name="unconnected-(U101-ITIMER-Pad10)" class="Default">
       <node ref="U101" pin="10" pinfunction="ITIMER_10" pintype="passive+no_connect"/>
     </net>
-    <net code="98" name="unconnected-(U102-EN-Pad5)" class="Default">
+    <net code="97" name="unconnected-(U102-EN-Pad5)" class="Default">
       <node ref="U102" pin="5" pinfunction="EN_5" pintype="input+no_connect"/>
     </net>
-    <net code="99" name="unconnected-(U201-SYNC-Pad38)" class="Default">
+    <net code="98" name="unconnected-(U201-SYNC-Pad38)" class="Default">
       <node ref="U201" pin="38" pinfunction="SYNC_38" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="100" name="unconnected-(U201-VSHARE-Pad35)" class="Default">
+    <net code="99" name="unconnected-(U201-VSHARE-Pad35)" class="Default">
       <node ref="U201" pin="35" pinfunction="VSHARE_35" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="101" name="unconnected-(U401-3V3_EN-Pad37)" class="Default">
+    <net code="100" name="unconnected-(U401-3V3_EN-Pad37)" class="Default">
       <node ref="U401" pin="37" pinfunction="3V3_EN_37" pintype="passive+no_connect"/>
     </net>
-    <net code="102" name="unconnected-(U401-ADC_VREF-Pad35)" class="Default">
+    <net code="101" name="unconnected-(U401-ADC_VREF-Pad35)" class="Default">
       <node ref="U401" pin="35" pinfunction="ADC_VREF_35" pintype="power_in+no_connect"/>
     </net>
-    <net code="103" name="unconnected-(U401-GPIO12-Pad16)" class="Default">
-      <node ref="U401" pin="16" pinfunction="GPIO12_16" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="104" name="unconnected-(U401-GPIO13-Pad17)" class="Default">
+    <net code="102" name="unconnected-(U401-GPIO13-Pad17)" class="Default">
       <node ref="U401" pin="17" pinfunction="GPIO13_17" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="105" name="unconnected-(U401-GPIO14-Pad19)" class="Default">
+    <net code="103" name="unconnected-(U401-GPIO14-Pad19)" class="Default">
       <node ref="U401" pin="19" pinfunction="GPIO14_19" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="106" name="unconnected-(U401-GPIO16-Pad21)" class="Default">
+    <net code="104" name="unconnected-(U401-GPIO16-Pad21)" class="Default">
       <node ref="U401" pin="21" pinfunction="GPIO16_21" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="107" name="unconnected-(U401-GPIO17-Pad22)" class="Default">
+    <net code="105" name="unconnected-(U401-GPIO17-Pad22)" class="Default">
       <node ref="U401" pin="22" pinfunction="GPIO17_22" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="108" name="unconnected-(U401-GPIO18-Pad24)" class="Default">
+    <net code="106" name="unconnected-(U401-GPIO18-Pad24)" class="Default">
       <node ref="U401" pin="24" pinfunction="GPIO18_24" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="109" name="unconnected-(U401-GPIO19-Pad25)" class="Default">
+    <net code="107" name="unconnected-(U401-GPIO19-Pad25)" class="Default">
       <node ref="U401" pin="25" pinfunction="GPIO19_25" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="110" name="unconnected-(U401-GPIO20-Pad26)" class="Default">
+    <net code="108" name="unconnected-(U401-GPIO20-Pad26)" class="Default">
       <node ref="U401" pin="26" pinfunction="GPIO20_26" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="111" name="unconnected-(U401-GPIO21-Pad27)" class="Default">
+    <net code="109" name="unconnected-(U401-GPIO21-Pad27)" class="Default">
       <node ref="U401" pin="27" pinfunction="GPIO21_27" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="112" name="unconnected-(U401-GPIO22-Pad29)" class="Default">
+    <net code="110" name="unconnected-(U401-GPIO22-Pad29)" class="Default">
       <node ref="U401" pin="29" pinfunction="GPIO22_29" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="113" name="unconnected-(U401-GPIO26_ADC0-Pad31)" class="Default">
+    <net code="111" name="unconnected-(U401-GPIO26_ADC0-Pad31)" class="Default">
       <node ref="U401" pin="31" pinfunction="GPIO26_ADC0_31" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="114" name="unconnected-(U401-GPIO28_ADC2-Pad34)" class="Default">
+    <net code="112" name="unconnected-(U401-GPIO28_ADC2-Pad34)" class="Default">
       <node ref="U401" pin="34" pinfunction="GPIO28_ADC2_34" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="115" name="unconnected-(U401-RUN-Pad30)" class="Default">
+    <net code="113" name="unconnected-(U401-RUN-Pad30)" class="Default">
       <node ref="U401" pin="30" pinfunction="RUN_30" pintype="passive+no_connect"/>
     </net>
-    <net code="116" name="unconnected-(U401-VBUS-Pad40)" class="Default">
+    <net code="114" name="unconnected-(U401-VBUS-Pad40)" class="Default">
       <node ref="U401" pin="40" pinfunction="VBUS_40" pintype="power_out+no_connect"/>
     </net>
-    <net code="117" name="unconnected-(U502-CT-Pad4)" class="Default">
+    <net code="115" name="unconnected-(U502-CT-Pad4)" class="Default">
       <node ref="U502" pin="4" pinfunction="CT_4" pintype="passive+no_connect"/>
     </net>
-    <net code="118" name="unconnected-(U503-Q_N-Pad3)" class="Default">
+    <net code="116" name="unconnected-(U503-Q_N-Pad3)" class="Default">
       <node ref="U503" pin="3" pinfunction="Q_N_3" pintype="output+no_connect"/>
     </net>
-    <net code="119" name="unconnected-(U504-4Y-Pad11)" class="Default">
+    <net code="117" name="unconnected-(U504-3Y-Pad8)" class="Default">
+      <node ref="U504" pin="8" pinfunction="3Y_8" pintype="output+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U504-4Y-Pad11)" class="Default">
       <node ref="U504" pin="11" pinfunction="4Y_11" pintype="output+no_connect"/>
     </net>
   </nets>

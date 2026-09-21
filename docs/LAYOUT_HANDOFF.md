@@ -24,6 +24,8 @@ Provide adjacent power/ground probe pads at the socket pin groups and regulator 
 
 Place TP7 and TP607 near J1.54, on the same accessible face, with pad centers no more than 2 mm apart. Keep the reset stub and ground path short. Mark RESET and GND and preserve access with the socket closed. Both pads are 1 mm diameter.
 
+Connect R603 to local VIO so Q601 releases reset by default whenever VIO is valid. Keep the three explicit `RESET_BASE` pull-down paths from SW601, U601, and Q602 intact. Q602 gate is GP4 `RESET_ASSERT`, with R411 holding it low when the Pico is absent or high impedance. Route GP6/GP7/GP12 diagnostic inputs independently; these observations have no reset or run-latch clear connection. U509 uses its own R516 pull-up on `VIN12_VALID`. The separate U501 OVP clear path remains protective.
+
 Implement the U301 enable interface placement requirements in [IO_ENABLE.md](IO_ENABLE.md). Keep comparator sense lines, NTC wiring, and clock routing clear of switching-node coupling.
 
 ## Socket and package

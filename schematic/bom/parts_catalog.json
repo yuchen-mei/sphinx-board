@@ -57,7 +57,7 @@
       "purchase_quantity": 6,
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "source_access_method": "web_reader_page",
-      "application_check": "R105 sets a nominal 2.69 A current limit. OVLO is approximately 14.4 V. U509 senses post-eFuse input loss and clears RUN_LATCH. Connect ILM only to local R105; keep parasitic capacitance below 50 pF. Verify inrush and rapid interruption.",
+      "application_check": "R105 sets a nominal 2.69 A current limit. OVLO is approximately 14.4 V. U509 monitors post-eFuse VIN12 without clearing RUN_LATCH. Intrinsic UVLO/OVLO can recover if control power and the latch survive; FLT events still clear the latch. Connect ILM only to local R105; keep parasitic capacitance below 50 pF. Verify inrush and rapid interruption.",
       "spec_review_status": "NOMINAL_RATINGS_REVIEWED",
       "optional_full_population_quantity": 0
     },
@@ -277,7 +277,7 @@
       "purchase_quantity": 6,
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "source_access_method": "web_reader_page",
-      "application_check": "Required controller contract (firmware outside this repository): ON and commanded operating-range changes pulse GP10 RUN_SET after configuration and fault checks; no separate ARM command. GP5 reads RUN_LATCH and GP8 reads HW_FAULT_N. GP15 may drive HW_FAULT_N low or high impedance only. Boot, OFF, and faults leave enable requests and RESET_RELEASE low; do not retry ON automatically.",
+      "application_check": "Companion firmware: ON and explicit SET scale changes pulse GP10 RUN_SET after configuration checks. GP5 reads RUN_LATCH, GP8 reads HW_FAULT_N, and GP12 reads VIN12_VALID. GP15 drives HW_FAULT_N low or high impedance only. GP4 RESET_ASSERT defaults low; only explicit RESET commands change its request. PG, voltage deviations and host disconnection are warnings. Latched protection requires explicit ON recovery.",
       "spec_review_status": "NOMINAL_RATINGS_REVIEWED",
       "optional_full_population_quantity": 0
     },
@@ -334,7 +334,7 @@
       "purchase_quantity": 18,
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "source_access_method": "web_reader_page",
-      "application_check": "U501 core OVP, U508 I/O qualifier, and U509 post-eFuse input detector. Nominal thresholds are 1.319 V, 1.626 V, and 10.333 V. Evaluate tolerance, propagation delay, and temperature dependence.",
+      "application_check": "U501 core OVP clears the power latch. U508 IO_VALID and U509 VIN12_VALID are independent telemetry only. Nominal thresholds are 1.319 V, 1.626 V, and 10.333 V. Evaluate tolerance, propagation delay, and temperature dependence.",
       "spec_review_status": "NOMINAL_RATINGS_REVIEWED",
       "optional_full_population_quantity": 0
     },
@@ -442,37 +442,10 @@
       "purchase_quantity": 6,
       "status": "MANUFACTURER_SPEC_VERIFIED_STOCK_NOT_CHECKED",
       "source_access_method": "manufacturer_web_page_and_datasheet",
-      "application_check": "U504 replaces three single AND packages. Pins 1/2/3 qualify CORE_REQ; 4/5/6 qualify IO_REQ; 9/10/8 qualify RESET_RELEASE with RUN_LATCH. Pins 12/13 are grounded, 11 unconnected, 7 ground, 14 3V3_CTRL. Datasheet DS35261 Rev.4-2: at VCC=3V, VOH >=2.3V at -12mA through 85C (>=2.1V through 125C); at -24mA, >=2.2V/2.0V. R307=270 ohm can draw 13.5mA at 3.6V and -1% tolerance; the conservative 24mA level exceeds Q301's 1.8V gate-drive test point. Q301 full-temperature and transient performance still require board verification. At VCC=0, Ioff <=10uA through 85C or <=20uA through 125C with VI/VO up to 3.6V; existing output pull-downs remain required. Same pin numbers do not establish equivalent power-off behavior for another manufacturer.",
+      "application_check": "U504 gates only the two supply requests with RUN_LATCH. Pins 1/2/3 qualify CORE_REQ; 4/5/6 qualify IO_REQ. Unused inputs 9/10/12/13 are grounded, outputs 8/11 unconnected, pin 7 ground and 14 3V3_CTRL. Datasheet DS35261 Rev.4-2: at VCC=3V, VOH >=2.3V at -12mA through 85C (>=2.1V through 125C); at -24mA, >=2.2V/2.0V. R307=270 ohm can draw 13.5mA at 3.6V and -1% tolerance; the conservative 24mA level exceeds Q301's 1.8V gate-drive test point. Q301 full-temperature and transient performance still require board verification. At VCC=0, Ioff <=10uA through 85C or <=20uA through 125C with VI/VO up to 3.6V; existing output pull-downs remain required. Same pin numbers do not establish equivalent power-off behavior for another manufacturer.",
       "spec_review_status": "PINMAP_DRIVE_AND_IOFF_REVIEWED_WITH_TRANSIENT_AND_TEMPERATURE_HOLDS",
       "optional_full_population_quantity": 0,
       "availability_note": "Manufacturer specification verified; no distributor stock, MOQ, price, or China delivery check. Purchase quantity 6 is the five-board-plus-spare requirement, not a verified order quantity."
-    },
-    {
-      "mpn": "SN74LVC1G11DCKR",
-      "manufacturer": "Texas Instruments",
-      "references": [
-        "U506"
-      ],
-      "specification": "1.65-5.5V single 3-input AND; DCK SC70-6",
-      "quantity_per_board": 1,
-      "observed_stock": 2583,
-      "source_url": "https://www.digikey.com/en/products/detail/texas-instruments/SN74LVC1G11DCKR/770206",
-      "china_order_url": "https://www.digikey.cn/zh/products/detail/texas-instruments/SN74LVC1G11DCKR/770206",
-      "checked_on": "2026-09-17",
-      "source_freshness": "4 days ago",
-      "moq": 1,
-      "lifecycle": "Active / listed for sale",
-      "datasheet_url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g11.pdf",
-      "display_value": null,
-      "footprint_override": null,
-      "fitted_per_board": 1,
-      "dnp_references": [],
-      "purchase_quantity": 6,
-      "status": "PUBLIC_STOCK_SNAPSHOT",
-      "source_access_method": "web_reader_page",
-      "application_check": "Combines CORE_PG, IO_VALID, and RESET_PERMIT. U504 first qualifies RESET_RELEASE with RUN_LATCH, preserving immediate reset inhibition on a latch clear. Q601 translates the release condition to the active-high 1.8 V DUT reset node.",
-      "spec_review_status": "NOMINAL_RATINGS_REVIEWED",
-      "optional_full_population_quantity": 0
     },
     {
       "mpn": "280-5205-01",
@@ -754,7 +727,7 @@
       "purchase_quantity": 6,
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "source_access_method": "web_reader_page",
-      "application_check": "DUT reset pull-down transistor; B/E/C are pins 1/2/3. SW601 or U601 pulls the base low to assert reset through R602. Nominal collector current from the 1.8 V, 10 kohm pull-up is 0.18 mA.",
+      "application_check": "DUT reset pull-down transistor; B/E/C are pins 1/2/3. R603 biases its base from VIO so valid VIO defaults to released reset. SW601, U601 or Q602 sinks RESET_BASE to assert reset through R602. Nominal collector load is 0.18 mA; nominal net base current is about 44 uA at VIO=1.8 V and VBE=0.7 V. Verify reset levels and edges on the assembled board.",
       "spec_review_status": "NOMINAL_RATINGS_REVIEWED",
       "optional_full_population_quantity": 0
     },
@@ -802,10 +775,11 @@
         "R507",
         "R513",
         "R515",
+        "R516",
         "R602"
       ],
       "specification": "10k +/-1% 0.1W 0603 thick film; +/-100ppm/C",
-      "quantity_per_board": 14,
+      "quantity_per_board": 15,
       "observed_stock": 1706112,
       "source_url": "https://www.digikey.com/en/products/detail/yageo/RC0603FR-0710KL/726880",
       "china_order_url": "https://www.digikey.cn/zh/products/detail/yageo/RC0603FR-0710KL/726880",
@@ -816,12 +790,12 @@
       "datasheet_url": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL",
       "display_value": null,
       "footprint_override": null,
-      "fitted_per_board": 14,
+      "fitted_per_board": 15,
       "dnp_references": [],
-      "purchase_quantity": 84,
+      "purchase_quantity": 90,
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "source_access_method": "web_reader_page",
-      "application_check": "Pull-ups, divider resistors, and logic bias. R306 biases IO_EN_INHIBIT from VIN12. R507 holds RUN_SET low while Pico GP10 is high impedance. Check dissipation at maximum input voltage.",
+      "application_check": "Pull-ups, divider resistors, and logic bias. R306 biases IO_EN_INHIBIT from VIN12. R507 holds RUN_SET low while Pico GP10 is high impedance. Check dissipation at maximum input voltage. R516 pulls the independent VIN12_VALID monitor output high; it is not on the fault bus.",
       "spec_review_status": "NOMINAL_RATINGS_REVIEWED",
       "optional_full_population_quantity": 0
     },
@@ -992,7 +966,7 @@
       "purchase_quantity": 12,
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "source_access_method": "web_reader_page",
-      "application_check": "R205 sets the MSEL1 startup strap. R603 limits reset-base drive and optocoupler sink current. Verify DUT reset high/low levels and remote-reset timing.",
+      "application_check": "R205 sets the MSEL1 startup strap. R603 biases Q601 from VIO for default reset release and limits the explicit reset sink current. Verify DUT reset high/low levels and remote-reset timing.",
       "spec_review_status": "NOMINAL_RATINGS_REVIEWED",
       "optional_full_population_quantity": 0
     },
@@ -1078,7 +1052,7 @@
       "purchase_quantity": 36,
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "source_access_method": "web_reader_page",
-      "application_check": "Control pull-downs and NTC divider. Use the specified resistance and tolerance.",
+      "application_check": "Control pull-downs and NTC divider. Use the specified resistance and tolerance. R411 holds RESET_ASSERT low when Pico GP4 is high impedance; place it beside Q602.",
       "spec_review_status": "NOMINAL_RATINGS_REVIEWED",
       "optional_full_population_quantity": 0
     },
@@ -1575,7 +1549,6 @@
         "C503",
         "C504",
         "C506",
-        "C507",
         "C508",
         "C509",
         "C510",
@@ -1607,7 +1580,7 @@
         "C830"
       ],
       "specification": "100nF +/-10% 16V X7R 0402",
-      "quantity_per_board": 34,
+      "quantity_per_board": 33,
       "observed_stock": 1690982,
       "source_url": "https://www.digikey.com/en/products/detail/samsung-electro-mechanics/CL05B104KO5NNNC/3889087",
       "china_order_url": "https://www.digikey.cn/zh/products/detail/samsung-electro-mechanics/CL05B104KO5NNNC/3889087",
@@ -1618,9 +1591,9 @@
       "datasheet_url": "https://product.samsungsem.com/mlcc/CL05B104KO5NNN.do",
       "display_value": "100n / 16V",
       "footprint_override": null,
-      "fitted_per_board": 34,
+      "fitted_per_board": 33,
       "dnp_references": [],
-      "purchase_quantity": 204,
+      "purchase_quantity": 198,
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "source_access_method": "web_reader_page",
       "application_check": "Local 100 nF bypass, including one capacitor for consolidated U504 and U509. Keep supply and return connections short.",
@@ -1951,7 +1924,8 @@
       "manufacturer": "Diodes Incorporated",
       "references": [
         "Q301",
-        "Q302"
+        "Q302",
+        "Q602"
       ],
       "specification": "60V NMOS, +/-20V VGS, SOT23 G1/S2/D3; RDS(on)<=4Ohm atVGS1.8V/25C; -55..150C operating range; full-temperature electrical maxima not generally specified",
       "observed_stock": 3406,
@@ -1962,7 +1936,7 @@
       "datasheet_url": "https://www.diodes.com/assets/Datasheets/DMN62D2UQ.pdf",
       "display_value": "DMN62D2UQ-7",
       "footprint_override": "Package_TO_SOT_SMD:SOT-23",
-      "application_check": "Q301/Q302 I/O-enable interface, G/S/D on pins 1/2/3. Q301 pulls IO_EN_INHIBIT down through R308; Q302 pulls EN down. Fit C306 and C307. Verify local VIN-relative EN limits during startup, enable transitions, and input loss with USB power maintained.",
+      "application_check": "Q301/Q302 I/O-enable interface, G/S/D on pins 1/2/3. Q301 pulls IO_EN_INHIBIT down through R308; Q302 pulls EN down. Fit C306 and C307. Verify local VIN-relative EN limits during startup, enable transitions, and input loss with USB power maintained. Q602 independently sinks RESET_BASE on an explicit high RESET_ASSERT request from Pico GP4. R411 holds its gate low by default; place R411 beside Q602. This request does not gate power.",
       "spec_review_status": "NOMINAL_RATINGS_REVIEWED_WITH_TRANSIENT_AND_TEMPERATURE_HOLDS",
       "checked_on": "2026-09-18",
       "moq": 1,
@@ -1970,9 +1944,9 @@
       "dnp_references": [],
       "status": "PUBLIC_STOCK_SNAPSHOT",
       "optional_full_population_quantity": 0,
-      "quantity_per_board": 2,
-      "fitted_per_board": 2,
-      "purchase_quantity": 12,
+      "quantity_per_board": 3,
+      "fitted_per_board": 3,
+      "purchase_quantity": 18,
       "availability_note": "Mouser indexed snapshot only; direct open failed. DigiKey US separately showed0. No China checkout/reservation; re-confirm source and quantity before purchase."
     },
     {
@@ -2061,5 +2035,6 @@
   ],
   "regional_shipping_status": "China storefront links are provided. Checkout availability, delivery date, and inventory reservation are unverified.",
   "source_freshness_policy": "checked_on records the source-review date. source_freshness records the source age at that date. Stock fields are not live inventory.",
-  "review_scope": "Part identification, ratings, and circuit application. Board-level electrical and thermal verification is documented separately."
+  "review_scope": "Part identification, ratings, and circuit application. Board-level electrical and thermal verification is documented separately.",
+  "design_updated_on": "2026-09-20"
 }
