@@ -1,69 +1,144 @@
 {
-  "checked_on": "2026-09-20",
+  "checked_on": "2026-09-22",
+  "generated_at_utc": "2026-09-22T08:16:13.906647+00:00",
   "project": "Sphinx V2",
-  "scope": "Explicit-request reset and warning-only experiment diagnostics revision",
+  "scope": "Final independent recheck of autonomous retained supply/reset state, component pinouts and footprints, high-current screening, protection and command-only Pico revision",
+  "result": "PASS_WITH_PHYSICAL_QUALIFICATION_PENDING",
   "erc_violations": 0,
   "erc_ignored_checks": [
-    "single_global_label",
-    "four_way_junction",
-    "simulation_model_issue",
-    "footprint_filter"
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
   ],
-  "netlisted_components": 219,
-  "nets": 118,
-  "netlisted_pin_connections": 700,
-  "contract_pins_checked": 156,
-  "independent_netlist_diff": "21 expected pin changes only; high-current power path unchanged",
-  "pdf_pages": 9,
-  "pdf_visual_review": "All nine final pages inspected; new Q602 and R516 placements clear of title blocks.",
-  "bom_order_lines": 69,
-  "bom_purchased_component_references": 208,
-  "controller_test_count": 42,
-  "controller_tests": "PASS; host fault injection, including physical USB poll/read/write errors. No real Pico execution.",
+  "netlisted_components": 247,
+  "nets": 146,
+  "netlisted_pin_connections": 804,
+  "contract_pins_checked": 270,
+  "independent_new_hardware_pin_checks": 86,
+  "independent_loaded_footprint_pad_sets": 247,
+  "independent_pico_physical_pins_checked": 40,
+  "asic_physical_pins_unchanged": 80,
+  "independent_netlist_diff": "17 intended existing pin changes only; 28 components added; no existing components removed; high-current power path and ASIC pinout unchanged",
+  "pdf_pages": 11,
+  "pdf_visual_review": "All eleven pages freshly rendered and visually inspected during the final independent review.",
+  "bom_order_lines": 75,
+  "bom_purchased_component_references": 236,
+  "controller_test_count": 51,
+  "controller_tests": "PASS; independent retained board-state host model, command/rejoin/fault tests, 122 accepted-write interruption points with read-only rejoin, and binary USB flow/error/slow-progress/raw-Unicode tests. No real Pico execution.",
   "controller_test_runtime": "CPython 3.13.5",
-  "independent_usb_transport_tests": {
-    "cases": 6,
-    "result": "PASS",
-    "evidence": "../review/evidence/usb_transport_review.json",
-    "sha256": "af2b475277352c1d429c8d32f9ba8f8bc34c189c92c90292a01f8c2b817e53a8",
-    "scope": "Run-loop poll/read/write OSError injection, with and without overtemperature; mocked hardware."
-  },
   "controller_test_command": "python3 -m unittest discover -s controller/tests -v (from workspace root)",
   "companion_firmware_location": "../controller",
   "companion_firmware_files": [
     {
       "path": "../controller/main.py",
-      "sha256": "b25818920e62691e8c2b8141cdaeaa919a424d8c2b55ad683b2b448628debf47"
+      "sha256": "08fb166b78bb96ae51dc400bd9451c81bcd0df1c4d653d57ae84826f103a5eb1"
     },
     {
       "path": "../controller/power.py",
-      "sha256": "c56a75029ab488de5fb79fcbbb20ff7e4fb9f29fd264844521fa792eea44215e"
+      "sha256": "1acd9c8cc58f44e7055b384fe51816e8d29289f2501a76d9cc25936a83943520"
     },
     {
       "path": "../controller/profile.py",
-      "sha256": "948da737cd515349800494400908b12b1886d8a87748f1b10cdedf76f09fe043"
+      "sha256": "174b4309289493d3a2e8ac95201289ac2cee306bba265b68e3c72c84bc938d8a"
     },
     {
       "path": "../controller/README.md",
-      "sha256": "9162d426d383b1ae465028fe7f420e7e9d7537351e65f5c30ddbbcad6330c97f"
+      "sha256": "692e1ae053e41e1191eb29043559742e084889d154b5d23c6adbd144dc9e2b26"
     },
     {
       "path": "../controller/tests/test_controller.py",
-      "sha256": "df7019d6fefe44279e30c05e1f8d30fd64d577d4d3327a99c984ad13accaddeb"
+      "sha256": "00290b126d2e151d60abcbf47082d2757b7ebe0b978bacbb68f3578d5557a6b5"
     },
     {
       "path": "../controller/test_results.txt",
-      "sha256": "1d2159f1ca72617497f41afb4a59dc3a9c8be305493f67dc365394bbe6963b99"
+      "sha256": "67aede67435dbc6f112e8f9d243f11b54384aa7b0ccf6eda543fd6e17673d075"
     }
   ],
-  "documentation_language": "English",
+  "evidence": [
+    {
+      "path": "docs/evidence/erc.json",
+      "sha256": "875ee20a8276f012d18d55a53b9696e68a256873dba5257317ab15f141d839d3"
+    },
+    {
+      "path": "docs/evidence/hardware_review.json",
+      "sha256": "8feb585e2fd435edd51457f38fadd5e9179d67bcf38e9e4e2ad9a021e3c035ab"
+    },
+    {
+      "path": "docs/evidence/autonomy_netlist_diff.json",
+      "sha256": "d1ae36191934ddcab087bed95ce270fdaa38ff5c7a364f1c4c52ae21cd895b49"
+    },
+    {
+      "path": "docs/evidence/autonomous_pinout.json",
+      "sha256": "66045ebf5faaee050281a0d415adeac00492aba34f9692c008cb755ad95fd74b"
+    },
+    {
+      "path": "docs/evidence/socket_keepout.json",
+      "sha256": "1af6b2c38dabc9f0c6d49b306b9573f0339dff0163a99f4a5c143e36c84962d7"
+    },
+    {
+      "path": "docs/evidence/full_pinout_review.json",
+      "sha256": "2ef428eca764303801a8f996615f4285c115d7284b32e9641036f529eb5ca851"
+    },
+    {
+      "path": "docs/FINAL_REVIEW_2026-09-22.md",
+      "sha256": "9c3e0d19a878d1843b777c1a57f4eb3ca15b2ac6855e27e225d2bc5d9230bb9f"
+    }
+  ],
+  "documentation_local_links": "PASS: current main README/CONTRIBUTING, all docs Markdown, controller README, and current Chinese revision guide",
+  "documentation_language": "English; Chinese explanatory guide maintained outside main in ../review",
   "physical_board_measurements_performed": false,
   "real_micropython_execution_performed": false,
-  "unresolved_prior_review_items": [
-    "Complete host ASIC/kernel/steady-state-power application is not present.",
-    "Existing socket footprint keepout coordinate defect remains outside this reset revision.",
-    "No V2 PCB or assembled-board evidence establishing 10 A continuous qualification.",
-    "TI scale=1 endpoint at 0.70-0.75 V remains a commissioning limitation."
+  "new_part_inventory_verified": false,
+  "closed_findings": [
+    "Pico-supplied control domain replaced by independent TLV75533 LDO",
+    "Pico direct enable/reset/fault/ADC wiring replaced by ISO1640 + board-retained TCA9535 and ADS1115",
+    "Independent TMP302B and IO OVP added; autonomous hardware protection documented",
+    "Boot/rejoin/idle/exception paths no longer rewrite or shut down rails",
+    "Scale1 ceiling reduced to0.70V;0.75V uses scale0.5",
+    "USB blocking whole-response print and Ctrl-C shutdown removed; binary bounded FIFO transport",
+    "Socket keepout coordinates, copper layer and footprint exclusions corrected",
+    "Repeated ON rejects unexpected active regulator configuration without altering supply",
+    "Demand-driven monitors, uncertainty handling and interrupted-command semantics documented",
+    "Repeated ON and SET reject unexpected expander configuration without altering running state",
+    "CL21B475KOFNNNE manufacturer lifecycle corrected to NRND in catalog and purchase notes; C202/C901/C902 applicability documented",
+    "TMP302 startup wording corrected to include both section8.2.3 typical35ms and section9 functional readiness within35ms afterVS>=1.4V",
+    "TCA9535 temperature-dependent SDA current allowance incorporated into required U903 Tj<=100C qualification envelope"
   ],
-  "verification_scope": "ERC, exact net membership, BOM checks and host simulations do not establish analog reset timing, physical USB behavior, ASIC limits, PCB layout or assembled-board operation."
+  "remaining_qualification": [
+    "No V2 PCB or assembled-board evidence establishing10A continuous capability, loop stability or transient response",
+    "Actual UF2 and USB runtime, Pico power-ramp isolation and state retention require hardware tests",
+    "ISO1640 board-side bus capacitance <=80pF and low-level noise margin require layout extraction and measurement",
+    "Independent thermal/OVP thresholds, hot-start behavior, placement and ADC temperature calibration require measurement",
+    "Partial input brownout may reset regulator and control storage at different times; transparent recovery is not guaranteed",
+    "Complete host ASIC/kernel/JTAG/steady-state-power application is not included",
+    "New procurement line stock is not checked; previous stock observations remain dated snapshots",
+    "U903 junction temperature <=100C and actual I2C low-level noise margin must be established at qualified worst load/airflow"
+  ],
+  "verification_scope": "ERC, pin contracts, independent package checks, netlist comparison, visual review and host tests validate source consistency. They do not establish fabricated-board performance, actual chip safe limits or firmware execution on a Pico.",
+  "final_review": "docs/FINAL_REVIEW_2026-09-22.md",
+  "independent_existing_active_device_pin_checks": 158,
+  "independent_component_bom_matches": 247,
+  "controller_interrupted_write_points": 122,
+  "controller_interrupted_write_breakdown": {
+    "cold_on": 41,
+    "off_state_set": 34,
+    "same_scale_set": 5,
+    "range_changing_set": 36,
+    "off": 5,
+    "reset": 1
+  },
+  "fresh_export_comparison": "PASS: all 247 component records, 146 net records including pin attributes, and libparts match the checked-in export; export metadata ignored"
 }

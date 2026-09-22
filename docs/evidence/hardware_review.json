@@ -1,18 +1,26 @@
 {
-  "review": "Current V2 hardware control electrical contract and BOM audit",
-  "generated_at_utc": "2026-09-20T08:37:23.121213+00:00",
+  "review": "Current V2 autonomous power electrical contract and BOM audit",
+  "generated_at_utc": "2026-09-22T08:13:29.367269+00:00",
   "result": "PASS",
   "reproduce": "python3 tools/verify_control_connectivity.py",
   "current": {
     "path": "schematic/exports/sphinx_power_v2.net.xml",
-    "sha256": "f18db4235cdf11ca63ef6614f194fd8517d830ad70e96b1d3e77360231026d8d",
-    "components": 219,
-    "nets": 118
+    "sha256": "240d38f0de089dcb6def0fc5f04d3170028d987e0101d43cb6f9b77cf67aefb0",
+    "components": 247,
+    "nets": 146
   },
   "connectivity": {
-    "netlist_pins": 700,
-    "contract_pins_checked": 156,
+    "netlist_pins": 804,
+    "contract_pins_checked": 270,
     "full_control_pin_contract": {
+      "C1001": {
+        "1": "3V3_CTRL",
+        "2": "GND"
+      },
+      "C1002": {
+        "1": "3V3_CTRL",
+        "2": "GND"
+      },
       "C306": {
         "1": "VIN12",
         "2": "IO_EN_INHIBIT"
@@ -23,6 +31,34 @@
       },
       "C506": {
         "1": "3V3_CTRL",
+        "2": "GND"
+      },
+      "C901": {
+        "1": "AUX5V",
+        "2": "GND"
+      },
+      "C902": {
+        "1": "3V3_CTRL",
+        "2": "GND"
+      },
+      "C903": {
+        "1": "3V3_CTRL",
+        "2": "GND"
+      },
+      "C904": {
+        "1": "PICO_3V3",
+        "2": "GND"
+      },
+      "C905": {
+        "1": "3V3_CTRL",
+        "2": "GND"
+      },
+      "C906": {
+        "1": "3V3_CTRL",
+        "2": "GND"
+      },
+      "C907": {
+        "1": "BOARD_NTC",
         "2": "GND"
       },
       "J1": {
@@ -52,6 +88,47 @@
         "2": "GND",
         "3": "RESET_BASE"
       },
+      "Q901": {
+        "1": "CLEAR_REQUEST",
+        "2": "GND",
+        "3": "HW_FAULT_N"
+      },
+      "R1001": {
+        "1": "3V3_CTRL",
+        "2": "SUPERVISOR_CT"
+      },
+      "R1002": {
+        "1": "1V8",
+        "2": "IO_OV_SENSE"
+      },
+      "R1003": {
+        "1": "IO_OV_SENSE",
+        "2": "GND"
+      },
+      "R1004": {
+        "1": "UNUSED_P12",
+        "2": "GND"
+      },
+      "R1005": {
+        "1": "UNUSED_P13",
+        "2": "GND"
+      },
+      "R1006": {
+        "1": "UNUSED_P14",
+        "2": "GND"
+      },
+      "R1007": {
+        "1": "UNUSED_P15",
+        "2": "GND"
+      },
+      "R1008": {
+        "1": "UNUSED_P16",
+        "2": "GND"
+      },
+      "R1009": {
+        "1": "UNUSED_P17",
+        "2": "GND"
+      },
       "R210": {
         "1": "CORE_EN",
         "2": "GND"
@@ -79,6 +156,14 @@
       "R308": {
         "1": "IO_EN_INHIBIT",
         "2": "IO_EN_PULLDOWN"
+      },
+      "R408": {
+        "1": "3V3_CTRL",
+        "2": "BOARD_NTC"
+      },
+      "R409": {
+        "1": "BOARD_NTC",
+        "2": "GND"
       },
       "R411": {
         "1": "RESET_ASSERT",
@@ -148,6 +233,18 @@
         "1": "ZED_3V3",
         "2": "ZED_OPTO_A"
       },
+      "R901": {
+        "1": "PICO_3V3",
+        "2": "PICO_SDA"
+      },
+      "R902": {
+        "1": "PICO_3V3",
+        "2": "PICO_SCL"
+      },
+      "R903": {
+        "1": "CLEAR_REQUEST",
+        "2": "GND"
+      },
       "SW502": {
         "1": "HW_FAULT_N",
         "2": "GND"
@@ -156,8 +253,25 @@
         "1": "RESET_BASE",
         "2": "GND"
       },
+      "U1001": {
+        "1": "3V3_CTRL",
+        "2": "GND",
+        "3": "HW_FAULT_N",
+        "4": "GND",
+        "5": "3V3_CTRL",
+        "6": "GND"
+      },
+      "U1002": {
+        "1": "HW_FAULT_N",
+        "2": "GND",
+        "3": "IO_OV_REF",
+        "4": "IO_OV_SENSE",
+        "5": "IO_OV_REF",
+        "6": "3V3_CTRL"
+      },
       "U101": {
         "1": "INPUT_UVLO",
+        "10": "unconnected-(U101-ITIMER-Pad10)",
         "2": "INPUT_OVLO",
         "3": "unconnected-(U101-AUXOFF-Pad3)",
         "4": "HW_FAULT_N",
@@ -165,8 +279,7 @@
         "6": "VIN12",
         "7": "INPUT_DVDT",
         "8": "GND",
-        "9": "INPUT_ILM",
-        "10": "unconnected-(U101-ITIMER-Pad10)"
+        "9": "INPUT_ILM"
       },
       "U201": {
         "1": "CORE_PG",
@@ -179,17 +292,23 @@
         "14": "1V8"
       },
       "U401": {
-        "4": "CORE_REQ",
-        "5": "IO_REQ",
-        "6": "RESET_ASSERT",
-        "7": "RUN_LATCH",
-        "9": "CORE_PG",
-        "10": "IO_VALID",
-        "11": "HW_FAULT_N",
-        "14": "RUN_SET",
-        "16": "VIN12_VALID",
-        "20": "HW_FAULT_N",
-        "36": "3V3_CTRL"
+        "1": "PICO_SDA",
+        "10": "unconnected-(U401-GPIO7-Pad10)",
+        "11": "unconnected-(U401-GPIO8-Pad11)",
+        "12": "unconnected-(U401-GPIO9-Pad12)",
+        "14": "unconnected-(U401-GPIO10-Pad14)",
+        "15": "unconnected-(U401-GPIO11-Pad15)",
+        "16": "unconnected-(U401-GPIO12-Pad16)",
+        "2": "PICO_SCL",
+        "20": "unconnected-(U401-GPIO15-Pad20)",
+        "32": "unconnected-(U401-GPIO27_ADC1-Pad32)",
+        "36": "PICO_3V3",
+        "39": "PICO_VSYS",
+        "4": "unconnected-(U401-GPIO2-Pad4)",
+        "5": "unconnected-(U401-GPIO3-Pad5)",
+        "6": "unconnected-(U401-GPIO4-Pad6)",
+        "7": "unconnected-(U401-GPIO5-Pad7)",
+        "9": "unconnected-(U401-GPIO6-Pad9)"
       },
       "U501": {
         "1": "HW_FAULT_N",
@@ -203,7 +322,7 @@
         "1": "HW_FAULT_N",
         "2": "GND",
         "3": "3V3_CTRL",
-        "4": "unconnected-(U502-CT-Pad4)",
+        "4": "SUPERVISOR_CT",
         "5": "3V3_CTRL",
         "6": "3V3_CTRL"
       },
@@ -219,6 +338,11 @@
       },
       "U504": {
         "1": "RUN_LATCH",
+        "10": "GND",
+        "11": "unconnected-(U504-4Y-Pad11)",
+        "12": "GND",
+        "13": "GND",
+        "14": "3V3_CTRL",
         "2": "CORE_REQ",
         "3": "CORE_EN",
         "4": "RUN_LATCH",
@@ -226,12 +350,7 @@
         "6": "IO_EN_CTRL",
         "7": "GND",
         "8": "unconnected-(U504-3Y-Pad8)",
-        "9": "GND",
-        "10": "GND",
-        "11": "unconnected-(U504-4Y-Pad11)",
-        "12": "GND",
-        "13": "GND",
-        "14": "3V3_CTRL"
+        "9": "GND"
       },
       "U507": {
         "1": "RUN_SET",
@@ -262,6 +381,61 @@
         "2": "ZED_RESET_OD",
         "3": "GND",
         "4": "RESET_BASE"
+      },
+      "U901": {
+        "1": "AUX5V",
+        "2": "GND",
+        "3": "AUX5V",
+        "4": "unconnected-(U901-NC-Pad4)",
+        "5": "3V3_CTRL"
+      },
+      "U902": {
+        "1": "3V3_CTRL",
+        "2": "PMBUS_SDA",
+        "3": "PMBUS_SCL",
+        "4": "GND",
+        "5": "GND",
+        "6": "PICO_SCL",
+        "7": "PICO_SDA",
+        "8": "PICO_3V3"
+      },
+      "U903": {
+        "1": "unconnected-(U903-INT_N-Pad1)",
+        "10": "HW_FAULT_N",
+        "11": "CORE_PG",
+        "12": "GND",
+        "13": "IO_VALID",
+        "14": "VIN12_VALID",
+        "15": "UNUSED_P12",
+        "16": "UNUSED_P13",
+        "17": "UNUSED_P14",
+        "18": "UNUSED_P15",
+        "19": "UNUSED_P16",
+        "2": "GND",
+        "20": "UNUSED_P17",
+        "21": "GND",
+        "22": "PMBUS_SCL",
+        "23": "PMBUS_SDA",
+        "24": "3V3_CTRL",
+        "3": "GND",
+        "4": "CORE_REQ",
+        "5": "IO_REQ",
+        "6": "RESET_ASSERT",
+        "7": "RUN_SET",
+        "8": "CLEAR_REQUEST",
+        "9": "RUN_LATCH"
+      },
+      "U904": {
+        "1": "GND",
+        "10": "PMBUS_SCL",
+        "2": "unconnected-(U904-ALERT_RDY_N-Pad2)",
+        "3": "GND",
+        "4": "BOARD_NTC",
+        "5": "3V3_CTRL",
+        "6": "GND",
+        "7": "GND",
+        "8": "3V3_CTRL",
+        "9": "PMBUS_SDA"
       }
     },
     "exact_net_membership_checked": [
@@ -288,11 +462,25 @@
       "IO_VALID",
       "CORE_OV_SENSE",
       "VIN12_UV_SENSE",
-      "IO_UV_SENSE"
+      "IO_UV_SENSE",
+      "PICO_3V3",
+      "PICO_SDA",
+      "PICO_SCL",
+      "CLEAR_REQUEST",
+      "SUPERVISOR_CT",
+      "BOARD_NTC",
+      "IO_OV_REF",
+      "IO_OV_SENSE",
+      "UNUSED_P12",
+      "UNUSED_P13",
+      "UNUSED_P14",
+      "UNUSED_P15",
+      "UNUSED_P16",
+      "UNUSED_P17"
     ],
     "pin_differences": [],
     "net_member_differences": [],
-    "scope": "Fault detectors, STOP, hardware clear, run-set pulse, run latch, all enable/reset gates, I/O-enable interface, local/remote reset, and controller interfaces."
+    "scope": "Independent control supply, isolated Pico interface, retained expander requests, board ADC, standalone thermal and IO overvoltage shutdown, STOP, run latch, all enable/reset gates and local/remote reset."
   },
   "U504": {
     "manufacturer": "Diodes Incorporated",
@@ -387,16 +575,16 @@
     "assessment": "STOP and hardware-fault detectors clear U503 asynchronously through U507. Fault recovery creates no RUN_SET rising edge and therefore does not set the latch by itself.",
     "firmware_condition": "No automatic RUN_SET pulses after a fault, boot or reconnect; a fresh ON request is required. A faulty controller can issue another pulse, so the circuit is not an independent prohibition of all controller-initiated restarts.",
     "reset_policy": "With valid VIO, reset is asserted only by SW601, U601, or Q602. R603 biases Q601 on from VIO by default. PG, VIN12_VALID, and RUN_LATCH do not qualify reset release.",
-    "input_loss_limit": "U509 reports VIN12_VALID only. Intrinsic eFuse UVLO/OVLO can recover without a new ON if control power and U503 remain valid; eFuse FLT or control brownout still clears U503."
+    "input_loss_limit": "Retention requires continuously valid board input. Complete board-power loss defaults OFF. Partial input brownout can reset regulator and control domains differently; it requires physical characterization. U509 remains diagnostic only."
   },
   "bom": {
     "catalog_path": "schematic/bom/parts_catalog.json",
-    "catalog_sha256": "561b5db648c15066ec9b0e191b1d8faa88502946b4b31d37eda42f3403a21d93",
+    "catalog_sha256": "040e12a115a86585ce4d22d921eb928b7c4d4768111cb4daa34ad0b397f59d5f",
     "buy_list_path": "schematic/bom/BUY_LIST.csv",
-    "buy_list_sha256": "86e6221e4c37f463b927ed26906e6bec2e59c78fc209a77b801286fa7f30ec5e",
-    "catalog_order_lines": 69,
-    "csv_order_lines": 69,
-    "purchased_component_references": 208,
+    "buy_list_sha256": "7d426091b61f4c15b1846e3b35085c75b4997a82c91e83117e4865ad441e4388",
+    "catalog_order_lines": 75,
+    "csv_order_lines": 75,
+    "purchased_component_references": 236,
     "nonpurchase_references": [
       "NT601",
       "NT602",
@@ -410,14 +598,14 @@
       "TP805",
       "TP806"
     ],
-    "mpn_references_checked": 208,
+    "mpn_references_checked": 236,
     "alignment_differences": []
   },
   "erc": {
     "path": "docs/evidence/erc.json",
-    "sha256": "54e97fbc97f63037c84b8f0f3f0ae2498385ae5b4ad662c21b1e012c930ef0c5",
+    "sha256": "875ee20a8276f012d18d55a53b9696e68a256873dba5257317ab15f141d839d3",
     "reported_violations": 0,
-    "reported_date": "2026-09-20T01:33:02",
+    "reported_date": "2026-09-22T01:00:26",
     "ignored_checks": [
       {
         "description": "Global label only appears once in the schematic",

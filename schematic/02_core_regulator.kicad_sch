@@ -385,7 +385,7 @@
 (pin passive line (at 27.94 -45.72 180) (length 5.08) (hide yes) (name "PGND/AGND/EP" (effects (font (size 1 1))  )) (number "41" (effects (font (size 0.9 0.9))  )))
 )))
         (text "0.75 V nominal core; approximately 5 W during kernel execution. Board continuous-current design target: 10 A." (at 15 15 0) (effects (font (size 1.8 1.8)) (justify left top) ) (uuid "6b3aefa9-02be-50d4-8a3d-a78b2e8411dc"))
-(text "Boot 0.750 V. 650 kHz. Differential sense after R201 at socket. Output remains disabled until hardware run latch + MCU enable." (at 15 23 0) (effects (font (size 1.27 1.27)) (justify left top) ) (uuid "a20a213a-84c2-5f2f-a19a-b999861096ed"))
+(text "Boot 0.750 V. 650 kHz. Differential sense after R201 at socket. Output remains disabled until hardware run latch + retained board enable." (at 15 23 0) (effects (font (size 1.27 1.27)) (justify left top) ) (uuid "a20a213a-84c2-5f2f-a19a-b999861096ed"))
 (symbol (lib_id "Sphinx_V2:TPS546B24A") (at 100.33 115.57 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "6cf2aff4-55ad-5285-b60c-0e5f90d3f2cc")
 (property "Reference" "U201" (at 100.33 63.85 0) (effects (font (size 1.0 1.0))  ))
 (property "Value" "TPS546B24ARVFR" (at 100.33 66.35 0) (effects (font (size 1.0 1.0))  ))

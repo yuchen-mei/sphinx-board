@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/Users/yuchen/Documents/Stanford-Document/Research/sphinx-board/main/schematic/sphinx_power_v2.kicad_sch</source>
-    <date>2026-09-20T01:33:03</date>
+    <date>2026-09-22T00:53:14</date>
     <tool>Eeschema 10.0.5</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>Sphinx V2 | Programmable power test platform</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-20</date>
+        <date>2026-09-22</date>
         <source>sphinx_power_v2.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -63,7 +63,7 @@
         <title>03 | Fixed 1.8 V I/O and calibrated telemetry</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-20</date>
+        <date>2026-09-22</date>
         <source>03_io_and_telemetry.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -81,7 +81,7 @@
         <title>04 | USB control and remote reset</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-20</date>
+        <date>2026-09-22</date>
         <source>04_usb_control.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -99,7 +99,7 @@
         <title>05 | Hardware power shutdown latch</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-20</date>
+        <date>2026-09-22</date>
         <source>05_hardware_safety.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -117,7 +117,7 @@
         <title>06 | Socket pinout and signal interfaces</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-20</date>
+        <date>2026-09-22</date>
         <source>06_socket_and_signals.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
@@ -153,11 +153,47 @@
         <title>08 | I/O decoupling and voltage monitor</title>
         <company>Sphinx | Programmable power test board</company>
         <rev>V2</rev>
-        <date>2026-09-20</date>
+        <date>2026-09-22</date>
         <source>08_io_decoupling.kicad_sch</source>
         <comment number="1" value="Review package: PCB, PI, SI, thermal and ASIC limits require qualification"/>
         <comment number="2" value="12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V"/>
         <comment number="3" value="Author: Yuchen Mei"/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="10" name="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/">
+      <title_block>
+        <title>09 | Independent control supply and retained board state</title>
+        <company>Sphinx | Programmable power test board</company>
+        <rev>V2</rev>
+        <date>2026-09-22</date>
+        <source>09_autonomous_control.kicad_sch</source>
+        <comment number="1" value="Schematic revision; PCB and bench qualification required"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="11" name="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/">
+      <title_block>
+        <title>10 | Independent temperature and IO overvoltage protection</title>
+        <company>Sphinx | Programmable power test board</company>
+        <rev>V2</rev>
+        <date>2026-09-22</date>
+        <source>10_independent_protection.kicad_sch</source>
+        <comment number="1" value="Schematic revision; PCB and bench qualification required"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
         <comment number="4" value=""/>
         <comment number="5" value=""/>
         <comment number="6" value=""/>
@@ -2317,12 +2353,12 @@
       <value>10k / 1%</value>
       <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
       <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
-      <description>Pullup for U509 VIN12_VALID monitor output to Pico GP12 | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
+      <description>Pullup for U509 VIN12_VALID monitor output to U903 P11 | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
         <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
         <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
-        <field name="Description">Pullup for U509 VIN12_VALID monitor output to Pico GP12 | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
+        <field name="Description">Pullup for U509 VIN12_VALID monitor output to U903 P11 | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
@@ -2454,12 +2490,12 @@
       <value>TLV3011AIDBVR</value>
       <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tlv3011.pdf</datasheet>
-      <description>Post-eFuse VIN12 voltage monitor to Pico GP12 only; nominal10.333V, static screening9.75-10.94V. Does not clear RUN_LATCH or assert reset. | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</description>
+      <description>Post-eFuse VIN12 voltage monitor to U903 P11 only; nominal10.333V, static screening9.75-10.94V. Does not clear RUN_LATCH or assert reset. | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</description>
       <fields>
         <field name="MPN">TLV3011AIDBVR</field>
         <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv3011.pdf</field>
-        <field name="Description">Post-eFuse VIN12 voltage monitor to Pico GP12 only; nominal10.333V, static screening9.75-10.94V. Does not clear RUN_LATCH or assert reset. | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</field>
+        <field name="Description">Post-eFuse VIN12 voltage monitor to U903 P11 only; nominal10.333V, static screening9.75-10.94V. Does not clear RUN_LATCH or assert reset. | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</field>
       </fields>
       <libsource lib="Sphinx_V2" part="TLV3011" description=""/>
       <property name="MPN" value="TLV3011AIDBVR"/>
@@ -2767,12 +2803,12 @@
       <value>100k</value>
       <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
       <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL</datasheet>
-      <description>Pico RESET_ASSERT gate pulldown; place next to Q602 to keep reset request inactive with GPIO unpowered or high-Z | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
+      <description>Board expander RESET_ASSERT gate pulldown; place next to Q602 to keep reset request inactive with GPIO unpowered or high-Z | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
       <fields>
         <field name="MPN">RC0603FR-07100KL</field>
         <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
         <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL</field>
-        <field name="Description">Pico RESET_ASSERT gate pulldown; place next to Q602 to keep reset request inactive with GPIO unpowered or high-Z | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
+        <field name="Description">Board expander RESET_ASSERT gate pulldown; place next to Q602 to keep reset request inactive with GPIO unpowered or high-Z | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-07100KL"/>
@@ -3141,12 +3177,12 @@
       <value>10k</value>
       <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
       <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
-      <description>Holds run-latch clock low while Pico GP10 is high impedance. | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
+      <description>Holds run-latch clock low while U903 P03 is high impedance. | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</description>
       <fields>
         <field name="MPN">RC0603FR-0710KL</field>
         <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
         <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
-        <field name="Description">Holds run-latch clock low while Pico GP10 is high impedance. | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
+        <field name="Description">Holds run-latch clock low while U903 P03 is high impedance. | 10k +/-1% 0.1W 0603 thick film; +/-100ppm/C</field>
       </fields>
       <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
       <property name="MPN" value="RC0603FR-0710KL"/>
@@ -3282,12 +3318,12 @@
       <value>TPS3808G33DBVR</value>
       <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tps3808.pdf</datasheet>
-      <description>Control-supply supervisor; CT open gives approximately 20 ms startup reset, threshold 3.07 V. | 0.9-6.5V supervisor, G33 threshold3.07V, open-drain reset, CT open approx20ms; DBV6</description>
+      <description>Control-supply supervisor; CT100k pullup gives180-420ms startup reset, threshold 3.07 V. | 0.9-6.5V supervisor, G33 threshold3.07V, open-drain reset, CT100k pullup:180-420ms (300ms nominal); DBV6</description>
       <fields>
         <field name="MPN">TPS3808G33DBVR</field>
         <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tps3808.pdf</field>
-        <field name="Description">Control-supply supervisor; CT open gives approximately 20 ms startup reset, threshold 3.07 V. | 0.9-6.5V supervisor, G33 threshold3.07V, open-drain reset, CT open approx20ms; DBV6</field>
+        <field name="Description">Control-supply supervisor; CT100k pullup gives180-420ms startup reset, threshold 3.07 V. | 0.9-6.5V supervisor, G33 threshold3.07V, open-drain reset, CT100k pullup:180-420ms (300ms nominal); DBV6</field>
       </fields>
       <libsource lib="Sphinx_V2" part="TPS3808G33" description=""/>
       <property name="MPN" value="TPS3808G33DBVR"/>
@@ -3732,12 +3768,12 @@
       <value>DMN62D2UQ-7</value>
       <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23</footprint>
       <datasheet>https://www.diodes.com/assets/Datasheets/DMN62D2UQ.pdf</datasheet>
-      <description>Pico active-high reset request sinks RESET_BASE; R411100k gate pulldown must be placed next to Q602. | 60V NMOS, +/-20V VGS, SOT23 G1/S2/D3; RDS(on)&lt;=4Ohm atVGS1.8V/25C; -55..150C operating range; full-temperature electrical maxima not generally specified</description>
+      <description>Held U903 active-high reset request sinks RESET_BASE; R411100k gate pulldown must be placed next to Q602. | 60V NMOS, +/-20V VGS, SOT23 G1/S2/D3; RDS(on)&lt;=4Ohm atVGS1.8V/25C; -55..150C operating range; full-temperature electrical maxima not generally specified</description>
       <fields>
         <field name="MPN">DMN62D2UQ-7</field>
         <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23</field>
         <field name="Datasheet">https://www.diodes.com/assets/Datasheets/DMN62D2UQ.pdf</field>
-        <field name="Description">Pico active-high reset request sinks RESET_BASE; R411100k gate pulldown must be placed next to Q602. | 60V NMOS, +/-20V VGS, SOT23 G1/S2/D3; RDS(on)&lt;=4Ohm atVGS1.8V/25C; -55..150C operating range; full-temperature electrical maxima not generally specified</field>
+        <field name="Description">Held U903 active-high reset request sinks RESET_BASE; R411100k gate pulldown must be placed next to Q602. | 60V NMOS, +/-20V VGS, SOT23 G1/S2/D3; RDS(on)&lt;=4Ohm atVGS1.8V/25C; -55..150C operating range; full-temperature electrical maxima not generally specified</field>
       </fields>
       <libsource lib="Sphinx_V2" part="Transistor_FET__Q_NMOS_GSD" description="N-MOSFET transistor, gate/source/drain"/>
       <property name="MPN" value="DMN62D2UQ-7"/>
@@ -6487,12 +6523,12 @@
       <value>TLV3011AIDBVR</value>
       <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</footprint>
       <datasheet>https://www.ti.com/lit/ds/symlink/tlv3011.pdf</datasheet>
-      <description>Independent VIO monitor to Pico GP7 only, nominal1.626V; no reset or hardware shutdown action | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</description>
+      <description>Independent VIO monitor to U903 P10 only, nominal1.626V; no reset or hardware shutdown action | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</description>
       <fields>
         <field name="MPN">TLV3011AIDBVR</field>
         <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</field>
         <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv3011.pdf</field>
-        <field name="Description">Independent VIO monitor to Pico GP7 only, nominal1.626V; no reset or hardware shutdown action | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</field>
+        <field name="Description">Independent VIO monitor to U903 P10 only, nominal1.626V; no reset or hardware shutdown action | 1.8-5.5V comparator, OPEN-DRAIN, 1.242V reference; DBV SOT23-6</field>
       </fields>
       <libsource lib="Sphinx_V2" part="TLV3011" description=""/>
       <property name="MPN" value="TLV3011AIDBVR"/>
@@ -6500,6 +6536,825 @@
       <property name="Sheetfile" value="08_io_decoupling.kicad_sch"/>
       <sheetpath names="/I/O decoupling and voltage monitor/" tstamps="/36761b75-2b3e-5b16-bc66-e4b7245270a9/"/>
       <tstamps>2964b1f4-0aa3-53e6-ba49-1962013483bd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C901">
+      <value>4.7u / 16V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B475KOFNNN.do</datasheet>
+      <description>4.7uF input bypass;effective&gt;=1uF; close to U901</description>
+      <fields>
+        <field name="MPN">CL21B475KOFNNNE</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0805_2012Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B475KOFNNN.do</field>
+        <field name="Description">4.7uF input bypass;effective&gt;=1uF; close to U901</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21B475KOFNNNE"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>b5ce9a2a-9617-4585-8576-5bb849ea57fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C902">
+      <value>4.7u / 16V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0805_2012Metric</footprint>
+      <datasheet>https://product.samsungsem.com/mlcc/CL21B475KOFNNN.do</datasheet>
+      <description>1uF effective output capacitance required at U901</description>
+      <fields>
+        <field name="MPN">CL21B475KOFNNNE</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0805_2012Metric</field>
+        <field name="Datasheet">https://product.samsungsem.com/mlcc/CL21B475KOFNNN.do</field>
+        <field name="Description">1uF effective output capacitance required at U901</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="CL21B475KOFNNNE"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>c539bb77-1fbb-4e37-b7a8-2c05b5bfeb12</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C903">
+      <value>100n / 100V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</datasheet>
+      <description>U902 board-side bypass</description>
+      <fields>
+        <field name="MPN">GRM188R72A104KA35D</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</field>
+        <field name="Description">U902 board-side bypass</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R72A104KA35D"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>d56f1a8a-a6c0-4f23-9eb7-3aa52a5815db</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C904">
+      <value>100n / 100V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</datasheet>
+      <description>U902 Pico-side bypass</description>
+      <fields>
+        <field name="MPN">GRM188R72A104KA35D</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</field>
+        <field name="Description">U902 Pico-side bypass</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R72A104KA35D"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>5b9dea44-03d7-4186-99f8-5d31462d2c81</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C905">
+      <value>100n / 100V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</datasheet>
+      <description>U903 bypass</description>
+      <fields>
+        <field name="MPN">GRM188R72A104KA35D</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</field>
+        <field name="Description">U903 bypass</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R72A104KA35D"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>97607ce8-7339-406d-9c66-bd29f9aa354d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C906">
+      <value>100n / 100V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</datasheet>
+      <description>U904 bypass</description>
+      <fields>
+        <field name="MPN">GRM188R72A104KA35D</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</field>
+        <field name="Description">U904 bypass</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R72A104KA35D"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>aa6af8f4-ab93-4913-a240-647cfbf664d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C907">
+      <value>100n / 100V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</datasheet>
+      <description>NTC input charge reservoir; calibrate ADC loading; not protection</description>
+      <fields>
+        <field name="MPN">GRM188R72A104KA35D</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</field>
+        <field name="Description">NTC input charge reservoir; calibrate ADC loading; not protection</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R72A104KA35D"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>bff21e61-3b13-45c8-8fe1-85e08e6b4560</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="Q901">
+      <value>DMN62D2UQ-7</value>
+      <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/DMN62D2UQ.pdf</datasheet>
+      <description>Active-high expander clear request; open-drain fault clear</description>
+      <fields>
+        <field name="MPN">DMN62D2UQ-7</field>
+        <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23</field>
+        <field name="Datasheet">https://www.diodes.com/assets/Datasheets/DMN62D2UQ.pdf</field>
+        <field name="Description">Active-high expander clear request; open-drain fault clear</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Transistor_FET__Q_NMOS_GSD" description="N-MOSFET transistor, gate/source/drain"/>
+      <property name="MPN" value="DMN62D2UQ-7"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="transistor NMOS N-MOS N-MOSFET"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>0e17faee-5460-4724-96be-b63eaa69dd7a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R901">
+      <value>2.2k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L</datasheet>
+      <description>Pico-side SDA pullup</description>
+      <fields>
+        <field name="MPN">RC0603FR-072K2L</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L</field>
+        <field name="Description">Pico-side SDA pullup</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-072K2L"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>08eec84b-f491-40e0-80f9-5b7154e72b40</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R902">
+      <value>2.2k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L</datasheet>
+      <description>Pico-side SCL pullup</description>
+      <fields>
+        <field name="MPN">RC0603FR-072K2L</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L</field>
+        <field name="Description">Pico-side SCL pullup</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-072K2L"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>3a977a99-6de6-4038-8d76-ab7086d85319</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R903">
+      <value>100k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL</datasheet>
+      <description>Cold-POR fault-clear gate pulldown</description>
+      <fields>
+        <field name="MPN">RC0603FR-07100KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL</field>
+        <field name="Description">Cold-POR fault-clear gate pulldown</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>9828720e-e75e-4930-934d-4999b564ac39</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U901">
+      <value>TLV75533PDBVR</value>
+      <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23-5</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv755p.pdf</datasheet>
+      <description>Always-on 3.3V control LDO; separate from Pico 3V3</description>
+      <fields>
+        <field name="MPN">TLV75533PDBVR</field>
+        <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23-5</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv755p.pdf</field>
+        <field name="Description">Always-on 3.3V control LDO; separate from Pico 3V3</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="TLV75533PDBVR" description=""/>
+      <property name="MPN" value="TLV75533PDBVR"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>c4b8f5b1-91fa-4914-a553-c809d30664e0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="4"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U902">
+      <value>ISO1640BDR</value>
+      <footprint>Sphinx_V2:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/iso1640.pdf</datasheet>
+      <description>Power-domain isolation; side1 board, side2 Pico; common system ground</description>
+      <fields>
+        <field name="MPN">ISO1640BDR</field>
+        <field name="Footprint">Sphinx_V2:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/iso1640.pdf</field>
+        <field name="Description">Power-domain isolation; side1 board, side2 Pico; common system ground</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="ISO1640BDR" description=""/>
+      <property name="MPN" value="ISO1640BDR"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>c9d2e49b-c676-430b-9471-786a3be9bad4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="8"/>
+            <pin num="7"/>
+            <pin num="6"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U903">
+      <value>TCA9535PWR</value>
+      <footprint>Sphinx_V2:Package_SO__TSSOP-24_4.4x7.8mm_P0.65mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tca9535.pdf</datasheet>
+      <description>I2C 0x20; retained enable/reset request outputs; cold POR all inputs</description>
+      <fields>
+        <field name="MPN">TCA9535PWR</field>
+        <field name="Footprint">Sphinx_V2:Package_SO__TSSOP-24_4.4x7.8mm_P0.65mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tca9535.pdf</field>
+        <field name="Description">I2C 0x20; retained enable/reset request outputs; cold POR all inputs</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="TCA9535PWR" description=""/>
+      <property name="MPN" value="TCA9535PWR"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>e160893c-683e-4c02-91e6-eb999a7f9b25</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="24"/>
+            <pin num="23"/>
+            <pin num="22"/>
+            <pin num="21"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="1"/>
+            <pin num="12"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U904">
+      <value>ADS1115IDGSR</value>
+      <footprint>Sphinx_V2:Package_SO__TSSOP-10_3x3mm_P0.5mm</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/ads1115.pdf</datasheet>
+      <description>I2C 0x48; NTC telemetry only; ratio AIN0/AIN1; fixed hardware thermal protection on sheet10</description>
+      <fields>
+        <field name="MPN">ADS1115IDGSR</field>
+        <field name="Footprint">Sphinx_V2:Package_SO__TSSOP-10_3x3mm_P0.5mm</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/ads1115.pdf</field>
+        <field name="Description">I2C 0x48; NTC telemetry only; ratio AIN0/AIN1; fixed hardware thermal protection on sheet10</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="ADS1115IDGSR" description=""/>
+      <property name="MPN" value="ADS1115IDGSR"/>
+      <property name="Sheetname" value="09 | Independent control supply and retained board state"/>
+      <property name="Sheetfile" value="09_autonomous_control.kicad_sch"/>
+      <sheetpath names="/09 | Independent control supply and retained board state/" tstamps="/72e8466f-3339-482a-809b-589b878ed9ef/"/>
+      <tstamps>7360986a-6853-4cbe-8fe2-b57fbd7b432d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1001">
+      <value>100n / 100V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</datasheet>
+      <description>U1001 bypass</description>
+      <fields>
+        <field name="MPN">GRM188R72A104KA35D</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</field>
+        <field name="Description">U1001 bypass</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R72A104KA35D"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>a4fa0d54-272d-4201-8263-f1065d3c9708</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C1002">
+      <value>100n / 100V</value>
+      <footprint>Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</footprint>
+      <datasheet>https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</datasheet>
+      <description>U1002 bypass</description>
+      <fields>
+        <field name="MPN">GRM188R72A104KA35D</field>
+        <field name="Footprint">Sphinx_V2:Capacitor_SMD__C_0603_1608Metric</field>
+        <field name="Datasheet">https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf</field>
+        <field name="Description">U1002 bypass</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__C" description="Unpolarized capacitor"/>
+      <property name="MPN" value="GRM188R72A104KA35D"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>601ba199-5be7-47db-bd6a-9bf305f3bf8f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1001">
+      <value>100k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL</datasheet>
+      <description>U502 CT pullup sets300ms nominal delay,180ms minimum</description>
+      <fields>
+        <field name="MPN">RC0603FR-07100KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL</field>
+        <field name="Description">U502 CT pullup sets300ms nominal delay,180ms minimum</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-07100KL"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>7664e9e5-24a9-4559-8230-e81927748214</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1002">
+      <value>12.6k 0.1%</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L</datasheet>
+      <description>IO OVP upper divider 12.6k,0.1%,25ppm/C</description>
+      <fields>
+        <field name="MPN">RT0603BRD0712K6L</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L</field>
+        <field name="Description">IO OVP upper divider 12.6k,0.1%,25ppm/C</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD0712K6L"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>d4681f9d-75b5-477c-951d-f98f22e1fc23</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1003">
+      <value>20k / 0.1%</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0720KL</datasheet>
+      <description>IO OVP lower divider20k0.1%</description>
+      <fields>
+        <field name="MPN">RT0603BRD0720KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0720KL</field>
+        <field name="Description">IO OVP lower divider20k0.1%</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RT0603BRD0720KL"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>a6394cd7-4876-447c-97aa-a6a56ac0f0e4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1004">
+      <value>10k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
+      <description>Unused U903 input 10k pull-down</description>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
+        <field name="Description">Unused U903 input 10k pull-down</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>170e9dd7-7abd-4ce5-8535-a5adf5349b91</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1005">
+      <value>10k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
+      <description>Unused U903 input 10k pull-down</description>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
+        <field name="Description">Unused U903 input 10k pull-down</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>5e204cc3-6077-461c-8324-e67879c12db7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1006">
+      <value>10k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
+      <description>Unused U903 input 10k pull-down</description>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
+        <field name="Description">Unused U903 input 10k pull-down</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>15d66815-72e9-4f24-af6d-e18576d54948</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1007">
+      <value>10k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
+      <description>Unused U903 input 10k pull-down</description>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
+        <field name="Description">Unused U903 input 10k pull-down</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>e58994ad-0521-4ec2-b09f-868ffe2f540e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1008">
+      <value>10k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
+      <description>Unused U903 input 10k pull-down</description>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
+        <field name="Description">Unused U903 input 10k pull-down</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>91927f4b-0ab2-4b12-835f-8f33aa7953b5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R1009">
+      <value>10k</value>
+      <footprint>Sphinx_V2:Resistor_SMD__R_0603_1608Metric</footprint>
+      <datasheet>https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</datasheet>
+      <description>Unused U903 input 10k pull-down</description>
+      <fields>
+        <field name="MPN">RC0603FR-0710KL</field>
+        <field name="Footprint">Sphinx_V2:Resistor_SMD__R_0603_1608Metric</field>
+        <field name="Datasheet">https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL</field>
+        <field name="Description">Unused U903 input 10k pull-down</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="Device__R" description="Resistor"/>
+      <property name="MPN" value="RC0603FR-0710KL"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>6c7396f3-9418-41a0-9c99-138d0c21f655</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1001">
+      <value>TMP302BDRLR</value>
+      <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-563</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tmp302.pdf</datasheet>
+      <description>Independent local-board overtemperature switch;75C nominal trip,5C hysteresis</description>
+      <fields>
+        <field name="MPN">TMP302BDRLR</field>
+        <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-563</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tmp302.pdf</field>
+        <field name="Description">Independent local-board overtemperature switch;75C nominal trip,5C hysteresis</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="TMP302BDRLR" description=""/>
+      <property name="MPN" value="TMP302BDRLR"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>4a219ec7-cec8-4aac-bad6-8db4b08da9a1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="5"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U1002">
+      <value>TLV3011AIDBVR</value>
+      <footprint>Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</footprint>
+      <datasheet>https://www.ti.com/lit/ds/symlink/tlv3011.pdf</datasheet>
+      <description>Independent IO overvoltage open-drain shutdown;2.02446V nominal,not ASIC absolute max</description>
+      <fields>
+        <field name="MPN">TLV3011AIDBVR</field>
+        <field name="Footprint">Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6</field>
+        <field name="Datasheet">https://www.ti.com/lit/ds/symlink/tlv3011.pdf</field>
+        <field name="Description">Independent IO overvoltage open-drain shutdown;2.02446V nominal,not ASIC absolute max</field>
+      </fields>
+      <libsource lib="Sphinx_V2" part="TLV3011" description=""/>
+      <property name="MPN" value="TLV3011AIDBVR"/>
+      <property name="Sheetname" value="10 | Independent temperature and IO overvoltage protection"/>
+      <property name="Sheetfile" value="10_independent_protection.kicad_sch"/>
+      <sheetpath names="/10 | Independent temperature and IO overvoltage protection/" tstamps="/940c0d29-da87-4f90-9fc1-e3c2f4896fd0/"/>
+      <tstamps>1c0472a6-40d8-4033-acd9-11eaa1bc8ebb</tstamps>
       <units>
         <unit name="A">
           <pins>
@@ -6539,6 +7394,27 @@
         <pin num="12" name="4A" type="input"/>
         <pin num="13" name="4B" type="input"/>
         <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sphinx_V2" part="ADS1115IDGSR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADS1115IDGSR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="ADDR" type="input"/>
+        <pin num="2" name="ALERT_RDY_N" type="open_collector"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="AIN0" type="input"/>
+        <pin num="5" name="AIN1" type="input"/>
+        <pin num="6" name="AIN2" type="input"/>
+        <pin num="7" name="AIN3" type="input"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="SDA" type="bidirectional"/>
+        <pin num="10" name="SCL" type="input"/>
       </pins>
     </libpart>
     <libpart lib="Sphinx_V2" part="Banana_4mm_TwoLegs">
@@ -6819,6 +7695,25 @@
         <pin num="10" name="IN+" type="input"/>
       </pins>
     </libpart>
+    <libpart lib="Sphinx_V2" part="ISO1640BDR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ISO1640BDR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC1_BOARD" type="power_in"/>
+        <pin num="2" name="SDA1" type="bidirectional"/>
+        <pin num="3" name="SCL1" type="bidirectional"/>
+        <pin num="4" name="GND1" type="power_in"/>
+        <pin num="5" name="GND2" type="power_in"/>
+        <pin num="6" name="SCL2" type="bidirectional"/>
+        <pin num="7" name="SDA2" type="bidirectional"/>
+        <pin num="8" name="VCC2_PICO" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="Sphinx_V2" part="MCU_Module__RaspberryPi_Pico">
       <description>Versatile and inexpensive microcontroller module powered by RP2040 dual-core Arm Cortex-M0+ processor up to 133 MHz, 264kB SRAM, 2MB QSPI flash; also supports Raspberry Pi Pico 2</description>
       <docs>https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf</docs>
@@ -7041,6 +7936,41 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Sphinx_V2" part="TCA9535PWR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TCA9535PWR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="INT_N" type="open_collector"/>
+        <pin num="2" name="A1" type="input"/>
+        <pin num="3" name="A2" type="input"/>
+        <pin num="4" name="P00" type="bidirectional"/>
+        <pin num="5" name="P01" type="bidirectional"/>
+        <pin num="6" name="P02" type="bidirectional"/>
+        <pin num="7" name="P03" type="bidirectional"/>
+        <pin num="8" name="P04" type="bidirectional"/>
+        <pin num="9" name="P05" type="bidirectional"/>
+        <pin num="10" name="P06" type="bidirectional"/>
+        <pin num="11" name="P07" type="bidirectional"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="P10" type="bidirectional"/>
+        <pin num="14" name="P11" type="bidirectional"/>
+        <pin num="15" name="P12" type="bidirectional"/>
+        <pin num="16" name="P13" type="bidirectional"/>
+        <pin num="17" name="P14" type="bidirectional"/>
+        <pin num="18" name="P15" type="bidirectional"/>
+        <pin num="19" name="P16" type="bidirectional"/>
+        <pin num="20" name="P17" type="bidirectional"/>
+        <pin num="21" name="A0" type="input"/>
+        <pin num="22" name="SCL" type="input"/>
+        <pin num="23" name="SDA" type="bidirectional"/>
+        <pin num="24" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
     <libpart lib="Sphinx_V2" part="TLP293">
       <description>Optical coupling only: input powered solely by ZedBoard; output sinks RESET_BASE</description>
       <fields>
@@ -7072,6 +8002,39 @@
         <pin num="4" name="IN-" type="input"/>
         <pin num="5" name="REF_1V242" type="output"/>
         <pin num="6" name="V+" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sphinx_V2" part="TLV75533PDBVR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TLV75533PDBVR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="no_connect"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sphinx_V2" part="TMP302BDRLR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TMP302BDRLR</field>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="TRIPSET0" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT_N" type="open_collector"/>
+        <pin num="4" name="HYSTSET" type="input"/>
+        <pin num="5" name="VS" type="power_in"/>
+        <pin num="6" name="TRIPSET1" type="input"/>
       </pins>
     </libpart>
     <libpart lib="Sphinx_V2" part="TPS259470L">
@@ -7380,6 +8343,7 @@
       <node ref="J1" pin="80" pinfunction="VDDPST_80" pintype="passive"/>
       <node ref="J2" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="J6" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
+      <node ref="R1002" pin="1" pintype="passive"/>
       <node ref="R301" pin="2" pintype="passive"/>
       <node ref="R304" pin="1" pintype="passive"/>
       <node ref="R321" pin="1" pintype="passive"/>
@@ -7391,6 +8355,8 @@
       <node ref="U303" pin="8" pinfunction="VBUS_8" pintype="input"/>
     </net>
     <net code="3" name="3V3_CTRL" class="Default">
+      <node ref="C1001" pin="1" pintype="passive"/>
+      <node ref="C1002" pin="1" pintype="passive"/>
       <node ref="C310" pin="1" pintype="passive"/>
       <node ref="C320" pin="1" pintype="passive"/>
       <node ref="C502" pin="1" pintype="passive"/>
@@ -7400,7 +8366,12 @@
       <node ref="C508" pin="1" pintype="passive"/>
       <node ref="C509" pin="1" pintype="passive"/>
       <node ref="C510" pin="1" pintype="passive"/>
+      <node ref="C902" pin="1" pintype="passive"/>
+      <node ref="C903" pin="1" pintype="passive"/>
+      <node ref="C905" pin="1" pintype="passive"/>
+      <node ref="C906" pin="1" pintype="passive"/>
       <node ref="J401" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
+      <node ref="R1001" pin="1" pintype="passive"/>
       <node ref="R211" pin="1" pintype="passive"/>
       <node ref="R302" pin="1" pintype="passive"/>
       <node ref="R401" pin="1" pintype="passive"/>
@@ -7411,10 +8382,12 @@
       <node ref="R506" pin="1" pintype="passive"/>
       <node ref="R513" pin="1" pintype="passive"/>
       <node ref="R516" pin="1" pintype="passive"/>
+      <node ref="U1001" pin="1" pinfunction="TRIPSET0_1" pintype="input"/>
+      <node ref="U1001" pin="5" pinfunction="VS_5" pintype="power_in"/>
+      <node ref="U1002" pin="6" pinfunction="V+_6" pintype="power_in"/>
       <node ref="U302" pin="6" pinfunction="VS_6" pintype="power_in"/>
       <node ref="U303" pin="2" pinfunction="A0_2" pintype="input"/>
       <node ref="U303" pin="6" pinfunction="VS_6" pintype="power_in"/>
-      <node ref="U401" pin="36" pinfunction="3V3_36" pintype="power_out"/>
       <node ref="U501" pin="6" pinfunction="V+_6" pintype="power_in"/>
       <node ref="U502" pin="3" pinfunction="MR_N_3" pintype="input"/>
       <node ref="U502" pin="5" pinfunction="SENSE_5" pintype="input"/>
@@ -7426,6 +8399,11 @@
       <node ref="U507" pin="5" pinfunction="VCC_5" pintype="power_in"/>
       <node ref="U508" pin="6" pinfunction="V+_6" pintype="power_in"/>
       <node ref="U509" pin="6" pinfunction="V+_6" pintype="power_in"/>
+      <node ref="U901" pin="5" pinfunction="OUT_5" pintype="power_out"/>
+      <node ref="U902" pin="1" pinfunction="VCC1_BOARD_1" pintype="power_in"/>
+      <node ref="U903" pin="24" pinfunction="VCC_24" pintype="power_in"/>
+      <node ref="U904" pin="5" pinfunction="AIN1_5" pintype="input"/>
+      <node ref="U904" pin="8" pinfunction="VDD_8" pintype="power_in"/>
     </net>
     <net code="4" name="ADRSEL" class="Default">
       <node ref="R209" pin="1" pintype="passive"/>
@@ -7434,9 +8412,12 @@
     <net code="5" name="AUX5V" class="Default">
       <node ref="C108" pin="1" pintype="passive"/>
       <node ref="C109" pin="1" pintype="passive"/>
+      <node ref="C901" pin="1" pintype="passive"/>
       <node ref="D401" pin="2" pinfunction="A_2" pintype="passive"/>
       <node ref="L101" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R107" pin="1" pintype="passive"/>
+      <node ref="U901" pin="1" pinfunction="IN_1" pintype="power_in"/>
+      <node ref="U901" pin="3" pinfunction="EN_3" pintype="input"/>
     </net>
     <net code="6" name="AUX_BOOT" class="Default">
       <node ref="C107" pin="1" pintype="passive"/>
@@ -7453,86 +8434,91 @@
       <node ref="U102" pin="2" pinfunction="SW_2" pintype="power_out"/>
     </net>
     <net code="9" name="BOARD_NTC" class="Default">
+      <node ref="C907" pin="1" pintype="passive"/>
       <node ref="R408" pin="2" pintype="passive"/>
       <node ref="R409" pin="1" pintype="passive"/>
-      <node ref="U401" pin="32" pinfunction="GPIO27_ADC1_32" pintype="bidirectional"/>
+      <node ref="U904" pin="4" pinfunction="AIN0_4" pintype="input"/>
     </net>
-    <net code="10" name="CORE_ALERT_N" class="Default">
+    <net code="10" name="CLEAR_REQUEST" class="Default">
+      <node ref="Q901" pin="1" pinfunction="G_1" pintype="input"/>
+      <node ref="R903" pin="1" pintype="passive"/>
+      <node ref="U903" pin="8" pinfunction="P04_8" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="CORE_ALERT_N" class="Default">
       <node ref="J401" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="R403" pin="2" pintype="passive"/>
       <node ref="U201" pin="6" pinfunction="SMB_ALRT_N_6" pintype="open_collector"/>
-      <node ref="U401" pin="12" pinfunction="GPIO9_12" pintype="bidirectional"/>
     </net>
-    <net code="11" name="CORE_AVIN" class="Default">
+    <net code="12" name="CORE_AVIN" class="Default">
       <node ref="C204" pin="1" pintype="passive"/>
       <node ref="R202" pin="2" pintype="passive"/>
       <node ref="U201" pin="26" pinfunction="AVIN_26" pintype="power_in"/>
     </net>
-    <net code="12" name="CORE_BOOT" class="Default">
+    <net code="13" name="CORE_BOOT" class="Default">
       <node ref="C201" pin="1" pintype="passive"/>
       <node ref="U201" pin="7" pinfunction="BOOT_7" pintype="passive"/>
     </net>
-    <net code="13" name="CORE_BP1V5" class="Default">
+    <net code="14" name="CORE_BP1V5" class="Default">
       <node ref="C203" pin="1" pintype="passive"/>
       <node ref="R204" pin="1" pintype="passive"/>
       <node ref="R206" pin="1" pintype="passive"/>
       <node ref="U201" pin="4" pinfunction="BP1V5_4" pintype="power_out"/>
     </net>
-    <net code="14" name="CORE_DRTN" class="Default">
+    <net code="15" name="CORE_DRTN" class="Default">
       <node ref="C203" pin="2" pintype="passive"/>
       <node ref="U201" pin="5" pinfunction="DRTN_5" pintype="passive"/>
     </net>
-    <net code="15" name="CORE_EN" class="Default">
+    <net code="16" name="CORE_EN" class="Default">
       <node ref="R210" pin="1" pintype="passive"/>
       <node ref="U201" pin="27" pinfunction="EN/UVLO_27" pintype="input"/>
       <node ref="U504" pin="3" pinfunction="1Y_3" pintype="output"/>
     </net>
-    <net code="16" name="CORE_ISENSE_N" class="Default">
+    <net code="17" name="CORE_ISENSE_N" class="Default">
       <node ref="C311" pin="2" pintype="passive"/>
       <node ref="R311" pin="2" pintype="passive"/>
       <node ref="U302" pin="9" pinfunction="IN-_9" pintype="input"/>
     </net>
-    <net code="17" name="CORE_ISENSE_P" class="Default">
+    <net code="18" name="CORE_ISENSE_P" class="Default">
       <node ref="C311" pin="1" pintype="passive"/>
       <node ref="R310" pin="2" pintype="passive"/>
       <node ref="U302" pin="10" pinfunction="IN+_10" pintype="input"/>
     </net>
-    <net code="18" name="CORE_OV_SENSE" class="Default">
+    <net code="19" name="CORE_OV_SENSE" class="Default">
       <node ref="R503" pin="2" pintype="passive"/>
       <node ref="R504" pin="1" pintype="passive"/>
       <node ref="U501" pin="4" pinfunction="IN-_4" pintype="input"/>
     </net>
-    <net code="19" name="CORE_PG" class="Default">
+    <net code="20" name="CORE_PG" class="Default">
       <node ref="R211" pin="2" pintype="passive"/>
       <node ref="U201" pin="1" pinfunction="PGD_1" pintype="open_collector"/>
-      <node ref="U401" pin="9" pinfunction="GPIO6_9" pintype="bidirectional"/>
+      <node ref="U903" pin="11" pinfunction="P07_11" pintype="bidirectional"/>
     </net>
-    <net code="20" name="CORE_PRE_SHUNT" class="CorePower,Default">
+    <net code="21" name="CORE_PRE_SHUNT" class="CorePower,Default">
       <node ref="L201" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R201" pin="1" pintype="passive"/>
       <node ref="R310" pin="1" pintype="passive"/>
     </net>
-    <net code="21" name="CORE_REQ" class="Default">
+    <net code="22" name="CORE_REQ" class="Default">
       <node ref="R509" pin="1" pintype="passive"/>
-      <node ref="U401" pin="4" pinfunction="GPIO2_4" pintype="bidirectional"/>
       <node ref="U504" pin="2" pinfunction="1B_2" pintype="input"/>
+      <node ref="U903" pin="4" pinfunction="P00_4" pintype="bidirectional"/>
     </net>
-    <net code="22" name="CORE_SENSE_N" class="KelvinSense,Default">
+    <net code="23" name="CORE_SENSE_N" class="KelvinSense,Default">
       <node ref="J601" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="NT602" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U201" pin="34" pinfunction="GOSNS_34" pintype="input"/>
     </net>
-    <net code="23" name="CORE_SENSE_P" class="KelvinSense,Default">
+    <net code="24" name="CORE_SENSE_P" class="KelvinSense,Default">
       <node ref="J601" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="NT601" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="U201" pin="33" pinfunction="VOSNS_33" pintype="input"/>
       <node ref="U302" pin="8" pinfunction="VBUS_8" pintype="input"/>
     </net>
-    <net code="24" name="CORE_SNUB" class="Default">
+    <net code="25" name="CORE_SNUB" class="Default">
       <node ref="C210" pin="1" pintype="passive"/>
       <node ref="R203" pin="2" pintype="passive"/>
     </net>
-    <net code="25" name="CORE_SW" class="Default">
+    <net code="26" name="CORE_SW" class="Default">
       <node ref="C201" pin="2" pintype="passive"/>
       <node ref="L201" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="R203" pin="1" pintype="passive"/>
@@ -7542,11 +8528,13 @@
       <node ref="U201" pin="8" pinfunction="SW_8" pintype="power_out"/>
       <node ref="U201" pin="9" pinfunction="SW_9" pintype="passive"/>
     </net>
-    <net code="26" name="CORE_VDD5" class="Default">
+    <net code="27" name="CORE_VDD5" class="Default">
       <node ref="C202" pin="1" pintype="passive"/>
       <node ref="U201" pin="28" pinfunction="VDD5_28" pintype="power_out"/>
     </net>
-    <net code="27" name="GND" class="Default">
+    <net code="28" name="GND" class="Default">
+      <node ref="C1001" pin="2" pintype="passive"/>
+      <node ref="C1002" pin="2" pintype="passive"/>
       <node ref="C101" pin="2" pintype="passive"/>
       <node ref="C102" pin="2" pintype="passive"/>
       <node ref="C103" pin="2" pintype="passive"/>
@@ -7659,6 +8647,13 @@
       <node ref="C828" pin="2" pintype="passive"/>
       <node ref="C829" pin="2" pintype="passive"/>
       <node ref="C830" pin="2" pintype="passive"/>
+      <node ref="C901" pin="2" pintype="passive"/>
+      <node ref="C902" pin="2" pintype="passive"/>
+      <node ref="C903" pin="2" pintype="passive"/>
+      <node ref="C904" pin="2" pintype="passive"/>
+      <node ref="C905" pin="2" pintype="passive"/>
+      <node ref="C906" pin="2" pintype="passive"/>
+      <node ref="C907" pin="2" pintype="passive"/>
       <node ref="J1" pin="11" pinfunction="VSS_11" pintype="passive"/>
       <node ref="J1" pin="16" pinfunction="VSS_16" pintype="passive"/>
       <node ref="J1" pin="18" pinfunction="VSS_18" pintype="passive"/>
@@ -7704,6 +8699,14 @@
       <node ref="Q302" pin="2" pinfunction="S_2" pintype="passive"/>
       <node ref="Q601" pin="2" pinfunction="E_2" pintype="passive"/>
       <node ref="Q602" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="Q901" pin="2" pinfunction="S_2" pintype="passive"/>
+      <node ref="R1003" pin="2" pintype="passive"/>
+      <node ref="R1004" pin="2" pintype="passive"/>
+      <node ref="R1005" pin="2" pintype="passive"/>
+      <node ref="R1006" pin="2" pintype="passive"/>
+      <node ref="R1007" pin="2" pintype="passive"/>
+      <node ref="R1008" pin="2" pintype="passive"/>
+      <node ref="R1009" pin="2" pintype="passive"/>
       <node ref="R102" pin="2" pintype="passive"/>
       <node ref="R104" pin="2" pintype="passive"/>
       <node ref="R105" pin="2" pintype="passive"/>
@@ -7727,12 +8730,17 @@
       <node ref="R515" pin="2" pintype="passive"/>
       <node ref="R601" pin="2" pintype="passive"/>
       <node ref="R604" pin="2" pintype="passive"/>
+      <node ref="R903" pin="2" pintype="passive"/>
       <node ref="SW502" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="SW601" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="TP607" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP802" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP804" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="TP806" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1001" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U1001" pin="4" pinfunction="HYSTSET_4" pintype="input"/>
+      <node ref="U1001" pin="6" pinfunction="TRIPSET1_6" pintype="input"/>
+      <node ref="U1002" pin="2" pinfunction="V-_2" pintype="power_in"/>
       <node ref="U101" pin="8" pinfunction="GND_8" pintype="power_in"/>
       <node ref="U102" pin="1" pinfunction="GND_1" pintype="power_in"/>
       <node ref="U201" pin="13" pinfunction="PGND/AGND/EP_13" pintype="power_in"/>
@@ -7779,157 +8787,199 @@
       <node ref="U508" pin="2" pinfunction="V-_2" pintype="power_in"/>
       <node ref="U509" pin="2" pinfunction="V-_2" pintype="power_in"/>
       <node ref="U601" pin="3" pinfunction="E_3" pintype="passive"/>
+      <node ref="U901" pin="2" pinfunction="GND_2" pintype="power_in"/>
+      <node ref="U902" pin="4" pinfunction="GND1_4" pintype="power_in"/>
+      <node ref="U902" pin="5" pinfunction="GND2_5" pintype="power_in"/>
+      <node ref="U903" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U903" pin="2" pinfunction="A1_2" pintype="input"/>
+      <node ref="U903" pin="21" pinfunction="A0_21" pintype="input"/>
+      <node ref="U903" pin="3" pinfunction="A2_3" pintype="input"/>
+      <node ref="U904" pin="1" pinfunction="ADDR_1" pintype="input"/>
+      <node ref="U904" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="U904" pin="6" pinfunction="AIN2_6" pintype="input"/>
+      <node ref="U904" pin="7" pinfunction="AIN3_7" pintype="input"/>
     </net>
-    <net code="28" name="HW_CLEAR_N" class="Default">
+    <net code="29" name="HW_CLEAR_N" class="Default">
       <node ref="U503" pin="6" pinfunction="CLR_N_6" pintype="input"/>
       <node ref="U507" pin="4" pinfunction="2Y_4" pintype="output"/>
     </net>
-    <net code="29" name="HW_FAULT_N" class="Default">
+    <net code="30" name="HW_FAULT_N" class="Default">
+      <node ref="Q901" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R506" pin="2" pintype="passive"/>
       <node ref="SW502" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U1001" pin="3" pinfunction="OUT_N_3" pintype="open_collector"/>
+      <node ref="U1002" pin="1" pinfunction="OUT_OD_1" pintype="open_collector"/>
       <node ref="U101" pin="4" pinfunction="FLT_N_4" pintype="open_collector"/>
-      <node ref="U401" pin="11" pinfunction="GPIO8_11" pintype="bidirectional"/>
-      <node ref="U401" pin="20" pinfunction="GPIO15_20" pintype="bidirectional"/>
       <node ref="U501" pin="1" pinfunction="OUT_OD_1" pintype="open_collector"/>
       <node ref="U502" pin="1" pinfunction="RESET_N_1" pintype="open_collector"/>
       <node ref="U507" pin="3" pinfunction="2A_3" pintype="input"/>
+      <node ref="U903" pin="10" pinfunction="P06_10" pintype="bidirectional"/>
     </net>
-    <net code="30" name="INPUT_DVDT" class="Default">
+    <net code="31" name="INPUT_DVDT" class="Default">
       <node ref="C103" pin="1" pintype="passive"/>
       <node ref="U101" pin="7" pinfunction="DVDT_7" pintype="passive"/>
     </net>
-    <net code="31" name="INPUT_ILM" class="Default">
+    <net code="32" name="INPUT_ILM" class="Default">
       <node ref="R105" pin="1" pintype="passive"/>
       <node ref="U101" pin="9" pinfunction="ILM_9" pintype="passive"/>
     </net>
-    <net code="32" name="INPUT_OVLO" class="Default">
+    <net code="33" name="INPUT_OVLO" class="Default">
       <node ref="R103" pin="2" pintype="passive"/>
       <node ref="R104" pin="1" pintype="passive"/>
       <node ref="U101" pin="2" pinfunction="OVLO_2" pintype="input"/>
     </net>
-    <net code="33" name="INPUT_UVLO" class="Default">
+    <net code="34" name="INPUT_UVLO" class="Default">
       <node ref="R101" pin="2" pintype="passive"/>
       <node ref="R102" pin="1" pintype="passive"/>
       <node ref="U101" pin="1" pinfunction="EN/UVLO_1" pintype="input"/>
     </net>
-    <net code="34" name="IO_EN" class="Default">
+    <net code="35" name="IO_EN" class="Default">
       <node ref="C307" pin="1" pintype="passive"/>
       <node ref="Q302" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R303" pin="1" pintype="passive"/>
       <node ref="R305" pin="2" pintype="passive"/>
       <node ref="U301" pin="13" pinfunction="EN_13" pintype="input"/>
     </net>
-    <net code="35" name="IO_EN_CTRL" class="Default">
+    <net code="36" name="IO_EN_CTRL" class="Default">
       <node ref="Q301" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R307" pin="1" pintype="passive"/>
       <node ref="U504" pin="6" pinfunction="2Y_6" pintype="output"/>
     </net>
-    <net code="36" name="IO_EN_INHIBIT" class="Default">
+    <net code="37" name="IO_EN_INHIBIT" class="Default">
       <node ref="C306" pin="2" pintype="passive"/>
       <node ref="Q302" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R306" pin="2" pintype="passive"/>
       <node ref="R308" pin="1" pintype="passive"/>
     </net>
-    <net code="37" name="IO_EN_PULLDOWN" class="Default">
+    <net code="38" name="IO_EN_PULLDOWN" class="Default">
       <node ref="Q301" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R308" pin="2" pintype="passive"/>
     </net>
-    <net code="38" name="IO_ISENSE_N" class="Default">
+    <net code="39" name="IO_ISENSE_N" class="Default">
       <node ref="C321" pin="2" pintype="passive"/>
       <node ref="R321" pin="2" pintype="passive"/>
       <node ref="U303" pin="9" pinfunction="IN-_9" pintype="input"/>
     </net>
-    <net code="39" name="IO_ISENSE_P" class="Default">
+    <net code="40" name="IO_ISENSE_P" class="Default">
       <node ref="C321" pin="1" pintype="passive"/>
       <node ref="R320" pin="2" pintype="passive"/>
       <node ref="U303" pin="10" pinfunction="IN+_10" pintype="input"/>
     </net>
-    <net code="40" name="IO_PG" class="Default">
+    <net code="41" name="IO_OV_REF" class="Default">
+      <node ref="U1002" pin="3" pinfunction="IN+_3" pintype="input"/>
+      <node ref="U1002" pin="5" pinfunction="REF_1V242_5" pintype="output"/>
+    </net>
+    <net code="42" name="IO_OV_SENSE" class="Default">
+      <node ref="R1002" pin="2" pintype="passive"/>
+      <node ref="R1003" pin="1" pintype="passive"/>
+      <node ref="U1002" pin="4" pinfunction="IN-_4" pintype="input"/>
+    </net>
+    <net code="43" name="IO_PG" class="Default">
       <node ref="R302" pin="2" pintype="passive"/>
       <node ref="U301" pin="4" pinfunction="PG_4" pintype="open_collector"/>
       <node ref="U301" pin="7" pinfunction="FSW_7" pintype="input"/>
     </net>
-    <net code="41" name="IO_PRE_SHUNT" class="Default">
+    <net code="44" name="IO_PRE_SHUNT" class="Default">
       <node ref="L301" pin="2" pinfunction="2_2" pintype="passive"/>
       <node ref="R301" pin="1" pintype="passive"/>
       <node ref="R320" pin="1" pintype="passive"/>
     </net>
-    <net code="42" name="IO_REQ" class="Default">
+    <net code="45" name="IO_REQ" class="Default">
       <node ref="R510" pin="1" pintype="passive"/>
-      <node ref="U401" pin="5" pinfunction="GPIO3_5" pintype="bidirectional"/>
       <node ref="U504" pin="5" pinfunction="2B_5" pintype="input"/>
+      <node ref="U903" pin="5" pinfunction="P01_5" pintype="bidirectional"/>
     </net>
-    <net code="43" name="IO_SS" class="Default">
+    <net code="46" name="IO_SS" class="Default">
       <node ref="C303" pin="1" pintype="passive"/>
       <node ref="U301" pin="9" pinfunction="SS/TR_9" pintype="passive"/>
     </net>
-    <net code="44" name="IO_SW" class="Default">
+    <net code="47" name="IO_SW" class="Default">
       <node ref="L301" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U301" pin="1" pinfunction="SW_1" pintype="power_out"/>
       <node ref="U301" pin="2" pinfunction="SW_2" pintype="passive"/>
       <node ref="U301" pin="3" pinfunction="SW_3" pintype="passive"/>
     </net>
-    <net code="45" name="IO_UV_REF" class="Default">
+    <net code="48" name="IO_UV_REF" class="Default">
       <node ref="U508" pin="4" pinfunction="IN-_4" pintype="input"/>
       <node ref="U508" pin="5" pinfunction="REF_1V242_5" pintype="output"/>
     </net>
-    <net code="46" name="IO_UV_SENSE" class="Default">
+    <net code="49" name="IO_UV_SENSE" class="Default">
       <node ref="R511" pin="2" pintype="passive"/>
       <node ref="R512" pin="1" pintype="passive"/>
       <node ref="U508" pin="3" pinfunction="IN+_3" pintype="input"/>
     </net>
-    <net code="47" name="IO_VALID" class="Default">
+    <net code="50" name="IO_VALID" class="Default">
       <node ref="R513" pin="2" pintype="passive"/>
-      <node ref="U401" pin="10" pinfunction="GPIO7_10" pintype="bidirectional"/>
       <node ref="U508" pin="1" pinfunction="OUT_OD_1" pintype="open_collector"/>
+      <node ref="U903" pin="13" pinfunction="P10_13" pintype="bidirectional"/>
     </net>
-    <net code="48" name="MON_ALERT_N" class="Default">
+    <net code="51" name="MON_ALERT_N" class="Default">
       <node ref="R404" pin="2" pintype="passive"/>
       <node ref="U302" pin="3" pinfunction="ALERT_N_3" pintype="open_collector"/>
       <node ref="U303" pin="3" pinfunction="ALERT_N_3" pintype="open_collector"/>
-      <node ref="U401" pin="15" pinfunction="GPIO11_15" pintype="bidirectional"/>
     </net>
-    <net code="49" name="MSEL1" class="Default">
+    <net code="52" name="MSEL1" class="Default">
       <node ref="R204" pin="2" pintype="passive"/>
       <node ref="R205" pin="1" pintype="passive"/>
       <node ref="U201" pin="32" pinfunction="MSEL1_32" pintype="input"/>
     </net>
-    <net code="50" name="MSEL2" class="Default">
+    <net code="53" name="MSEL2" class="Default">
       <node ref="R206" pin="2" pintype="passive"/>
       <node ref="R207" pin="1" pintype="passive"/>
       <node ref="U201" pin="29" pinfunction="MSEL2_29" pintype="input"/>
     </net>
-    <net code="51" name="PICO_VSYS" class="Default">
+    <net code="54" name="PICO_3V3" class="Default">
+      <node ref="C904" pin="1" pintype="passive"/>
+      <node ref="R901" pin="1" pintype="passive"/>
+      <node ref="R902" pin="1" pintype="passive"/>
+      <node ref="U401" pin="36" pinfunction="3V3_36" pintype="power_out"/>
+      <node ref="U902" pin="8" pinfunction="VCC2_PICO_8" pintype="power_in"/>
+    </net>
+    <net code="55" name="PICO_SCL" class="Default">
+      <node ref="R902" pin="2" pintype="passive"/>
+      <node ref="U401" pin="2" pinfunction="GPIO1_2" pintype="bidirectional"/>
+      <node ref="U902" pin="6" pinfunction="SCL2_6" pintype="bidirectional"/>
+    </net>
+    <net code="56" name="PICO_SDA" class="Default">
+      <node ref="R901" pin="2" pintype="passive"/>
+      <node ref="U401" pin="1" pinfunction="GPIO0_1" pintype="bidirectional"/>
+      <node ref="U902" pin="7" pinfunction="SDA2_7" pintype="bidirectional"/>
+    </net>
+    <net code="57" name="PICO_VSYS" class="Default">
       <node ref="C401" pin="1" pintype="passive"/>
       <node ref="D401" pin="1" pinfunction="K_1" pintype="passive"/>
       <node ref="U401" pin="39" pinfunction="VSYS_39" pintype="power_in"/>
     </net>
-    <net code="52" name="PMBUS_SCL" class="Default">
+    <net code="58" name="PMBUS_SCL" class="Default">
       <node ref="J401" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="R402" pin="2" pintype="passive"/>
       <node ref="U201" pin="3" pinfunction="PMB_CLK_3" pintype="input"/>
       <node ref="U302" pin="5" pinfunction="SCL_5" pintype="input"/>
       <node ref="U303" pin="5" pinfunction="SCL_5" pintype="input"/>
-      <node ref="U401" pin="2" pinfunction="GPIO1_2" pintype="bidirectional"/>
+      <node ref="U902" pin="3" pinfunction="SCL1_3" pintype="bidirectional"/>
+      <node ref="U903" pin="22" pinfunction="SCL_22" pintype="input"/>
+      <node ref="U904" pin="10" pinfunction="SCL_10" pintype="input"/>
     </net>
-    <net code="53" name="PMBUS_SDA" class="Default">
+    <net code="59" name="PMBUS_SDA" class="Default">
       <node ref="J401" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="R401" pin="2" pintype="passive"/>
       <node ref="U201" pin="2" pinfunction="PMB_DATA_2" pintype="bidirectional"/>
       <node ref="U302" pin="4" pinfunction="SDA_4" pintype="bidirectional"/>
       <node ref="U303" pin="4" pinfunction="SDA_4" pintype="bidirectional"/>
-      <node ref="U401" pin="1" pinfunction="GPIO0_1" pintype="bidirectional"/>
+      <node ref="U902" pin="2" pinfunction="SDA1_2" pintype="bidirectional"/>
+      <node ref="U903" pin="23" pinfunction="SDA_23" pintype="bidirectional"/>
+      <node ref="U904" pin="9" pinfunction="SDA_9" pintype="bidirectional"/>
     </net>
-    <net code="54" name="REF1V242" class="Default">
+    <net code="60" name="REF1V242" class="Default">
       <node ref="U501" pin="3" pinfunction="IN+_3" pintype="input"/>
       <node ref="U501" pin="5" pinfunction="REF_1V242_5" pintype="output"/>
     </net>
-    <net code="55" name="RESET_ASSERT" class="Default">
+    <net code="61" name="RESET_ASSERT" class="Default">
       <node ref="Q602" pin="1" pinfunction="G_1" pintype="input"/>
       <node ref="R411" pin="1" pintype="passive"/>
-      <node ref="U401" pin="6" pinfunction="GPIO4_6" pintype="bidirectional"/>
+      <node ref="U903" pin="6" pinfunction="P02_6" pintype="bidirectional"/>
     </net>
-    <net code="56" name="RESET_BASE" class="Default">
+    <net code="62" name="RESET_BASE" class="Default">
       <node ref="Q601" pin="1" pinfunction="B_1" pintype="input"/>
       <node ref="Q602" pin="3" pinfunction="D_3" pintype="passive"/>
       <node ref="R603" pin="2" pintype="passive"/>
@@ -7937,22 +8987,50 @@
       <node ref="SW601" pin="1" pinfunction="1_1" pintype="passive"/>
       <node ref="U601" pin="4" pinfunction="C_4" pintype="open_collector"/>
     </net>
-    <net code="57" name="RUN_LATCH" class="Default">
-      <node ref="U401" pin="7" pinfunction="GPIO5_7" pintype="bidirectional"/>
+    <net code="63" name="RUN_LATCH" class="Default">
       <node ref="U503" pin="5" pinfunction="Q_5" pintype="output"/>
       <node ref="U504" pin="1" pinfunction="1A_1" pintype="input"/>
       <node ref="U504" pin="4" pinfunction="2A_4" pintype="input"/>
+      <node ref="U903" pin="9" pinfunction="P05_9" pintype="bidirectional"/>
     </net>
-    <net code="58" name="RUN_SET" class="Default">
+    <net code="64" name="RUN_SET" class="Default">
       <node ref="R507" pin="1" pintype="passive"/>
-      <node ref="U401" pin="14" pinfunction="GPIO10_14" pintype="bidirectional"/>
       <node ref="U507" pin="1" pinfunction="1A_1" pintype="input"/>
+      <node ref="U903" pin="7" pinfunction="P03_7" pintype="bidirectional"/>
     </net>
-    <net code="59" name="RUN_SET_CLEAN" class="Default">
+    <net code="65" name="RUN_SET_CLEAN" class="Default">
       <node ref="U503" pin="1" pinfunction="CLK_1" pintype="input"/>
       <node ref="U507" pin="6" pinfunction="1Y_6" pintype="output"/>
     </net>
-    <net code="60" name="VIN12" class="Default">
+    <net code="66" name="SUPERVISOR_CT" class="Default">
+      <node ref="R1001" pin="2" pintype="passive"/>
+      <node ref="U502" pin="4" pinfunction="CT_4" pintype="passive"/>
+    </net>
+    <net code="67" name="UNUSED_P12" class="Default">
+      <node ref="R1004" pin="1" pintype="passive"/>
+      <node ref="U903" pin="15" pinfunction="P12_15" pintype="bidirectional"/>
+    </net>
+    <net code="68" name="UNUSED_P13" class="Default">
+      <node ref="R1005" pin="1" pintype="passive"/>
+      <node ref="U903" pin="16" pinfunction="P13_16" pintype="bidirectional"/>
+    </net>
+    <net code="69" name="UNUSED_P14" class="Default">
+      <node ref="R1006" pin="1" pintype="passive"/>
+      <node ref="U903" pin="17" pinfunction="P14_17" pintype="bidirectional"/>
+    </net>
+    <net code="70" name="UNUSED_P15" class="Default">
+      <node ref="R1007" pin="1" pintype="passive"/>
+      <node ref="U903" pin="18" pinfunction="P15_18" pintype="bidirectional"/>
+    </net>
+    <net code="71" name="UNUSED_P16" class="Default">
+      <node ref="R1008" pin="1" pintype="passive"/>
+      <node ref="U903" pin="19" pinfunction="P16_19" pintype="bidirectional"/>
+    </net>
+    <net code="72" name="UNUSED_P17" class="Default">
+      <node ref="R1009" pin="1" pintype="passive"/>
+      <node ref="U903" pin="20" pinfunction="P17_20" pintype="bidirectional"/>
+    </net>
+    <net code="73" name="VIN12" class="Default">
       <node ref="C104" pin="1" pintype="passive"/>
       <node ref="C105" pin="1" pintype="passive"/>
       <node ref="C106" pin="1" pintype="passive"/>
@@ -7980,21 +9058,21 @@
       <node ref="U301" pin="11" pinfunction="PVIN/AVIN_11" pintype="power_in"/>
       <node ref="U301" pin="12" pinfunction="PVIN/AVIN_12" pintype="passive"/>
     </net>
-    <net code="61" name="VIN12_UV_REF" class="Default">
+    <net code="74" name="VIN12_UV_REF" class="Default">
       <node ref="U509" pin="4" pinfunction="IN-_4" pintype="input"/>
       <node ref="U509" pin="5" pinfunction="REF_1V242_5" pintype="output"/>
     </net>
-    <net code="62" name="VIN12_UV_SENSE" class="Default">
+    <net code="75" name="VIN12_UV_SENSE" class="Default">
       <node ref="R514" pin="2" pintype="passive"/>
       <node ref="R515" pin="1" pintype="passive"/>
       <node ref="U509" pin="3" pinfunction="IN+_3" pintype="input"/>
     </net>
-    <net code="63" name="VIN12_VALID" class="Default">
+    <net code="76" name="VIN12_VALID" class="Default">
       <node ref="R516" pin="2" pintype="passive"/>
-      <node ref="U401" pin="16" pinfunction="GPIO12_16" pintype="bidirectional"/>
       <node ref="U509" pin="1" pinfunction="OUT_OD_1" pintype="open_collector"/>
+      <node ref="U903" pin="14" pinfunction="P11_14" pintype="bidirectional"/>
     </net>
-    <net code="64" name="VIN_FUSED" class="Default">
+    <net code="77" name="VIN_FUSED" class="Default">
       <node ref="C101" pin="1" pintype="passive"/>
       <node ref="C102" pin="1" pintype="passive"/>
       <node ref="F101" pin="2" pintype="passive"/>
@@ -8002,187 +9080,232 @@
       <node ref="R103" pin="1" pintype="passive"/>
       <node ref="U101" pin="5" pinfunction="IN_5" pintype="power_in"/>
     </net>
-    <net code="65" name="VIN_RAW" class="Default">
+    <net code="78" name="VIN_RAW" class="Default">
       <node ref="F101" pin="1" pintype="passive"/>
       <node ref="J101" pin="1" pinfunction="CONTACT_1" pintype="passive"/>
       <node ref="J101" pin="2" pinfunction="CONTACT_2" pintype="passive"/>
     </net>
-    <net code="66" name="VSEL" class="Default">
+    <net code="79" name="VSEL" class="Default">
       <node ref="R208" pin="1" pintype="passive"/>
       <node ref="U201" pin="30" pinfunction="VSEL_30" pintype="input"/>
     </net>
-    <net code="67" name="ZED_3V3" class="Default">
+    <net code="80" name="ZED_3V3" class="Default">
       <node ref="J602" pin="1" pinfunction="Pin_1_1" pintype="passive"/>
       <node ref="R605" pin="1" pintype="passive"/>
     </net>
-    <net code="68" name="ZED_OPTO_A" class="Default">
+    <net code="81" name="ZED_OPTO_A" class="Default">
       <node ref="R605" pin="2" pintype="passive"/>
       <node ref="U601" pin="1" pinfunction="A_1" pintype="passive"/>
     </net>
-    <net code="69" name="ZED_RESET_OD" class="Default">
+    <net code="82" name="ZED_RESET_OD" class="Default">
       <node ref="J602" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="U601" pin="2" pinfunction="K_2" pintype="passive"/>
     </net>
-    <net code="70" name="clock_tap" class="Default">
+    <net code="83" name="clock_tap" class="Default">
       <node ref="J1" pin="47" pinfunction="clock_tap_47" pintype="passive"/>
       <node ref="TP4" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="71" name="jtag_TDI" class="Default">
+    <net code="84" name="jtag_TDI" class="Default">
       <node ref="J1" pin="6" pinfunction="jtag_TDI_6" pintype="passive"/>
       <node ref="J2" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
       <node ref="J6" pin="5" pinfunction="Pin_5_5" pintype="passive"/>
     </net>
-    <net code="72" name="jtag_TDO" class="Default">
+    <net code="85" name="jtag_TDO" class="Default">
       <node ref="J1" pin="7" pinfunction="jtag_TDO_7" pintype="passive"/>
       <node ref="J2" pin="2" pinfunction="Pin_2_2" pintype="passive"/>
       <node ref="J6" pin="13" pinfunction="Pin_13_13" pintype="passive"/>
     </net>
-    <net code="73" name="jtag_TMS" class="Default">
+    <net code="86" name="jtag_TMS" class="Default">
       <node ref="J1" pin="14" pinfunction="jtag_TMS_14" pintype="passive"/>
       <node ref="J2" pin="4" pinfunction="Pin_4_4" pintype="passive"/>
       <node ref="J6" pin="7" pinfunction="Pin_7_7" pintype="passive"/>
     </net>
-    <net code="74" name="jtag_clk" class="Default">
+    <net code="87" name="jtag_clk" class="Default">
       <node ref="J1" pin="13" pinfunction="jtag_TCK_13" pintype="passive"/>
       <node ref="J2" pin="3" pinfunction="Pin_3_3" pintype="passive"/>
       <node ref="J6" pin="9" pinfunction="Pin_9_9" pintype="passive"/>
     </net>
-    <net code="75" name="master_clk" class="Default">
+    <net code="88" name="master_clk" class="Default">
       <node ref="J1" pin="48" pinfunction="clock_48" pintype="passive"/>
       <node ref="J5" pin="1" pinfunction="In_1" pintype="passive"/>
       <node ref="R601" pin="1" pintype="passive"/>
     </net>
-    <net code="76" name="reset" class="Default">
+    <net code="89" name="reset" class="Default">
       <node ref="J1" pin="54" pinfunction="reset_54" pintype="passive"/>
       <node ref="Q601" pin="3" pinfunction="C_3" pintype="passive"/>
       <node ref="R602" pin="2" pintype="passive"/>
       <node ref="TP7" pin="1" pinfunction="1_1" pintype="passive"/>
     </net>
-    <net code="77" name="unconnected-(J1-Hole_1-Pad81)" class="Default">
+    <net code="90" name="unconnected-(J1-Hole_1-Pad81)" class="Default">
       <node ref="J1" pin="81" pinfunction="Hole_1_81" pintype="passive+no_connect"/>
     </net>
-    <net code="78" name="unconnected-(J1-Hole_2-Pad82)" class="Default">
+    <net code="91" name="unconnected-(J1-Hole_2-Pad82)" class="Default">
       <node ref="J1" pin="82" pinfunction="Hole_2_82" pintype="passive+no_connect"/>
     </net>
-    <net code="79" name="unconnected-(J1-Hole_3-Pad83)" class="Default">
+    <net code="92" name="unconnected-(J1-Hole_3-Pad83)" class="Default">
       <node ref="J1" pin="83" pinfunction="Hole_3_83" pintype="passive+no_connect"/>
     </net>
-    <net code="80" name="unconnected-(J1-Standoff_1-Pad84)" class="Default">
+    <net code="93" name="unconnected-(J1-Standoff_1-Pad84)" class="Default">
       <node ref="J1" pin="84" pinfunction="Standoff_1_84" pintype="passive+no_connect"/>
     </net>
-    <net code="81" name="unconnected-(J1-UNCONNECTED-Pad2)" class="Default">
+    <net code="94" name="unconnected-(J1-UNCONNECTED-Pad2)" class="Default">
       <node ref="J1" pin="2" pinfunction="UNCONNECTED_2" pintype="passive+no_connect"/>
     </net>
-    <net code="82" name="unconnected-(J1-UNCONNECTED-Pad19)" class="Default">
+    <net code="95" name="unconnected-(J1-UNCONNECTED-Pad19)" class="Default">
       <node ref="J1" pin="19" pinfunction="UNCONNECTED_19" pintype="passive+no_connect"/>
     </net>
-    <net code="83" name="unconnected-(J1-UNCONNECTED-Pad22)" class="Default">
+    <net code="96" name="unconnected-(J1-UNCONNECTED-Pad22)" class="Default">
       <node ref="J1" pin="22" pinfunction="UNCONNECTED_22" pintype="passive+no_connect"/>
     </net>
-    <net code="84" name="unconnected-(J1-UNCONNECTED-Pad38)" class="Default">
+    <net code="97" name="unconnected-(J1-UNCONNECTED-Pad38)" class="Default">
       <node ref="J1" pin="38" pinfunction="UNCONNECTED_38" pintype="passive+no_connect"/>
     </net>
-    <net code="85" name="unconnected-(J1-UNCONNECTED-Pad39)" class="Default">
+    <net code="98" name="unconnected-(J1-UNCONNECTED-Pad39)" class="Default">
       <node ref="J1" pin="39" pinfunction="UNCONNECTED_39" pintype="passive+no_connect"/>
     </net>
-    <net code="86" name="unconnected-(J1-UNCONNECTED-Pad42)" class="Default">
+    <net code="99" name="unconnected-(J1-UNCONNECTED-Pad42)" class="Default">
       <node ref="J1" pin="42" pinfunction="UNCONNECTED_42" pintype="passive+no_connect"/>
     </net>
-    <net code="87" name="unconnected-(J1-UNCONNECTED-Pad59)" class="Default">
+    <net code="100" name="unconnected-(J1-UNCONNECTED-Pad59)" class="Default">
       <node ref="J1" pin="59" pinfunction="UNCONNECTED_59" pintype="passive+no_connect"/>
     </net>
-    <net code="88" name="unconnected-(J1-UNCONNECTED-Pad62)" class="Default">
+    <net code="101" name="unconnected-(J1-UNCONNECTED-Pad62)" class="Default">
       <node ref="J1" pin="62" pinfunction="UNCONNECTED_62" pintype="passive+no_connect"/>
     </net>
-    <net code="89" name="unconnected-(J1-UNCONNECTED-Pad79)" class="Default">
+    <net code="102" name="unconnected-(J1-UNCONNECTED-Pad79)" class="Default">
       <node ref="J1" pin="79" pinfunction="UNCONNECTED_79" pintype="passive+no_connect"/>
     </net>
-    <net code="90" name="unconnected-(J6-Pin_2-Pad2)" class="Default">
+    <net code="103" name="unconnected-(J6-Pin_2-Pad2)" class="Default">
       <node ref="J6" pin="2" pinfunction="Pin_2_2" pintype="passive+no_connect"/>
     </net>
-    <net code="91" name="unconnected-(J6-Pin_3-Pad3)" class="Default">
+    <net code="104" name="unconnected-(J6-Pin_3-Pad3)" class="Default">
       <node ref="J6" pin="3" pinfunction="Pin_3_3" pintype="passive+no_connect"/>
     </net>
-    <net code="92" name="unconnected-(J6-Pin_15-Pad15)" class="Default">
+    <net code="105" name="unconnected-(J6-Pin_15-Pad15)" class="Default">
       <node ref="J6" pin="15" pinfunction="Pin_15_15" pintype="passive+no_connect"/>
     </net>
-    <net code="93" name="unconnected-(J6-Pin_17-Pad17)" class="Default">
+    <net code="106" name="unconnected-(J6-Pin_17-Pad17)" class="Default">
       <node ref="J6" pin="17" pinfunction="Pin_17_17" pintype="passive+no_connect"/>
     </net>
-    <net code="94" name="unconnected-(J6-Pin_19-Pad19)" class="Default">
+    <net code="107" name="unconnected-(J6-Pin_19-Pad19)" class="Default">
       <node ref="J6" pin="19" pinfunction="Pin_19_19" pintype="passive+no_connect"/>
     </net>
-    <net code="95" name="unconnected-(U101-AUXOFF-Pad3)" class="Default">
+    <net code="108" name="unconnected-(U101-AUXOFF-Pad3)" class="Default">
       <node ref="U101" pin="3" pinfunction="AUXOFF_3" pintype="open_collector+no_connect"/>
     </net>
-    <net code="96" name="unconnected-(U101-ITIMER-Pad10)" class="Default">
+    <net code="109" name="unconnected-(U101-ITIMER-Pad10)" class="Default">
       <node ref="U101" pin="10" pinfunction="ITIMER_10" pintype="passive+no_connect"/>
     </net>
-    <net code="97" name="unconnected-(U102-EN-Pad5)" class="Default">
+    <net code="110" name="unconnected-(U102-EN-Pad5)" class="Default">
       <node ref="U102" pin="5" pinfunction="EN_5" pintype="input+no_connect"/>
     </net>
-    <net code="98" name="unconnected-(U201-SYNC-Pad38)" class="Default">
+    <net code="111" name="unconnected-(U201-SYNC-Pad38)" class="Default">
       <node ref="U201" pin="38" pinfunction="SYNC_38" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="99" name="unconnected-(U201-VSHARE-Pad35)" class="Default">
+    <net code="112" name="unconnected-(U201-VSHARE-Pad35)" class="Default">
       <node ref="U201" pin="35" pinfunction="VSHARE_35" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="100" name="unconnected-(U401-3V3_EN-Pad37)" class="Default">
+    <net code="113" name="unconnected-(U401-3V3_EN-Pad37)" class="Default">
       <node ref="U401" pin="37" pinfunction="3V3_EN_37" pintype="passive+no_connect"/>
     </net>
-    <net code="101" name="unconnected-(U401-ADC_VREF-Pad35)" class="Default">
+    <net code="114" name="unconnected-(U401-ADC_VREF-Pad35)" class="Default">
       <node ref="U401" pin="35" pinfunction="ADC_VREF_35" pintype="power_in+no_connect"/>
     </net>
-    <net code="102" name="unconnected-(U401-GPIO13-Pad17)" class="Default">
+    <net code="115" name="unconnected-(U401-GPIO2-Pad4)" class="Default">
+      <node ref="U401" pin="4" pinfunction="GPIO2_4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(U401-GPIO3-Pad5)" class="Default">
+      <node ref="U401" pin="5" pinfunction="GPIO3_5" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(U401-GPIO4-Pad6)" class="Default">
+      <node ref="U401" pin="6" pinfunction="GPIO4_6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U401-GPIO5-Pad7)" class="Default">
+      <node ref="U401" pin="7" pinfunction="GPIO5_7" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U401-GPIO6-Pad9)" class="Default">
+      <node ref="U401" pin="9" pinfunction="GPIO6_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U401-GPIO7-Pad10)" class="Default">
+      <node ref="U401" pin="10" pinfunction="GPIO7_10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U401-GPIO8-Pad11)" class="Default">
+      <node ref="U401" pin="11" pinfunction="GPIO8_11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U401-GPIO9-Pad12)" class="Default">
+      <node ref="U401" pin="12" pinfunction="GPIO9_12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U401-GPIO10-Pad14)" class="Default">
+      <node ref="U401" pin="14" pinfunction="GPIO10_14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(U401-GPIO11-Pad15)" class="Default">
+      <node ref="U401" pin="15" pinfunction="GPIO11_15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(U401-GPIO12-Pad16)" class="Default">
+      <node ref="U401" pin="16" pinfunction="GPIO12_16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(U401-GPIO13-Pad17)" class="Default">
       <node ref="U401" pin="17" pinfunction="GPIO13_17" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="103" name="unconnected-(U401-GPIO14-Pad19)" class="Default">
+    <net code="127" name="unconnected-(U401-GPIO14-Pad19)" class="Default">
       <node ref="U401" pin="19" pinfunction="GPIO14_19" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="104" name="unconnected-(U401-GPIO16-Pad21)" class="Default">
+    <net code="128" name="unconnected-(U401-GPIO15-Pad20)" class="Default">
+      <node ref="U401" pin="20" pinfunction="GPIO15_20" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="129" name="unconnected-(U401-GPIO16-Pad21)" class="Default">
       <node ref="U401" pin="21" pinfunction="GPIO16_21" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="105" name="unconnected-(U401-GPIO17-Pad22)" class="Default">
+    <net code="130" name="unconnected-(U401-GPIO17-Pad22)" class="Default">
       <node ref="U401" pin="22" pinfunction="GPIO17_22" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="106" name="unconnected-(U401-GPIO18-Pad24)" class="Default">
+    <net code="131" name="unconnected-(U401-GPIO18-Pad24)" class="Default">
       <node ref="U401" pin="24" pinfunction="GPIO18_24" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="107" name="unconnected-(U401-GPIO19-Pad25)" class="Default">
+    <net code="132" name="unconnected-(U401-GPIO19-Pad25)" class="Default">
       <node ref="U401" pin="25" pinfunction="GPIO19_25" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="108" name="unconnected-(U401-GPIO20-Pad26)" class="Default">
+    <net code="133" name="unconnected-(U401-GPIO20-Pad26)" class="Default">
       <node ref="U401" pin="26" pinfunction="GPIO20_26" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="109" name="unconnected-(U401-GPIO21-Pad27)" class="Default">
+    <net code="134" name="unconnected-(U401-GPIO21-Pad27)" class="Default">
       <node ref="U401" pin="27" pinfunction="GPIO21_27" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="110" name="unconnected-(U401-GPIO22-Pad29)" class="Default">
+    <net code="135" name="unconnected-(U401-GPIO22-Pad29)" class="Default">
       <node ref="U401" pin="29" pinfunction="GPIO22_29" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="111" name="unconnected-(U401-GPIO26_ADC0-Pad31)" class="Default">
+    <net code="136" name="unconnected-(U401-GPIO26_ADC0-Pad31)" class="Default">
       <node ref="U401" pin="31" pinfunction="GPIO26_ADC0_31" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="112" name="unconnected-(U401-GPIO28_ADC2-Pad34)" class="Default">
+    <net code="137" name="unconnected-(U401-GPIO27_ADC1-Pad32)" class="Default">
+      <node ref="U401" pin="32" pinfunction="GPIO27_ADC1_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="138" name="unconnected-(U401-GPIO28_ADC2-Pad34)" class="Default">
       <node ref="U401" pin="34" pinfunction="GPIO28_ADC2_34" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="113" name="unconnected-(U401-RUN-Pad30)" class="Default">
+    <net code="139" name="unconnected-(U401-RUN-Pad30)" class="Default">
       <node ref="U401" pin="30" pinfunction="RUN_30" pintype="passive+no_connect"/>
     </net>
-    <net code="114" name="unconnected-(U401-VBUS-Pad40)" class="Default">
+    <net code="140" name="unconnected-(U401-VBUS-Pad40)" class="Default">
       <node ref="U401" pin="40" pinfunction="VBUS_40" pintype="power_out+no_connect"/>
     </net>
-    <net code="115" name="unconnected-(U502-CT-Pad4)" class="Default">
-      <node ref="U502" pin="4" pinfunction="CT_4" pintype="passive+no_connect"/>
-    </net>
-    <net code="116" name="unconnected-(U503-Q_N-Pad3)" class="Default">
+    <net code="141" name="unconnected-(U503-Q_N-Pad3)" class="Default">
       <node ref="U503" pin="3" pinfunction="Q_N_3" pintype="output+no_connect"/>
     </net>
-    <net code="117" name="unconnected-(U504-3Y-Pad8)" class="Default">
+    <net code="142" name="unconnected-(U504-3Y-Pad8)" class="Default">
       <node ref="U504" pin="8" pinfunction="3Y_8" pintype="output+no_connect"/>
     </net>
-    <net code="118" name="unconnected-(U504-4Y-Pad11)" class="Default">
+    <net code="143" name="unconnected-(U504-4Y-Pad11)" class="Default">
       <node ref="U504" pin="11" pinfunction="4Y_11" pintype="output+no_connect"/>
+    </net>
+    <net code="144" name="unconnected-(U901-NC-Pad4)" class="Default">
+      <node ref="U901" pin="4" pinfunction="NC_4" pintype="no_connect"/>
+    </net>
+    <net code="145" name="unconnected-(U903-INT_N-Pad1)" class="Default">
+      <node ref="U903" pin="1" pinfunction="INT_N_1" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="146" name="unconnected-(U904-ALERT_RDY_N-Pad2)" class="Default">
+      <node ref="U904" pin="2" pinfunction="ALERT_RDY_N_2" pintype="open_collector+no_connect"/>
     </net>
   </nets>
 </export>

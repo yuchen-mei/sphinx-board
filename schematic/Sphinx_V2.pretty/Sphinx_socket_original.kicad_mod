@@ -760,7 +760,7 @@
     (size 4.99999 4.99999)
     (layers "F.Cu" "F.Mask" "F.Paste"))
   (zone
-    (layer "F.Fab")
+    (layer "F.Cu")
     (uuid "16c07194-3779-48fe-a63b-82e2c5a54262")
     (hatch full 0.508)
     (connect_pads
@@ -771,7 +771,7 @@
       (vias not_allowed)
       (pads allowed)
       (copperpour not_allowed)
-      (footprints allowed))
+      (footprints not_allowed))
     (placement
       (enabled no)
       (sheetname ""))
@@ -781,12 +781,12 @@
       (island_removal_mode 0))
     (polygon
       (pts
-        (xy 111.336505 116.561306)
-        (xy 116.336495 116.561306)
-        (xy 116.336495 121.561296)
-        (xy 111.336505 121.561296))))
+        (xy -6.413495 14.761306)
+        (xy -1.413505 14.761306)
+        (xy -1.413505 19.761296)
+        (xy -6.413495 19.761296))))
   (zone
-    (layer "F.Fab")
+    (layer "F.Cu")
     (uuid "f9ed9ccc-7d5f-4599-a311-70556d6b4d70")
     (hatch full 0.508)
     (connect_pads
@@ -797,7 +797,7 @@
       (vias not_allowed)
       (pads allowed)
       (copperpour not_allowed)
-      (footprints allowed))
+      (footprints not_allowed))
     (placement
       (enabled no)
       (sheetname ""))
@@ -807,12 +807,12 @@
       (island_removal_mode 0))
     (polygon
       (pts
-        (xy 111.336905 91.538906)
-        (xy 116.336895 91.538906)
-        (xy 116.336895 96.538896)
-        (xy 111.336905 96.538896))))
+        (xy -6.413095 -10.261094)
+        (xy -1.413105 -10.261094)
+        (xy -1.413105 -5.261104)
+        (xy -6.413095 -5.261104))))
   (zone
-    (layer "F.Fab")
+    (layer "F.Cu")
     (uuid "0be5bc71-a34a-48c4-9bac-258ad92e1fb6")
     (hatch full 0.508)
     (connect_pads
@@ -823,7 +823,7 @@
       (vias not_allowed)
       (pads allowed)
       (copperpour not_allowed)
-      (footprints allowed))
+      (footprints not_allowed))
     (placement
       (enabled no)
       (sheetname ""))
@@ -833,12 +833,12 @@
       (island_removal_mode 0))
     (polygon
       (pts
-        (xy 136.358905 91.538906)
-        (xy 141.358895 91.538906)
-        (xy 141.358895 96.538896)
-        (xy 136.358905 96.538896))))
+        (xy 18.608905 -10.261094)
+        (xy 23.608895 -10.261094)
+        (xy 23.608895 -5.261104)
+        (xy 18.608905 -5.261104))))
   (zone
-    (layer "F.Fab")
+    (layer "F.Cu")
     (uuid "f7e42560-96d2-4815-8bab-31f0fef0eaae")
     (hatch full 0.508)
     (connect_pads
@@ -849,7 +849,7 @@
       (vias not_allowed)
       (pads allowed)
       (copperpour not_allowed)
-      (footprints allowed))
+      (footprints not_allowed))
     (placement
       (enabled no)
       (sheetname ""))
@@ -859,7 +859,7 @@
       (island_removal_mode 0))
     (polygon
       (pts
-        (xy 141.358895 116.560906)
-        (xy 141.358895 121.560896)
-        (xy 136.358905 121.560896)
-        (xy 136.358905 116.560906)))))
+        (xy 23.608895 14.760906)
+        (xy 23.608895 19.760896)
+        (xy 18.608905 19.760896)
+        (xy 18.608905 14.760906)))))

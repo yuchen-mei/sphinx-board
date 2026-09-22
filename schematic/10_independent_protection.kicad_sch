@@ -1,0 +1,447 @@
+(kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0") (uuid "940c0d29-da87-4f90-9fc1-e3c2f4896fd0") (paper "A3")
+(title_block (title "10 | Independent temperature and IO overvoltage protection") (date "2026-09-22") (rev "V2") (company "Sphinx | Programmable power test board") (comment 1 "Schematic revision; PCB and bench qualification required"))
+(lib_symbols (symbol "Sphinx_V2:Device__C"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0.254))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "C"
+    (at 0.635 2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Value" "C"
+    (at 0.635 -2.54 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Footprint" ""
+    (at 0.9652 -3.81 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Unpolarized capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "cap capacitor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "C_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Device__C_0_1"
+    (polyline
+      (pts
+        (xy -2.032 0.762)
+        (xy 2.032 0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none)))
+    (polyline
+      (pts
+        (xy -2.032 -0.762)
+        (xy 2.032 -0.762))
+      (stroke
+        (width 0.508)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Device__C_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 2.794)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 2.794)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+(symbol "Sphinx_V2:Device__R"
+  (pin_numbers
+    (hide yes))
+  (pin_names
+    (offset 0))
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (in_pos_files yes)
+  (duplicate_pin_numbers_are_jumpers no)
+  (property "Reference" "R"
+    (at 2.032 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Value" "R"
+    (at 0 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Footprint" ""
+    (at -1.778 0 90)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Datasheet" ""
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "Description" "Resistor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_keywords" "R res resistor"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (property "ki_fp_filters" "R_*"
+    (at 0 0 0)
+    (show_name no)
+    (do_not_autoplace no)
+    (hide yes)
+    (effects
+      (font
+        (size 1.27 1.27))))
+  (symbol "Device__R_0_1"
+    (rectangle
+      (start -1.016 -2.54)
+      (end 1.016 2.54)
+      (stroke
+        (width 0.254)
+        (type default))
+      (fill
+        (type none))))
+  (symbol "Device__R_1_1"
+    (pin passive line
+      (at 0 3.81 270)
+      (length 1.27)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "1"
+        (effects
+          (font
+            (size 1.27 1.27)))))
+    (pin passive line
+      (at 0 -3.81 90)
+      (length 1.27)
+      (name ""
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (number "2"
+        (effects
+          (font
+            (size 1.27 1.27))))))
+  (embedded_fonts no))
+(symbol "Sphinx_V2:TLV3011" (pin_names (offset 0.8)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 28.4 0) (effects (font (size 1.0 1.0))  ))
+(property "Value" "TLV3011" (at 0 26.4 0) (effects (font (size 1.0 1.0))  ))
+(property "Footprint" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Datasheet" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "" (at 0 0 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(symbol "TLV3011_0_1" (rectangle (start -12.7 25.4) (end 12.7 -25.4) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TLV3011_1_1"
+(pin input line (at -17.78 5.08 0) (length 5.08)  (name "IN+" (effects (font (size 1 1))  )) (number "3" (effects (font (size 0.9 0.9))  )))
+(pin input line (at -17.78 -5.08 0) (length 5.08)  (name "IN-" (effects (font (size 1 1))  )) (number "4" (effects (font (size 0.9 0.9))  )))
+(pin output line (at 17.78 10.16 180) (length 5.08)  (name "REF_1V242" (effects (font (size 1 1))  )) (number "5" (effects (font (size 0.9 0.9))  )))
+(pin open_collector line (at 17.78 0 180) (length 5.08)  (name "OUT_OD" (effects (font (size 1 1))  )) (number "1" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 20.32 180) (length 5.08)  (name "V+" (effects (font (size 1 1))  )) (number "6" (effects (font (size 0.9 0.9))  )))
+(pin power_in line (at 17.78 -15.24 180) (length 5.08)  (name "V-" (effects (font (size 1 1))  )) (number "2" (effects (font (size 0.9 0.9))  )))
+))
+(symbol "Sphinx_V2:TMP302BDRLR" (pin_names (offset 0.8)) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at 0 15.24 0) (effects (font (size 1 1))))
+(property "Value" "TMP302BDRLR" (at 0 12.7 0) (effects (font (size 1 1))))
+(symbol "TMP302BDRLR_0_1" (rectangle (start -15.24 10.16) (end 15.24 -10.16) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TMP302BDRLR_1_1"
+(pin input line (at -20.32 3.81 0) (length 5.08) (name "TRIPSET0" (effects (font (size 1 1)))) (number "1" (effects (font (size 0.9 0.9)))))
+(pin power_in line (at -20.32 1.27 0) (length 5.08) (name "GND" (effects (font (size 1 1)))) (number "2" (effects (font (size 0.9 0.9)))))
+(pin input line (at -20.32 -1.27 0) (length 5.08) (name "HYSTSET" (effects (font (size 1 1)))) (number "4" (effects (font (size 0.9 0.9)))))
+(pin input line (at -20.32 -3.81 0) (length 5.08) (name "TRIPSET1" (effects (font (size 1 1)))) (number "6" (effects (font (size 0.9 0.9)))))
+(pin power_in line (at 20.32 1.27 180) (length 5.08) (name "VS" (effects (font (size 1 1)))) (number "5" (effects (font (size 0.9 0.9)))))
+(pin open_collector line (at 20.32 -1.27 180) (length 5.08) (name "OUT_N" (effects (font (size 1 1)))) (number "3" (effects (font (size 0.9 0.9)))))
+)))
+(text "Hardware protection stays active with Pico unpowered or firmware stopped." (at 20 18 0) (effects (font (size 1.5 1.5)) (justify left top)) (uuid "8f78780e-fdfc-4d2a-8dc1-6e3d542a11fb"))
+(symbol (lib_id "Sphinx_V2:TMP302BDRLR") (at 85.09 80.01 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "4a219ec7-cec8-4aac-bad6-8db4b08da9a1")
+(property "Reference" "U1001" (at 85.09 63.01 0) (effects (font (size 1 1))))
+(property "Value" "TMP302BDRLR" (at 85.09 65.55 0) (effects (font (size 1 1))))
+(property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-563" (at 85.09 80.01 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "TMP302BDRLR" (at 85.09 80.01 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tmp302.pdf" (at 85.09 80.01 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "Independent local-board overtemperature switch;75C nominal trip,5C hysteresis" (at 85.09 80.01 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "0fd8d31d-a44a-4af7-a962-3fd58dad4c51"))
+(pin "2" (uuid "30c8cd8f-f624-4c88-8e1c-7788786af62f"))
+(pin "4" (uuid "a9b571ed-254e-43e5-acdc-c9d5e3c7902f"))
+(pin "6" (uuid "3a83d643-9c9f-416e-9601-0049dd42e5c2"))
+(pin "5" (uuid "11e8cb78-77d8-491e-bcc7-f8bedc89167a"))
+(pin "3" (uuid "2b44ee8c-8078-45d1-aa34-96078b4a1942"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "U1001") (unit 1)))))
+(wire (pts (xy 64.77 76.2) (xy 59.69 76.2)) (stroke (width 0) (type default)) (uuid "a2f2625f-c258-4749-9077-f89f44b78181"))
+(global_label "3V3_CTRL" (shape passive) (at 59.69 76.2 180) (effects (font (size 1 1)) (justify right)) (uuid "62fc26f8-e8cb-4a81-af30-28d4622a0616") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 76.2 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 64.77 78.74) (xy 59.69 78.74)) (stroke (width 0) (type default)) (uuid "f3cd2bca-d227-4f8e-bb76-58137b1dfcb9"))
+(global_label "GND" (shape passive) (at 59.69 78.74 180) (effects (font (size 1 1)) (justify right)) (uuid "2834b1bb-f71e-43b6-9062-4ef7edba5b3e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 78.74 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 64.77 81.28) (xy 59.69 81.28)) (stroke (width 0) (type default)) (uuid "e84f0756-e83c-4329-b0f5-b35b22c5f702"))
+(global_label "GND" (shape passive) (at 59.69 81.28 180) (effects (font (size 1 1)) (justify right)) (uuid "38819723-f556-4a77-9bda-b24dda660c4e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 81.28 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 64.77 83.82) (xy 59.69 83.82)) (stroke (width 0) (type default)) (uuid "a5560e6f-aeb1-4ef8-a753-e436486fad42"))
+(global_label "GND" (shape passive) (at 59.69 83.82 180) (effects (font (size 1 1)) (justify right)) (uuid "20dd7f57-71c3-4e74-89dd-afeee33f3feb") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 59.69 83.82 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 105.41 78.74) (xy 110.49 78.74)) (stroke (width 0) (type default)) (uuid "3ab29177-533f-4f8a-9755-5c3f2619fc87"))
+(global_label "3V3_CTRL" (shape passive) (at 110.49 78.74 0) (effects (font (size 1 1)) (justify left)) (uuid "77e4f11d-96e0-4888-af16-e821a174a31a") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 110.49 78.74 0) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 105.41 81.28) (xy 110.49 81.28)) (stroke (width 0) (type default)) (uuid "4efc1466-1048-4141-8985-001e3af3b492"))
+(global_label "HW_FAULT_N" (shape passive) (at 110.49 81.28 0) (effects (font (size 1 1)) (justify left)) (uuid "ddd9d8b8-ba76-4eda-ace1-47ac416d0b6e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 110.49 81.28 0) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:TLV3011") (at 281.94 82.55 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "1c0472a6-40d8-4033-acd9-11eaa1bc8ebb")
+(property "Reference" "U1002" (at 281.94 50.15 0) (effects (font (size 1 1))))
+(property "Value" "TLV3011AIDBVR" (at 281.94 52.69 0) (effects (font (size 1 1))))
+(property "Footprint" "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6" (at 281.94 82.55 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "TLV3011AIDBVR" (at 281.94 82.55 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tlv3011.pdf" (at 281.94 82.55 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "Independent IO overvoltage open-drain shutdown;2.02446V nominal,not ASIC absolute max" (at 281.94 82.55 0) (effects (font (size 1 1))) (hide yes))
+(pin "3" (uuid "8b8996ad-0962-41d8-9ce0-adc32c843fa9"))
+(pin "4" (uuid "f2916a77-0d69-4efb-98bc-fdfa930da50b"))
+(pin "5" (uuid "250659d1-8f3a-4d80-a7d3-4294351ef740"))
+(pin "1" (uuid "48df38dc-6f77-45f8-9ae3-f4a7901e7314"))
+(pin "6" (uuid "d71d040e-7aab-493f-8458-b88d33da7196"))
+(pin "2" (uuid "f0583e95-0962-47de-a360-c7bcc8b6d703"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "U1002") (unit 1)))))
+(wire (pts (xy 264.16 77.47) (xy 259.08 77.47)) (stroke (width 0) (type default)) (uuid "c7c69fc7-dff1-4816-b4dc-33508de93752"))
+(global_label "IO_OV_REF" (shape passive) (at 259.08 77.47 180) (effects (font (size 1 1)) (justify right)) (uuid "b232a729-13ee-44c7-af8c-5245e79e8b4d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.08 77.47 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 264.16 87.63) (xy 259.08 87.63)) (stroke (width 0) (type default)) (uuid "3339f263-675d-44f8-bd5f-9d9a4e7cea46"))
+(global_label "IO_OV_SENSE" (shape passive) (at 259.08 87.63 180) (effects (font (size 1 1)) (justify right)) (uuid "d63e4fcd-4fe4-480e-8730-3a23863d7c0c") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 259.08 87.63 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 299.72 72.39) (xy 304.8 72.39)) (stroke (width 0) (type default)) (uuid "761ee98c-2ae3-403a-953f-ef24bac06b35"))
+(global_label "IO_OV_REF" (shape passive) (at 304.8 72.39 0) (effects (font (size 1 1)) (justify left)) (uuid "d88f5442-b76e-440f-baad-6b3fbdd58fc4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 304.8 72.39 0) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 299.72 82.55) (xy 304.8 82.55)) (stroke (width 0) (type default)) (uuid "f7676f1f-c6bd-4636-850a-84068fb7be9d"))
+(global_label "HW_FAULT_N" (shape passive) (at 304.8 82.55 0) (effects (font (size 1 1)) (justify left)) (uuid "47ca0e97-0f90-4f63-8df4-ec34c4ca6a15") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 304.8 82.55 0) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 299.72 62.23) (xy 304.8 62.23)) (stroke (width 0) (type default)) (uuid "d92fbb1a-0186-4a30-8ecd-4ca732e0a1ad"))
+(global_label "3V3_CTRL" (shape passive) (at 304.8 62.23 0) (effects (font (size 1 1)) (justify left)) (uuid "089c8a07-3eee-4a5d-b723-c28be0b1d68b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 304.8 62.23 0) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 299.72 97.79) (xy 304.8 97.79)) (stroke (width 0) (type default)) (uuid "307b0797-f9cc-417b-a91d-7ef1f0ce3995"))
+(global_label "GND" (shape passive) (at 304.8 97.79 0) (effects (font (size 1 1)) (justify left)) (uuid "54626930-7c6f-4c58-9924-c14f1cfdcacf") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 304.8 97.79 0) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__C") (at 44.45 139.7 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a4fa0d54-272d-4201-8263-f1065d3c9708")
+(property "Reference" "C1001" (at 50.45 138.43 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "100n / 100V" (at 50.45 140.97 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric" (at 44.45 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "GRM188R72A104KA35D" (at 44.45 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf" (at 44.45 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "U1001 bypass" (at 44.45 139.7 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "e6e7400f-241e-4cc6-a8f7-8b528b3376fe"))
+(pin "2" (uuid "a6e6940c-1dba-4b2f-b128-be1e1c83f1ee"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "C1001") (unit 1)))))
+(wire (pts (xy 44.45 135.89) (xy 44.45 130.81)) (stroke (width 0) (type default)) (uuid "cc2bc826-404f-4f18-9513-b50f6e714b29"))
+(global_label "3V3_CTRL" (shape passive) (at 44.45 130.81 180) (effects (font (size 1 1)) (justify right)) (uuid "28ad0940-ee19-4ca4-9b75-c86f40bec275") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.45 130.81 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 44.45 143.51) (xy 44.45 148.59)) (stroke (width 0) (type default)) (uuid "a1f0f4d0-e312-494e-8b31-9d0ec323bd4e"))
+(global_label "GND" (shape passive) (at 44.45 148.59 180) (effects (font (size 1 1)) (justify right)) (uuid "20ac22a4-9926-442d-8254-f4dd7c9db7cd") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 44.45 148.59 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 119.38 139.7 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "7664e9e5-24a9-4559-8230-e81927748214")
+(property "Reference" "R1001" (at 125.38 138.43 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "100k" (at 125.38 140.97 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 119.38 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RC0603FR-07100KL" (at 119.38 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL" (at 119.38 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "U502 CT pullup sets300ms nominal delay,180ms minimum" (at 119.38 139.7 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "d7ad9df0-5c89-4fb2-9fdf-045aaab923bc"))
+(pin "2" (uuid "f198a707-01c2-487c-b348-db2d167696e6"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1001") (unit 1)))))
+(wire (pts (xy 119.38 135.89) (xy 119.38 130.81)) (stroke (width 0) (type default)) (uuid "5c3923ce-a306-409b-b238-0e0e2a01b58a"))
+(global_label "3V3_CTRL" (shape passive) (at 119.38 130.81 180) (effects (font (size 1 1)) (justify right)) (uuid "1c0c9da2-9984-4ca0-aa85-3c8d5bd46244") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 130.81 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 119.38 143.51) (xy 119.38 148.59)) (stroke (width 0) (type default)) (uuid "4166f2e9-f75b-4ee9-bc71-81d07ab4740f"))
+(global_label "SUPERVISOR_CT" (shape passive) (at 119.38 148.59 180) (effects (font (size 1 1)) (justify right)) (uuid "2e4c97f5-36be-4932-ab53-4f806edd0f02") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 119.38 148.59 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 219.71 139.7 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "d4681f9d-75b5-477c-951d-f98f22e1fc23")
+(property "Reference" "R1002" (at 225.71 138.43 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "12.6k 0.1%" (at 225.71 140.97 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 219.71 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RT0603BRD0712K6L" (at 219.71 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L" (at 219.71 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "IO OVP upper divider 12.6k,0.1%,25ppm/C" (at 219.71 139.7 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "237d45a5-7e98-477c-b52b-0fc0c3b50eb5"))
+(pin "2" (uuid "4f21437c-b2c6-421c-a596-d838675cdc56"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1002") (unit 1)))))
+(wire (pts (xy 219.71 135.89) (xy 219.71 130.81)) (stroke (width 0) (type default)) (uuid "1c41b794-6588-4694-bfa1-bd472f34da16"))
+(global_label "1V8" (shape passive) (at 219.71 130.81 180) (effects (font (size 1 1)) (justify right)) (uuid "8e7b97a7-9d98-465e-bf4a-a5280cc592ad") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 219.71 130.81 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 219.71 143.51) (xy 219.71 148.59)) (stroke (width 0) (type default)) (uuid "d7f19e2e-f033-48b3-aaca-7b916bd24ac6"))
+(global_label "IO_OV_SENSE" (shape passive) (at 219.71 148.59 180) (effects (font (size 1 1)) (justify right)) (uuid "3e0c698e-3a59-4a39-94a6-c4e5218eae50") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 219.71 148.59 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 289.56 139.7 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "a6394cd7-4876-447c-97aa-a6a56ac0f0e4")
+(property "Reference" "R1003" (at 295.56 138.43 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "20k / 0.1%" (at 295.56 140.97 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 289.56 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RT0603BRD0720KL" (at 289.56 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0720KL" (at 289.56 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "IO OVP lower divider20k0.1%" (at 289.56 139.7 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "f86cd494-fb74-42ca-8938-5fca4a908486"))
+(pin "2" (uuid "a5caa0cd-3b13-4e71-be45-4dc6f4f45561"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1003") (unit 1)))))
+(wire (pts (xy 289.56 135.89) (xy 289.56 130.81)) (stroke (width 0) (type default)) (uuid "898b7d5e-bab8-4482-8465-eee2c53a5e04"))
+(global_label "IO_OV_SENSE" (shape passive) (at 289.56 130.81 180) (effects (font (size 1 1)) (justify right)) (uuid "ac3f2736-82fa-42c5-8c60-c14cfc609681") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 289.56 130.81 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 289.56 143.51) (xy 289.56 148.59)) (stroke (width 0) (type default)) (uuid "2de99690-540b-4131-a141-33201579a86e"))
+(global_label "GND" (shape passive) (at 289.56 148.59 180) (effects (font (size 1 1)) (justify right)) (uuid "1f894826-60ac-440f-9c92-250d0c974485") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 289.56 148.59 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__C") (at 355.6 139.7 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "601ba199-5be7-47db-bd6a-9bf305f3bf8f")
+(property "Reference" "C1002" (at 361.6 138.43 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "100n / 100V" (at 361.6 140.97 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric" (at 355.6 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "GRM188R72A104KA35D" (at 355.6 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf" (at 355.6 139.7 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "U1002 bypass" (at 355.6 139.7 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "9f06e93a-80e4-4aa8-a5cd-9fd24840ca7b"))
+(pin "2" (uuid "720070c3-1a66-48a1-87ea-a8e080024c03"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "C1002") (unit 1)))))
+(wire (pts (xy 355.6 135.89) (xy 355.6 130.81)) (stroke (width 0) (type default)) (uuid "ed544758-0aca-4df9-b692-3d640c6a0ec4"))
+(global_label "3V3_CTRL" (shape passive) (at 355.6 130.81 180) (effects (font (size 1 1)) (justify right)) (uuid "8d104bb8-db40-4b36-acc3-d9b76f5a2837") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 355.6 130.81 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 355.6 143.51) (xy 355.6 148.59)) (stroke (width 0) (type default)) (uuid "5ab1120a-8ac2-42bc-991d-076d6797c9d2"))
+(global_label "GND" (shape passive) (at 355.6 148.59 180) (effects (font (size 1 1)) (justify right)) (uuid "6d680198-b409-4c2a-8db8-ec6195ddbb1b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 355.6 148.59 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(text "TMP302B: TRIPSET1=0,TRIPSET0=1 =>75 C; HYSTSET=0 =>5 C.\nPlace at the characterized board hotspot; it is not a die sensor.\nOutput startup35ms typical. U502 CT delay >=180ms; verify timing.\nQualify hot-start timing at supply and temperature corners." (at 20 184 0) (effects (font (size 1.15 1.15)) (justify left top)) (uuid "2b8c77d2-ac96-4ef2-b1b9-2e4a3eaf0932"))
+(text "IO OVP =1.242*(1+12.6/20)=2.02446 V nominal.\nReference,offset,resistor and temperature errors apply.\nStatic screening: approximately1.943-2.106 V; measure actual trip.\nDo not represent this as a precise2.025 V limit or ASIC safe voltage." (at 220 184 0) (effects (font (size 1.15 1.15)) (justify left top)) (uuid "252a2d64-e766-4735-ae21-160b0996cd12"))
+(text "Unused expander input pull-downs; do not configure these ports as outputs." (at 20 202 0) (effects (font (size 1.05 1.05)) (justify left top)) (uuid "ffe7f9cc-9f5c-4917-a001-d8d64289ae90"))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 30.48 228.6 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "170e9dd7-7abd-4ce5-8535-a5adf5349b91")
+(property "Reference" "R1004" (at 36.48 227.33 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "10k" (at 36.48 229.87 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 30.48 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RC0603FR-0710KL" (at 30.48 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 30.48 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "Unused U903 input 10k pull-down" (at 30.48 228.6 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "43df6daa-256f-46cf-bd9e-244a391a20b3"))
+(pin "2" (uuid "32b16d5a-4d15-493b-a8f7-c97859e5ca43"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1004") (unit 1)))))
+(wire (pts (xy 30.48 224.79) (xy 30.48 219.71)) (stroke (width 0) (type default)) (uuid "fb3ce235-d505-4a0d-b259-fc359a741c26"))
+(global_label "UNUSED_P12" (shape passive) (at 30.48 219.71 180) (effects (font (size 1 1)) (justify right)) (uuid "8738bbbc-ec92-494c-b309-894467b923bb") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 30.48 219.71 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 30.48 232.41) (xy 30.48 237.49)) (stroke (width 0) (type default)) (uuid "203b082f-c070-47e1-ada5-5070138bee6a"))
+(global_label "GND" (shape passive) (at 30.48 237.49 180) (effects (font (size 1 1)) (justify right)) (uuid "f9cdf69e-ab74-40ee-bacd-951db3d36427") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 30.48 237.49 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 90.17 228.6 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "5e204cc3-6077-461c-8324-e67879c12db7")
+(property "Reference" "R1005" (at 96.17 227.33 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "10k" (at 96.17 229.87 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 90.17 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RC0603FR-0710KL" (at 90.17 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 90.17 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "Unused U903 input 10k pull-down" (at 90.17 228.6 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "678b67d9-6d7a-452b-8f43-8fe91a5735e6"))
+(pin "2" (uuid "9a9441ec-485f-419c-8f97-7f16aed373ef"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1005") (unit 1)))))
+(wire (pts (xy 90.17 224.79) (xy 90.17 219.71)) (stroke (width 0) (type default)) (uuid "7eee88e2-37a6-4e10-a5c3-b083ea58aa14"))
+(global_label "UNUSED_P13" (shape passive) (at 90.17 219.71 180) (effects (font (size 1 1)) (justify right)) (uuid "d0a23f16-b2cf-49da-a7fa-07be7bc60f7e") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.17 219.71 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 90.17 232.41) (xy 90.17 237.49)) (stroke (width 0) (type default)) (uuid "a2f22228-4ccf-45bd-bb4c-9e3c71401a9b"))
+(global_label "GND" (shape passive) (at 90.17 237.49 180) (effects (font (size 1 1)) (justify right)) (uuid "ae64635e-c44c-499c-ac40-5d4cff242711") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.17 237.49 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 149.86 228.6 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "15d66815-72e9-4f24-af6d-e18576d54948")
+(property "Reference" "R1006" (at 155.86 227.33 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "10k" (at 155.86 229.87 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 149.86 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RC0603FR-0710KL" (at 149.86 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 149.86 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "Unused U903 input 10k pull-down" (at 149.86 228.6 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "b510e701-1009-4970-bc56-cf2649f3e065"))
+(pin "2" (uuid "c8816738-3d58-4826-a51a-61d6cd370a8b"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1006") (unit 1)))))
+(wire (pts (xy 149.86 224.79) (xy 149.86 219.71)) (stroke (width 0) (type default)) (uuid "95a1f232-7476-43ed-a53b-49b20f950f81"))
+(global_label "UNUSED_P14" (shape passive) (at 149.86 219.71 180) (effects (font (size 1 1)) (justify right)) (uuid "feb4c419-c30e-40d6-a689-730a01676451") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.86 219.71 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 149.86 232.41) (xy 149.86 237.49)) (stroke (width 0) (type default)) (uuid "17d0f9da-64b8-4fcc-a34a-d78b4db3610a"))
+(global_label "GND" (shape passive) (at 149.86 237.49 180) (effects (font (size 1 1)) (justify right)) (uuid "fe3d9558-90c2-4105-af1a-b0f8649f8601") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 149.86 237.49 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 209.55 228.6 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "e58994ad-0521-4ec2-b09f-868ffe2f540e")
+(property "Reference" "R1007" (at 215.55 227.33 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "10k" (at 215.55 229.87 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 209.55 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RC0603FR-0710KL" (at 209.55 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 209.55 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "Unused U903 input 10k pull-down" (at 209.55 228.6 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "a19e8d4e-1bc7-4173-8de0-74350df215bf"))
+(pin "2" (uuid "89587d33-7c16-482a-9ff5-9a245d09100c"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1007") (unit 1)))))
+(wire (pts (xy 209.55 224.79) (xy 209.55 219.71)) (stroke (width 0) (type default)) (uuid "a463d65d-7178-43fa-9375-416a96986a68"))
+(global_label "UNUSED_P15" (shape passive) (at 209.55 219.71 180) (effects (font (size 1 1)) (justify right)) (uuid "08fae96e-b0f7-4e09-950e-ae06bda19e45") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 209.55 219.71 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 209.55 232.41) (xy 209.55 237.49)) (stroke (width 0) (type default)) (uuid "c47e8750-b406-4c93-8b61-bb992ec72222"))
+(global_label "GND" (shape passive) (at 209.55 237.49 180) (effects (font (size 1 1)) (justify right)) (uuid "18283298-79fa-4d6c-9cb7-edbf39e118ac") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 209.55 237.49 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 270.51 228.6 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "91927f4b-0ab2-4b12-835f-8f33aa7953b5")
+(property "Reference" "R1008" (at 276.51 227.33 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "10k" (at 276.51 229.87 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 270.51 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RC0603FR-0710KL" (at 270.51 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 270.51 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "Unused U903 input 10k pull-down" (at 270.51 228.6 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "7db589ec-9996-4a0c-9bcf-829c5f2bc754"))
+(pin "2" (uuid "028ff2db-81e3-4898-a9f0-50120d1551b7"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1008") (unit 1)))))
+(wire (pts (xy 270.51 224.79) (xy 270.51 219.71)) (stroke (width 0) (type default)) (uuid "665dfc9f-6e82-469b-8049-a0fcd9856f7d"))
+(global_label "UNUSED_P16" (shape passive) (at 270.51 219.71 180) (effects (font (size 1 1)) (justify right)) (uuid "340e2ab3-7b01-4536-9585-3cd8af1464b5") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 270.51 219.71 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 270.51 232.41) (xy 270.51 237.49)) (stroke (width 0) (type default)) (uuid "ca99a1c5-c533-4ca0-98ab-7d6a482323a1"))
+(global_label "GND" (shape passive) (at 270.51 237.49 180) (effects (font (size 1 1)) (justify right)) (uuid "9bdda029-47d9-4a13-843d-54e27b70d7a6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 270.51 237.49 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(symbol (lib_id "Sphinx_V2:Device__R") (at 330.2 228.6 0) (unit 1) (in_bom yes) (on_board yes) (dnp no) (uuid "6c7396f3-9418-41a0-9c99-138d0c21f655")
+(property "Reference" "R1009" (at 336.2 227.33 0) (effects (font (size 1 1)) (justify left)))
+(property "Value" "10k" (at 336.2 229.87 0) (effects (font (size 1 1)) (justify left)))
+(property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 330.2 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "MPN" "RC0603FR-0710KL" (at 330.2 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-0710KL" (at 330.2 228.6 0) (effects (font (size 1 1))) (hide yes))
+(property "Description" "Unused U903 input 10k pull-down" (at 330.2 228.6 0) (effects (font (size 1 1))) (hide yes))
+(pin "1" (uuid "71dbc31a-3a28-4b0d-9114-e7bae97ad918"))
+(pin "2" (uuid "25a00d1d-1e03-4b7b-9133-ba5bfcc9fd6f"))
+(instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (reference "R1009") (unit 1)))))
+(wire (pts (xy 330.2 224.79) (xy 330.2 219.71)) (stroke (width 0) (type default)) (uuid "40bfef95-0572-41cd-9b5a-ad878cce4097"))
+(global_label "UNUSED_P17" (shape passive) (at 330.2 219.71 180) (effects (font (size 1 1)) (justify right)) (uuid "f8363b31-50e2-4785-baf7-136eb1a2feb4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 330.2 219.71 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(wire (pts (xy 330.2 232.41) (xy 330.2 237.49)) (stroke (width 0) (type default)) (uuid "d2a8a9ba-06f4-4b89-a625-87de6898c58d"))
+(global_label "GND" (shape passive) (at 330.2 237.49 180) (effects (font (size 1 1)) (justify right)) (uuid "e5e2f983-beb3-40fc-af60-e0731bef3f35") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 330.2 237.49 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(text "Both open-drain outputs join HW_FAULT_N and asynchronously clear U503 through U507.\nFault release creates no RUN_SET edge: explicit ON is required for recovery.\nIndependent core OVP, control brownout, input eFuse FLT and physical STOP remain on sheet05.\nCore regulator intrinsic OVP/OC/OT protects Core without Pico; a regulator-only fault need not clear IO." (at 20 259 0) (effects (font (size 1.1 1.1)) (justify left top)) (uuid "5e9d8edf-1399-49a4-93e2-cd4c1e5490a9"))
+(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/940c0d29-da87-4f90-9fc1-e3c2f4896fd0" (page "11"))) (embedded_fonts no))

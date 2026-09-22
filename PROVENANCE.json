@@ -1,7 +1,7 @@
 {
   "project": "Sphinx V2",
   "hardware_revision": "V2",
-  "updated_on": "2026-09-20",
+  "updated_on": "2026-09-22",
   "maintenance": "Update the current design in place.",
   "repository_scope": "Current KiCad schematic project, local libraries, BOM, exports, verification and design documentation",
   "new_pcb_included": false,
@@ -17,23 +17,23 @@
     },
     {
       "path": "schematic/02_core_regulator.kicad_sch",
-      "sha256": "277f275cc67f96448b2e888b8052b7d4bb8d391eb140c89641b733e28bdc63e2"
+      "sha256": "3c636d93fcb81b14a37ea0cb0ff057a5626d799c45473ee567748427397753b6"
     },
     {
       "path": "schematic/03_io_and_telemetry.kicad_sch",
-      "sha256": "227f307cd751ee0e37c7aff660f1158c9f23c0b197b4af7cafa54927213b229a"
+      "sha256": "8eb187aa5912b5cfab03039cbcf3368f9dfff61fcf5b3bb66cc7825d29d202e8"
     },
     {
       "path": "schematic/04_usb_control.kicad_sch",
-      "sha256": "0864a7ff21308e3ca47fea3cd2b59c4d13f9bb9558b21856e79d5dfb4bf2d2e6"
+      "sha256": "df58fc71b7fcf0ed2d9bd0fbb8c93e7bab0f7dddb7a0ca91b2ba75ee53ee51e9"
     },
     {
       "path": "schematic/05_hardware_safety.kicad_sch",
-      "sha256": "b11502ca8e37fa7e2428d1d5cc858089a6001e808409282cbb3949401614363d"
+      "sha256": "6e39b0835a91f7e9540670e89eb0b5f06d087a2575fe26eaf879e4d5a3ade748"
     },
     {
       "path": "schematic/06_socket_and_signals.kicad_sch",
-      "sha256": "25e15d7a5127405ff04e3c133fc55c9722eb48482d6679c4425155736e8dcb4a"
+      "sha256": "234ba2e6a58906b7b8de76164a68386ff441e2b612c1ab3ac0361f7ab050179c"
     },
     {
       "path": "schematic/07_core_decoupling.kicad_sch",
@@ -41,11 +41,19 @@
     },
     {
       "path": "schematic/08_io_decoupling.kicad_sch",
-      "sha256": "9fde11466e83cd683ded388f239fe9c9b067ccea92cae5fd3d51322a4b6bfb47"
+      "sha256": "3fa6192081baebd8e0127feb8ab5d9d64f9d61430103da8df30e2beb249a30eb"
+    },
+    {
+      "path": "schematic/09_autonomous_control.kicad_sch",
+      "sha256": "1f5df11552fa63904ed2e21545c7e55579f560e262b985d9a7c781712897f123"
+    },
+    {
+      "path": "schematic/10_independent_protection.kicad_sch",
+      "sha256": "90f980f2c4ea7940c8f8b12a5119c60c1e52b105035893fa548d2d087f6ecc45"
     },
     {
       "path": "schematic/Sphinx_V2.kicad_sym",
-      "sha256": "682f09407584cb98c832a998afa5a0b46ee7753c818f8f9f3e49dce21490703e"
+      "sha256": "5cb60d2c39c99611891f14683821dd3ef486a70b3b0cd5f4d3c082d1e6de2a6f"
     },
     {
       "path": "schematic/Sphinx_V2.pretty/AMASS_24_243_P15.7mm.kicad_mod",
@@ -148,12 +156,20 @@
       "sha256": "27dec90ac20b7f64bfd02b2f1125fc26c97263714ce9467c62072c4875831763"
     },
     {
+      "path": "schematic/Sphinx_V2.pretty/Package_SO__SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+      "sha256": "91c0344efccdf0b422a567ecbba2659f6a4798142aa84298fcfcbb436bc7319b"
+    },
+    {
       "path": "schematic/Sphinx_V2.pretty/Package_SO__TSSOP-10_3x3mm_P0.5mm.kicad_mod",
       "sha256": "7b0eeb82bf179e0583edf1b75064c3eef0be0a485fc1086901dbc8a11b1111dd"
     },
     {
       "path": "schematic/Sphinx_V2.pretty/Package_SO__TSSOP-14_4.4x5mm_P0.65mm.kicad_mod",
       "sha256": "7c160e25f9e44b069c208b299330353bcade93fa7d6e456c95094fabeafa3476"
+    },
+    {
+      "path": "schematic/Sphinx_V2.pretty/Package_SO__TSSOP-24_4.4x7.8mm_P0.65mm.kicad_mod",
+      "sha256": "39d38911ecdfcba8b93650bb4744a8d07706fcb72d9e97ce1bdf5e5015c0c266"
     },
     {
       "path": "schematic/Sphinx_V2.pretty/Package_SO__VSSOP-8_2.3x2mm_P0.5mm.kicad_mod",
@@ -176,6 +192,10 @@
       "sha256": "bb8085c5df264745fbf940579996ef3f84e459ed8043f8bb39ec2be5e0aec78f"
     },
     {
+      "path": "schematic/Sphinx_V2.pretty/Package_TO_SOT_SMD__SOT-563.kicad_mod",
+      "sha256": "8a55d05f6cc589c5841b8be7c9e0082fbf53947baa2508d0ae252a5c6bccde96"
+    },
+    {
       "path": "schematic/Sphinx_V2.pretty/Resistor_SMD__R_0603_1608Metric.kicad_mod",
       "sha256": "c49223bef444e3a62fcbffd7b63c531c27bdbaf57362987865dcbf879792099c"
     },
@@ -193,7 +213,7 @@
     },
     {
       "path": "schematic/Sphinx_V2.pretty/Sphinx_socket_original.kicad_mod",
-      "sha256": "6a8fad478485faddb12b5bb70898e3d558b38b17df3e409fc41cd522e7b8e0c9"
+      "sha256": "1407146f80f7848e63ec9e1f17971a0547a68545134fe0f943deae80ce5db283"
     },
     {
       "path": "schematic/Sphinx_V2.pretty/TI_RPW0010A.kicad_mod",
@@ -217,23 +237,23 @@
     },
     {
       "path": "schematic/bom/BUY_LIST.csv",
-      "sha256": "86e6221e4c37f463b927ed26906e6bec2e59c78fc209a77b801286fa7f30ec5e"
+      "sha256": "7d426091b61f4c15b1846e3b35085c75b4997a82c91e83117e4865ad441e4388"
     },
     {
       "path": "schematic/bom/component_list.csv",
-      "sha256": "55b154b3a6ffaf9d7c07ebfe0414c67d5a22e808152b60ccee1504bfbbb6dec5"
+      "sha256": "8f541ec6215d47c94d284cfe8a7315877f8827e5b8ace768e302b4e2ea136fd9"
     },
     {
       "path": "schematic/bom/parts_catalog.json",
-      "sha256": "561b5db648c15066ec9b0e191b1d8faa88502946b4b31d37eda42f3403a21d93"
+      "sha256": "040e12a115a86585ce4d22d921eb928b7c4d4768111cb4daa34ad0b397f59d5f"
     },
     {
       "path": "schematic/exports/sphinx_power_v2.net.xml",
-      "sha256": "f18db4235cdf11ca63ef6614f194fd8517d830ad70e96b1d3e77360231026d8d"
+      "sha256": "240d38f0de089dcb6def0fc5f04d3170028d987e0101d43cb6f9b77cf67aefb0"
     },
     {
       "path": "schematic/exports/sphinx_power_v2.pdf",
-      "sha256": "e5e7a9aa9eb0aae3e9f4ab96a0a29bae64d7fe33bfa256a472406164d360ffa4"
+      "sha256": "04a41cf7e597d82c6ab1c8ca0e8e5ac9e285271055e86f416e620cbd37a1149e"
     },
     {
       "path": "schematic/fp-lib-table",
@@ -245,7 +265,7 @@
     },
     {
       "path": "schematic/sphinx_power_v2.kicad_sch",
-      "sha256": "2a530464be29fdc19fa6fd46032a1a2dddc059ffa2be4d2e5abe02e35559917a"
+      "sha256": "b3aa06a80476cb611971bb15cb6aadb5ccac2a601a5a5315b2291f68df3e8df9"
     },
     {
       "path": "schematic/sym-lib-table",
@@ -254,60 +274,88 @@
   ],
   "reviewed_documentation_and_checks": [
     {
+      "path": "CONTRIBUTING.md",
+      "sha256": "4f6bb69fda5eaf75ce09fe249c03d5b9d4d481968caf51d7045afaab665f6c71"
+    },
+    {
       "path": "README.md",
-      "sha256": "ad9c5d06e07aef0596355eb0b7d287e6e704b8a2910c55679a9a9d139f833902"
+      "sha256": "1a1752bc314b8eccec6e2aba5c836bef9fa601593282c0387364cb702f640477"
+    },
+    {
+      "path": "docs/AUTONOMOUS_POWER.md",
+      "sha256": "862a13571683cc838ceb9a35666536847ea204ae6dcad2dbccf6a8923d992316"
     },
     {
       "path": "docs/DESIGN.md",
-      "sha256": "31a68b1366fe00e6b69d4dd0222fbd28896d27c35f688b94c98e523c90cc1034"
+      "sha256": "fe065a34c1e175404a56db322ae48f9ad22af8a7d84d428faa342321c2b944e6"
     },
     {
       "path": "docs/IO_ENABLE.md",
-      "sha256": "a567198a1faeecb9148ce4579a1b1bb3d70b4a54f01b64d33db3b05b232669e8"
+      "sha256": "1491002d8343e4a01e4afd7c12fa440184fe7f4d3b763654055b175f476f3498"
     },
     {
       "path": "docs/LAYOUT_HANDOFF.md",
-      "sha256": "514d9acd23887a6495de7ff068af0abe87a6c107f1df4c7120c877aa14b67891"
+      "sha256": "df8ebbdbe5519a4ddd015fbc6416d36cc3357001758cf30c6e48acb1c4609483"
     },
     {
       "path": "docs/POWER_CONFIGURATION.md",
-      "sha256": "c2ed5c323317462f7d03fff5c0a5732465fbb5c42a11968c8211d24248480fd1"
+      "sha256": "0257e3f1a6a4c726e1963a0abe89c1a85451a1a1f3387ba5b3724d3faa433d60"
     },
     {
       "path": "docs/README.md",
-      "sha256": "42a309d245c3f136e9a82c3759260d91effb8b210d6775bbe52bce2c663c8350"
+      "sha256": "e58acd0a91e79852f1334e702563aa84f007efceb6f83ebbe7d2c42baa8899fe"
     },
     {
       "path": "docs/REFERENCES.md",
-      "sha256": "08ba8e63aba8f752aba95a3c8501fe76342d1105ec9a8e1c883b0df070d6944b"
+      "sha256": "eddf25ec6c225a8266fc4c50dead3070bd778fec5fef79b72cd0eeffa6cb2ed8"
     },
     {
       "path": "docs/REQUIREMENTS.md",
-      "sha256": "436a119fef013be738d81800640f15779f1eaf4ffeee9b6c72d52963b121d876"
+      "sha256": "74289de26d9208bbd0d531a4d17834bd8b78435f1de435a027b5fe8a37d5dd0e"
     },
     {
       "path": "docs/RESET_AND_CONTROL.md",
-      "sha256": "9810296e22aeeff50dfe0d96ac0d06dcb958d948a17e81734f16a6868a0ba59f"
+      "sha256": "627e957608cb5848703d2b6ecbecddce6aa3a911fabaeda722e8b0a908d0d3e3"
     },
     {
       "path": "docs/VALIDATION.md",
-      "sha256": "1cde091f46d5ee8463ea5ce50e3542ffc368708ee6aa12c9159abf0279bb845b"
+      "sha256": "8e55fc314dc5a19887f0965804ec18b8edab0cdd4ddb5d5a813eeaaa131badaf"
     },
     {
-      "path": "tools/verify_control_connectivity.py",
-      "sha256": "0d2695a8d2c498b235a9751aff4e032c37d8f5f99fe36da3b31fec4415713e8c"
+      "path": "docs/evidence/autonomous_pinout.json",
+      "sha256": "66045ebf5faaee050281a0d415adeac00492aba34f9692c008cb755ad95fd74b"
+    },
+    {
+      "path": "docs/evidence/autonomy_netlist_diff.json",
+      "sha256": "d1ae36191934ddcab087bed95ce270fdaa38ff5c7a364f1c4c52ae21cd895b49"
     },
     {
       "path": "docs/evidence/documentation_validation.json",
-      "sha256": "fa5f05713b22041352789358cbc96fecb74549e770f54b9a27f1dc16be2d029c"
+      "sha256": "a0fa83d03e82dd2c16b1fd9d36447cad5c9f1753a9a42a9e298b77ec19271a70"
     },
     {
       "path": "docs/evidence/erc.json",
-      "sha256": "54e97fbc97f63037c84b8f0f3f0ae2498385ae5b4ad662c21b1e012c930ef0c5"
+      "sha256": "875ee20a8276f012d18d55a53b9696e68a256873dba5257317ab15f141d839d3"
     },
     {
       "path": "docs/evidence/hardware_review.json",
-      "sha256": "a10ae30a9949f8be99422f3a38fdbee6670fa9382bac4772d080372be5c13184"
+      "sha256": "8feb585e2fd435edd51457f38fadd5e9179d67bcf38e9e4e2ad9a021e3c035ab"
+    },
+    {
+      "path": "docs/evidence/socket_keepout.json",
+      "sha256": "1af6b2c38dabc9f0c6d49b306b9573f0339dff0163a99f4a5c143e36c84962d7"
+    },
+    {
+      "path": "tools/verify_control_connectivity.py",
+      "sha256": "32cc9884f2c810506511f2e65cbba62f62f47dae368faf7a7bff6e1eb98131e5"
+    },
+    {
+      "path": "docs/evidence/full_pinout_review.json",
+      "sha256": "2ef428eca764303801a8f996615f4285c115d7284b32e9641036f529eb5ca851"
+    },
+    {
+      "path": "docs/FINAL_REVIEW_2026-09-22.md",
+      "sha256": "9c3e0d19a878d1843b777c1a57f4eb3ca15b2ac6855e27e225d2bc5d9230bb9f"
     }
   ]
 }

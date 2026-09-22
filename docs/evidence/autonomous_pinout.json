@@ -1,0 +1,1534 @@
+{
+  "netlist_sha256": "240d38f0de089dcb6def0fc5f04d3170028d987e0101d43cb6f9b77cf67aefb0",
+  "design_date": "2026-09-22T00:53:14",
+  "kicad_version": "10.0.5",
+  "pin_checks": [
+    {
+      "ref": "U901",
+      "pin": 1,
+      "expected": "AUX5V",
+      "actual": "AUX5V",
+      "pass": true
+    },
+    {
+      "ref": "U901",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U901",
+      "pin": 3,
+      "expected": "AUX5V",
+      "actual": "AUX5V",
+      "pass": true
+    },
+    {
+      "ref": "U901",
+      "pin": 4,
+      "expected": null,
+      "actual": "unconnected-(U901-NC-Pad4)",
+      "pass": true
+    },
+    {
+      "ref": "U901",
+      "pin": 5,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "pin": 1,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "pin": 2,
+      "expected": "PMBUS_SDA",
+      "actual": "PMBUS_SDA",
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "pin": 3,
+      "expected": "PMBUS_SCL",
+      "actual": "PMBUS_SCL",
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "pin": 4,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "pin": 5,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "pin": 6,
+      "expected": "PICO_SCL",
+      "actual": "PICO_SCL",
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "pin": 7,
+      "expected": "PICO_SDA",
+      "actual": "PICO_SDA",
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "pin": 8,
+      "expected": "PICO_3V3",
+      "actual": "PICO_3V3",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 1,
+      "expected": null,
+      "actual": "unconnected-(U903-INT_N-Pad1)",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 3,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 4,
+      "expected": "CORE_REQ",
+      "actual": "CORE_REQ",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 5,
+      "expected": "IO_REQ",
+      "actual": "IO_REQ",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 6,
+      "expected": "RESET_ASSERT",
+      "actual": "RESET_ASSERT",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 7,
+      "expected": "RUN_SET",
+      "actual": "RUN_SET",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 8,
+      "expected": "CLEAR_REQUEST",
+      "actual": "CLEAR_REQUEST",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 9,
+      "expected": "RUN_LATCH",
+      "actual": "RUN_LATCH",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 10,
+      "expected": "HW_FAULT_N",
+      "actual": "HW_FAULT_N",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 11,
+      "expected": "CORE_PG",
+      "actual": "CORE_PG",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 12,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 13,
+      "expected": "IO_VALID",
+      "actual": "IO_VALID",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 14,
+      "expected": "VIN12_VALID",
+      "actual": "VIN12_VALID",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 15,
+      "expected": "UNUSED_P12",
+      "actual": "UNUSED_P12",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 16,
+      "expected": "UNUSED_P13",
+      "actual": "UNUSED_P13",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 17,
+      "expected": "UNUSED_P14",
+      "actual": "UNUSED_P14",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 18,
+      "expected": "UNUSED_P15",
+      "actual": "UNUSED_P15",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 19,
+      "expected": "UNUSED_P16",
+      "actual": "UNUSED_P16",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 20,
+      "expected": "UNUSED_P17",
+      "actual": "UNUSED_P17",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 21,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 22,
+      "expected": "PMBUS_SCL",
+      "actual": "PMBUS_SCL",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 23,
+      "expected": "PMBUS_SDA",
+      "actual": "PMBUS_SDA",
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "pin": 24,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 1,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 2,
+      "expected": null,
+      "actual": "unconnected-(U904-ALERT_RDY_N-Pad2)",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 3,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 4,
+      "expected": "BOARD_NTC",
+      "actual": "BOARD_NTC",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 5,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 6,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 7,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 8,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 9,
+      "expected": "PMBUS_SDA",
+      "actual": "PMBUS_SDA",
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "pin": 10,
+      "expected": "PMBUS_SCL",
+      "actual": "PMBUS_SCL",
+      "pass": true
+    },
+    {
+      "ref": "U1001",
+      "pin": 1,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U1001",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U1001",
+      "pin": 3,
+      "expected": "HW_FAULT_N",
+      "actual": "HW_FAULT_N",
+      "pass": true
+    },
+    {
+      "ref": "U1001",
+      "pin": 4,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U1001",
+      "pin": 5,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U1001",
+      "pin": 6,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U1002",
+      "pin": 1,
+      "expected": "HW_FAULT_N",
+      "actual": "HW_FAULT_N",
+      "pass": true
+    },
+    {
+      "ref": "U1002",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U1002",
+      "pin": 3,
+      "expected": "IO_OV_REF",
+      "actual": "IO_OV_REF",
+      "pass": true
+    },
+    {
+      "ref": "U1002",
+      "pin": 4,
+      "expected": "IO_OV_SENSE",
+      "actual": "IO_OV_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "U1002",
+      "pin": 5,
+      "expected": "IO_OV_REF",
+      "actual": "IO_OV_REF",
+      "pass": true
+    },
+    {
+      "ref": "U1002",
+      "pin": 6,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "Q901",
+      "pin": 1,
+      "expected": "CLEAR_REQUEST",
+      "actual": "CLEAR_REQUEST",
+      "pass": true
+    },
+    {
+      "ref": "Q901",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "Q901",
+      "pin": 3,
+      "expected": "HW_FAULT_N",
+      "actual": "HW_FAULT_N",
+      "pass": true
+    },
+    {
+      "ref": "R1001",
+      "pin": 1,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "R1001",
+      "pin": 2,
+      "expected": "SUPERVISOR_CT",
+      "actual": "SUPERVISOR_CT",
+      "pass": true
+    },
+    {
+      "ref": "R1002",
+      "pin": 1,
+      "expected": "1V8",
+      "actual": "1V8",
+      "pass": true
+    },
+    {
+      "ref": "R1002",
+      "pin": 2,
+      "expected": "IO_OV_SENSE",
+      "actual": "IO_OV_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "R1003",
+      "pin": 1,
+      "expected": "IO_OV_SENSE",
+      "actual": "IO_OV_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "R1003",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U502",
+      "pin": 1,
+      "expected": "HW_FAULT_N",
+      "actual": "HW_FAULT_N",
+      "pass": true
+    },
+    {
+      "ref": "U502",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U502",
+      "pin": 3,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U502",
+      "pin": 4,
+      "expected": "SUPERVISOR_CT",
+      "actual": "SUPERVISOR_CT",
+      "pass": true
+    },
+    {
+      "ref": "U502",
+      "pin": 5,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U502",
+      "pin": 6,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "R1004",
+      "pin": 1,
+      "expected": "UNUSED_P12",
+      "actual": "UNUSED_P12",
+      "pass": true
+    },
+    {
+      "ref": "R1004",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "R1005",
+      "pin": 1,
+      "expected": "UNUSED_P13",
+      "actual": "UNUSED_P13",
+      "pass": true
+    },
+    {
+      "ref": "R1005",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "R1006",
+      "pin": 1,
+      "expected": "UNUSED_P14",
+      "actual": "UNUSED_P14",
+      "pass": true
+    },
+    {
+      "ref": "R1006",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "R1007",
+      "pin": 1,
+      "expected": "UNUSED_P15",
+      "actual": "UNUSED_P15",
+      "pass": true
+    },
+    {
+      "ref": "R1007",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "R1008",
+      "pin": 1,
+      "expected": "UNUSED_P16",
+      "actual": "UNUSED_P16",
+      "pass": true
+    },
+    {
+      "ref": "R1008",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "R1009",
+      "pin": 1,
+      "expected": "UNUSED_P17",
+      "actual": "UNUSED_P17",
+      "pass": true
+    },
+    {
+      "ref": "R1009",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    }
+  ],
+  "symbol_footprint_pad_checks": [
+    {
+      "ref": "U901",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-5",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "match": true
+    },
+    {
+      "ref": "U902",
+      "footprint": "Package_SO__SOIC-8_3.9x4.9mm_P1.27mm",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "match": true
+    },
+    {
+      "ref": "U903",
+      "footprint": "Package_SO__TSSOP-24_4.4x7.8mm_P0.65mm",
+      "pad_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "match": true
+    },
+    {
+      "ref": "U904",
+      "footprint": "Package_SO__TSSOP-10_3x3mm_P0.5mm",
+      "pad_numbers": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "match": true
+    },
+    {
+      "ref": "U1001",
+      "footprint": "Package_TO_SOT_SMD__SOT-563",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "match": true
+    },
+    {
+      "ref": "U1002",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "match": true
+    },
+    {
+      "ref": "Q901",
+      "footprint": "Package_TO_SOT_SMD__SOT-23",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2",
+        "3"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1001",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1002",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1003",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    },
+    {
+      "ref": "U502",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pad_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1004",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1005",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1006",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1007",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1008",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    },
+    {
+      "ref": "R1009",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pad_numbers": [
+        "1",
+        "2"
+      ],
+      "symbol_pin_numbers": [
+        "1",
+        "2"
+      ],
+      "match": true
+    }
+  ],
+  "pico_only_i2c_power_ground_connected": true,
+  "pico_pin_nets": {
+    "13": "GND",
+    "18": "GND",
+    "23": "GND",
+    "28": "GND",
+    "3": "GND",
+    "33": "GND",
+    "38": "GND",
+    "8": "GND",
+    "36": "PICO_3V3",
+    "2": "PICO_SCL",
+    "1": "PICO_SDA",
+    "39": "PICO_VSYS",
+    "37": "unconnected-(U401-3V3_EN-Pad37)",
+    "35": "unconnected-(U401-ADC_VREF-Pad35)",
+    "4": "unconnected-(U401-GPIO2-Pad4)",
+    "5": "unconnected-(U401-GPIO3-Pad5)",
+    "6": "unconnected-(U401-GPIO4-Pad6)",
+    "7": "unconnected-(U401-GPIO5-Pad7)",
+    "9": "unconnected-(U401-GPIO6-Pad9)",
+    "10": "unconnected-(U401-GPIO7-Pad10)",
+    "11": "unconnected-(U401-GPIO8-Pad11)",
+    "12": "unconnected-(U401-GPIO9-Pad12)",
+    "14": "unconnected-(U401-GPIO10-Pad14)",
+    "15": "unconnected-(U401-GPIO11-Pad15)",
+    "16": "unconnected-(U401-GPIO12-Pad16)",
+    "17": "unconnected-(U401-GPIO13-Pad17)",
+    "19": "unconnected-(U401-GPIO14-Pad19)",
+    "20": "unconnected-(U401-GPIO15-Pad20)",
+    "21": "unconnected-(U401-GPIO16-Pad21)",
+    "22": "unconnected-(U401-GPIO17-Pad22)",
+    "24": "unconnected-(U401-GPIO18-Pad24)",
+    "25": "unconnected-(U401-GPIO19-Pad25)",
+    "26": "unconnected-(U401-GPIO20-Pad26)",
+    "27": "unconnected-(U401-GPIO21-Pad27)",
+    "29": "unconnected-(U401-GPIO22-Pad29)",
+    "31": "unconnected-(U401-GPIO26_ADC0-Pad31)",
+    "32": "unconnected-(U401-GPIO27_ADC1-Pad32)",
+    "34": "unconnected-(U401-GPIO28_ADC2-Pad34)",
+    "30": "unconnected-(U401-RUN-Pad30)",
+    "40": "unconnected-(U401-VBUS-Pad40)"
+  },
+  "other_reviewed_networks": {
+    "C901": {
+      "1": "AUX5V",
+      "2": "GND"
+    },
+    "C902": {
+      "1": "3V3_CTRL",
+      "2": "GND"
+    },
+    "C903": {
+      "1": "3V3_CTRL",
+      "2": "GND"
+    },
+    "C904": {
+      "2": "GND",
+      "1": "PICO_3V3"
+    },
+    "C905": {
+      "1": "3V3_CTRL",
+      "2": "GND"
+    },
+    "C906": {
+      "1": "3V3_CTRL",
+      "2": "GND"
+    },
+    "C907": {
+      "1": "BOARD_NTC",
+      "2": "GND"
+    },
+    "C1001": {
+      "1": "3V3_CTRL",
+      "2": "GND"
+    },
+    "C1002": {
+      "1": "3V3_CTRL",
+      "2": "GND"
+    },
+    "Q602": {
+      "2": "GND",
+      "1": "RESET_ASSERT",
+      "3": "RESET_BASE"
+    },
+    "R411": {
+      "2": "GND",
+      "1": "RESET_ASSERT"
+    },
+    "R507": {
+      "2": "GND",
+      "1": "RUN_SET"
+    },
+    "R509": {
+      "1": "CORE_REQ",
+      "2": "GND"
+    },
+    "R510": {
+      "2": "GND",
+      "1": "IO_REQ"
+    },
+    "U503": {
+      "2": "3V3_CTRL",
+      "7": "3V3_CTRL",
+      "8": "3V3_CTRL",
+      "4": "GND",
+      "6": "HW_CLEAR_N",
+      "5": "RUN_LATCH",
+      "1": "RUN_SET_CLEAN",
+      "3": "unconnected-(U503-Q_N-Pad3)"
+    },
+    "U504": {
+      "14": "3V3_CTRL",
+      "3": "CORE_EN",
+      "2": "CORE_REQ",
+      "10": "GND",
+      "12": "GND",
+      "13": "GND",
+      "7": "GND",
+      "9": "GND",
+      "6": "IO_EN_CTRL",
+      "5": "IO_REQ",
+      "1": "RUN_LATCH",
+      "4": "RUN_LATCH",
+      "8": "unconnected-(U504-3Y-Pad8)",
+      "11": "unconnected-(U504-4Y-Pad11)"
+    },
+    "U507": {
+      "5": "3V3_CTRL",
+      "2": "GND",
+      "4": "HW_CLEAR_N",
+      "3": "HW_FAULT_N",
+      "1": "RUN_SET",
+      "6": "RUN_SET_CLEAN"
+    }
+  },
+  "power_and_bus_net_members": {
+    "3V3_CTRL": [
+      [
+        "C1001",
+        "1"
+      ],
+      [
+        "C1002",
+        "1"
+      ],
+      [
+        "C310",
+        "1"
+      ],
+      [
+        "C320",
+        "1"
+      ],
+      [
+        "C502",
+        "1"
+      ],
+      [
+        "C503",
+        "1"
+      ],
+      [
+        "C504",
+        "1"
+      ],
+      [
+        "C506",
+        "1"
+      ],
+      [
+        "C508",
+        "1"
+      ],
+      [
+        "C509",
+        "1"
+      ],
+      [
+        "C510",
+        "1"
+      ],
+      [
+        "C902",
+        "1"
+      ],
+      [
+        "C903",
+        "1"
+      ],
+      [
+        "C905",
+        "1"
+      ],
+      [
+        "C906",
+        "1"
+      ],
+      [
+        "J401",
+        "5"
+      ],
+      [
+        "R1001",
+        "1"
+      ],
+      [
+        "R211",
+        "1"
+      ],
+      [
+        "R302",
+        "1"
+      ],
+      [
+        "R401",
+        "1"
+      ],
+      [
+        "R402",
+        "1"
+      ],
+      [
+        "R403",
+        "1"
+      ],
+      [
+        "R404",
+        "1"
+      ],
+      [
+        "R408",
+        "1"
+      ],
+      [
+        "R506",
+        "1"
+      ],
+      [
+        "R513",
+        "1"
+      ],
+      [
+        "R516",
+        "1"
+      ],
+      [
+        "U1001",
+        "1"
+      ],
+      [
+        "U1001",
+        "5"
+      ],
+      [
+        "U1002",
+        "6"
+      ],
+      [
+        "U302",
+        "6"
+      ],
+      [
+        "U303",
+        "2"
+      ],
+      [
+        "U303",
+        "6"
+      ],
+      [
+        "U501",
+        "6"
+      ],
+      [
+        "U502",
+        "3"
+      ],
+      [
+        "U502",
+        "5"
+      ],
+      [
+        "U502",
+        "6"
+      ],
+      [
+        "U503",
+        "2"
+      ],
+      [
+        "U503",
+        "7"
+      ],
+      [
+        "U503",
+        "8"
+      ],
+      [
+        "U504",
+        "14"
+      ],
+      [
+        "U507",
+        "5"
+      ],
+      [
+        "U508",
+        "6"
+      ],
+      [
+        "U509",
+        "6"
+      ],
+      [
+        "U901",
+        "5"
+      ],
+      [
+        "U902",
+        "1"
+      ],
+      [
+        "U903",
+        "24"
+      ],
+      [
+        "U904",
+        "5"
+      ],
+      [
+        "U904",
+        "8"
+      ]
+    ],
+    "PICO_3V3": [
+      [
+        "C904",
+        "1"
+      ],
+      [
+        "R901",
+        "1"
+      ],
+      [
+        "R902",
+        "1"
+      ],
+      [
+        "U401",
+        "36"
+      ],
+      [
+        "U902",
+        "8"
+      ]
+    ],
+    "PICO_SDA": [
+      [
+        "R901",
+        "2"
+      ],
+      [
+        "U401",
+        "1"
+      ],
+      [
+        "U902",
+        "7"
+      ]
+    ],
+    "PICO_SCL": [
+      [
+        "R902",
+        "2"
+      ],
+      [
+        "U401",
+        "2"
+      ],
+      [
+        "U902",
+        "6"
+      ]
+    ],
+    "PMBUS_SDA": [
+      [
+        "J401",
+        "3"
+      ],
+      [
+        "R401",
+        "2"
+      ],
+      [
+        "U201",
+        "2"
+      ],
+      [
+        "U302",
+        "4"
+      ],
+      [
+        "U303",
+        "4"
+      ],
+      [
+        "U902",
+        "2"
+      ],
+      [
+        "U903",
+        "23"
+      ],
+      [
+        "U904",
+        "9"
+      ]
+    ],
+    "PMBUS_SCL": [
+      [
+        "J401",
+        "2"
+      ],
+      [
+        "R402",
+        "2"
+      ],
+      [
+        "U201",
+        "3"
+      ],
+      [
+        "U302",
+        "5"
+      ],
+      [
+        "U303",
+        "5"
+      ],
+      [
+        "U902",
+        "3"
+      ],
+      [
+        "U903",
+        "22"
+      ],
+      [
+        "U904",
+        "10"
+      ]
+    ],
+    "HW_FAULT_N": [
+      [
+        "Q901",
+        "3"
+      ],
+      [
+        "R506",
+        "2"
+      ],
+      [
+        "SW502",
+        "1"
+      ],
+      [
+        "U1001",
+        "3"
+      ],
+      [
+        "U1002",
+        "1"
+      ],
+      [
+        "U101",
+        "4"
+      ],
+      [
+        "U501",
+        "1"
+      ],
+      [
+        "U502",
+        "1"
+      ],
+      [
+        "U507",
+        "3"
+      ],
+      [
+        "U903",
+        "10"
+      ]
+    ]
+  },
+  "selected_component_properties": {
+    "U502": {
+      "value": "TPS3808G33DBVR",
+      "description": "Control-supply supervisor; CT100k pullup gives180-420ms startup reset, threshold 3.07 V. | 0.9-6.5V supervisor, G33 threshold3.07V, open-drain reset, CT100k pullup:180-420ms (300ms nominal); DBV6",
+      "fields": {
+        "MPN": "TPS3808G33DBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6",
+        "Datasheet": "https://www.ti.com/lit/ds/symlink/tps3808.pdf",
+        "Description": "Control-supply supervisor; CT100k pullup gives180-420ms startup reset, threshold 3.07 V. | 0.9-6.5V supervisor, G33 threshold3.07V, open-drain reset, CT100k pullup:180-420ms (300ms nominal); DBV6"
+      }
+    },
+    "C901": {
+      "value": "4.7u / 16V",
+      "description": "4.7uF input bypass;effective>=1uF; close to U901",
+      "fields": {
+        "MPN": "CL21B475KOFNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL21B475KOFNNN.do",
+        "Description": "4.7uF input bypass;effective>=1uF; close to U901"
+      }
+    },
+    "C902": {
+      "value": "4.7u / 16V",
+      "description": "1uF effective output capacitance required at U901",
+      "fields": {
+        "MPN": "CL21B475KOFNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric",
+        "Datasheet": "https://product.samsungsem.com/mlcc/CL21B475KOFNNN.do",
+        "Description": "1uF effective output capacitance required at U901"
+      }
+    },
+    "C907": {
+      "value": "100n / 100V",
+      "description": "NTC input charge reservoir; calibrate ADC loading; not protection",
+      "fields": {
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric",
+        "Datasheet": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM188R72A104KA35-01A.pdf",
+        "Description": "NTC input charge reservoir; calibrate ADC loading; not protection"
+      }
+    },
+    "R901": {
+      "value": "2.2k",
+      "description": "Pico-side SDA pullup",
+      "fields": {
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric",
+        "Datasheet": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L",
+        "Description": "Pico-side SDA pullup"
+      }
+    },
+    "R902": {
+      "value": "2.2k",
+      "description": "Pico-side SCL pullup",
+      "fields": {
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric",
+        "Datasheet": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-072K2L",
+        "Description": "Pico-side SCL pullup"
+      }
+    },
+    "R903": {
+      "value": "100k",
+      "description": "Cold-POR fault-clear gate pulldown",
+      "fields": {
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric",
+        "Datasheet": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL",
+        "Description": "Cold-POR fault-clear gate pulldown"
+      }
+    },
+    "R1001": {
+      "value": "100k",
+      "description": "U502 CT pullup sets300ms nominal delay,180ms minimum",
+      "fields": {
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric",
+        "Datasheet": "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL",
+        "Description": "U502 CT pullup sets300ms nominal delay,180ms minimum"
+      }
+    },
+    "R1002": {
+      "value": "12.6k 0.1%",
+      "description": "IO OVP upper divider 12.6k,0.1%,25ppm/C",
+      "fields": {
+        "MPN": "RT0603BRD0712K6L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric",
+        "Datasheet": "https://yageogroup.com/content/datasheet/asset/file/PYU-RT_1-TO-0-01_ROHS_L",
+        "Description": "IO OVP upper divider 12.6k,0.1%,25ppm/C"
+      }
+    },
+    "R1003": {
+      "value": "20k / 0.1%",
+      "description": "IO OVP lower divider20k0.1%",
+      "fields": {
+        "MPN": "RT0603BRD0720KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric",
+        "Datasheet": "https://yageogroup.com/component-documentation/download/specsheet/RT0603BRD0720KL",
+        "Description": "IO OVP lower divider20k0.1%"
+      }
+    }
+  }
+}

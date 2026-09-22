@@ -1,6 +1,6 @@
 # I/O Regulator Enable Interface
 
-U301 EN is supplied from local VIN12 through a resistive divider. USB-powered logic controls MOSFET gates and does not directly drive EN. This separates the EN high-level source from the USB control supply.
+U301 EN is supplied from local VIN12 through a resistive divider. Logic powered by independent `3V3_CTRL` controls MOSFET gates and does not directly drive EN. U903 retains `IO_REQ` without Pico execution; USB/Pico power loss must not change an established enable state while board input power remains valid.
 
 ## Connections
 
@@ -16,7 +16,7 @@ U301 EN is supplied from local VIN12 through a resistive divider. USB-powered lo
 | C306 | 1 nF, 50 V, C0G, ±5% | VIN12 to IO_EN_INHIBIT |
 | C307 | 100 pF, 100 V, C0G, ±5% | IO_EN to ground |
 
-Q301 and Q302 use gate/source/drain pins 1/2/3. U504 pin 6 drives `IO_EN_CTRL`, the AND of `RUN_LATCH` and `IO_REQ`.
+Q301 and Q302 use gate/source/drain pins 1/2/3. U504 pin 6 drives `IO_EN_CTRL`, the AND of `RUN_LATCH` and U903 P01 `IO_REQ`. Hardware STOP or a fault clears the latch and overrides a retained high request.
 
 With the command low or control power absent, R306 biases Q302 on and inhibits U301. A high command turns Q301 on, discharges the Q302 gate through R308, and permits the VIN12 divider to enable U301. The unloaded nominal divider voltage is 1.31 V at 12 V input.
 
@@ -32,6 +32,6 @@ Place the interface close to U301. Use local VIN12 and ground connections, short
 
 ## Verification
 
-Measure VIN, EN, IO_EN_CTRL, and IO_EN_INHIBIT during cold startup, command transitions, and rapid input interruption with USB power maintained. Include the fastest measured supply edges and the intended temperature range. Verify `EN − VIN ≤ 0.3 V`, `EN ≥ −0.3 V`, and the enable/disable thresholds.
+Measure VIN, EN, IO_EN_CTRL, and IO_EN_INHIBIT during cold startup, command transitions, Pico-only power loss/recovery, and rapid input interruption with USB both present and absent. Confirm Pico loss does not disturb an established enable. Input loss can remove independent control power even with USB present. Include the fastest measured supply edges and the intended temperature range. Verify `EN − VIN ≤ 0.3 V`, `EN ≥ −0.3 V`, and the enable/disable thresholds.
 
 Also measure SS/TR during rapid VIN collapse; its pin rating depends on VIN. A static divider calculation does not establish transient pin compliance. Use measured parasitics and probe loading when interpreting the waveforms.

@@ -1,6 +1,6 @@
 (kicad_sch (version 20250114) (generator "eeschema") (generator_version "10.0")
         (uuid "75c9142f-37c4-500b-ad86-039aa4577f35") (paper "A3")
-        (title_block (title "04 | USB control and remote reset") (date "2026-09-20") (rev "V2")
+        (title_block (title "04 | USB control and remote reset") (date "2026-09-22") (rev "V2")
         (company "Sphinx | Programmable power test board")
         (comment 1 "Review package: PCB, PI, SI, thermal and ASIC limits require qualification")
         (comment 2 "12 V nominal input | VCORE 0.30-1.20 V | VIO 1.80 V")
@@ -1545,35 +1545,35 @@
 (pin "40" (uuid "213d2e25-35ab-5483-ba7d-dfb7ca5ab5d0"))
 (instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "U401") (unit 1)))) )
 (wire (pts (xy 62.23 82.55) (xy 57.15 82.55)) (stroke (width 0) (type default)) (uuid "ad282b36-9e84-51be-958d-f76e65c2e596"))
-(global_label "PMBUS_SDA" (shape passive) (at 57.15 82.55 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ba3afe13-9921-5941-888a-842c44936713") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 82.55 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(global_label "PICO_SDA" (shape passive) (at 57.15 82.55 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ba3afe13-9921-5941-888a-842c44936713") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 82.55 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (wire (pts (xy 62.23 85.09) (xy 57.15 85.09)) (stroke (width 0) (type default)) (uuid "327551f0-9a5d-5b48-8f02-1c3bfc549bf4"))
-(global_label "PMBUS_SCL" (shape passive) (at 57.15 85.09 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "98afb789-9343-5bd0-8e32-e0c1da597201") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 85.09 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(global_label "PICO_SCL" (shape passive) (at 57.15 85.09 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "98afb789-9343-5bd0-8e32-e0c1da597201") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 85.09 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (wire (pts (xy 85.09 133.35) (xy 85.09 138.43)) (stroke (width 0) (type default)) (uuid "494826e9-f52c-52bb-8e4c-84081afca123"))
 (global_label "GND" (shape passive) (at 85.09 138.43 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b10cc384-668b-5d15-a4a0-be45e958ccea") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 85.09 138.43 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 62.23 87.63) (xy 57.15 87.63)) (stroke (width 0) (type default)) (uuid "5e3c8ba6-b444-5e68-bef8-1d9ffcb46349"))
-(global_label "CORE_REQ" (shape passive) (at 57.15 87.63 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "1a1bec91-436c-55db-9c79-1d1f27ebca69") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 87.63 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 62.23 90.17) (xy 57.15 90.17)) (stroke (width 0) (type default)) (uuid "4e95967a-5ca3-5645-96ae-a7f116f86c74"))
-(global_label "IO_REQ" (shape passive) (at 57.15 90.17 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "b67f7ace-b041-529a-ae61-5cc307d35de2") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 90.17 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 62.23 92.71) (xy 57.15 92.71)) (stroke (width 0) (type default)) (uuid "cee36bee-41ad-5362-bfee-0c24b8c8e52c"))
-(global_label "RESET_ASSERT" (shape passive) (at 57.15 92.71 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "42b3430c-2505-5663-818c-bc8748c77d2b") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 92.71 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 62.23 95.25) (xy 57.15 95.25)) (stroke (width 0) (type default)) (uuid "e129aa95-eaec-5f84-8610-ef44fb6abee5"))
-(global_label "RUN_LATCH" (shape passive) (at 57.15 95.25 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "48667d5b-d58d-5d9c-8c02-d8a93da7de44") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 95.25 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 62.23 97.79) (xy 57.15 97.79)) (stroke (width 0) (type default)) (uuid "f84e71c5-18e4-5709-9955-4b548db83586"))
-(global_label "CORE_PG" (shape passive) (at 57.15 97.79 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ee584eb3-5964-5861-b33e-661962c7011d") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 97.79 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 62.23 100.33) (xy 57.15 100.33)) (stroke (width 0) (type default)) (uuid "af129170-0d8d-5409-af61-207278811a1f"))
-(global_label "IO_VALID" (shape passive) (at 57.15 100.33 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "fe87f209-71a7-59e6-b944-00d768741a23") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 100.33 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 62.23 102.87) (xy 57.15 102.87)) (stroke (width 0) (type default)) (uuid "61a23ae6-d588-52bb-b3c4-2b037896d5ed"))
-(global_label "HW_FAULT_N" (shape passive) (at 57.15 102.87 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "d4bd97a3-c2de-5604-aeb6-4d3b1c0bb03f") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 102.87 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(wire (pts (xy 62.23 105.41) (xy 57.15 105.41)) (stroke (width 0) (type default)) (uuid "4f84694b-180b-54fe-820e-6d21a5683f5d"))
-(global_label "CORE_ALERT_N" (shape passive) (at 57.15 105.41 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "ff881047-1050-579e-b8b7-19ca3c5b83f8") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 105.41 180) (effects (font (size 0.8 0.8))  (hide yes))))
 
-(wire (pts (xy 62.23 110.49) (xy 57.15 110.49)) (stroke (width 0) (type default)) (uuid "100d88b6-f206-52cb-aae3-dc921a1fda3a"))
-(global_label "MON_ALERT_N" (shape passive) (at 57.15 110.49 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "9d01dcfc-4a86-506b-9640-158318017cb0") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 110.49 180) (effects (font (size 0.8 0.8))  (hide yes))))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 (no_connect (at 62.23 115.57) (uuid "de01cd78-8b1f-543f-9fa4-2cea4913783c"))
 (no_connect (at 62.23 118.11) (uuid "a6a044ee-2db4-551d-9248-2c873e713eeb"))
-(wire (pts (xy 62.23 120.65) (xy 57.15 120.65)) (stroke (width 0) (type default)) (uuid "75b29040-f96c-5872-83a8-d14849e91540"))
-(global_label "HW_FAULT_N" (shape passive) (at 57.15 120.65 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "76e9c432-95b2-526c-b70f-d3a5e97a5304") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 120.65 180) (effects (font (size 0.8 0.8))  (hide yes))))
+
+
 (no_connect (at 107.95 85.09) (uuid "4a456442-3e49-58bc-98ac-79457b839c9f"))
 (no_connect (at 107.95 87.63) (uuid "587fc17a-2fcb-5642-af06-d303d0328059"))
 (no_connect (at 107.95 90.17) (uuid "3ea74e8f-e15c-515f-936c-fd35b3203b4f"))
@@ -1583,14 +1583,14 @@
 (no_connect (at 107.95 100.33) (uuid "cee44dcb-b04b-5782-9d17-6021049c54cb"))
 (no_connect (at 62.23 74.93) (uuid "ee492dfc-c9d2-531d-8023-838ce44c5b7e"))
 (no_connect (at 107.95 110.49) (uuid "dcaa4089-ffc2-5d13-83c8-c1f6dde6ccdc"))
-(wire (pts (xy 107.95 113.03) (xy 113.03 113.03)) (stroke (width 0) (type default)) (uuid "0a60966d-bfe5-5bd6-96ab-e1e4028c0713"))
-(global_label "BOARD_NTC" (shape passive) (at 113.03 113.03 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "238ca187-4a00-54c2-881e-6c5b26a5d2a6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 113.03 113.03 0) (effects (font (size 0.8 0.8))  (hide yes))))
+
+
 (wire (pts (xy 107.95 120.65) (xy 113.03 120.65)) (stroke (width 0) (type default)) (uuid "6488caf0-02f2-5512-9bf0-d29df27d5d5c"))
 (global_label "GND" (shape passive) (at 113.03 120.65 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "08c6533b-c096-55d3-b8f0-7a21b75d82ee") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 113.03 120.65 0) (effects (font (size 0.8 0.8))  (hide yes))))
 (no_connect (at 107.95 115.57) (uuid "193adcb9-4446-5fd2-ba97-2b876f0f7b57"))
 (no_connect (at 107.95 105.41) (uuid "d43e519a-f927-5db2-bf37-f8e3289c77f5"))
 (wire (pts (xy 90.17 59.69) (xy 90.17 54.61)) (stroke (width 0) (type default)) (uuid "c7cf88c2-3154-58b0-a2cb-b332a89c5e89"))
-(global_label "3V3_CTRL" (shape passive) (at 90.17 54.61 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "eb3705d9-9be7-569a-bd60-4bcc48f525b4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.17 54.61 180) (effects (font (size 0.8 0.8))  (hide yes))))
+(global_label "PICO_3V3" (shape passive) (at 90.17 54.61 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "eb3705d9-9be7-569a-bd60-4bcc48f525b4") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 90.17 54.61 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (no_connect (at 62.23 77.47) (uuid "224e54fe-8c26-5028-91e3-a3b521496d83"))
 (wire (pts (xy 80.01 59.69) (xy 80.01 54.61)) (stroke (width 0) (type default)) (uuid "a9d4e83b-217a-5f71-bd4f-e05730208210"))
 (global_label "PICO_VSYS" (shape passive) (at 80.01 54.61 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "adc54c6b-73dd-546f-be76-5e55101ce583") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 80.01 54.61 180) (effects (font (size 0.8 0.8))  (hide yes))))
@@ -1730,15 +1730,15 @@
 (global_label "BOARD_NTC" (shape passive) (at 355.6 226.06 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "23408f02-340f-5d2b-b3ea-2e6568726e69") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 355.6 226.06 180) (effects (font (size 0.8 0.8))  (hide yes))))
 (wire (pts (xy 355.6 238.76) (xy 355.6 243.84)) (stroke (width 0) (type default)) (uuid "f5399c0d-26b6-5916-9e45-087f64854bb7"))
 (global_label "GND" (shape passive) (at 355.6 243.84 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "d761bc19-69d2-58c1-be40-87a03c8e22cb") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 355.6 243.84 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(text "USB host controls the sweep. Pico implements output sequencing, fault handling, and watchdog.\n19 points: 0.30-1.20V / 0.05V steps. Scale changes perform a controlled power-cycle.\nJ401 exposes only the debug bus; it does not replace the Pico safety state machine.\nAUX5V keeps control power independent of the PC connection." (at 25 196 0) (effects (font (size 1.1 1.1)) (justify left top) ) (uuid "f8d1be2c-4675-5c4d-8b59-0a61aed5e270"))
-(text "GP12 VIN12_VALID reports input validity only; no input voltage/current ADC." (at 150 268 0) (effects (font (size 0.95 0.95)) (justify left top) ) (uuid "c4a1e67c-b75d-56d0-974e-9642500afb2f"))
+(text "Pico is a command-only USB interface. Board state and protection are independent.\nI2C is isolated by U902; U903 retains CORE / IO / RESET requests.\nPico boot, USB inactivity and communication errors do not change outputs.\nSee sheets09/10 and docs/AUTONOMOUS_POWER.md." (at 25 196 0) (effects (font (size 1.1 1.1)) (justify left top) ) (uuid "f8d1be2c-4675-5c4d-8b59-0a61aed5e270"))
+
 (symbol (lib_id "Sphinx_V2:Device__R") (at 129.54 153.67 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "b58c615f-3124-5ae9-b662-28c30d62c48f")
 (property "Reference" "R411" (at 133.54 152.42 0) (effects (font (size 1.0 1.0)) (justify left) ))
 (property "Value" "100k" (at 133.54 154.92 0) (effects (font (size 1.0 1.0)) (justify left) ))
 (property "Footprint" "Sphinx_V2:Resistor_SMD__R_0603_1608Metric" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "Datasheet" "https://yageogroup.com/component-documentation/download/specsheet/RC0603FR-07100KL" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (property "MPN" "RC0603FR-07100KL" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
-(property "Description" "Pico RESET_ASSERT gate pulldown; place next to Q602 to keep reset request inactive with GPIO unpowered or high-Z | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
+(property "Description" "Board expander RESET_ASSERT gate pulldown; place next to Q602 to keep reset request inactive with GPIO unpowered or high-Z | 100k +/-1% 0.1W 0603 thick film; +/-100ppm/C" (at 129.54 153.67 0) (effects (font (size 1.0 1.0))  (hide yes)))
 (pin "1" (uuid "83b44844-1376-5380-a9e4-c90ba88d9b24"))
 (pin "2" (uuid "d2cd4a27-6109-51e1-89e9-0b1fa77953a5"))
 (instances (project "sphinx_power_v2" (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (reference "R411") (unit 1)))) )
@@ -1816,10 +1816,36 @@
 (wire (pts (xy 297.18 247.65) (xy 302.26 247.65)) (stroke (width 0) (type default)) (uuid "3326b740-986f-52f7-94c4-8c64c91ab0d0"))
 (global_label "GND" (shape passive) (at 302.26 247.65 0) (effects (font (size 1.0 1.0)) (justify left) ) (uuid "b4dfbb14-6d09-5930-aa96-ac622e55c546") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 302.26 247.65 0) (effects (font (size 0.8 0.8))  (hide yes))))
 (text "J602: 1 = Zed Pmod3.3V; 2 = Zed GPIO LOW/Z (NOT GND).\nLOW asserts reset; Z/unplugged leaves local control unchanged.\nNo conductive connection from either input pin to board power/GND." (at 170 258 0) (effects (font (size 0.9 0.9)) (justify left top) ) (uuid "fff25c39-f4f5-57fe-bab5-365537bbdfc6"))
-(text "GP15: OPEN-DRAIN shutdown; LOW clears RUN_LATCH. Never drive HW_FAULT_N push-pull HIGH." (at 15 276 0) (effects (font (size 1.0 1.0)) (justify left top) ) (uuid "04a038d2-0a0b-53d8-90bb-53929b0dfa9b"))(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (page "5"))) (embedded_fonts no)
-(wire (pts (xy 62.23 107.95) (xy 57.15 107.95)) (stroke (width 0) (type default)) (uuid "007d2eef-c648-5ee4-b4cb-94ad44e93d2a"))
-(global_label "RUN_SET" (shape passive) (at 57.15 107.95 180) (effects (font (size 1.0 1.0)) (justify right) ) (uuid "31b0cce7-9f50-5e7b-af10-6d8e7023b8e6") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 107.95 180) (effects (font (size 0.8 0.8))  (hide yes))))
-(text "ON performs configuration and a single RUN_SET pulse.\nOFF and damage-risk faults clear RUN_LATCH; recovery needs ON.\nGP10 output: RUN_SET. GP5 input: RUN_LATCH.\nGP4 RESET_ASSERT: HIGH requests reset; LOW/high-Z releases." (at 160 147 0) (effects (font (size 1.1 1.1)) (justify left top) ) (uuid "c7cbe1f8-bdfd-5f64-884f-6dc15303a7ec"))
-(wire (pts (xy 62.23 113.03) (xy 57.15 113.03)) (stroke (width 0) (type default)) (uuid "c0d6204d-59e3-4113-ad1f-f1e595a7c024"))
-(global_label "VIN12_VALID" (shape passive) (at 57.15 113.03 180) (effects (font (size 1.0 1.0)) (justify right)) (uuid "a269e5c3-8b09-42c7-830a-52ce97866d39") (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 57.15 113.03 180) (effects (font (size 0.8 0.8)) (hide yes))))
+(sheet_instances (path "/f39c8d6a-e478-5a84-9c95-766dfa82ae02/75c9142f-37c4-500b-ad86-039aa4577f35" (page "5"))) (embedded_fonts no)
+
+
+(text "All Pico GPIOs except GP0/GP1 are unconnected.\nGPIO expander U903 drives RUN_SET, CORE_REQ, IO_REQ\nand held RESET_ASSERT. Q901 provides fault clear.\nExplicit OFF and physical STOP remain available." (at 160 147 0) (effects (font (size 1.1 1.1)) (justify left top) ) (uuid "c7cbe1f8-bdfd-5f64-884f-6dc15303a7ec"))
+
+
+
+(no_connect (at 62.23 87.63) (uuid "2596f59d-b662-435a-93a3-348d0049f382"))
+
+(no_connect (at 62.23 90.17) (uuid "ddf913e0-3db1-433a-8a5e-1c3c2862ea28"))
+
+(no_connect (at 62.23 92.71) (uuid "016d6e8a-c7ef-4c0e-8da2-75d031a737d4"))
+
+(no_connect (at 62.23 95.25) (uuid "f91f21c5-a4e9-4ee7-a10c-c36943d1fbd4"))
+
+(no_connect (at 62.23 97.79) (uuid "9d316e15-19dd-4e12-8d33-87f4d3923ccb"))
+
+(no_connect (at 62.23 100.33) (uuid "e3eb06bd-f4fc-4d4c-898b-4a9c0b66f49d"))
+
+(no_connect (at 62.23 102.87) (uuid "426c2987-83fe-4cc1-b812-36562bbf4689"))
+
+(no_connect (at 62.23 105.41) (uuid "40bcffda-9e0b-40d7-aff1-899902a2f918"))
+
+(no_connect (at 62.23 107.95) (uuid "ba08423b-e9ac-498a-ba4d-a8deba744e77"))
+
+(no_connect (at 62.23 110.49) (uuid "d719adc5-0a9c-4589-9fd4-3e12859ddd94"))
+
+(no_connect (at 62.23 113.03) (uuid "8f570848-c307-4ca9-a8b6-a7eb1c6ddc97"))
+
+(no_connect (at 62.23 120.65) (uuid "51c3d1ea-714e-4f00-94e4-9f6695e8e5c4"))
+
+(no_connect (at 107.95 113.03) (uuid "e844cd4d-860d-49ee-b651-e663ebe0468b"))
 )

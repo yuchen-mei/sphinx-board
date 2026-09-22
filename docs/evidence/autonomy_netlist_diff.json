@@ -1,0 +1,145 @@
+{
+  "result": "PASS",
+  "source_baseline": "main HEAD 060c88a prior audited V2",
+  "current_netlist_sha256": "240d38f0de089dcb6def0fc5f04d3170028d987e0101d43cb6f9b77cf67aefb0",
+  "existing_pin_changes": [
+    {
+      "ref": "U401",
+      "pin": "36",
+      "before": "3V3_CTRL",
+      "after": "PICO_3V3"
+    },
+    {
+      "ref": "U401",
+      "pin": "32",
+      "before": "BOARD_NTC",
+      "after": "unconnected-(U401-GPIO27_ADC1-Pad32)"
+    },
+    {
+      "ref": "U401",
+      "pin": "12",
+      "before": "CORE_ALERT_N",
+      "after": "unconnected-(U401-GPIO9-Pad12)"
+    },
+    {
+      "ref": "U401",
+      "pin": "9",
+      "before": "CORE_PG",
+      "after": "unconnected-(U401-GPIO6-Pad9)"
+    },
+    {
+      "ref": "U401",
+      "pin": "4",
+      "before": "CORE_REQ",
+      "after": "unconnected-(U401-GPIO2-Pad4)"
+    },
+    {
+      "ref": "U401",
+      "pin": "11",
+      "before": "HW_FAULT_N",
+      "after": "unconnected-(U401-GPIO8-Pad11)"
+    },
+    {
+      "ref": "U401",
+      "pin": "20",
+      "before": "HW_FAULT_N",
+      "after": "unconnected-(U401-GPIO15-Pad20)"
+    },
+    {
+      "ref": "U401",
+      "pin": "5",
+      "before": "IO_REQ",
+      "after": "unconnected-(U401-GPIO3-Pad5)"
+    },
+    {
+      "ref": "U401",
+      "pin": "10",
+      "before": "IO_VALID",
+      "after": "unconnected-(U401-GPIO7-Pad10)"
+    },
+    {
+      "ref": "U401",
+      "pin": "15",
+      "before": "MON_ALERT_N",
+      "after": "unconnected-(U401-GPIO11-Pad15)"
+    },
+    {
+      "ref": "U401",
+      "pin": "2",
+      "before": "PMBUS_SCL",
+      "after": "PICO_SCL"
+    },
+    {
+      "ref": "U401",
+      "pin": "1",
+      "before": "PMBUS_SDA",
+      "after": "PICO_SDA"
+    },
+    {
+      "ref": "U401",
+      "pin": "6",
+      "before": "RESET_ASSERT",
+      "after": "unconnected-(U401-GPIO4-Pad6)"
+    },
+    {
+      "ref": "U401",
+      "pin": "7",
+      "before": "RUN_LATCH",
+      "after": "unconnected-(U401-GPIO5-Pad7)"
+    },
+    {
+      "ref": "U401",
+      "pin": "14",
+      "before": "RUN_SET",
+      "after": "unconnected-(U401-GPIO10-Pad14)"
+    },
+    {
+      "ref": "U401",
+      "pin": "16",
+      "before": "VIN12_VALID",
+      "after": "unconnected-(U401-GPIO12-Pad16)"
+    },
+    {
+      "ref": "U502",
+      "pin": "4",
+      "before": "unconnected-(U502-CT-Pad4)",
+      "after": "SUPERVISOR_CT"
+    }
+  ],
+  "existing_pin_changes_count": 17,
+  "unexpected_changes": [],
+  "asic_physical_pins_unchanged": 80,
+  "high_current_and_asic_paths_unchanged": true,
+  "added_components": [
+    "C1001",
+    "C1002",
+    "C901",
+    "C902",
+    "C903",
+    "C904",
+    "C905",
+    "C906",
+    "C907",
+    "Q901",
+    "R1001",
+    "R1002",
+    "R1003",
+    "R1004",
+    "R1005",
+    "R1006",
+    "R1007",
+    "R1008",
+    "R1009",
+    "R901",
+    "R902",
+    "R903",
+    "U1001",
+    "U1002",
+    "U901",
+    "U902",
+    "U903",
+    "U904"
+  ],
+  "removed_components": [],
+  "physical_tests_performed": false
+}

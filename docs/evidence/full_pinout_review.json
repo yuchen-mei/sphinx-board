@@ -1,0 +1,8505 @@
+{
+  "netlist_sha256": "240d38f0de089dcb6def0fc5f04d3170028d987e0101d43cb6f9b77cf67aefb0",
+  "design_date": "2026-09-22T00:53:14",
+  "kicad_version": "10.0.5",
+  "legacy_active_device_pin_checks": [
+    {
+      "ref": "U101",
+      "pin": 1,
+      "expected": "INPUT_UVLO",
+      "actual": "INPUT_UVLO",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 2,
+      "expected": "INPUT_OVLO",
+      "actual": "INPUT_OVLO",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 3,
+      "expected": null,
+      "actual": "unconnected-(U101-AUXOFF-Pad3)",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 4,
+      "expected": "HW_FAULT_N",
+      "actual": "HW_FAULT_N",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 5,
+      "expected": "VIN_FUSED",
+      "actual": "VIN_FUSED",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 6,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 7,
+      "expected": "INPUT_DVDT",
+      "actual": "INPUT_DVDT",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 8,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 9,
+      "expected": "INPUT_ILM",
+      "actual": "INPUT_ILM",
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "pin": 10,
+      "expected": null,
+      "actual": "unconnected-(U101-ITIMER-Pad10)",
+      "pass": true
+    },
+    {
+      "ref": "U102",
+      "pin": 1,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U102",
+      "pin": 2,
+      "expected": "AUX_SW",
+      "actual": "AUX_SW",
+      "pass": true
+    },
+    {
+      "ref": "U102",
+      "pin": 3,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U102",
+      "pin": 4,
+      "expected": "AUX_FB",
+      "actual": "AUX_FB",
+      "pass": true
+    },
+    {
+      "ref": "U102",
+      "pin": 5,
+      "expected": null,
+      "actual": "unconnected-(U102-EN-Pad5)",
+      "pass": true
+    },
+    {
+      "ref": "U102",
+      "pin": 6,
+      "expected": "AUX_BOOT",
+      "actual": "AUX_BOOT",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 1,
+      "expected": "CORE_PG",
+      "actual": "CORE_PG",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 2,
+      "expected": "PMBUS_SDA",
+      "actual": "PMBUS_SDA",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 3,
+      "expected": "PMBUS_SCL",
+      "actual": "PMBUS_SCL",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 4,
+      "expected": "CORE_BP1V5",
+      "actual": "CORE_BP1V5",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 5,
+      "expected": "CORE_DRTN",
+      "actual": "CORE_DRTN",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 6,
+      "expected": "CORE_ALERT_N",
+      "actual": "CORE_ALERT_N",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 7,
+      "expected": "CORE_BOOT",
+      "actual": "CORE_BOOT",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 8,
+      "expected": "CORE_SW",
+      "actual": "CORE_SW",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 9,
+      "expected": "CORE_SW",
+      "actual": "CORE_SW",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 10,
+      "expected": "CORE_SW",
+      "actual": "CORE_SW",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 11,
+      "expected": "CORE_SW",
+      "actual": "CORE_SW",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 12,
+      "expected": "CORE_SW",
+      "actual": "CORE_SW",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 13,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 14,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 15,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 16,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 17,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 18,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 19,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 20,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 21,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 22,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 23,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 24,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 25,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 26,
+      "expected": "CORE_AVIN",
+      "actual": "CORE_AVIN",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 27,
+      "expected": "CORE_EN",
+      "actual": "CORE_EN",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 28,
+      "expected": "CORE_VDD5",
+      "actual": "CORE_VDD5",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 29,
+      "expected": "MSEL2",
+      "actual": "MSEL2",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 30,
+      "expected": "VSEL",
+      "actual": "VSEL",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 31,
+      "expected": "ADRSEL",
+      "actual": "ADRSEL",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 32,
+      "expected": "MSEL1",
+      "actual": "MSEL1",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 33,
+      "expected": "CORE_SENSE_P",
+      "actual": "CORE_SENSE_P",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 34,
+      "expected": "CORE_SENSE_N",
+      "actual": "CORE_SENSE_N",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 35,
+      "expected": null,
+      "actual": "unconnected-(U201-VSHARE-Pad35)",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 36,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 37,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 38,
+      "expected": null,
+      "actual": "unconnected-(U201-SYNC-Pad38)",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 39,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 40,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "pin": 41,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 1,
+      "expected": "IO_SW",
+      "actual": "IO_SW",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 2,
+      "expected": "IO_SW",
+      "actual": "IO_SW",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 3,
+      "expected": "IO_SW",
+      "actual": "IO_SW",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 4,
+      "expected": "IO_PG",
+      "actual": "IO_PG",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 5,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 6,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 7,
+      "expected": "IO_PG",
+      "actual": "IO_PG",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 8,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 9,
+      "expected": "IO_SS",
+      "actual": "IO_SS",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 10,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 11,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 12,
+      "expected": "VIN12",
+      "actual": "VIN12",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 13,
+      "expected": "IO_EN",
+      "actual": "IO_EN",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 14,
+      "expected": "1V8",
+      "actual": "1V8",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 15,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 16,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "pin": 17,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 1,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 3,
+      "expected": "MON_ALERT_N",
+      "actual": "MON_ALERT_N",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 4,
+      "expected": "PMBUS_SDA",
+      "actual": "PMBUS_SDA",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 5,
+      "expected": "PMBUS_SCL",
+      "actual": "PMBUS_SCL",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 6,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 7,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 8,
+      "expected": "CORE_SENSE_P",
+      "actual": "CORE_SENSE_P",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 9,
+      "expected": "CORE_ISENSE_N",
+      "actual": "CORE_ISENSE_N",
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "pin": 10,
+      "expected": "CORE_ISENSE_P",
+      "actual": "CORE_ISENSE_P",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 1,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 2,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 3,
+      "expected": "MON_ALERT_N",
+      "actual": "MON_ALERT_N",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 4,
+      "expected": "PMBUS_SDA",
+      "actual": "PMBUS_SDA",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 5,
+      "expected": "PMBUS_SCL",
+      "actual": "PMBUS_SCL",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 6,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 7,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 8,
+      "expected": "1V8",
+      "actual": "1V8",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 9,
+      "expected": "IO_ISENSE_N",
+      "actual": "IO_ISENSE_N",
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "pin": 10,
+      "expected": "IO_ISENSE_P",
+      "actual": "IO_ISENSE_P",
+      "pass": true
+    },
+    {
+      "ref": "U501",
+      "pin": 1,
+      "expected": "HW_FAULT_N",
+      "actual": "HW_FAULT_N",
+      "pass": true
+    },
+    {
+      "ref": "U501",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U501",
+      "pin": 3,
+      "expected": "REF1V242",
+      "actual": "REF1V242",
+      "pass": true
+    },
+    {
+      "ref": "U501",
+      "pin": 4,
+      "expected": "CORE_OV_SENSE",
+      "actual": "CORE_OV_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "U501",
+      "pin": 5,
+      "expected": "REF1V242",
+      "actual": "REF1V242",
+      "pass": true
+    },
+    {
+      "ref": "U501",
+      "pin": 6,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U508",
+      "pin": 1,
+      "expected": "IO_VALID",
+      "actual": "IO_VALID",
+      "pass": true
+    },
+    {
+      "ref": "U508",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U508",
+      "pin": 3,
+      "expected": "IO_UV_SENSE",
+      "actual": "IO_UV_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "U508",
+      "pin": 4,
+      "expected": "IO_UV_REF",
+      "actual": "IO_UV_REF",
+      "pass": true
+    },
+    {
+      "ref": "U508",
+      "pin": 5,
+      "expected": "IO_UV_REF",
+      "actual": "IO_UV_REF",
+      "pass": true
+    },
+    {
+      "ref": "U508",
+      "pin": 6,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U509",
+      "pin": 1,
+      "expected": "VIN12_VALID",
+      "actual": "VIN12_VALID",
+      "pass": true
+    },
+    {
+      "ref": "U509",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U509",
+      "pin": 3,
+      "expected": "VIN12_UV_SENSE",
+      "actual": "VIN12_UV_SENSE",
+      "pass": true
+    },
+    {
+      "ref": "U509",
+      "pin": 4,
+      "expected": "VIN12_UV_REF",
+      "actual": "VIN12_UV_REF",
+      "pass": true
+    },
+    {
+      "ref": "U509",
+      "pin": 5,
+      "expected": "VIN12_UV_REF",
+      "actual": "VIN12_UV_REF",
+      "pass": true
+    },
+    {
+      "ref": "U509",
+      "pin": 6,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "pin": 1,
+      "expected": "RUN_SET_CLEAN",
+      "actual": "RUN_SET_CLEAN",
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "pin": 2,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "pin": 3,
+      "expected": null,
+      "actual": "unconnected-(U503-Q_N-Pad3)",
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "pin": 4,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "pin": 5,
+      "expected": "RUN_LATCH",
+      "actual": "RUN_LATCH",
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "pin": 6,
+      "expected": "HW_CLEAR_N",
+      "actual": "HW_CLEAR_N",
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "pin": 7,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "pin": 8,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 1,
+      "expected": "RUN_LATCH",
+      "actual": "RUN_LATCH",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 2,
+      "expected": "CORE_REQ",
+      "actual": "CORE_REQ",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 3,
+      "expected": "CORE_EN",
+      "actual": "CORE_EN",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 4,
+      "expected": "RUN_LATCH",
+      "actual": "RUN_LATCH",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 5,
+      "expected": "IO_REQ",
+      "actual": "IO_REQ",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 6,
+      "expected": "IO_EN_CTRL",
+      "actual": "IO_EN_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 7,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 8,
+      "expected": null,
+      "actual": "unconnected-(U504-3Y-Pad8)",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 9,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 10,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 11,
+      "expected": null,
+      "actual": "unconnected-(U504-4Y-Pad11)",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 12,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 13,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "pin": 14,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U507",
+      "pin": 1,
+      "expected": "RUN_SET",
+      "actual": "RUN_SET",
+      "pass": true
+    },
+    {
+      "ref": "U507",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U507",
+      "pin": 3,
+      "expected": "HW_FAULT_N",
+      "actual": "HW_FAULT_N",
+      "pass": true
+    },
+    {
+      "ref": "U507",
+      "pin": 4,
+      "expected": "HW_CLEAR_N",
+      "actual": "HW_CLEAR_N",
+      "pass": true
+    },
+    {
+      "ref": "U507",
+      "pin": 5,
+      "expected": "3V3_CTRL",
+      "actual": "3V3_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "U507",
+      "pin": 6,
+      "expected": "RUN_SET_CLEAN",
+      "actual": "RUN_SET_CLEAN",
+      "pass": true
+    },
+    {
+      "ref": "U601",
+      "pin": 1,
+      "expected": "ZED_OPTO_A",
+      "actual": "ZED_OPTO_A",
+      "pass": true
+    },
+    {
+      "ref": "U601",
+      "pin": 2,
+      "expected": "ZED_RESET_OD",
+      "actual": "ZED_RESET_OD",
+      "pass": true
+    },
+    {
+      "ref": "U601",
+      "pin": 3,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "U601",
+      "pin": 4,
+      "expected": "RESET_BASE",
+      "actual": "RESET_BASE",
+      "pass": true
+    },
+    {
+      "ref": "Q301",
+      "pin": 1,
+      "expected": "IO_EN_CTRL",
+      "actual": "IO_EN_CTRL",
+      "pass": true
+    },
+    {
+      "ref": "Q301",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "Q301",
+      "pin": 3,
+      "expected": "IO_EN_PULLDOWN",
+      "actual": "IO_EN_PULLDOWN",
+      "pass": true
+    },
+    {
+      "ref": "Q302",
+      "pin": 1,
+      "expected": "IO_EN_INHIBIT",
+      "actual": "IO_EN_INHIBIT",
+      "pass": true
+    },
+    {
+      "ref": "Q302",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "Q302",
+      "pin": 3,
+      "expected": "IO_EN",
+      "actual": "IO_EN",
+      "pass": true
+    },
+    {
+      "ref": "Q601",
+      "pin": 1,
+      "expected": "RESET_BASE",
+      "actual": "RESET_BASE",
+      "pass": true
+    },
+    {
+      "ref": "Q601",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "Q601",
+      "pin": 3,
+      "expected": "reset",
+      "actual": "reset",
+      "pass": true
+    },
+    {
+      "ref": "Q602",
+      "pin": 1,
+      "expected": "RESET_ASSERT",
+      "actual": "RESET_ASSERT",
+      "pass": true
+    },
+    {
+      "ref": "Q602",
+      "pin": 2,
+      "expected": "GND",
+      "actual": "GND",
+      "pass": true
+    },
+    {
+      "ref": "Q602",
+      "pin": 3,
+      "expected": "RESET_BASE",
+      "actual": "RESET_BASE",
+      "pass": true
+    },
+    {
+      "ref": "D401",
+      "pin": 1,
+      "expected": "PICO_VSYS",
+      "actual": "PICO_VSYS",
+      "pass": true
+    },
+    {
+      "ref": "D401",
+      "pin": 2,
+      "expected": "AUX5V",
+      "actual": "AUX5V",
+      "pass": true
+    }
+  ],
+  "all_component_loaded_pad_checks": [
+    {
+      "ref": "C101",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C102",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C103",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C104",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C105",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C106",
+      "footprint": "Capacitor_SMD__C_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C107",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C108",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C109",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "F101",
+      "footprint": "Fuse__Fuse_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J101",
+      "footprint": "AMASS_24_243_P15.7mm",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J102",
+      "footprint": "AMASS_24_243_P15.7mm",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "L101",
+      "footprint": "Inductor_SMD__L_Bourns_SRP7028A_7.3x6.6mm",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R101",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R102",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R103",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R104",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R105",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R107",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R108",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "footprint": "TI_RPW0010A",
+      "pads": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U102",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C201",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C202",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C203",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C204",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C205",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C206",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C207",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C208",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C209",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C210",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "L201",
+      "footprint": "Inductor_SMD__L_Coilcraft_XAL1030-XXX",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R201",
+      "footprint": "Resistor_SMD__R_2512_6332Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R202",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R203",
+      "footprint": "Resistor_SMD__R_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R204",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R205",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R206",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R207",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R208",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R209",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R210",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R211",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R212",
+      "footprint": "Resistor_SMD__R_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "footprint": "TI_RVF0040A",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "40",
+        "41",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "40",
+        "41",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C301",
+      "footprint": "Capacitor_SMD__C_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C302",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C303",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C304",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C305",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C306",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C307",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C310",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C311",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C320",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C321",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C510",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "L301",
+      "footprint": "Inductor_SMD__L_Bourns_SRP5030T",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "Q301",
+      "footprint": "Package_TO_SOT_SMD__SOT-23",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "Q302",
+      "footprint": "Package_TO_SOT_SMD__SOT-23",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R301",
+      "footprint": "Resistor_SMD__R_2512_6332Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R302",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R303",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R304",
+      "footprint": "Resistor_SMD__R_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R305",
+      "footprint": "Resistor_SMD__R_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R306",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R307",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R308",
+      "footprint": "Resistor_SMD__R_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R310",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R311",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R320",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R321",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R514",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R515",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R516",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "footprint": "Package_DFN_QFN__VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm_ThermalVias",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "footprint": "Package_SO__TSSOP-10_3x3mm_P0.5mm",
+      "pads": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "footprint": "Package_SO__TSSOP-10_3x3mm_P0.5mm",
+      "pads": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U509",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C401",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "D401",
+      "footprint": "Diode_SMD__D_SMA",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J401",
+      "footprint": "Connector_PinHeader_2.54mm__PinHeader_1x05_P2.54mm_Vertical",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J602",
+      "footprint": "Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R401",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R402",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R403",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R404",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R408",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R409",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R411",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R605",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U401",
+      "footprint": "Module__RaspberryPi_Pico_Common_THT",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "40",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "40",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U601",
+      "footprint": "Package_SO__SOIC-4_4.55x2.6mm_P1.27mm",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C502",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C503",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C504",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C506",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C508",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R503",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R504",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R506",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R507",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R509",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R510",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "SW502",
+      "footprint": "Button_Switch_SMD__SW_SPST_TL3342",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U501",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U502",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "footprint": "Package_SO__VSSOP-8_2.3x2mm_P0.5mm",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "footprint": "Package_SO__TSSOP-14_4.4x5mm_P0.65mm",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U507",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "footprint": "Sphinx_socket_original",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "5",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "6",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "7",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "8",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "28",
+        "29",
+        "3",
+        "30",
+        "31",
+        "32",
+        "33",
+        "34",
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "4",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48",
+        "49",
+        "5",
+        "50",
+        "51",
+        "52",
+        "53",
+        "54",
+        "55",
+        "56",
+        "57",
+        "58",
+        "59",
+        "6",
+        "60",
+        "61",
+        "62",
+        "63",
+        "64",
+        "65",
+        "66",
+        "67",
+        "68",
+        "69",
+        "7",
+        "70",
+        "71",
+        "72",
+        "73",
+        "74",
+        "75",
+        "76",
+        "77",
+        "78",
+        "79",
+        "8",
+        "80",
+        "81",
+        "82",
+        "83",
+        "84",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J2",
+      "footprint": "Connector_PinHeader_2.54mm__PinHeader_1x06_P2.54mm_Vertical",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J5",
+      "footprint": "Connector_Coaxial__SMA_Amphenol_132134_Vertical",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J6",
+      "footprint": "Connector_PinHeader_2.54mm__PinHeader_2x10_P2.54mm_Vertical",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "J601",
+      "footprint": "Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "NT601",
+      "footprint": "NetTie__NetTie-2_SMD_Pad0.5mm",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "NT602",
+      "footprint": "NetTie__NetTie-2_SMD_Pad0.5mm",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "Q601",
+      "footprint": "Package_TO_SOT_SMD__SOT-23",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "Q602",
+      "footprint": "Package_TO_SOT_SMD__SOT-23",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R601",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R602",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R603",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R604",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "SW601",
+      "footprint": "Button_Switch_SMD__SW_SPST_TL3342",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP4",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP7",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP607",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C701",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C702",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C703",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C704",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C705",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C706",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C707",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C708",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C711",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C712",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C713",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C714",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C715",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C716",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C717",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C718",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C721",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C722",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C723",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C724",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C725",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C726",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C727",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C728",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C729",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C730",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C731",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C732",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C733",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C734",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C735",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C736",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C741",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C742",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C743",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C744",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C745",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C746",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C747",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C748",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C749",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C750",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C751",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C752",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C753",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C754",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C755",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C756",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C761",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C762",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C763",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C764",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C765",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C766",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C767",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C768",
+      "footprint": "Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C771",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C772",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C773",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C774",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C775",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C776",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C777",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C778",
+      "footprint": "Capacitor_SMD__C_1210_3225Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C509",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C801",
+      "footprint": "Capacitor_SMD__C_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C802",
+      "footprint": "Capacitor_SMD__C_1206_3216Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C811",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C812",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C813",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C814",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C821",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C822",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C823",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C824",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C825",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C826",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C827",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C828",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C829",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C830",
+      "footprint": "Capacitor_SMD__C_0402_1005Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R511",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R512",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R513",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP801",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP802",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP803",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP804",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP805",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "TP806",
+      "footprint": "TestPoint__TestPoint_Pad_D1.0mm",
+      "pads": [
+        "1"
+      ],
+      "pins": [
+        "1"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U508",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C901",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C902",
+      "footprint": "Capacitor_SMD__C_0805_2012Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C903",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C904",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C905",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C906",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C907",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "Q901",
+      "footprint": "Package_TO_SOT_SMD__SOT-23",
+      "pads": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R901",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R902",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R903",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U901",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-5",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "footprint": "Package_SO__SOIC-8_3.9x4.9mm_P1.27mm",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "footprint": "Package_SO__TSSOP-24_4.4x7.8mm_P0.65mm",
+      "pads": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "footprint": "Package_SO__TSSOP-10_3x3mm_P0.5mm",
+      "pads": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pins": [
+        "1",
+        "10",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C1001",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "C1002",
+      "footprint": "Capacitor_SMD__C_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1001",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1002",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1003",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1004",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1005",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1006",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1007",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1008",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "R1009",
+      "footprint": "Resistor_SMD__R_0603_1608Metric",
+      "pads": [
+        "1",
+        "2"
+      ],
+      "pins": [
+        "1",
+        "2"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U1001",
+      "footprint": "Package_TO_SOT_SMD__SOT-563",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    },
+    {
+      "ref": "U1002",
+      "footprint": "Package_TO_SOT_SMD__SOT-23-6",
+      "pads": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pins": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "pass": true
+    }
+  ],
+  "all_component_bom_checks": [
+    {
+      "ref": "C101",
+      "netlist": {
+        "Value": "1u / 50V",
+        "MPN": "C0805C105K5RACTU",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "1u / 50V",
+        "MPN": "C0805C105K5RACTU",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C102",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C103",
+      "netlist": {
+        "Value": "10n / 50V",
+        "MPN": "CL10B103KB8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10n / 50V",
+        "MPN": "CL10B103KB8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C104",
+      "netlist": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C105",
+      "netlist": {
+        "Value": "1u / 50V",
+        "MPN": "C0805C105K5RACTU",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "1u / 50V",
+        "MPN": "C0805C105K5RACTU",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C106",
+      "netlist": {
+        "Value": "10u / 35V X7R",
+        "MPN": "CL31B106KLHNFNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1206_3216Metric"
+      },
+      "bom": {
+        "Value": "10u / 35V X7R",
+        "MPN": "CL31B106KLHNFNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1206_3216Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C107",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C108",
+      "netlist": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C109",
+      "netlist": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "F101",
+      "netlist": {
+        "Value": "3.15A / 63V",
+        "MPN": "MFU1206FF03150P100",
+        "Footprint": "Sphinx_V2:Fuse__Fuse_1206_3216Metric"
+      },
+      "bom": {
+        "Value": "3.15A / 63V",
+        "MPN": "MFU1206FF03150P100",
+        "Footprint": "Sphinx_V2:Fuse__Fuse_1206_3216Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J101",
+      "netlist": {
+        "Value": "24.243.1 RED",
+        "MPN": "24.243.1",
+        "Footprint": "Sphinx_V2:AMASS_24_243_P15.7mm"
+      },
+      "bom": {
+        "Value": "24.243.1 RED",
+        "MPN": "24.243.1",
+        "Footprint": "Sphinx_V2:AMASS_24_243_P15.7mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J102",
+      "netlist": {
+        "Value": "24.243.2 BLACK",
+        "MPN": "24.243.2",
+        "Footprint": "Sphinx_V2:AMASS_24_243_P15.7mm"
+      },
+      "bom": {
+        "Value": "24.243.2 BLACK",
+        "MPN": "24.243.2",
+        "Footprint": "Sphinx_V2:AMASS_24_243_P15.7mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "L101",
+      "netlist": {
+        "Value": "10u / SRP7028A",
+        "MPN": "SRP7028A-100M",
+        "Footprint": "Sphinx_V2:Inductor_SMD__L_Bourns_SRP7028A_7.3x6.6mm"
+      },
+      "bom": {
+        "Value": "10u / SRP7028A",
+        "MPN": "SRP7028A-100M",
+        "Footprint": "Sphinx_V2:Inductor_SMD__L_Bourns_SRP7028A_7.3x6.6mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R101",
+      "netlist": {
+        "Value": "78.7k",
+        "MPN": "RC0603FR-0778K7L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "78.7k",
+        "MPN": "RC0603FR-0778K7L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R102",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R103",
+      "netlist": {
+        "Value": "110k",
+        "MPN": "RC0603FR-07110KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "110k",
+        "MPN": "RC0603FR-07110KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R104",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R105",
+      "netlist": {
+        "Value": "1.24k / 1%",
+        "MPN": "RC0603FR-071K24L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "1.24k / 1%",
+        "MPN": "RC0603FR-071K24L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R107",
+      "netlist": {
+        "Value": "73.2k",
+        "MPN": "RC0603FR-0773K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "73.2k",
+        "MPN": "RC0603FR-0773K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R108",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U101",
+      "netlist": {
+        "Value": "TPS259470LRPWR",
+        "MPN": "TPS259470LRPWR",
+        "Footprint": "Sphinx_V2:TI_RPW0010A"
+      },
+      "bom": {
+        "Value": "TPS259470LRPWR",
+        "MPN": "TPS259470LRPWR",
+        "Footprint": "Sphinx_V2:TI_RPW0010A"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U102",
+      "netlist": {
+        "Value": "TPS54302DDCR",
+        "MPN": "TPS54302DDCR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "bom": {
+        "Value": "TPS54302DDCR",
+        "MPN": "TPS54302DDCR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C201",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C202",
+      "netlist": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL21B475KOFNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL21B475KOFNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C203",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL10B105KP8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL10B105KP8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C204",
+      "netlist": {
+        "Value": "1u / 50V",
+        "MPN": "C0805C105K5RACTU",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "1u / 50V",
+        "MPN": "C0805C105K5RACTU",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C205",
+      "netlist": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C206",
+      "netlist": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C207",
+      "netlist": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C208",
+      "netlist": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "22u / 25V",
+        "MPN": "GRM32EC81E226KE15L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C209",
+      "netlist": {
+        "Value": "4.7n / 25V",
+        "MPN": "GRM155R71E472KA01D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "4.7n / 25V",
+        "MPN": "GRM155R71E472KA01D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C210",
+      "netlist": {
+        "Value": "1n / 50V",
+        "MPN": "GRM1885C1H102JA01D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "1n / 50V",
+        "MPN": "GRM1885C1H102JA01D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "L201",
+      "netlist": {
+        "Value": "0.56u / XAL1030",
+        "MPN": "XAL1030-561MEC",
+        "Footprint": "Sphinx_V2:Inductor_SMD__L_Coilcraft_XAL1030-XXX"
+      },
+      "bom": {
+        "Value": "0.56u / XAL1030",
+        "MPN": "XAL1030-561MEC",
+        "Footprint": "Sphinx_V2:Inductor_SMD__L_Coilcraft_XAL1030-XXX"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R201",
+      "netlist": {
+        "Value": "1m / 1W KELVIN",
+        "MPN": "WSL25121L000FEA",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_2512_6332Metric"
+      },
+      "bom": {
+        "Value": "1m / 1W KELVIN",
+        "MPN": "WSL25121L000FEA",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_2512_6332Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R202",
+      "netlist": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R203",
+      "netlist": {
+        "Value": "1R / 0.25W",
+        "MPN": "RC1206FR-071RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_1206_3216Metric"
+      },
+      "bom": {
+        "Value": "1R / 0.25W",
+        "MPN": "RC1206FR-071RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_1206_3216Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R204",
+      "netlist": {
+        "Value": "12.1k",
+        "MPN": "AC0603FR-0712K1L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "12.1k",
+        "MPN": "AC0603FR-0712K1L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R205",
+      "netlist": {
+        "Value": "21.5k",
+        "MPN": "RC0603FR-0721K5L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "21.5k",
+        "MPN": "RC0603FR-0721K5L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R206",
+      "netlist": {
+        "Value": "19.6k",
+        "MPN": "RC0603FR-0719K6L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "19.6k",
+        "MPN": "RC0603FR-0719K6L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R207",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R208",
+      "netlist": {
+        "Value": "12.1k / 1%",
+        "MPN": "AC0603FR-0712K1L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "12.1k / 1%",
+        "MPN": "AC0603FR-0712K1L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R209",
+      "netlist": {
+        "Value": "4.64k / 1%",
+        "MPN": "RC0603FR-074K64L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "4.64k / 1%",
+        "MPN": "RC0603FR-074K64L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R210",
+      "netlist": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R211",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R212",
+      "netlist": {
+        "Value": "47R / 0.5W",
+        "MPN": "ERJ-P06F47R0V",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "47R / 0.5W",
+        "MPN": "ERJ-P06F47R0V",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U201",
+      "netlist": {
+        "Value": "TPS546B24ARVFR",
+        "MPN": "TPS546B24ARVFR",
+        "Footprint": "Sphinx_V2:TI_RVF0040A"
+      },
+      "bom": {
+        "Value": "TPS546B24ARVFR",
+        "MPN": "TPS546B24ARVFR",
+        "Footprint": "Sphinx_V2:TI_RVF0040A"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C301",
+      "netlist": {
+        "Value": "10u / 35V X7R",
+        "MPN": "CL31B106KLHNFNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1206_3216Metric"
+      },
+      "bom": {
+        "Value": "10u / 35V X7R",
+        "MPN": "CL31B106KLHNFNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1206_3216Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C302",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C303",
+      "netlist": {
+        "Value": "10n / 50V",
+        "MPN": "CL10B103KB8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10n / 50V",
+        "MPN": "CL10B103KB8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C304",
+      "netlist": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C305",
+      "netlist": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C306",
+      "netlist": {
+        "Value": "1n / 50V",
+        "MPN": "GRM1885C1H102JA01D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "1n / 50V",
+        "MPN": "GRM1885C1H102JA01D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C307",
+      "netlist": {
+        "Value": "100p / 100V",
+        "MPN": "GRM1885C2A101JA01D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100p / 100V",
+        "MPN": "GRM1885C2A101JA01D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C310",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C311",
+      "netlist": {
+        "Value": "10n / 50V",
+        "MPN": "CL10B103KB8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10n / 50V",
+        "MPN": "CL10B103KB8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C320",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C321",
+      "netlist": {
+        "Value": "10n / 50V",
+        "MPN": "CL10B103KB8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10n / 50V",
+        "MPN": "CL10B103KB8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C510",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "L301",
+      "netlist": {
+        "Value": "2.2u / Isat>=5A",
+        "MPN": "SRP5030T-2R2M",
+        "Footprint": "Sphinx_V2:Inductor_SMD__L_Bourns_SRP5030T"
+      },
+      "bom": {
+        "Value": "2.2u / Isat>=5A",
+        "MPN": "SRP5030T-2R2M",
+        "Footprint": "Sphinx_V2:Inductor_SMD__L_Bourns_SRP5030T"
+      },
+      "pass": true
+    },
+    {
+      "ref": "Q301",
+      "netlist": {
+        "Value": "DMN62D2UQ-7",
+        "MPN": "DMN62D2UQ-7",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "bom": {
+        "Value": "DMN62D2UQ-7",
+        "MPN": "DMN62D2UQ-7",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "pass": true
+    },
+    {
+      "ref": "Q302",
+      "netlist": {
+        "Value": "DMN62D2UQ-7",
+        "MPN": "DMN62D2UQ-7",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "bom": {
+        "Value": "DMN62D2UQ-7",
+        "MPN": "DMN62D2UQ-7",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R301",
+      "netlist": {
+        "Value": "10m / 1W KELVIN",
+        "MPN": "WSL2512R0100FEA",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_2512_6332Metric"
+      },
+      "bom": {
+        "Value": "10m / 1W KELVIN",
+        "MPN": "WSL2512R0100FEA",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_2512_6332Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R302",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R303",
+      "netlist": {
+        "Value": "270R",
+        "MPN": "RC0603FR-07270RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "270R",
+        "MPN": "RC0603FR-07270RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R304",
+      "netlist": {
+        "Value": "100R / 0.5W",
+        "MPN": "ERJ-P06F1000V",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "100R / 0.5W",
+        "MPN": "ERJ-P06F1000V",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R305",
+      "netlist": {
+        "Value": "2.2k / 0.25W",
+        "MPN": "RC1206FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_1206_3216Metric"
+      },
+      "bom": {
+        "Value": "2.2k / 0.25W",
+        "MPN": "RC1206FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_1206_3216Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R306",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R307",
+      "netlist": {
+        "Value": "270R",
+        "MPN": "RC0603FR-07270RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "270R",
+        "MPN": "RC0603FR-07270RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R308",
+      "netlist": {
+        "Value": "100R / 0.5W",
+        "MPN": "ERJ-P06F1000V",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "100R / 0.5W",
+        "MPN": "ERJ-P06F1000V",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R310",
+      "netlist": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R311",
+      "netlist": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R320",
+      "netlist": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R321",
+      "netlist": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10R",
+        "MPN": "RC0603FR-0710RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R514",
+      "netlist": {
+        "Value": "73.2k / 1%",
+        "MPN": "RC0603FR-0773K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "73.2k / 1%",
+        "MPN": "RC0603FR-0773K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R515",
+      "netlist": {
+        "Value": "10k / 1%",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k / 1%",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R516",
+      "netlist": {
+        "Value": "10k / 1%",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k / 1%",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U301",
+      "netlist": {
+        "Value": "TPS62131RGTR",
+        "MPN": "TPS62131RGTR",
+        "Footprint": "Sphinx_V2:Package_DFN_QFN__VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm_ThermalVias"
+      },
+      "bom": {
+        "Value": "TPS62131RGTR",
+        "MPN": "TPS62131RGTR",
+        "Footprint": "Sphinx_V2:Package_DFN_QFN__VQFN-16-1EP_3x3mm_P0.5mm_EP1.8x1.8mm_ThermalVias"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U302",
+      "netlist": {
+        "Value": "INA226 0x40",
+        "MPN": "INA226AIDGSR",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-10_3x3mm_P0.5mm"
+      },
+      "bom": {
+        "Value": "INA226 0x40",
+        "MPN": "INA226AIDGSR",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-10_3x3mm_P0.5mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U303",
+      "netlist": {
+        "Value": "INA226 0x41",
+        "MPN": "INA226AIDGSR",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-10_3x3mm_P0.5mm"
+      },
+      "bom": {
+        "Value": "INA226 0x41",
+        "MPN": "INA226AIDGSR",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-10_3x3mm_P0.5mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U509",
+      "netlist": {
+        "Value": "TLV3011AIDBVR",
+        "MPN": "TLV3011AIDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "bom": {
+        "Value": "TLV3011AIDBVR",
+        "MPN": "TLV3011AIDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C401",
+      "netlist": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "22u / 10V",
+        "MPN": "CL21A226MPQNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "D401",
+      "netlist": {
+        "Value": "SS14",
+        "MPN": "SS14-E3/61T",
+        "Footprint": "Sphinx_V2:Diode_SMD__D_SMA"
+      },
+      "bom": {
+        "Value": "SS14",
+        "MPN": "SS14-E3/61T",
+        "Footprint": "Sphinx_V2:Diode_SMD__D_SMA"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J401",
+      "netlist": {
+        "Value": "PMBus debug (3.3V)",
+        "MPN": "M20-9990546",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x05_P2.54mm_Vertical"
+      },
+      "bom": {
+        "Value": "PMBus debug (3.3V)",
+        "MPN": "M20-9990546",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x05_P2.54mm_Vertical"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J602",
+      "netlist": {
+        "Value": "ZED REMOTE RESET",
+        "MPN": "M20-9990246",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical"
+      },
+      "bom": {
+        "Value": "ZED REMOTE RESET",
+        "MPN": "M20-9990246",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R401",
+      "netlist": {
+        "Value": "2.2k",
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "2.2k",
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R402",
+      "netlist": {
+        "Value": "2.2k",
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "2.2k",
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R403",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R404",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R408",
+      "netlist": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R409",
+      "netlist": {
+        "Value": "100k NTC B4250",
+        "MPN": "NCU18WF104J60RB",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k NTC B4250",
+        "MPN": "NCU18WF104J60RB",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R411",
+      "netlist": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R605",
+      "netlist": {
+        "Value": "750R",
+        "MPN": "RC0603FR-13750RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "750R",
+        "MPN": "RC0603FR-13750RL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U401",
+      "netlist": {
+        "Value": "Raspberry Pi Pico",
+        "MPN": "SC0915",
+        "Footprint": "Sphinx_V2:Module__RaspberryPi_Pico_Common_THT"
+      },
+      "bom": {
+        "Value": "Raspberry Pi Pico",
+        "MPN": "SC0915",
+        "Footprint": "Sphinx_V2:Module__RaspberryPi_Pico_Common_THT"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U601",
+      "netlist": {
+        "Value": "TLP293 GB",
+        "MPN": "TLP293(GB-TPL,E",
+        "Footprint": "Sphinx_V2:Package_SO__SOIC-4_4.55x2.6mm_P1.27mm"
+      },
+      "bom": {
+        "Value": "TLP293 GB",
+        "MPN": "TLP293(GB-TPL,E",
+        "Footprint": "Sphinx_V2:Package_SO__SOIC-4_4.55x2.6mm_P1.27mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C502",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C503",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C504",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C506",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C508",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R503",
+      "netlist": {
+        "Value": "1.24k / 1%",
+        "MPN": "RC0603FR-071K24L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "1.24k / 1%",
+        "MPN": "RC0603FR-071K24L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R504",
+      "netlist": {
+        "Value": "20k / 0.1%",
+        "MPN": "RT0603BRD0720KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "20k / 0.1%",
+        "MPN": "RT0603BRD0720KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R506",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R507",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R509",
+      "netlist": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R510",
+      "netlist": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "SW502",
+      "netlist": {
+        "Value": "STOP",
+        "MPN": "TL3342F160QG/TR",
+        "Footprint": "Sphinx_V2:Button_Switch_SMD__SW_SPST_TL3342"
+      },
+      "bom": {
+        "Value": "STOP",
+        "MPN": "TL3342F160QG/TR",
+        "Footprint": "Sphinx_V2:Button_Switch_SMD__SW_SPST_TL3342"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U501",
+      "netlist": {
+        "Value": "TLV3011AIDBVR",
+        "MPN": "TLV3011AIDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "bom": {
+        "Value": "TLV3011AIDBVR",
+        "MPN": "TLV3011AIDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U502",
+      "netlist": {
+        "Value": "TPS3808G33DBVR",
+        "MPN": "TPS3808G33DBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "bom": {
+        "Value": "TPS3808G33DBVR",
+        "MPN": "TPS3808G33DBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U503",
+      "netlist": {
+        "Value": "SN74LVC1G74DCUR",
+        "MPN": "SN74LVC1G74DCUR",
+        "Footprint": "Sphinx_V2:Package_SO__VSSOP-8_2.3x2mm_P0.5mm"
+      },
+      "bom": {
+        "Value": "SN74LVC1G74DCUR",
+        "MPN": "SN74LVC1G74DCUR",
+        "Footprint": "Sphinx_V2:Package_SO__VSSOP-8_2.3x2mm_P0.5mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U504",
+      "netlist": {
+        "Value": "74LVC08AT14-13",
+        "MPN": "74LVC08AT14-13",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-14_4.4x5mm_P0.65mm"
+      },
+      "bom": {
+        "Value": "74LVC08AT14-13",
+        "MPN": "74LVC08AT14-13",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-14_4.4x5mm_P0.65mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U507",
+      "netlist": {
+        "Value": "SN74LVC2G17DBVT",
+        "MPN": "SN74LVC2G17DBVT",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "bom": {
+        "Value": "SN74LVC2G17DBVT",
+        "MPN": "SN74LVC2G17DBVT",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J1",
+      "netlist": {
+        "Value": "280-5205-01",
+        "MPN": "280-5205-01",
+        "Footprint": "Sphinx_V2:Sphinx_socket_original"
+      },
+      "bom": {
+        "Value": "280-5205-01",
+        "MPN": "280-5205-01",
+        "Footprint": "Sphinx_V2:Sphinx_socket_original"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J2",
+      "netlist": {
+        "Value": "Original 6-pin JTAG",
+        "MPN": "M20-9990646",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x06_P2.54mm_Vertical"
+      },
+      "bom": {
+        "Value": "Original 6-pin JTAG",
+        "MPN": "M20-9990646",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x06_P2.54mm_Vertical"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J5",
+      "netlist": {
+        "Value": "MASTER CLOCK SMA",
+        "MPN": "132134",
+        "Footprint": "Sphinx_V2:Connector_Coaxial__SMA_Amphenol_132134_Vertical"
+      },
+      "bom": {
+        "Value": "MASTER CLOCK SMA",
+        "MPN": "132134",
+        "Footprint": "Sphinx_V2:Connector_Coaxial__SMA_Amphenol_132134_Vertical"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J6",
+      "netlist": {
+        "Value": "20-pin JTAG: same pinout",
+        "MPN": "M20-9981046",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_2x10_P2.54mm_Vertical"
+      },
+      "bom": {
+        "Value": "20-pin JTAG: same pinout",
+        "MPN": "M20-9981046",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_2x10_P2.54mm_Vertical"
+      },
+      "pass": true
+    },
+    {
+      "ref": "J601",
+      "netlist": {
+        "Value": "Differential probe: high Z",
+        "MPN": "M20-9990246",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical"
+      },
+      "bom": {
+        "Value": "Differential probe: high Z",
+        "MPN": "M20-9990246",
+        "Footprint": "Sphinx_V2:Connector_PinHeader_2.54mm__PinHeader_1x02_P2.54mm_Vertical"
+      },
+      "pass": true
+    },
+    {
+      "ref": "NT601",
+      "netlist": {
+        "Value": "Kelvin + at socket",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:NetTie__NetTie-2_SMD_Pad0.5mm"
+      },
+      "bom": {
+        "Value": "Kelvin + at socket",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:NetTie__NetTie-2_SMD_Pad0.5mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "NT602",
+      "netlist": {
+        "Value": "Kelvin - at socket",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:NetTie__NetTie-2_SMD_Pad0.5mm"
+      },
+      "bom": {
+        "Value": "Kelvin - at socket",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:NetTie__NetTie-2_SMD_Pad0.5mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "Q601",
+      "netlist": {
+        "Value": "MMBT3904",
+        "MPN": "MMBT3904-7-F",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "bom": {
+        "Value": "MMBT3904",
+        "MPN": "MMBT3904-7-F",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "pass": true
+    },
+    {
+      "ref": "Q602",
+      "netlist": {
+        "Value": "DMN62D2UQ-7",
+        "MPN": "DMN62D2UQ-7",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "bom": {
+        "Value": "DMN62D2UQ-7",
+        "MPN": "DMN62D2UQ-7",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R601",
+      "netlist": {
+        "Value": "49.9R DNP",
+        "MPN": "RC0603FR-0749R9L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "49.9R DNP",
+        "MPN": "RC0603FR-0749R9L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R602",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R603",
+      "netlist": {
+        "Value": "21.5k",
+        "MPN": "RC0603FR-0721K5L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "21.5k",
+        "MPN": "RC0603FR-0721K5L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R604",
+      "netlist": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "SW601",
+      "netlist": {
+        "Value": "DUT RESET",
+        "MPN": "TL3342F160QG/TR",
+        "Footprint": "Sphinx_V2:Button_Switch_SMD__SW_SPST_TL3342"
+      },
+      "bom": {
+        "Value": "DUT RESET",
+        "MPN": "TL3342F160QG/TR",
+        "Footprint": "Sphinx_V2:Button_Switch_SMD__SW_SPST_TL3342"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP4",
+      "netlist": {
+        "Value": "clock_tap",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "clock_tap",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP7",
+      "netlist": {
+        "Value": "reset",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "reset",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP607",
+      "netlist": {
+        "Value": "GND",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "GND",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C701",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C702",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C703",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C704",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C705",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C706",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C707",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C708",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C711",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C712",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C713",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C714",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C715",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C716",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C717",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C718",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C721",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C722",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C723",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C724",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C725",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C726",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C727",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C728",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C729",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C730",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C731",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C732",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C733",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C734",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C735",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C736",
+      "netlist": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "1u / 10V",
+        "MPN": "CL05A105KP5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C741",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C742",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C743",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C744",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C745",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C746",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C747",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C748",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C749",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C750",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C751",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C752",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C753",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C754",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C755",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C756",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C761",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C762",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C763",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C764",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C765",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C766",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C767",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C768",
+      "netlist": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "bom": {
+        "Value": "330u / 6.3V",
+        "MPN": "TCJD337M006R0012E",
+        "Footprint": "Sphinx_V2:Capacitor_Tantalum_SMD__CP_EIA-7343-31_Kemet-D"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C771",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C772",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C773",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C774",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C775",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C776",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C777",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C778",
+      "netlist": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "bom": {
+        "Value": "100u / 6.3V",
+        "MPN": "CL32A107MQVNNWE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1210_3225Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C509",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C801",
+      "netlist": {
+        "Value": "47u / 6.3V",
+        "MPN": "GRM31CR60J476ME19L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1206_3216Metric"
+      },
+      "bom": {
+        "Value": "47u / 6.3V",
+        "MPN": "GRM31CR60J476ME19L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1206_3216Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C802",
+      "netlist": {
+        "Value": "47u / 6.3V",
+        "MPN": "GRM31CR60J476ME19L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1206_3216Metric"
+      },
+      "bom": {
+        "Value": "47u / 6.3V",
+        "MPN": "GRM31CR60J476ME19L",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_1206_3216Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C811",
+      "netlist": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL10A475KO8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL10A475KO8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C812",
+      "netlist": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL10A475KO8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL10A475KO8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C813",
+      "netlist": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL10A475KO8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL10A475KO8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C814",
+      "netlist": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL10A475KO8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL10A475KO8NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C821",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C822",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C823",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C824",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C825",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C826",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C827",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C828",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C829",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C830",
+      "netlist": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "bom": {
+        "Value": "100n / 16V",
+        "MPN": "CL05B104KO5NNNC",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0402_1005Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R511",
+      "netlist": {
+        "Value": "6.19k / 0.1%",
+        "MPN": "RT0603BRD076K19L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "6.19k / 0.1%",
+        "MPN": "RT0603BRD076K19L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R512",
+      "netlist": {
+        "Value": "20k / 0.1%",
+        "MPN": "RT0603BRD0720KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "20k / 0.1%",
+        "MPN": "RT0603BRD0720KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R513",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP801",
+      "netlist": {
+        "Value": "1V8",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "1V8",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP802",
+      "netlist": {
+        "Value": "GND",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "GND",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP803",
+      "netlist": {
+        "Value": "0V75",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "0V75",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP804",
+      "netlist": {
+        "Value": "GND",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "GND",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP805",
+      "netlist": {
+        "Value": "VIN12",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "VIN12",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "TP806",
+      "netlist": {
+        "Value": "GND",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "bom": {
+        "Value": "GND",
+        "MPN": "",
+        "Footprint": "Sphinx_V2:TestPoint__TestPoint_Pad_D1.0mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U508",
+      "netlist": {
+        "Value": "TLV3011AIDBVR",
+        "MPN": "TLV3011AIDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "bom": {
+        "Value": "TLV3011AIDBVR",
+        "MPN": "TLV3011AIDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C901",
+      "netlist": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL21B475KOFNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL21B475KOFNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C902",
+      "netlist": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL21B475KOFNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "bom": {
+        "Value": "4.7u / 16V",
+        "MPN": "CL21B475KOFNNNE",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0805_2012Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C903",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C904",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C905",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C906",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C907",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "Q901",
+      "netlist": {
+        "Value": "DMN62D2UQ-7",
+        "MPN": "DMN62D2UQ-7",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "bom": {
+        "Value": "DMN62D2UQ-7",
+        "MPN": "DMN62D2UQ-7",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R901",
+      "netlist": {
+        "Value": "2.2k",
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "2.2k",
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R902",
+      "netlist": {
+        "Value": "2.2k",
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "2.2k",
+        "MPN": "RC0603FR-072K2L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R903",
+      "netlist": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U901",
+      "netlist": {
+        "Value": "TLV75533PDBVR",
+        "MPN": "TLV75533PDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-5"
+      },
+      "bom": {
+        "Value": "TLV75533PDBVR",
+        "MPN": "TLV75533PDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-5"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U902",
+      "netlist": {
+        "Value": "ISO1640BDR",
+        "MPN": "ISO1640BDR",
+        "Footprint": "Sphinx_V2:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm"
+      },
+      "bom": {
+        "Value": "ISO1640BDR",
+        "MPN": "ISO1640BDR",
+        "Footprint": "Sphinx_V2:Package_SO__SOIC-8_3.9x4.9mm_P1.27mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U903",
+      "netlist": {
+        "Value": "TCA9535PWR",
+        "MPN": "TCA9535PWR",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-24_4.4x7.8mm_P0.65mm"
+      },
+      "bom": {
+        "Value": "TCA9535PWR",
+        "MPN": "TCA9535PWR",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-24_4.4x7.8mm_P0.65mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U904",
+      "netlist": {
+        "Value": "ADS1115IDGSR",
+        "MPN": "ADS1115IDGSR",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-10_3x3mm_P0.5mm"
+      },
+      "bom": {
+        "Value": "ADS1115IDGSR",
+        "MPN": "ADS1115IDGSR",
+        "Footprint": "Sphinx_V2:Package_SO__TSSOP-10_3x3mm_P0.5mm"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C1001",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "C1002",
+      "netlist": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100n / 100V",
+        "MPN": "GRM188R72A104KA35D",
+        "Footprint": "Sphinx_V2:Capacitor_SMD__C_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1001",
+      "netlist": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "100k",
+        "MPN": "RC0603FR-07100KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1002",
+      "netlist": {
+        "Value": "12.6k 0.1%",
+        "MPN": "RT0603BRD0712K6L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "12.6k 0.1%",
+        "MPN": "RT0603BRD0712K6L",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1003",
+      "netlist": {
+        "Value": "20k / 0.1%",
+        "MPN": "RT0603BRD0720KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "20k / 0.1%",
+        "MPN": "RT0603BRD0720KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1004",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1005",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1006",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1007",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1008",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "R1009",
+      "netlist": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "bom": {
+        "Value": "10k",
+        "MPN": "RC0603FR-0710KL",
+        "Footprint": "Sphinx_V2:Resistor_SMD__R_0603_1608Metric"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U1001",
+      "netlist": {
+        "Value": "TMP302BDRLR",
+        "MPN": "TMP302BDRLR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-563"
+      },
+      "bom": {
+        "Value": "TMP302BDRLR",
+        "MPN": "TMP302BDRLR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-563"
+      },
+      "pass": true
+    },
+    {
+      "ref": "U1002",
+      "netlist": {
+        "Value": "TLV3011AIDBVR",
+        "MPN": "TLV3011AIDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "bom": {
+        "Value": "TLV3011AIDBVR",
+        "MPN": "TLV3011AIDBVR",
+        "Footprint": "Sphinx_V2:Package_TO_SOT_SMD__SOT-23-6"
+      },
+      "pass": true
+    }
+  ],
+  "drtn_only_bypass_return": true,
+  "polymer_polarity": [
+    {
+      "ref": "C701",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C702",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C703",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C704",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C705",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C706",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C707",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C708",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C761",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C762",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C763",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C764",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C765",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C766",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C767",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    },
+    {
+      "ref": "C768",
+      "pin1": "0V75",
+      "pin2": "GND",
+      "pass": true
+    }
+  ]
+}
